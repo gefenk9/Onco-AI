@@ -77,10 +77,10 @@ SYSTEM_PROMPT = f"{SYSTEM_PROMPT_BASE}\n\n{guidelines_content}\n\n"
 
 with open('./user_prompt.txt', 'r', encoding='utf-8') as file:
     user_prompt = file.read()
-print("\n\nLLM+SYSTEM\n\n")
+
 message = client.messages.create(
     model="claude-3-5-sonnet-20241022",
-    max_tokens=1000,
+    max_tokens=2500,
     temperature=0,
     system=SYSTEM_PROMPT,
     messages=[{"role": "user", "content": [{"type": "text", "text": user_prompt}]}],
