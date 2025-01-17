@@ -1,0 +1,6711 @@
+NCCN
+GUIDELINES
+FOR PATIENTS
+
+2024
+
+®
+
+Bladder Cancer
+
+®
+
+NATIONAL COMPREHENSIVE CANCER NETWORK
+
+Presented with support from
+
+FOUNDATION
+Guiding Treatment. Changing Lives.
+
+Available online at
+NCCN.org/patientguidelines
+
+Ü
+
+Bladder Cancer
+
+About the NCCN Guidelines for Patients®
+
+Did you know that top cancer centers across the United
+States work together to improve cancer care? This
+alliance of leading cancer centers is called the National
+Comprehensive Cancer Network® (NCCN®).
+Cancer care is always changing. NCCN develops
+evidence-based cancer care recommendations used by health care providers
+worldwide. These frequently updated recommendations are the NCCN Clinical
+Practice Guidelines in Oncology (NCCN Guidelines®). The NCCN Guidelines for
+Patients plainly explain these expert recommendations for people with cancer
+and caregivers.
+
+These NCCN Guidelines for Patients are based on the NCCN
+Clinical Practice Guidelines in Oncology (NCCN Guidelines®)
+for Bladder Cancer, Version 4.2024 – May 9, 2024.
+
+View the NCCN Guidelines
+
+Find an NCCN Cancer
+
+for Patients free online
+
+Center near you
+
+NCCN.org/patientguidelines
+
+NCCN.org/cancercenters
+
+Connect with us
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+1
+
+Bladder Cancer
+
+Supporters
+®
+
+NATIONAL COMPREHENSIVE CANCER NETWORK
+
+FOUNDATION
+Guiding Treatment. Changing Lives.
+
+NCCN Guidelines for Patients are supported by funding from the
+NCCN Foundation®
+NCCN Foundation gratefully acknowledges the following
+supporters for helping to make available these
+NCCN Guidelines for Patients:
+Bristol Myers Squibb; Janssen Biotech, Inc.; and Pfizer Inc.
+NCCN independently adapts, updates, and hosts the NCCN
+Guidelines for Patients. Our corporate supporters do not participate
+in the development of the NCCN Guidelines for Patients and are not
+responsible for the content and recommendations contained therein.
+
+To make a gift or learn more, visit online or email
+NCCNFoundation.org/donate
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+PatientGuidelines@ NCCN.org
+
+2
+
+Bladder Cancer
+
+Contents
+4
+
+Bladder cancer basics
+
+12
+
+Tests for bladder cancer
+
+22
+
+Staging and grading
+
+28
+
+Treatment options for bladder cancer
+
+42
+
+Treatment for non–muscle-invasive bladder cancer
+
+50
+
+Treatment for muscle-invasive bladder cancer
+
+66
+
+Treatment for metastatic bladder cancer
+
+74
+
+Supportive care and other assistance
+
+80
+
+Making treatment decisions
+
+92
+
+Words to know
+
+95
+
+NCCN Contributors
+
+96
+
+NCCN Cancer Centers
+
+98
+
+Index
+
+© 2024 National Comprehensive Cancer Network, Inc. All rights reserved. NCCN
+Guidelines for Patients and illustrations herein may not be reproduced in any form for
+any purpose without the express written permission of NCCN. No one, including doctors
+or patients, may use the NCCN Guidelines for Patients for any commercial purpose
+and may not claim, represent, or imply that the NCCN Guidelines for Patients that have
+been modified in any manner are derived from, based on, related to, or arise out of the
+NCCN Guidelines for Patients. The NCCN Guidelines are a work in progress that may be
+redefined as often as new significant data become available. NCCN makes no warranties
+of any kind whatsoever regarding its content, use, or application and disclaims any
+responsibility for its application or use in any way.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+NCCN Foundation seeks to support the millions of patients and their families affected
+by a cancer diagnosis by funding and distributing NCCN Guidelines for Patients. NCCN
+Foundation is also committed to advancing cancer treatment by funding the nation’s
+promising doctors at the center of innovation in cancer research. For more details and the
+full library of patient and caregiver resources, visit NCCN.org/patients.
+National Comprehensive Cancer Network (NCCN) and NCCN Foundation
+3025 Chemical Road, Suite 100, Plymouth Meeting, PA 19462 USA
+
+3
+
+1
+
+Bladder cancer basics
+5
+
+About bladder cancer
+
+9
+
+Bladder cancer treatment
+
+11
+
+Key points
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+4
+
+1 Bladder cancer basics » About bladder cancer
+
+About bladder cancer
+
+Having cancer can be worrisome
+and stressful. This book will help
+
+What is bladder cancer?
+
+you understand your diagnosis
+
+Bladder cancer is a disease that occurs when
+cells in the inner lining of the bladder grow out
+of control. The bladder is a hollow, balloonlike organ that stores urine. It’s located in
+your pelvis—the area between your hip bones
+in your lower abdomen. The bladder’s inner
+lining, called the urothelium, prevents urine
+from leaking back into the body.
+
+of bladder cancer. It will also
+explain your options for treatment.
+Taken together, you’ll have the
+confidence to make well-informed
+decisions about what’s best for
+you. This may reduce some of the
+fear and worry.
+
+What does the bladder do?
+• The bladder is a hollow organ in
+the lower pelvis. Its main job is
+to store urine (pee). In adults, the
+bladder can hold up to 2 cups of
+urine.
+• Urine is made by the kidneys
+and flows down to the bladder
+through two tubes called ureters.
+• The bladder gets bigger as it fills
+with urine and gets smaller when
+you pee. It’s about the size of an
+orange when empty and the size
+of a grapefruit when full.
+• When you urinate, the muscles in
+the walls of the bladder contract.
+This forces the urine out of the
+bladder and through a tube
+called the urethra, which streams
+it out of the body.
+• Together, these organs are called
+the urinary tract.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+5
+
+1 Bladder cancer basics » About bladder cancer
+
+Bladder cancer happens when abnormal
+(cancer) cells develop genetic errors
+(mutations) that cause them to make many
+more cancer cells. Cancer cells also avoid
+normal cell death. As cancer cells increase,
+they crowd out and overwhelm normal cells.
+Over time, the cancer cells may form a tumor
+in the bladder. Sometimes the cells grow
+deeper and invade the bladder’s muscle
+layer. The cancer may even break through the
+bladder and spread to other parts of the body.
+
+Other (non-urothelial) types of bladder cancer
+are much less common. These include
+squamous cell carcinoma, adenocarcinoma,
+and small cell carcinoma.
+
+Is bladder cancer common?
+Bladder cancer is one of the most common
+cancers in adults. Most people who have
+bladder cancer are aged 55 years and over.
+
+How is bladder cancer found?
+
+Bladder cancer is often found at an early
+stage when the cancer is highly treatable.
+However, bladder cancer commonly comes
+back again even after treatment. In many
+cases, bladder cancer comes back in a
+different place and sometimes more advanced
+than before. That’s why follow-up testing is
+so important. People with bladder cancer
+need regular follow-up tests for many years to
+check if the cancer has returned.
+
+Bladder cancer is usually found when a person
+has symptoms. A symptom is a problem or
+feeling that may signal a disease or condition.
+The most common symptom of bladder cancer,
+and the one that usually appears first, is
+having blood in your urine (hematuria).
+How does blood get into urine? Bladder tumors
+are likely to release a little blood, which mixes
+with the urine in your bladder. The blood may
+turn your urine pink or bright red. Or, if there
+isn’t enough blood to be visible, your urine
+may look normal. But your clinical team can
+still detect blood by looking at a sample of the
+urine under a microscope.
+
+The most common kind of bladder cancer
+starts in the urothelial cells, which are stretchy
+cells that line the inside of the bladder.
+Urothelial cells also form the inner layer in
+the rest of the urinary tract, which includes
+the kidneys, the ureters, and the urethra.
+Cancer of the urothelium can start in these
+areas instead of the bladder, although it’s less
+common.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Blood in the urine can be caused by many
+other things besides bladder cancer. The most
+common cause is an infection in the urinary
+tract. So anyone with blood in their urine
+should see a health care provider to get their
+urine tested.
+
+6
+
+1 Bladder cancer basics » About bladder cancer
+
+Other symptoms of bladder cancer include:
+
+
+Frequent urination
+
+
+
+Urgency to urinate
+
+
+
+Painful urination
+
+
+
+Back pain
+
+What does aggressive
+mean?
+When health care professionals describe
+cancer as aggressive, they mean the
+cancer is likely to grow or spread more
+quickly than average.
+
+Not every person with bladder cancer will have
+all these symptoms. Some people will have no
+symptoms.
+
+Aggressive can also be used to describe
+a treatment that’s stronger or more
+intense than other treatment options.
+
+A person with one or more of these symptoms
+should visit a doctor or other health care
+provider who can recommend different tests.
+These tests are used to make a diagnosis. (A
+diagnosis means identifying an illness by using
+tests.)
+
+Bladder cancer
+Bladder cancer is often described
+by how far it has spread into the
+muscle layer of the bladder.
+Here, the cancer tumor has grown
+through the inner lining (urothelial
+layer) and invaded the muscle
+layer in the bladder wall. This type
+of cancer is known as muscleinvasive bladder cancer.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+7
+
+1 Bladder cancer basics » About bladder cancer
+
+Some people reading this book may have
+already been tested and given a diagnosis of
+bladder cancer. For those who haven’t been
+diagnosed yet, the only way to make sure you
+have bladder cancer is to have tests that:
+
+
+
+
+
+However, only some individuals with these
+genetic mutations go on to develop bladder
+cancer.
+
+What are the risk factors for
+bladder cancer?
+
+Look inside your bladder (cystoscopy and
+imaging)
+
+A risk factor is something that increases your
+chance of developing a disease. Risk factors
+don’t necessarily cause bladder cancer. But
+people with bladder cancer often have one or
+more of these risk factors:
+
+Study your urine (urinalysis and cytology)
+Analyze a sample of surgically removed
+bladder tissue (resection and biopsy)
+
+We’ll talk about these and other tests in
+Chapter 2.
+
+
+
+What causes bladder cancer?
+Many people wonder why they got cancer.
+Cancer experts don’t know exactly what
+causes bladder cells to grow out of control.
+What they do know is that bladder cancer and
+other cancers start with abnormal changes
+(mutations) in the genes of cells.
+
+
+
+
+
+Genes are tiny parts of a cell that carry the
+instructions for how cells behave. These
+instructions also control how new cells are
+made. Sometimes, mutations can mix up these
+instructions. This can turn normal cells into
+cancer cells.
+
+
+
+In most people with bladder cancer, these
+mutations aren’t passed down in families
+(hereditary mutation). They happen on their
+own and only in cancer cells. Still, you may
+have a higher risk for bladder cancer if another
+family member also had bladder cancer.
+In rare cases, mutations in these genes can
+be passed down in families. This results in
+an increased risk of getting bladder cancer.
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+8
+
+Smoking – Smoking is the greatest risk
+factor for bladder cancer. It accounts
+for about half of all cases. Secondhand
+smoke increases bladder cancer risk, too.
+Quitting smoking, even after diagnosis,
+can still be helpful.
+Age – The risk of bladder cancer
+increases as you age.
+Family history – Your risk increases
+if you or anyone in your family has had
+bladder cancer. Also, people with an
+inherited condition called Lynch syndrome
+have a greater risk of cancer in the
+urinary tract, including bladder cancer.
+Chemical exposure – Some chemicals
+used in dyes, rubber, leather, printing
+materials, textiles, and paint products
+have been linked to an increased risk for
+bladder cancer.
+
+1 Bladder cancer basics » Bladder cancer treatment
+
+Bladder cancer treatment
+
+How advanced is my bladder
+cancer?
+
+What’s the best treatment for
+bladder cancer?
+
+Once bladder cancer is found, it’s important to
+know how far it has grown or spread. Bladder
+cancer advances in 3 phases:
+
+
+
+
+
+
+There’s no single treatment that’s best for
+everyone. The best treatment for bladder
+cancer is the treatment that’s best for you.
+You’ll work with your treatment team to choose
+which option makes the most sense for you.
+This choice is based on your cancer stage
+as well as your overall health and personal
+preferences.
+
+Non–muscle-invasive bladder
+cancer has grown on or in the bladder’s
+inner layer of urothelial cells, but not into
+the bladder’s muscle layer.
+Muscle-invasive bladder cancer
+has grown through the bladder’s inner
+urothelial layer and into its muscle layer.
+But it hasn’t grown anywhere else.
+
+Very often, the best option includes more than
+one type of therapy. Common treatments for
+bladder cancer include:
+
+Metastatic bladder cancer has
+spread outside the bladder to other areas
+of the body. Common areas of metastatic
+bladder cancer include the lymph nodes,
+bones, lungs, liver, and the inner wall of
+the abdomen. (Lymph nodes are small,
+bean-shaped glands that transport a fluid
+called lymph and help fight infection.
+Lymph nodes are found around the
+urinary tract and all over the body.)
+
+
+
+Surgery
+
+
+
+Chemotherapy
+
+
+
+Immunotherapy
+
+
+
+Radiation therapy
+
+
+
+Targeted therapy
+
+Surgery, by itself or with other treatments, can
+be used in many stages of bladder cancer.
+For less advanced cancer, a minor surgical
+procedure can be used to remove just the
+tumor. For more advanced cancer, the entire
+bladder can be surgically removed.
+
+Treatment is different for each of these three
+phases of bladder cancer. These phases are
+further divided into stages, which are explained
+in Chapter 3.
+
+In addition, you may receive chemotherapy
+or immunotherapy directly into the bladder.
+For people with metastatic bladder cancer,
+chemotherapy or immunotherapy is used to
+treat cancer anywhere in the body. Another
+treatment option is to join a clinical trial.
+You’ll also receive treatment for any side
+effects caused by cancer therapy.
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+9
+
+1 Bladder cancer basics » Bladder cancer treatment
+
+Can bladder cancer be cured?
+
+Even so, there’s hope. If the cancer does
+come back, it can be treated. Many people
+live with bladder cancer and still have a good
+quality of life.
+
+Bladder cancer in an early (non-invasive)
+stage can usually be cured. Treatment for
+more advanced stage (muscle-invasive)
+bladder cancer can be complicated but it may
+still get rid of the cancer.
+
+Plus, new and improved ways to detect and
+treat bladder cancer are helping people live
+longer and with fewer side effects than ever
+before.
+
+Metastatic bladder cancer is not typically
+curable, but it is still treatable. And treatments
+are improving all the time. For most people
+with bladder cancer, treatment provides a
+longer and more comfortable life with fewer
+symptoms.
+
+Experts predict that treatment will improve
+rapidly over the next few years, with better
+results for all stages of bladder cancer.
+
+It’s important to know that bladder cancer
+commonly comes back even after treatment.
+In fact, bladder cancer is more likely to come
+back than almost any other kind of cancer.
+From now on, you and your health care
+providers will have to keep watching for any
+sign that the cancer returns.
+
+As a result of clinical trials,
+many new treatments for bladder
+cancer have been approved or
+are on the horizon. As always,
+you can try to join a clinical
+trial at almost any point during
+cancer care.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+10
+
+1 Bladder cancer basics » Key points
+
+“
+
+Key points
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bladder cancer happens when abnormal
+cells in the inner layer of the bladder grow
+out of control.
+
+Don’t Google your diagnosis and
+assume that statistics define your
+life! Every person’s cancer story
+and situation is different.”
+
+The most common symptom of bladder
+cancer is blood in the urine.
+Bladder cancer comes from abnormal
+changes (mutations) in the genes of cells.
+Smoking is the greatest risk factor for
+bladder cancer.
+Many bladder cancers can be cured. All
+bladder cancers can be treated.
+For most people with bladder cancer,
+treatment requires more than one type of
+therapy.
+Bladder cancer very often comes back
+even after treatment. You and your care
+team will need to watch for its return for
+potentially the rest of your life.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+11
+
+2
+
+Tests for bladder cancer
+13
+
+General health tests
+
+13
+
+Blood and urine tests
+
+15
+
+Cystoscopy and biopsy
+
+17
+
+Imaging
+
+20
+
+Inherited cancer risk
+
+20
+
+Quitting smoking
+
+21
+
+Key points
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+12
+
+2 Tests for bladder cancer » General health tests » Blood and urine tests
+
+Several tests are needed to
+
+Some cancers and other diseases run in
+families. Your care team will ask about the
+health history of family members who are blood
+relatives. This information is called a family
+history. Ask your family members about their
+health issues like heart disease, cancers, and
+diabetes, and at what age they were diagnosed.
+
+diagnose and treat bladder cancer.
+This chapter explains these tests
+and what to expect when being
+tested.
+
+Physical exam
+
+Before you can be treated, you’ll need several
+tests to confirm your diagnosis. These tests
+measure how much the cancer has grown and
+how quickly it’s growing. Tests are also used to
+plan treatment, to find out how well treatment
+is working, and to check if the cancer comes
+back after treatment.
+
+A physical exam is a check of your body for
+any signs of disease. Your health care provider
+may feel for abnormalities or tenderness in
+your abdomen and pelvis.
+
+Blood and urine tests
+
+This chapter describes what tests you may
+have and what to expect during testing. Bring
+someone with you to listen, ask questions, and
+write down the answers.
+
+Blood tests check for signs of disease and how
+well organs are working. A blood test requires a
+sample of your blood, which is removed through
+a needle placed into your vein. One sample
+may be used for several different blood tests:
+
+Tests and procedures that you may receive are
+described next. Not everyone will need all of
+these tests.
+
+Complete blood count
+A complete blood count (CBC) measures the
+levels of red blood cells, white blood cells, and
+platelets in your blood. Your doctor will want
+to know if you have enough red blood cells
+to carry oxygen throughout your body, white
+blood cells to fight infection, and platelets to
+control bleeding.
+
+General health tests
+Medical and family histories
+A medical history is a record of all health
+issues and treatments you’ve had in your
+life. Be prepared to list any illness or injury
+and when it happened. Also, put together
+a list of your prescription medications and
+any over-the-counter medicines, herbals, or
+supplements you take. Tell your doctor about
+any symptoms you have.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Comprehensive metabolic panel
+A comprehensive metabolic panel (CMP)
+measures important chemicals, proteins, and
+other substances in your blood. Levels that
+are too high or low could be a sign of a health
+problem in areas like the kidneys or liver.
+
+13
+
+2 Tests for bladder cancer » Blood and urine tests
+
+Who’s on your multidisciplinary care team?
+Treating bladder cancer takes a team
+approach. Some members of your care
+team will be with you throughout your
+cancer treatment, while others will be
+there for parts of it. Your team should
+communicate and work together to bring
+the best knowledge from each specialty.
+This is called multidisciplinary care.
+Depending on your diagnosis, your
+multidisciplinary team may include a dozen or more specialists and care providers:
+Your primary care doctor handles medical
+care not related to your cancer. Your primary
+doctor can help you express your thoughts about
+treatments to your cancer care team.
+
+A diagnostic radiologist reads the results
+of x-rays and other imaging tests.
+An anesthesiologist gives anesthesia, a
+medicine so you don’t feel pain during surgery
+or procedures.
+
+A urologist is an expert in the urinary system
+and the male reproductive organs.
+
+Advanced practice providers are
+an important part of any team. These are
+registered nurse practitioners and physician
+assistants who monitor your health and provide
+care.
+
+A urologic oncologist is a surgeon who
+diagnoses cancers of the urinary tract and the
+male reproductive organs, and treats the cancer
+using surgery and intravesical therapy.
+A medical oncologist treats cancer using
+systemic therapies such as chemotherapy and
+immunotherapy. A medical oncologist will often
+coordinate your care with other team members.
+If not, ask who will coordinate your care.
+
+Residents and fellows are doctors who
+are continuing their training, some to become
+specialists in a certain field of medicine.
+Nutritionists offer guidance on what foods
+or diet are most suitable for your particular
+condition.
+
+A radiation oncologist prescribes and
+plans radiation therapy to treat cancer.
+
+Psychologists and psychiatrists are
+mental health experts who help manage issues
+such as depression, anxiety, or other mental
+health conditions that affect how you feel.
+
+Oncology nurses provide your hands-on
+care, like giving systemic therapy, managing
+your care, answering questions, and helping
+you cope with side effects.
+
+Genetic counselors are experts who
+interpret how your family history may impact
+your treatment.
+
+A pharmacist prepares chemotherapy and
+other medicines, and can offer treatment advice.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+14
+
+2 Tests for bladder cancer » Cystoscopy and biopsy
+
+Some important tests in a CMP are:
+
+
+
+
+to identify some of these specific tumor cells.
+Scientists call these biomarkers.
+
+Liver function test looks at
+enzymes made by the liver, like alkaline
+phosphatase and bilirubin.
+
+At this time, biomarker tests may provide some
+helpful clues about bladder cancer, but aren’t
+quite reliable enough to diagnose it. Biomarker
+tests are also sometimes used for surveillance
+in people who’ve been treated for non–muscleinvasive bladder cancer. Surveillance means
+watching to see if the cancer comes back after
+it has been treated or removed.
+
+Kidney function test measures waste
+products like creatinine and blood urea
+nitrogen (BUN) to check if your kidneys
+are working normally. This test can be
+very helpful for deciding your treatment.
+
+Urine cytology
+
+Cystoscopy and biopsy
+
+Urine cytology is a lab test that analyzes your
+urine for any cancer or precancerous cells. You
+may receive a urine cytology test if you have
+blood in your urine.
+
+Cystoscopy is a procedure to look inside your
+urethra and bladder for any sign of cancer.
+This procedure uses a cystoscope, a tube
+with a camera and a light at the end, which is
+inserted into the urethra and through to the
+bladder.
+
+A urine cytology is done like other urine tests—
+you pee into a small plastic container. Or,
+your urologist may collect a sample of your
+urine during cystoscopy. Either way, the urine
+sample is sent to a lab for testing. At the lab,
+a pathologist (a doctor who examines cells
+and tissue to find disease) uses a microscope
+to look for any abnormal cells in your urine
+sample.
+
+Cystoscopy may be done at your urologist’s
+office, a hospital, or a clinic. The procedure
+takes only a few minutes, doesn’t require
+general anesthesia, and you can go home
+afterward.
+During a cystoscopy
+You’ll lie on your back on an exam table. You
+may be positioned with your feet up and your
+knees apart. After lubricating your urethra (and
+possibly numbing it with an anesthetic gel),
+your urologist will slowly insert the cystoscope
+into the opening of the urethra. This opening
+is at the tip of the penis or just in front of the
+vagina. This may be uncomfortable at first but
+it shouldn’t be painful. The cystoscope will
+move through the urethra and into the bladder.
+
+If abnormal cells are found, it means that
+cancer may be located anywhere in the urinary
+tract. You’ll need a cystoscopy procedure to
+find out if it’s in the urethra or the bladder. If
+cancer isn’t found in the urethra or bladder,
+you’ll need imaging tests to investigate the
+ureters, kidneys, or other areas.
+
+Urine tests for tumor markers
+Tumors shed cancer cells somewhat like a
+dog sheds hair. These cancer cells can end
+up in your urine. Urine tests are now available
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+The urologist will view a monitor that shows
+real-time images of the inside of the bladder.
+15
+
+2 Tests for bladder cancer » Cystoscopy and biopsy
+
+If any areas appear suspicious, the urologist
+may use a small tool on the cystoscope to
+remove tiny tissue samples for testing (biopsy).
+If a biopsy can’t be done during this visit, you
+might be scheduled for a separate procedure
+on another day.
+
+In addition to biopsy samples, the urologist can
+completely remove very small cancer growths
+during the cystoscopy. However, if a tumor is
+found, you’ll need to have it removed in an
+operating room at a clinic or hospital. This
+procedure is further explained in Chapter 4.
+
+Cystoscopy
+A cystoscopy is an exam to look inside the urethra and bladder for any signs of cancer.
+If anything looks suspicious, the urologist can use a small tool on the cystoscope to
+remove tiny tissue samples for testing (biopsy).
+A flexible cystoscope (upper left) is used for viewing and biopsy. A rigid cystoscope
+(bottom right) is more invasive, but it can also remove small tumors.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+16
+
+2 Tests for bladder cancer » Imaging
+
+In a very similar exam, called a ureteroscopy,
+the cystoscope goes a little farther to examine
+the upper parts of the urinary tract—the ureters
+and inner kidneys. A ureteroscopy is done only
+if something seems abnormal with the ureters
+or kidneys.
+
+Is blue light cystoscopy better?
+Cystoscopy commonly uses a white light
+to see inside the bladder. Some newer
+cystoscopes now use a blue light. When
+combined with a special dye injected into
+the bladder, blue light cystoscopy can
+identify tumors a little more distinctly than
+white light. Another technology called
+narrow-band imaging also helps detect
+tumors more clearly during cystoscopy but
+doesn’t require a dye.
+
+After a cystoscopy
+After the procedure, you may have one or
+more of these side effects:
+
+
+
+
+
+Bleeding from your urethra, which can
+appear bright pink in your urine or on
+toilet paper
+A burning sensation during urination
+Urinating more often for the next day or
+two
+
+While both blue light cystoscopy and
+narrow-band imaging may potentially detect
+tumors better than standard white light,
+they’re relatively new and still in the “testing
+phase.” More research will show whether
+they can replace or be used with white light
+as the standard detection method.
+
+If a tissue sample was taken for a biopsy, it will
+be sent to a lab and tested for cancer.
+
+Imaging
+Imaging means taking detailed pictures
+(images) of the insides of the body. The
+images can show the size, location, and other
+features of cancer. Imaging can reveal where
+the cancer started and whether the cancer has
+spread (metastasized).
+
+Types of imaging include x-rays, computed
+tomography (CT), positron emission
+tomography (PET), magnetic resonance
+imaging (MRI), and ultrasound.
+
+After your scan, your images will be studied
+by a radiologist. A radiologist is a doctor who’s
+an expert in interpreting imaging tests. The
+radiologist will send the results to your doctor
+or care team.
+
+CT scan
+A CT scan takes many x-rays of the same
+body part from different angles. A computer
+combines all the x-ray pictures to make a
+series of cross-sectional images.
+
+This information helps to plan the next steps
+of your care. Your doctor or other health care
+provider will discuss the results with you. Be
+sure to ask any questions you have.
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+To look for cancer that has spread beyond
+the bladder, you may have a CT scan of your
+abdomen and pelvis. The pelvis is the area of
+17
+
+2 Tests for bladder cancer » Imaging
+
+the lower abdomen located between the hip
+bones; it contains reproductive organs as well
+as the bladder and rectum.
+
+can be done with one or two machines,
+depending on the cancer center.
+
+MRI
+
+A CT scanner is a large machine that has a
+tunnel in the middle. During the test, you’ll
+lie on a table that moves slowly through the
+tunnel. Pillows or straps may be used to help
+keep you still during the test.
+
+MRI uses radio waves and powerful magnets
+to take pictures of the inside of the body. An
+MRI is used to get a more detailed view of
+cancer within the bladder or urinary tract. It’s
+also used to see if cancer has spread to the
+liver, nearby lymph nodes, or the bones in your
+pelvis.
+
+PET/CT scan
+A PET scan uses a radioactive drug injected
+into a vein to see where cancer cells are in the
+body. Cancer cells show up as bright spots on
+PET scans.
+
+Like a CT scanner, an MRI is a large machine
+with a tunnel in the middle. Unlike CT, MRI
+doesn’t use radiation (x-rays). An MRI also
+makes much more noise and takes longer than
+a CT scan. Tell your team if you get nervous
+in small spaces. You may be given a sedative
+(medicine) to help you relax. You’ll need to
+remain as motionless as possible during each
+scan. You may be positioned with pillows or
+bolsters to help you keep still.
+
+When a PET scan is combined with CT,
+it’s called a PET/CT scan. PET/CT creates
+detailed images that are useful in certain
+clinical situations for finding cancer that has
+spread outside the bladder. A PET/CT scan
+
+Imaging
+To look for cancer that
+has spread beyond the
+bladder, you may have
+an imaging scan of your
+abdomen and pelvis.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+18
+
+2 Tests for bladder cancer » Imaging
+
+Because an MRI uses magnets, you can’t
+bring any metal objects (such as a cell phone,
+wristwatch, belt with a metal buckle, or jewelry)
+into the imaging room.
+
+Tips for testing
+Results from blood tests, imaging
+studies, and biopsies will be used to
+determine your treatment plan. It’s
+important you understand what these
+tests mean. Ask questions and keep
+copies of your test results. Online patient
+portals are a handy way to access your
+test results.
+
+Other types of imaging
+CT and MRI are commonly used to see how
+far bladder cancer has spread. Other types of
+imaging are sometimes used to look for cancer
+in other parts of the urinary tract or other parts
+of the body:
+
+
+
+
+
+
+Urogram uses a contrast solution
+and either CT or MRI to see how well
+your entire urinary tract is working. The
+contrast makes the lining of your kidneys,
+ureters, and bladder easier to see. You
+may have a urogram if you’re feeling
+symptoms such as pain in your side or
+back, or if you have blood in your urine.
+
+Follow these tips for testing:
+
+3 Bring someone with you to doctor
+visits, if possible.
+
+3 Write down questions and take
+
+notes during appointments. Don’t
+be afraid to ask your care team
+questions.
+
+Renal ultrasound shows your kidneys,
+ureters, and bladder in real time. It’s the
+same technology used to look at a baby
+in the womb. A renal ultrasound is a
+painless, non-surgical test that produces
+black and white images of your kidneys
+and other organs.
+
+3 Get copies of your blood tests,
+
+imaging results, and pathology
+reports. Other providers or
+specialists may ask you for them.
+
+3 Organize your papers. Create
+
+files for insurance forms, medical
+records, and test results. You can do
+the same on your computer.
+
+Pyelogram uses x-rays and contrast
+solution to look for a blockage—such as
+a tumor, kidney stone, or blood clot—in
+your ureters or kidneys. This test may
+also be used to find causes for blood in
+urine. A pyelogram is usually done in the
+operating room during a cystoscopy. You’ll
+be given anesthesia for this procedure.
+During the cystoscopy, the contrast
+is given intravenously (into a vein) or
+injected directly into the ureters.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+3 Keep a list of contact information for
+
+everyone on your care team. Add it
+to your cellphone. Hang the list on
+your refrigerator or keep it in a place
+where someone can access it in an
+emergency. Keep your primary care
+physician informed of any changes
+to your list.
+
+19
+
+2 Tests for bladder cancer » Inherited cancer risk » Quitting smoking
+
+
+
+
+
+Chest imaging uses CT or x-ray to see
+if the cancer has reached the lungs.
+
+Quitting smoking is hard.
+Getting help can improve your
+chances of quitting
+for good.
+
+Bone scan is done when symptoms
+suggest that the cancer may have spread
+to any bones.
+
+Inherited cancer risk
+Sometimes, mutations in genes inherited from
+your parents can increase the risk for different
+cancers. You can pass these genes on to your
+children. Other family members might also
+carry these mutations. If you have a family
+history of cancer or other features, your doctor
+might suggest genetic testing to find out if you
+have an inherited cancer risk.
+
+will also help you interpret the results of
+these tests. (Ask your care team or go to
+findageneticcounselor.com)
+For bladder cancer, the most common
+germline mutations are found in these genes:
+CDKN2A, FGFR3, PIK3CA, ERBB2. If you
+have an inherited risk, your cancer might
+require additional testing or specialized
+treatment.
+
+The goal of this type of genetic testing is to
+look for germline (inherited) mutations that
+occur in every cell in your body. Germline
+testing may be more appropriate for people
+who have:
+
+
+Already had cancer
+
+
+
+A close relative with bladder cancer
+
+
+
+Age below 50
+
+
+
+Cancer of the upper urinary tract
+
+
+
+High grade (fast growing) cancer
+
+
+
+Quitting smoking
+Smoking increases the risk for bladder cancer.
+People who smoke are 3 times more likely to
+die from bladder cancer than people who don’t
+smoke.
+The more you smoke, the greater your risk.
+Your family and friends could also have a
+greater risk because your secondhand smoke
+may increase their risk for bladder cancer, too.
+
+Lynch syndrome or a family member with
+Lynch syndrome
+
+If you have one or more of these factors, you
+should ask about genetic counseling. A genetic
+counselor is an expert who has special training
+in genetic diseases and can help you decide
+whether to have germline testing. The test is
+done using a sample of your blood, saliva,
+urine, or tumor tissue. A genetic counselor
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Quitting smoking may reduce your risk of
+getting cancer and other serious diseases. It
+can also help treatments for bladder cancer
+work better.
+
+20
+
+2 Tests for bladder cancer » Key points
+
+Key points
+
+
+
+
+
+
+
+
+
+
+
+
+Tests of your blood and urine can show
+if something in your body isn’t working
+right. This may be a clue that you have a
+serious illness, such as cancer.
+
+If you smoke or vape,
+seek help to quit
+If you smoke tobacco or use e-cigarettes,
+it’s very important to quit. Smoking or
+vaping can limit how well cancer treatment
+works. Smoking greatly increases your
+chances of having side effects during
+and after surgery. It also increases your
+chances of developing other cancers.
+
+Cystoscopy uses a viewing device
+inserted through the urethra to look for
+cancer inside the bladder.
+Imaging tests can show whether cancer
+has spread to tissues, organs, and lymph
+nodes near the bladder, or to distant parts
+of the body.
+A urogram uses contrast and CT or MRI
+to see the lining of your urinary tract and
+to find out the extent of your bladder
+cancer.
+
+Nicotine is the chemical in tobacco that
+makes you want to keep smoking. Nicotine
+withdrawal is challenging for most people
+who smoke. The stress of having cancer
+may make it even harder to quit. If you
+smoke or vape, ask your care team about
+counseling and medicines to help you quit.
+
+A urogram uses contrast and CT or
+MRI to see how well your urinary tract
+is working and to find out the extent of
+bladder cancer.
+
+For online support, try these websites:
+
+People who smoke are much more likely
+to die from bladder cancer than people
+who don’t smoke.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+21
+
+•
+
+SmokeFree.gov
+
+•
+
+BeTobaccoFree.gov
+
+•
+
+CDC.gov/tobacco
+
+3
+
+Staging and grading
+23
+
+How far and how fast?
+
+24
+
+Stage
+
+26
+
+Grade
+
+26
+
+Subtypes
+
+27
+
+Key points
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+22
+
+3 Staging and grading » How far and how fast?
+
+The stage and grade of your
+
+
+
+cancer represent how far and how
+fast your cancer has grown. Your
+care team needs to know the stage
+and the grade of your cancer to
+predict the course of your disease
+
+
+
+and to make a treatment plan.
+
+How far and how fast?
+
+Grade measures the overall
+aggressiveness of the cancer. It’s an
+estimate of the rate that the cancer is
+growing. Cancer grade is either low grade
+(slow) or high grade (fast).
+
+It’s important for your care team to know the
+stage and the grade of your cancer to predict
+the course of your disease and to make a
+treatment plan.
+
+You’ve had many tests to learn about your
+cancer. But before you receive treatment, your
+care team needs to figure out how far your
+cancer has grown and how fast it’s growing.
+This is done with staging and grading.
+
+The next chapters explain how these ratings
+are used to choose treatments. But first, let’s
+get to know more about staging and grading.
+
+Layers of the bladder
+The wall of the bladder
+has four main layers.
+From the inside to the
+outside, they are:
+• Inner lining (urothelial
+layer)
+• Connective tissue layer
+• Muscle layer
+• Outer fatty layer
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Stage measures the physical extent of
+the cancer. It’s a number rating of how
+far the cancer has grown into the bladder
+wall. Numbers range from 0 to 4, where 0
+means no growth into the bladder and 4
+means it has grown through the bladder
+wall and out to other parts of the body.
+
+23
+
+3 Staging and grading » Stage
+
+Stage
+
+An important thing about bladder cancer is
+whether the tumor has or hasn’t grown into the
+bladder muscle. Cancer in stage 0 and stage
+1 haven’t grown into the muscle layer (non–
+muscle-invasive). Cancer in stages 2, 3, and
+4 have grown into the muscle layer (muscleinvasive). Cancer that has invaded the muscle
+layer needs more intense treatment.
+
+Staging is a way to describe how much cancer
+is in your body, how much it has grown, and
+how far it has spread. If the cancer has spread
+outside the bladder (metastasized), staging
+describes where it has spread to and whether
+it’s affecting other parts of the body.
+Staging uses your test results to identify and
+locate your cancer. Staging helps you and your
+care team select the best therapy.
+
+Stage 0
+Stage 0 is the earliest stage of bladder cancer.
+This stage of cancer affects only the inner
+lining of the bladder (urothelial layer). Stage 0
+has two subgroups:
+
+There are five stages of bladder cancer: 0, 1,
+2, 3, and 4. Some stages are also divided into
+subgroups.
+
+
+
+You may see the cancer stage written with a T,
+where the T stands for tumor: T0, T1, T2, T3,
+and T4.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+24
+
+Stage 0a describes cancer cells that
+grow from the inner lining toward the
+hollow center of the bladder, rather than
+into the bladder wall.
+
+3 Staging and grading » Stage
+
+
+
+Stage 0is stands for carcinoma in situ
+(CIS). This is a flat patch of cancer cells
+that hasn’t grown any farther than where
+it started. It’s still on the surface of the
+bladder lining and has yet to invade
+deeper layers. However, carcinoma in situ
+is fast-growing, aggressive, and can be
+very serious.
+
+
+
+Stage 4
+Stage 4 cancer has grown through the bladder
+wall and may have spread to lymph nodes or
+organs far from the bladder. Stage 4 has two
+subgroups:
+
+Stage 1
+Stage 1 has grown through the inner lining
+of the bladder wall and into the layer of
+connective tissue. But stage 1 hasn’t invaded
+the muscle layer of the bladder wall (non–
+muscle-invasive).
+
+
+
+
+
+Stage 2
+Stage 2 bladder cancer has grown into the
+muscle layer (muscle-invasive), but it hasn’t
+reached the fatty layer covering the outside of
+the bladder nor has it spread anywhere else.
+
+Stage 3
+Stage 3 has grown through the bladder
+wall and into the fatty layer surrounding the
+bladder. It may also have spread to lymph
+nodes and organs nearby (in the pelvis). Stage
+3 has two subgroups:
+
+
+Stage 3A bladder cancer may only be
+in the fatty tissue surrounding the bladder
+or it may have spread to a single nearby
+lymph node. It may also invade nearby
+reproductive organs such as the prostate
+gland, uterus, or vagina. Stage 3A cancer
+has not spread to nodes or organs that
+are far from the bladder.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Stage 3B has the same traits as stage
+3A but has spread to multiple lymph
+nodes in the pelvis. Stage 3B cancer has
+not spread to lymph nodes or organs far
+from the bladder.
+
+25
+
+Stage 4A has invaded the wall of the
+pelvis or abdomen. Or, it has spread to
+lymph nodes far from the bladder.
+Stage 4B has spread to far away lymph
+nodes and organs like the bones, liver,
+or lungs. Stage 4B is metastatic bladder
+cancer.
+
+3 Staging and grading » Grade » Subtypes
+
+Grade
+
+Subtypes
+
+The next piece of information used to plan
+treatment is the cancer grade. The grade
+measures how aggressive the cancer is. It’s
+a rating of how fast the cancer will likely grow
+and spread.
+
+The inner lining of the bladder is made of
+urothelial cells. Most cases of bladder cancer
+start in the urothelial cells. So this type of
+cancer is called urothelial cancer.
+But in rare cases, urothelial cell cancer has
+features that look like other types of cells.
+These are referred to as subtypes. Some of
+them include:
+
+To figure out the grade, a sample of your tumor
+will be studied in a laboratory by a pathologist.
+The pathologist will compare the cancer cells
+to normal cells. The more different they look,
+the higher the grade. And the higher the grade,
+the faster the cancer is expected to spread.
+
+
+
+
+LG means that the cancer cells are low
+grade (slow growing).
+HG means that the cancer cells are high
+grade (fast growing).
+
+
+
+Glandular subtype
+
+
+
+Squamous cell subtype
+
+
+
+Micropapillary subtype
+
+
+
+Plasmacytoid subtype
+
+
+
+Sarcomatoid subtype
+
+
+
+Nested subtype
+
+
+
+Lymphoepithelioma-like subtype
+
+
+
+Microcystic and tubular subtype
+
+It’s important to investigate whether you have
+one of these or another subtype. In general,
+treatment for these uncommon subtypes is
+similar in the early stages to treatment for
+typical urothelial cancer. However, some
+subtypes might grow or advance faster than
+typical urothelial cell cancer. And faster
+growth might mean it needs more aggressive
+treatment.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+26
+
+3 Staging and grading » Key points
+
+Key points
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+An important thing about bladder cancer
+is whether it has or it hasn’t grown into the
+muscle layer. Cancer that has invaded the
+muscle needs more aggressive treatment.
+
+We want your
+feedback!
+
+The stage of cancer describes how deep
+it has grown into the bladder wall and how
+far it has spread. Cancer stage is used to
+determine which tests and treatments will
+help you receive the best outcome.
+
+Our goal is to provide helpful and
+easy-to-understand information
+on cancer.
+
+Bladder cancer at stage 0 and stage 1
+haven’t invaded the muscle layer. Stage
+0 means that abnormal cells have grown
+on the inside lining of the bladder. Stage
+1 means that a tumor has formed and has
+invaded the layer of connective tissue in
+the bladder wall.
+
+Take our survey to let us know
+what we got right and what we
+could do better.
+NCCN.org/patients/feedback
+
+Stages 2, 3, and 4 bladder cancers are
+muscle-invasive. The tumor has invaded
+the muscle layer of the bladder wall.
+In stage 3 bladder cancer, the tumor
+has grown into the fat layer around the
+bladder. There may also be cancer in
+nearby lymph nodes.
+Stage 4 is metastatic bladder cancer.
+This is cancer that has spread outside the
+bladder and to distant sites in the body.
+Cancer grade is an estimate of how fast
+the cancer is expected to grow. Low
+grade bladder cancer is slow growing.
+High grade cancer grows more quickly.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+27
+
+4
+
+Treatment options for
+bladder cancer
+29
+
+Surgery
+
+33
+
+Intravesical therapy
+
+35
+
+Systemic therapy
+
+36
+
+Radiation therapy
+
+37
+
+Clinical trials
+
+39
+
+Supportive care
+
+39
+
+Side effects of treatment
+
+40
+
+Key points
+
+41
+
+What’s your stage?
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+28
+
+4 Treatment options for bladder cancer » Surgery
+
+This chapter explains the different
+
+
+
+treatment options for bladder
+cancer. Many people with bladder
+cancer receive more than one
+type of treatment. Together, you
+
+
+
+and your care team will choose a
+treatment plan that’s right for you.
+
+Types of surgery for bladder cancer include
+tumor removal and bladder removal.
+
+Tumor removal
+For bladder cancer, a surgical procedure
+called a resection removes the tumor but
+leaves the rest of the bladder in place. The full
+name of the procedure is called a transurethral
+resection of bladder tumor (TURBT, sometimes
+pronounced tur-bit).
+
+There are several ways to treat bladder
+cancer. It’s likely that you’ll need a few different
+types of treatment over months or years.
+Treatments include:
+
+
+
+
+
+Surgery – The goal of surgery is to
+take out the tumor and sometimes the
+surrounding tissue. Surgery procedures
+range from snipping a single tumor from
+the bladder lining to removing the entire
+bladder and other organs.
+
+Even though it has a complicated name, the
+concept of TURBT is simple. It’s a procedure
+that removes tumors through the urethra
+without having to cut into the abdomen. The
+tumor can then be tested to provide a more
+detailed diagnosis.
+
+Intravesical therapy – Intravesical
+therapy involves filling the bladder with
+a liquid medication that helps destroy
+cancer cells.
+
+TURBT is done in an operating room in a
+clinic or hospital. You’ll be given anesthesia
+to put you to sleep. The urologist then guides
+an instrument with a small cutting device
+through the urethra and into the bladder. The
+instrument is used to examine and remove the
+tumor from the bladder lining.
+
+Systemic therapy – Systemic therapy
+is typically an intravenous (IV) treatment
+that treats cancer anywhere in the whole
+body. Types of systemic therapy include
+chemotherapy, immunotherapy, and
+targeted therapy.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Clinical trial – Clinical trials are done to
+test experimental treatments. You may be
+able to join a clinical trial at any time.
+
+Surgery
+
+Treatment for bladder cancer is based on
+many things. This includes the extent, severity,
+and type of cancer. It also includes your
+age, your ability to perform daily tasks, your
+other health issues, and the availability and
+affordability of drugs. Importantly, treatment is
+also based on your wishes and preferences.
+
+
+
+Radiation therapy – Radiation therapy
+is a local therapy, which means it affects
+a specific area of the body. Sometimes
+chemotherapy or another therapy is
+added to radiation therapy to enhance
+treatment.
+
+29
+
+4 Treatment options for bladder cancer » Surgery
+
+The goals of TURBT are to:
+
+
+
+
+
+
+A treatment called intravesical therapy is often
+done in combination with TURBT. (More about
+intravesical therapy to follow.)
+
+Confirm the initial bladder cancer
+diagnosis.
+
+Bladder removal
+
+Take a sample of the bladder wall to see if
+the tumor has invaded the muscle layer.
+
+A procedure called a cystectomy treats bladder
+cancer by removing the entire bladder. When
+the word radical is used, it means taking out
+the bladder as well as nearby lymph nodes.
+If the disease has spread farther, sometimes
+other nearby organs also need to be removed,
+including:
+
+Remove all the visible tumor.
+
+After the procedure, most people can go home
+the same day. But you’ll need a few days to
+rest and recover. You may feel pain or burning
+when you urinate and have blood in your urine
+for the following 2 weeks or so.
+Another TURBT procedure may be needed
+about 2 to 6 weeks after the first one. The
+second TURBT is done to make sure all the
+tumor is removed. Or it may be done to get a
+deeper biopsy sample for the pathologist to
+examine.
+
+Urethra
+
+
+
+Prostate
+
+
+
+TURBT
+A transurethral
+resection of bladder
+tumor (TURBT) is
+a procedure that
+examines and removes
+tumors on the bladder
+wall.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+
+
+30
+
+Seminal vesicles (glands that help make
+semen)
+
+4 Treatment options for bladder cancer » Surgery
+
+
+
+
+
+Part of the vas deferens (a tube that
+carries sperm away from the testicles)
+
+urologist and treatment team about the
+risks, benefits, and side effects of a radical
+cystectomy.
+
+Proximal urethra (part of the urethra that
+goes through the prostate)
+
+
+
+Uterus
+
+
+
+Ovaries
+
+
+
+Fallopian tubes
+
+
+
+Part of the vagina
+
+Because a radical cystectomy removes your
+entire bladder, you’ll need a new way for urine
+to exit your body. So another procedure, called
+a urinary diversion, is also done at the same
+time.
+To find out about the 3 types of urinary
+diversion, see the next page.
+
+Radical cystectomy is the most widely used
+surgery for muscle-invasive bladder cancer.
+It’s a major operation that involves cutting
+into your abdomen. You’ll need to stay in the
+hospital for at least several days. It may take 2
+to 3 months or longer for you to recover.
+
+Partial cystectomy
+A partial cystectomy is a surgical procedure to
+remove part of the bladder. It’s not widely used
+for the treatment of bladder cancer. Fewer
+than 1 out of 20 people with bladder cancer
+are eligible for a partial cystectomy. It can only
+be done if the cancer is in a spot that can be
+neatly removed without taking out the whole
+bladder.
+
+Common side effects and complications of
+a radical cystectomy include constipation,
+diarrhea, bleeding, bowel problems, infections,
+and changes in sexual function. Talk to your
+
+Cystectomy
+Cystectomy is surgery to
+remove the bladder.
+A radical cystectomy removes
+the entire bladder, nearby
+lymph nodes, and other
+organs. It’s the most common
+surgery for muscle-invasive
+bladder cancer.
+A partial cystectomy removes
+part of the bladder. It’s rarely
+used for bladder cancer.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+31
+
+4 Treatment options for bladder cancer » Surgery
+
+Types of urinary diversion
+If your bladder is removed, urine needs another way to leave your body. This requires an additional
+surgical procedure called a urinary diversion. There are 3 types of urinary diversions:
+
+Ileal conduit
+
+Neobladder
+
+In this urinary diversion, the
+surgeon removes a section of the
+small intestine (ileum) to use as
+a tube (or conduit). The surgeon
+also creates a small hole, called
+a stoma, in the abdominal wall.
+One end of the tube is connected
+to the ureters, much like the
+bladder was. The other end of
+the tube is attached to the stoma.
+Urine drains from the kidneys and
+ureters, passes through the tube,
+and exits the body through the
+stoma.
+
+For this procedure, the bladder
+is replaced with a segment of
+small intestine that acts like a new
+bladder (neobladder). Like the
+original bladder, this substitute
+bladder is attached to the ureters
+at one end and to the urethra at
+the other end. This means that
+urine follows the same path out of
+the body it normally would if you
+still had your bladder. Because
+urine leaves the body in the usual
+way, a stoma and an ostomy bag
+aren’t needed.
+
+Urine can trickle out of the stoma
+at any time. A small disposable
+bag is attached to the outside
+of your abdomen to collect the
+urine when it comes out of the
+stoma. This is called an ostomy
+bag (or ostomy pouch). The bag
+is attached to your body with the
+help of an adhesive ring. The ring
+sticks to the skin and acts as a
+watertight barrier.
+
+A neobladder doesn’t work exactly
+the same way as a real bladder.
+You’ll probably need to empty it
+more often at first, maybe every 1
+to 3 hours. Also, urine might come
+out when you don’t want or expect
+it to, like during sleep. This is
+called urinary incontinence. With
+time and training, you’ll be able
+to better control the flow of urine
+from your neobladder. Even so,
+a neobladder may be difficult to
+empty completely. Some people
+have a catheter inserted through
+their urethra to help empty the
+neobladder.
+
+Most people find that they need to
+empty the bag every 2 to 4 hours,
+depending on how much liquid
+they drink. A closable spout at the
+bottom of the bag allows the urine
+to be emptied into a toilet without
+taking off the bag.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+32
+
+Continent cutaneous
+pouch (Indiana pouch)
+This urinary diversion uses a
+portion of the large intestine to
+create a pouch to hold urine. (It’s
+also called an Indiana pouch
+because it was developed by
+surgeons at Indiana University.)
+A section of the small intestine is
+used to connect the pouch to a
+stoma in the wall of the abdomen.
+A one-way valve, made from part
+of the intestine, prevents the urine
+from flowing out of the stoma.
+The stoma can be covered by
+a small bandage. Sometimes
+the stoma can be made in the
+belly button, making it much less
+noticeable. A catheter must be
+inserted into the stoma, through
+the valve, and into the pouch
+several times a day to drain the
+urine.
+A benefit to this type of urinary
+diversion is that no ostomy bag
+is needed. This may appeal to
+people with concerns about body
+image or people who don’t want to
+worry about the bag coming loose
+or leaking.
+
+4 Treatment options for bladder cancer » Intravesical therapy
+
+Intravesical therapy
+
+the bladder. Intravesical BCG can lower the
+chance of recurrence (cancer coming back) or
+getting worse (invading bladder muscle).
+
+While surgery is done to remove visible
+cancer, intravesical therapy is used to destroy
+cancer cells that aren’t visible or are hard to
+reach.
+
+Intravesical BCG is commonly used for highgrade bladder cancer that hasn’t invaded the
+muscle layer. It’s usually started about 3 to 6
+weeks after TURBT, to allow the bladder time
+to heal. It’s given once a week for 6 weeks.
+You should have a full re-evaluation at 12
+weeks after starting treatment.
+
+Intravesical therapy means putting medicine
+directly into the bladder. It’s done with a
+flexible tube, called a catheter, inserted into
+the urethra. The medicine flows through the
+catheter and into the bladder using a process
+called instillation.
+
+To prevent recurrence, you might be asked to
+continue having intravesical BCG therapy. This
+is called maintenance therapy. Maintenance
+therapy involves three intravesical BCG
+treatments (given in one week) at 3 months
+and again at 6 months after TURBT. You may
+continue to have maintenance therapy every
+6 months for up to 3 years, depending on the
+risk of recurrence.
+
+The two main intravesical therapies used to
+treat bladder cancer are bacillus CalmetteGuérin (BCG) and chemotherapy.
+
+Intravesical BCG
+Intravesical BCG therapy uses a fluid that
+contains a very weak bacterium (germ). The
+germ triggers the immune system, causing the
+immune system to attack cancer cells inside
+
+Possible side effects of intravesical BCG
+therapy include fever, chills, the urge to
+
+Intravesical therapy
+Intravesical therapy is a
+treatment where a liquid
+medicine is placed directly
+into the bladder. The
+medicine aims to destroy
+any cancer cells that TURBT
+left behind and to prevent
+any new cancer cells from
+forming.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+33
+
+4 Treatment options for bladder cancer » Intravesical therapy
+
+urinate, pain or difficulty when urinating, and
+blood or particles (clots) in your urine. Talk to
+your treatment team about the side effects.
+There may be ways to help lessen these
+effects.
+
+BCG shortage
+Even though BCG has been used for
+decades to treat bladder cancer, it’s been
+in short supply in the United States and
+worldwide for several years. As a result,
+many people with non–muscle-invasive
+bladder cancer haven’t been able to
+receive this treatment or have received a
+reduced dose. Patients with the highest
+risk are given the first opportunity to
+receive it.
+
+If intravesical BCG doesn’t work on its own,
+a number of other treatment options are
+available in addition to treatment in clinical
+trials. Ask your provider or another member of
+your care team about these potential options.
+
+Intravesical chemotherapy
+Chemotherapy is a drug used to kill
+actively growing cancer cells. Intravesical
+chemotherapy is given to treat the cancer and
+to reduce the risk of cancer recurrence.
+
+If a regular course of BCG treatment isn’t
+available to you, your treatment team
+may offer intravesical treatment with
+chemotherapy instead.
+
+Intravesical chemotherapy can be given soon
+after a TURBT procedure. The treatment is
+a one-time dose instilled within 24 hours of
+TURBT surgery. It’s meant to “clean up” any
+cancer cells that surgery may have left behind
+and to prevent any new cancer from growing.
+
+Other options include:
+
+3 Reduced doses or a shorter course
+of BCG treatment
+
+3 Eliminating BCG maintenance
+
+Intravesical chemotherapy may also be an
+option if BCG is unavailable, or if you were
+given BCG therapy but it wasn’t effective. In
+these cases, it’s given on the same schedule
+as BCG therapy: once a week for 6 weeks,
+usually beginning 3 to 4 weeks after TURBT.
+Maintenance intravesical chemotherapy, if
+given, is usually on a monthly basis for 1 to 2
+years.
+
+therapy
+
+3 Bladder removal surgery (for those
+at high risk of the cancer returning
+after treatment)
+
+3 Joining a clinical trial
+
+Because intravesical chemotherapy only
+goes into the bladder, not the entire body, it
+doesn’t usually cause the harsh side effects
+that chemotherapy is known for. However, it
+may cause the same type of side effects as
+intravesical BCG therapy.
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+34
+
+4 Treatment options for bladder cancer » Systemic therapy
+
+Systemic therapy
+
+What is dose-dense
+chemotherapy?
+
+Systemic therapy means a treatment that
+affects the whole body. It’s generally given
+directly into a vein (intravenously, or IV). The
+most common types of systemic therapy
+for bladder cancer are chemotherapy and
+immunotherapy.
+
+The term dose-dense refers to a
+method of speeding up chemotherapy
+by shortening the amount of time in
+between treatments (doses). The most
+common systemic chemotherapy used
+to treat bladder cancer is a combination
+of medicines known as dose-dense
+methotrexate, vinblastine, doxorubicin,
+and cisplatin (or ddMVAC).
+
+To determine which type of systemic therapy is
+best for you, your treatment team will consider
+your overall health. This includes how your
+heart, liver, and kidneys are functioning, how
+far the cancer has progressed, and your ability
+to do day-to-day activities.
+Note that systemic chemotherapy is different
+than intravesical chemotherapy. Systemic
+chemotherapy is a whole-body therapy.
+Intravesical chemotherapy only affects the
+inside of the bladder.
+
+A commonly used chemotherapy for bladder
+cancer is cisplatin, which contains the metal
+platinum. Platinum-based chemotherapy
+medicines can be effective against bladder
+cancer but can also damage the kidneys.
+People with kidney conditions or other health
+issues may not be able to have chemotherapy
+or, if possible, may receive non-platinum
+chemotherapy medicine.
+
+Chemotherapy
+Chemotherapy is treatment with drugs to
+kill cancer cells. Most chemotherapy drugs
+are liquids that are slowly injected into a
+vein (infusion). The drugs travel in your
+bloodstream to treat cancer throughout your
+body. Chemotherapy may also harm some
+healthy cells, which is why it can cause harsh
+side effects. Talk to your care team about any
+potential side effects from your chemotherapy
+treatment.
+
+Chemotherapy is given in a sequence of
+treatments called a cycle. A cycle includes a
+period of treatments (such as once-a-day for
+a few days) followed by a time of rest (several
+days or weeks). This treatment cycle is then
+repeated a few times. For example, you might
+have 3 to 6 cycles of chemotherapy over 2 to 3
+months.
+
+Chemotherapy may be given before surgery
+or sometimes after surgery depending on your
+type or stage of bladder cancer. Chemotherapy
+alone (without surgery) is sometimes the main
+treatment for people who have metastatic
+bladder cancer.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Immunotherapy
+Immunotherapy is a type of systemic therapy
+that uses your immune system (your body’s
+natural defense against infection and disease)
+to find and destroy cancer cells.
+
+35
+
+4 Treatment options for bladder cancer » Radiation therapy
+
+Checkpoint inhibitors are one type of
+immunotherapy used to treat bladder cancer
+and other cancers. Checkpoint inhibitors block
+the natural braking mechanisms in the body
+to allow your immune system to better identify
+and fight the cancer. The checkpoint inhibitors
+for bladder cancer include:
+
+
+Keytruda (pembrolizumab)
+
+
+
+Opdivo (nivolumab)
+
+
+
+Bavencio (avelumab)
+
+
+
+Tecentriq (atezolizumab)
+
+Because targeted therapy doesn’t harm normal
+cells as much as chemotherapy, the side
+effects tend to be different.
+Notably, the preferred therapy for metastatic
+bladder cancer is a combination of a targeted
+therapy (Padcev) and an immunotherapy
+(Keytruda).
+
+Radiation therapy
+Radiation therapy uses high-energy waves—
+such as x-rays—to kill cancer cells and shrink
+tumors. The type of radiation therapy usually
+used for bladder cancer is called external
+beam radiation therapy (EBRT). In EBRT, a
+large machine aims radiation at the tumor
+area.
+
+Targeted therapy
+Targeted therapy is a systemic treatment that
+can pick out and attack certain types of cancer
+cells. Targeted therapy is more often used for
+people with specific gene mutations. If you
+don’t have the mutation that the medicine
+“targets,” this treatment is unlikely to help.
+
+Radiation therapy can be given alone but is
+more often given with other bladder cancer
+treatments:
+
+Targeted therapies for certain types of bladder
+cancer include:
+
+
+
+
+
+
+Chemoradiation
+
+Padcev (enfortumab vedotin-ejfv), also
+known as an antibody-drug conjugate,
+targets and attaches itself to a specific
+protein, Nectin-4, found on the surface of
+bladder cancer cells.
+
+Chemotherapy and radiation therapy are
+often used together to treat bladder cancer.
+When given together, they work better than
+they do alone. This is called chemoradiation
+or chemoradiotherapy. Like many cancer
+treatments, chemoradiation works better for
+certain people than for others.
+
+Balversa (erdafitinib) is a targeted therapy
+used for people whose bladder cancer is
+due to specific mutations in the FGFR3
+gene.
+
+Trimodal therapy
+
+Trodelvy (sacituzumab govitecan-hziy)
+seeks and latches onto the protein Trop-2,
+found in large numbers on cancer cells.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Trimodal therapy refers to a combination
+of three treatments: TURBT to remove
+all visible cancer, followed by radiation
+and chemotherapy given together
+(chemoradiation).
+
+36
+
+4 Treatment options for bladder cancer » Clinical trials
+
+In certain people with bladder cancer, trimodal
+therapy can be used instead of bladder
+removal surgery (radical cystectomy). This
+is why trimodal therapy is referred to as a
+"bladder preserving" treatment.
+
+
+
+
+
+Clinical trials
+
+Every clinical trial has rules for joining, called
+eligibility criteria. The rules may be about age,
+cancer type and stage, treatment history, or
+general health. These requirements ensure
+that participants are alike in certain ways
+in order to compare how they respond to a
+specific treatment.
+
+After being developed and tested in a
+laboratory, potential new ways of fighting
+cancer need to be studied in people. If a new
+drug, device, or treatment approach is found
+to be safe and effective in a clinical trial, it may
+be approved by the FDA.
+
+Informed consent
+Clinical trials are managed by a group of
+experts called a research team. The research
+team will review the study with you in detail,
+including its purpose and the risks and benefits
+of joining.
+
+Everyone with cancer should carefully consider
+all of their treatment options, including
+standard treatments and clinical trials. Talk
+with your care team about whether a clinical
+trial may make sense for you.
+
+All of this information is also provided in
+an informed consent form. This agreement
+confirms that you’ve been fully told about your
+part in the trial. Read the form carefully and
+ask questions before signing it. Take time
+to discuss it with family, friends, or others
+you trust. Keep in mind that clinical trials are
+voluntary and you can seek treatment outside
+of the clinical trial at any time.
+
+Phases
+Most cancer clinical trials focus on treatment.
+Treatment trials are done in phases.
+
+
+
+Phase 1 trials study the dose, safety,
+and side effects of an investigational drug
+or treatment approach. They also look for
+early signs that the drug or approach is
+helpful.
+Phase 2 trials study how well the drug or
+approach works against a specific type of
+cancer.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Phase 4 trials study the long-term
+safety and benefit of an FDA-approved
+treatment.
+
+Who can enroll?
+
+Therapy may also be given as part of a
+clinical trial. A clinical trial is a type of medical
+research study and a vital way to assess new
+treatment methods.
+
+
+
+Phase 3 trials test the drug or approach
+against a standard treatment. If the
+results are good, it may be approved by
+the FDA.
+
+37
+
+4 Treatment options for bladder cancer » Clinical trials
+
+Start the conversation
+You don’t need to wait for someone on your
+care team to bring up clinical trials. Start
+the conversation and learn about all your
+treatment options. Ask if a clinical trial is
+available for your situation. If you find a study
+that you may be eligible for, ask your team if
+you meet the requirements.
+
+Finding a clinical trial
+In the United States
+
+If you have already started standard treatment,
+you may not be eligible for certain clinical
+trials. Try not to be discouraged if you cannot
+join. New clinical trials are always becoming
+available.
+
+NCCN Cancer Centers
+NCCN.org/cancercenters
+The National Cancer Institute (NCI)
+cancer.gov/about-cancer/treatment/
+clinical-trials/search
+
+Frequently asked questions
+
+Worldwide
+
+There are many myths and misconceptions
+surrounding clinical trials. The possible
+benefits and risks are not well understood by
+many with cancer.
+
+The U.S. National Library of Medicine
+(NLM)
+clinicaltrials.gov/
+
+Will I get a placebo?
+Placebos (inactive versions of real medicines)
+are almost never used alone in cancer clinical
+trials. It’s common to receive either a placebo
+with a standard treatment or a new drug with
+a standard treatment. You’ll be informed if a
+placebo is part of a clinical trial before you
+enroll.
+
+Need help finding a clinical trial?
+NCI’s Cancer Information Service (CIS)
+1.800.4.CANCER (1.800.422.6237)
+cancer.gov/contact
+
+Are clinical trials free?
+There’s no fee to enroll in a clinical trial. The
+study sponsor usually pays for researchrelated costs, including the study drug. You
+may, however, have costs indirectly related to
+the trial, such as the cost of transportation or
+childcare due to extra appointments.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Depending on the trial, you may continue to
+receive standard cancer care. The standard
+treatment is billed to—and often covered by—
+insurance. You’re responsible for copays and
+any costs for this care that aren’t covered by
+your insurance.
+
+38
+
+4 Treatment options for bladder cancer » Supportive care
+
+Supportive care
+
+Intravesical therapy – swelling
+(inflammation) of the bladder lining, frequent
+urination, pain or burning feeling when
+urinating, blood in the urine, infection
+
+Supportive care is health care that relieves
+symptoms caused by cancer or by its
+treatment. The aim of supportive care is to
+improve your quality of life. Supportive care
+may include relieving symptoms, emotional
+or spiritual support, financial aid, or family
+counseling.
+
+Chemotherapy – nausea, vomiting, extreme
+tiredness (fatigue), fever, infection, tingling or
+numbness, rash, diarrhea
+Immunotherapy – autoimmune reaction,
+fatigue, fever, nausea, loss of appetite,
+infection, diarrhea, constipation
+
+Supportive care is available at any cancer
+stage. Speak to your care team about how
+you’re feeling and if you’re having any side
+effects. You can read more about supportive
+care in Chapter 8.
+
+Not every patient develops nausea or vomiting
+from cancer therapy. But if you have these side
+effects, it’s important to reduce them as much
+as possible to prevent them from interfering
+with your treatment.
+
+Side effects of treatment
+
+Read more about these side effects in NCCN
+Guidelines for Patients: Nausea and Vomiting,
+available at NCCN.org/patientguidelines and
+on the NCCN Patient Guides for Cancer app.
+
+A side eﬀect is an unhealthy or unpleasant
+physical or emotional condition caused by
+treatment. All treatments for bladder cancer
+can cause side eﬀects.
+Some people have many side eﬀects while
+others have few. Some side eﬀects can
+be very serious while others are simply
+unpleasant. Most side eﬀects appear soon
+after treatment starts and go away after
+treatment ends. Other side eﬀects are longterm or may appear years later.
+Side effects depend on many factors,
+especially the type of treatment (radiation
+versus chemotherapy, for example) and the
+length or the dose of treatment. Here are some
+common side effects of different treatments:
+Bladder removal surgery – bleeding,
+blood clots, kidney problems, infection, sexual
+dysfunction, incontinence, problems caused by
+the urinary diversion
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+39
+
+4 Treatment options for bladder cancer » Key points
+
+Key points
+
+Other notable side effects
+Some side effects happen more commonly in
+people with bladder cancer, particularly after
+bladder cancer surgery. While you may not
+get these side effects, you should be aware of
+them as you consider the benefits and risks of
+different treatments:
+
+
+
+
+
+
+
+
+Sexual dysfunction – Treatment or
+cancer itself may interfere with your
+ability to have sex. Sexual dysfunction
+also includes a decreased desire to have
+sex. This may be due to a lack of energy,
+being self-conscious about your body
+after surgery, or feeling stressed out and
+depressed.
+
+
+
+
+
+Trouble controlling the flow of
+urine – Urine may come out when you’re
+not expecting it. This is referred to as
+urinary incontinence. But there are things
+you can do, like pelvic floor exercises,
+that can help you regain control of urine
+function.
+
+
+
+Many side effects can be managed. Some can
+even be prevented. Ask your treatment team
+for a complete list of short- and long-term side
+effects and information on how to manage
+them.
+
+
+
+
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+40
+
+Treatment options for bladder cancer
+depend on the stage and grade of your
+cancer, your overall health, and your
+preferences.
+Transurethral resection of bladder tumor
+(TURBT) is a procedure that examines
+tumors on the bladder wall and removes
+them.
+Radical cystectomy is the most widely
+used surgery for muscle-invasive bladder
+cancer. It involves removing the bladder,
+nearby lymph nodes, and other organs in
+the pelvis.
+A urinary diversion is a surgical procedure
+included with a radical cystectomy. Its
+purpose is to provide a new way for urine
+to leave the body.
+Intravesical therapy is the use of cancer
+medicine placed directly into the bladder
+through a catheter. The medicine is slowly
+put into the bladder using a process
+called instillation.
+Chemotherapy is treatment with drugs
+to kill cancer cells. Most chemotherapy
+drugs are liquids that are slowly injected
+into a vein (infusion). Chemotherapy
+affects cancer cells (and other cells)
+throughout the whole body.
+All treatments for bladder cancer can
+cause side eﬀects. Ask your care team
+about ways to deal with the side effects of
+treatment.
+
+4 Treatment options for bladder cancer » What’s your stage?
+
+What’s your stage?
+If your urologist or another provider told you
+your cancer stage, but you don’t remember or
+you didn’t understand, call the office and ask
+for more information. Someone there should be
+willing to explain it to you.
+
+If you’ve reached this page, then
+you’ve probably been told the
+stage of your bladder cancer. Turn
+to the correct chapter to find out
+
+Turn to the chapter that matches your cancer
+stage to read about the types of treatment you
+may receive.
+
+about your treatment.
+
+Your overall
+cancer stage
+
+Chapter
+
+Page
+
+0
+
+5. Non–muscle-invasive
+
+42
+
+0a
+
+5. Non–muscle-invasive
+
+42
+
+0is
+
+5. Non–muscle-invasive
+
+42
+
+1
+
+5. Non–muscle-invasive
+
+42
+
+2
+
+6. Muscle-invasive
+
+50
+
+3A
+
+6. Muscle-invasive
+
+50
+
+3B
+
+6. Locally advanced
+
+50
+
+4A
+
+6. Locally advanced/metastatic
+
+50
+
+4B
+
+7. Metastatic
+
+66
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+41
+
+5
+
+Treatment for non–muscleinvasive bladder cancer
+43
+
+Stage 0 and stage 1 bladder cancers
+
+46
+
+Follow-up care
+
+48
+
+Recurrence or progression
+
+49
+
+What’s next?
+
+49
+
+Key points
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+42
+
+5 Treatment for non–muscle-invasive bladder cancer » Stage 0 and stage 1 bladder cancers
+
+Stage 0 and stage 1
+bladder cancers
+
+Treatment for non–muscleinvasive bladder cancer aims
+to reduce the chance of cancer
+
+Stage 0 bladder cancer occurs only on the
+surface of the urothelial layer (inner lining) of
+the bladder. There are two types of stage 0
+bladder cancer:
+
+coming back after treatment
+and to prevent the cancer from
+progressing to a more advanced
+
+
+
+stage.
+
+Bladder cancer that hasn’t grown into the
+muscle layer of the bladder wall is called non–
+muscle-invasive. Stage 0 and stage 1 bladder
+cancers are non–muscle-invasive. Often, non–
+muscle-invasive bladder cancer can be treated
+without removing the bladder.
+
+
+
+Stage 0is (also called carcinoma in situ,
+or CIS) is a flat tumor on the inner lining
+of the bladder.
+
+Stage 1 bladder cancer has grown into the
+layer of connective tissue of the bladder wall
+but hasn’t reached the muscle layer.
+
+Stage 0 and stage 1
+bladder cancers
+Stage 0 bladder cancer
+occurs only on the inner
+lining (urothelial layer) of
+the bladder wall.
+Stage 1 bladder cancer
+has grown through the
+inner lining and into
+the layer of connective
+tissue, but it hasn’t
+reached the muscle layer.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Stage 0a (also called noninvasive
+papillary carcinoma) are finger-like
+projections that grow from the inner
+surface toward the hollow center of the
+bladder.
+
+43
+
+5 Treatment for non–muscle-invasive bladder cancer » Stage 0 and stage 1 bladder cancers
+
+Treatment for stage 0 and stage 1 bladder
+cancers depends on whether the cancer
+has low, medium, or high risk for coming
+back (recurrence) or continuing to grow
+(progression). The level of risk is based on
+certain features, including the stage, whether
+it’s growing slow or fast (low or high grade),
+its size, and whether there’s more than one
+tumor. See Guide 2.
+
+Your biopsy sample and your first TURBT test
+typically reveal this risk. A second (repeat)
+TURBT may be needed if the first TURBT
+didn’t remove enough of the tumor or didn’t
+include any muscle tissue from the bladder
+wall. If the repeat TURBT finds that the cancer
+has invaded the muscle layer, the tumor will
+be treated as muscle-invasive bladder cancer
+(stage 2 or higher).
+
+For example, a small, slow-growing stage
+0a tumor has a low risk of recurrence or
+progression. On the other hand, cancer with
+multiple large fast-growing stage 0a tumors
+has a high risk.
+
+Also, you may have received a single dose
+of intravesical chemotherapy when you had
+your first TURBT. This can help prevent
+cancer recurrence. This “one-shot” intravesical
+treatment is separate from the 6-week course
+of intravesical therapy recommended in
+
+Guide 2.
+Guide 2
+Stage 0 and stage 1 treatment options
+Low risk
+
+• Small, single, slow-growing stage 0a
+lesion
+
+Medium risk
+
+• Large or multiple slow-growing stage
+0a tumor(s)
+• Slow-growing stage 0a tumor that
+comes back within 1 year
+• Small, single, fast-growing stage 0a
+tumor
+• Slow-growing stage 1 tumor
+
+High risk
+
+• Large or multiple fast-growing stage 0a
+tumor(s)
+• Fast-growing stage 0is tumor
+• Fast-growing stage 1 tumor
+• Stage 0 or stage 1 tumor with very
+high-risk features
+
+*Preferred treatment
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+44
+
+ª • Surveillance
+ª
+
+• Intravesical (BCG or
+chemo) therapy*
+• Surveillance
+
+ª
+
+• Intravesical BCG
+therapy*
+• Radical cystectomy
+
+ª
+
+• Radical cystectomy*
+• Intravesical BCG
+therapy
+
+5 Treatment for non–muscle-invasive bladder cancer » Stage 0 and stage 1 bladder cancers
+
+Treatment based on risk
+
+
+
+You’ve had a lot of tests. Now your care team
+finally knows enough about your cancer to plan
+how to treat it.
+Treatment for stage 0 and stage 1 cancers is
+based on the risk that the cancer will recur or
+progress. See Guide 2 again.
+
+
+
+
+
+
+High risk bladder cancer with
+very high-risk features has a greater
+chance of progressing to an advanced
+stage, so radical cystectomy is the
+preferred treatment. However, intravesical
+BCG may be an option in certain cases.
+
+Very high-risk features include:
+
+Low risk bladder cancer care is
+surveillance. Surveillance means
+watching out for cancer to reappear after
+it’s been treated. For stage 0 bladder
+cancer, surveillance usually involves
+follow-up cystoscopy and urine cytology
+tests every 3 to 6 months for 2 years or
+more.
+
+•
+
+Medium risk bladder cancer has
+a fair chance of recurring. Although
+surveillance is a reasonable option,
+the preferred treatment is a 6-week
+course of intravesical therapy (BCG or
+chemotherapy).
+
+•
+
+•
+
+•
+
+Intravesical BCG therapy has no effect
+on it.
+Tumor cells are found in the blood or in
+lymph vessels outside of the main tumor
+(lymphovascular invasion).
+Cancer recurrence develops in the
+urethra.
+The cancer is a rare subtype that
+usually leads to poor outcomes.
+
+Supportive care should also be available
+during treatment. Supportive care is for
+relieving symptoms and for other concerns.
+
+High risk bladder cancer has a major
+risk of coming back or growing further.
+High risk cancer is typically treated with
+intravesical BCG therapy (if you haven’t
+had BCG before), although radical
+cystectomy is also an option.
+
+If you have high-risk non–muscle-invasive
+bladder cancer but you can’t have BCG or
+if it doesn’t work for you, then the preferred
+treatment is a radical cystectomy. If you
+can’t have or don’t want a cystectomy, then
+intravesical chemotherapy is an option.
+If neither BCG nor cystectomy is a good
+option, then Keytruda (pembrolizumab),
+Adstiladrin (nadofaragene firadenovec-vncg),
+or Anktiva (nogapendekin alfa inbakicept-pmln)
+may be possible options in certain specific
+cases.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+45
+
+5 Treatment for non–muscle-invasive bladder cancer » Follow-up care
+
+Follow-up care
+
+As mentioned elsewhere in this book, bladder
+cancer often comes back at some point. So
+surveillance is always recommended after
+treatment ends. Make sure you go to all your
+follow-up appointments. (If you develop any
+symptoms or problems, don’t wait until your
+
+After treatment, the next phase of care will
+begin. This is the follow-up (or surveillance)
+phase. During this time, you’ll have occasional
+tests to watch out for your cancer to return.
+
+Guide 3
+Follow-up care by risk level for non–muscle-invasive bladder cancer
+
+Cystoscopy
+
+Imaging
+of upper
+urinary tract
+
+Low risk
+
+Medium risk
+
+High risk
+
+Year 1: At 3 and 12
+months
+Years 2–5: Once a
+year
+After that: As directed
+by your doctor
+
+Year 1: At 3, 6, and 12
+months
+Year 2: Every 6 months
+Years 3–5: Once a year
+After that: As directed
+by your doctor
+
+Years 1–2: Every 3 months
+Years 3–5: Every 6 months
+Years 6–10: Once a year
+After that: As directed by
+your doctor
+
+Year 1: Baseline imaging with urogram (CT or
+MRI), pyelogram, or ureteroscopy
+After that: As directed by your doctor
+
+Imaging of
+abdomen
+and pelvis
+
+Urine
+cytology
+
+Urine tumor
+marker
+testing
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Year 1: Baseline imaging,
+and again at 12 months
+Years 2–10: Every 1–2
+years
+After that: As directed by
+your doctor
+
+Year 1: Baseline imaging with CT or MRI
+After that: As directed by your doctor
+
+none
+
+Year 1: At 3, 6, and 12
+months
+Year 2: Every 6 months
+Years 3–5: Once a year
+After that: As directed
+by your doctor
+
+Years 1–2: Every 3 months
+Years 3–5: Every 6 months
+Years 6–10: Once a year
+After that: As directed by
+your doctor
+Your doctor may suggest
+this testing in the first 2
+years after treatment.
+
+none
+
+46
+
+5 Treatment for non–muscle-invasive bladder cancer » Follow-up care
+
+next follow-up visit. Call your doctor or care
+team right away.)
+The tests you should have—and how often you
+should have them—are guided by your risk for
+cancer recurrence. Each person’s follow-up
+plan is different. Depending on your type of
+cancer and other health considerations, you
+may need these follow-up tests:
+
+
+Cystoscopy
+
+
+
+Imaging of the upper urinary tract
+
+
+
+Imaging of the abdomen and pelvis
+
+
+
+Urine cytology
+
+
+
+Urinary biomarkers
+
+If you didn’t have your bladder removed
+as part of your treatment, see Guide 3 for
+follow-up testing based on your risk level.
+If your bladder was removed, see which
+follow-up tests you’ll need in Guide 4.
+
+Guide 4
+Follow-up tests after bladder removal for non–muscle-invasive bladder cancer
+
+Year 1
+
+Imaging
+
+Blood tests
+
+At 3 and 12 months:
+• Urogram (CT or MRI)
+of upper urinary tract,
+abdomen, and pelvis
+
+Every 3–6 months:
+• Kidney function
+• Liver function
+• CBC and CMP (if you
+had chemotherapy)
+
+Once a year:
+• Urogram (CT or MRI)
+of upper urinary tract,
+abdomen, and pelvis
+
+Once a year:
+• Kidney function
+• Liver function
+• B12 level
+
+Year 2
+Year 3
+Year 4
+Year 5
+Years 6–10
+
+After 10
+years
+
+Once a year:
+• Ultrasound of the
+kidneys
+As directed by your
+doctor
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Once a year:
+• B12 level
+
+47
+
+Urine tests
+Every 6–12 months:
+• Urine cytology
+• Urethral wash cytology
+(only if high risk of
+recurrence)
+
+As directed by your
+doctor:
+• Urine cytology
+• Urethral wash cytology
+(only if high risk of
+recurrence)
+
+5 Treatment for non–muscle-invasive bladder cancer » Recurrence or progression
+
+Recurrence or progression
+
+Tests may include:
+
+Follow-up care is all about watching for the
+recurrence of cancer. When cancer does
+return, it’s helpful to know how to deal with it.
+
+
+
+
+
+If cancer returns during follow-up therapy,
+it’s usually detected by a cystoscopy exam.
+However, sometimes a urine cytology test
+indicates signs of cancer when cystoscopy
+doesn’t. Here’s what will happen depending on
+the results of these tests:
+
+
+
+Urine cytology of the upper urinary tract
+Ureteroscopy, a test that examines the
+insides of the kidneys and ureters
+
+If the biopsy of the bladder or urinary tract
+finds cancer, you’ll have another TURBT to
+find out your current level of risk.
+See Guide 2.
+
+If cystoscopy finds cancer
+
+Treatment for other test results:
+
+If cancer appears on a follow-up cystoscopy
+test, you’ll have another TURBT to re-assess
+the cancer risk. The level of risk indicates the
+appropriate treatment. See Guide 2.
+
+
+
+
+
+For example, if the repeat TURBT shows
+that the cancer has come back as high risk
+non–muscle-invasive cancer, the preferred
+treatment is intravesical BCG therapy. Radical
+cystectomy is also an option, especially if
+you’ve had BCG therapy before and it didn’t
+reduce the cancer. After this treatment, you’ll
+resume follow-up.
+
+
+
+If none of the tests detect cancer, you
+should have a follow-up visit in 3 months
+for more tests.
+If a biopsy finds cancer in the prostate,
+then further testing and treatment of the
+prostate is needed.
+If a urine cytology of the upper tract
+indicates cancer, then you’ll need further
+testing and treatment of the upper urinary
+tract.
+
+After treatment, your follow-up schedule will
+depend on the current stage of your cancer
+and what treatment you’ve already received.
+
+If urine cytology indicates cancer
+If the results from a follow-up urine cytology
+test suggest cancer may have returned—and
+a second cytology test confirms the first one—
+then more testing is needed to pinpoint where
+the cancer is.
+Further testing will look for cancer in the
+bladder as well as other areas such as the
+prostate and upper urinary tract.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Biopsies of the urethra, bladder, and/or
+prostate
+
+48
+
+5 Treatment for non–muscle-invasive bladder cancer » What’s next? » Key points
+
+What’s next?
+
+Key points
+
+You’ll continue to have tests and follow-up
+visits every so often to watch out for the cancer
+to return or progress. Surveillance is a key part
+of the follow-up plan.
+
+
+
+
+
+There are many new and exciting treatments
+for bladder cancer recently approved and on
+the horizon. As always, you can try to join a
+clinical trial at almost any point during cancer
+care.
+
+
+
+Consider joining a support group. Talking with
+other people who have bladder cancer can be
+informative and reassuring.
+
+
+
+Just know that you can have bladder cancer
+and still lead a fulfilling life after diagnosis and
+treatment.
+
+
+
+
+
+
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+49
+
+Many non–muscle-invasive cancers can
+be treated without removing the bladder.
+Treatment for non–muscle-invasive
+bladder cancer is based on the risk that
+the cancer will come back or continue to
+grow.
+Surveillance is often the best care for low
+risk bladder cancer. Surveillance means
+occasional testing to find out if cancer has
+returned.
+The preferred treatment for medium risk
+bladder cancer is intravesical therapy with
+either BCG or chemotherapy.
+High risk cancer is typically treated with
+intravesical BCG therapy, although radical
+cystectomy is also an option.
+Radical cystectomy is the preferred
+treatment for high risk bladder cancer with
+very high-risk features.
+Follow-up testing is based on the risk of
+the cancer returning. The higher the risk,
+the more tests are needed.
+
+6
+
+Treatment for muscle-invasive
+bladder cancer
+51
+
+Stage 2 and stage 3A bladder cancers
+
+56
+
+Stage 3B bladder cancer
+
+59
+
+Stage 4A bladder cancer
+
+61
+
+Follow-up care
+
+63
+
+Recurrence or persistence
+
+65
+
+What’s next?
+
+65
+
+Key points
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+50
+
+6 Treatment for muscle-invasive bladder cancer » Stage 2 and stage 3A bladder cancers
+
+Stage 2 and stage 3A
+bladder cancers
+
+Muscle-invasive bladder cancer
+means that the tumor has grown
+deep enough to reach the thick
+
+Stage 2 bladder cancer has grown into
+the muscle layer, but it hasn’t reached the fatty
+tissue covering the bladder nor has it spread
+anywhere else. Stage 2 bladder cancer has a
+better prognosis than cancer that has reached
+the fatty layer or beyond.
+
+layer of muscle in the bladder wall.
+This is often treated with surgery
+to remove the bladder or with
+chemoradiation therapy.
+
+Stage 3A bladder cancer has grown
+through the bladder wall to the fatty layer
+surrounding the bladder. It may have spread
+to nearby reproductive organs such as the
+prostate gland, seminal vesicles, uterus, or
+vagina. Or it may have spread to a nearby
+lymph node. Stage 3A cancer has not spread
+to the walls of the pelvis or the abdomen, or to
+nodes or organs far from the bladder.
+
+This chapter covers treatment for cancer that
+has grown into the muscle layer of the bladder
+wall. This includes stages 2 to 4A.
+If you know your cancer stage, turn to the page
+that describes the treatment for that stage.
+
+The main treatment for stage 2 and stage
+3A bladder cancers is a radical cystectomy.
+This is a surgery that removes the cancer by
+
+Stage 2 and stage 3A
+bladder cancers
+Stage 2 bladder cancer
+has grown into the muscle
+layer but it hasn’t reached
+the fatty outer layer or
+spread anywhere else.
+Stage 3A bladder cancer
+has grown through
+the bladder wall to the
+fatty layer. It may also
+have spread to nearby
+reproductive organs or a
+nearby lymph node.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+51
+
+6 Treatment for muscle-invasive bladder cancer » Stage 2 and stage 3A bladder cancers
+
+taking out the entire bladder and nearby lymph
+nodes, and sometimes the prostate or uterus.
+
+If you do expect to have a radical cystectomy,
+read the following.
+
+Combination chemotherapy with cisplatin is
+often given before a cystectomy to shrink
+the tumor prior to the surgery and to kill any
+cancer cells that might be outside the bladder.
+
+Bladder removal surgery
+Radical cystectomy can be done with or
+without cisplatin-based chemotherapy. The
+choice depends on whether you’re able to
+have the chemotherapy.
+
+To choose the best treatment for your needs,
+you and your treatment team will consider
+these two important questions:
+
+
+
+
+Chemotherapy and bladder removal
+surgery
+This option starts with a combination of
+chemotherapy drugs, one of which is
+cisplatin. Cisplatin has been shown to
+be the most effective chemotherapy for
+treating bladder cancer. Typically, 3 to 6
+cycles of chemotherapy are given before
+bladder removal surgery. For recommended
+chemotherapy options, see Guide 5.
+
+Can you tolerate chemotherapy with the
+drug cisplatin?
+Are you healthy enough to undergo a
+major surgery to remove your bladder?
+
+To help answer these questions, you’ll receive
+further evaluation, such as CT or MRI imaging
+of the abdomen and pelvis. Another essential
+test checks the health of your kidneys. This is
+a simple blood test to make sure your kidneys
+are working well enough to handle the stress
+of chemotherapy.
+
+About 1 to 2 months after finishing
+chemotherapy, you’ll have surgery to remove
+the bladder (radical cystectomy). A radical
+cystectomy is often the best option to treat
+muscle-invasive bladder cancer and help
+prevent it from returning. During the radical
+cystectomy procedure, the surgeon will also
+create a urinary diversion.
+
+Some people with stage 2 bladder cancer can’t
+have surgery or don’t want it. If this describes
+you, you can skip the next section and go
+directly to Treatment without bladder removal
+on page 54.
+
+Guide 5
+Stages 2 and 3A chemotherapy options before bladder removal surgery
+dose-dense methotrexate, vinblastine,
+doxorubicin, and cisplatin (ddMVAC)*
+
+3–6 cycles
+
+gemcitabine and cisplatin
+
+4 cycles
+
+* Preferred treatment
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+52
+
+6 Treatment for muscle-invasive bladder cancer » Stage 2 and stage 3A bladder cancers
+
+Bladder removal surgery alone
+This is an option for people who can’t have
+cisplatin-based chemotherapy. Cisplatin may
+be too harsh for some people, especially those
+whose liver and kidneys don’t work well. If you
+have hearing loss, nerve damage, or if you’re
+not able to do most daily activities, then you
+too may not be able to have cisplatin-based
+chemotherapy.
+
+you may have additional therapy after surgery
+to try to destroy any remaining cancer cells.
+Reasons why you may need additional therapy
+include:
+
+
+
+
+
+People who can’t have cisplatin don’t need to
+try different or less effective chemotherapy.
+Bladder removal surgery is the most
+appropriate option.
+
+The tumor was larger than expected.
+The tumor had grown through the bladder
+wall.
+Cancer had reached the lymph nodes.
+
+The choice of additional treatment is based in
+part on whether you received therapy before
+surgery. See Guide 6. Treatment options
+include:
+
+Treatment after surgery
+Depending on what the surgeon sees and
+learns first-hand during radical cystectomy,
+
+
+
+Cisplatin-based chemotherapy (if you
+didn’t have chemo before surgery)
+
+Guide 6
+Stages 2 and 3A treatment options for bladder removal surgery
+Treatment options
+
+• Chemotherapy and bladder removal surgery with urinary diversion
+• Bladder removal surgery alone with urinary diversion
+
+• If tumor is stage 2 or smaller, and
+• No cancer in lymph nodes
+Additional
+treatment options
+
+• If the tumor is larger than stage
+2, or
+• If the tumor has invaded the
+muscle layer, or
+• If cancer is found in lymph nodes
+
+ª No additional therapy needed
+Additional therapy needed:
+• Cisplatin-based chemotherapy
+(if not given before)
+
+ª • Immunotherapy (Opdivo)
+
+• Radiation therapy (in selected
+cases)
+
+For stage 2 cancer, partial bladder removal is possible but uncommon.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+53
+
+6 Treatment for muscle-invasive bladder cancer » Stage 2 and stage 3A bladder cancers
+
+
+
+
+
+Immunotherapy with Opdivo (if you had
+chemo before surgery)
+
+involve radical cystectomy is called “bladder
+preserving.”
+
+Radiation therapy (in selected patients
+whose tumor was larger and/or cancer
+reached the lymph nodes)
+
+There are three treatment options that don’t
+involve removing the bladder:
+Trimodal therapy
+Trimodal therapy is a bladder preserving
+treatment for certain people with muscleinvasive bladder cancer. In trimodal therapy,
+TURBT (transurethral resection of bladder
+tumor) first removes any visible tumor and then
+chemotherapy and radiation are used together
+to kill any cancer cells left over. Trimodal
+therapy may be a good option if Guide 7
+describes your cancer.
+
+Follow-up
+For recommendations on follow-up care and
+monitoring for the return of cancer, see
+page 61.
+
+Treatment without bladder
+removal
+Not everyone may need, want, or be able
+to have a radical cystectomy. If you have
+other serious health problems or you’re
+physically unable to do many day-to-day
+activities, surgery may not be a good option
+for you. Or, your tumor may be small enough
+to be removed without removing the whole
+bladder. Bladder cancer treatment that doesn’t
+
+Radiation therapy alone
+If you’re not able to have chemoradiation and
+you’re not able or don’t want to have radical
+cystectomy, radiation therapy alone is a
+possible treatment option for people with stage
+2 or stage 3A bladder cancer.
+
+Guide 7
+Can you have bladder preserving treatment?
+Chemoradiation without bladder removal surgery is an option only for some
+people with muscle-invasive bladder cancer.
+Every person is different, but here are some common characteristics of those who
+can have bladder-preserving treatment:
+• The tumor is smaller than 6 centimeters (about as long as a house key
+or an egg).
+Common
+characteristics
+
+• The tumor is not blocking the flow of urine from the kidneys into the
+bladder.
+• No carcinoma in situ (CIS). CIS is an area of flat, fast-growing cancer
+cells on the inside lining of the bladder.
+• The tumor can be entirely removed by TURBT.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+54
+
+6 Treatment for muscle-invasive bladder cancer » Stage 2 and stage 3A bladder cancers
+
+“
+
+TURBT
+Having only a TURBT procedure may be an
+option for people who can’t have, or don’t
+want, radical cystectomy. This option may work
+better if the tumor is smaller than 2 centimeters
+(about the size of a penny or a grape). Within 4
+weeks of the TURBT, you should have a repeat
+TURBT to make sure there’s no cancer left
+behind.
+
+Come armed to each and every
+appointment with all of your
+questions and concerns—and do
+not leave until you get them all
+answered! ”
+
+What’s next?
+The tumor should be checked 2 to 3 months
+after you’ve finished treatment. Depending on
+whether cancer is still found, this is generally
+what might happen next:
+If no cancer is found, you can begin followup care and monitoring for the return of cancer.
+If cancer is still there and you can have
+radical cystectomy, treatment options are
+based on the type and size of the remaining
+tumor. Options include TURBT with or without
+intravesical therapy if the tumor is now stage
+1, radical cystectomy if the tumor is stage 2, or
+treatment for metastatic cancer.
+
+Surveillance is a key part of your follow-up
+plan. Be sure to go to follow-up visits and
+stay in touch with your treatment team.
+
+If cancer is still there but you can’t
+have or don’t want radical cystectomy,
+treatment options include cisplatin-based
+chemotherapy, TURBT with or without
+intravesical therapy, and supportive care. For
+stage 2 bladder cancer, radiation therapy alone
+is also an option if you didn’t have it previously.
+
+Follow-up
+For recommendations about follow-up care
+and monitoring for the return of cancer, see
+page 61.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+55
+
+6 Treatment for muscle-invasive bladder cancer » Stage 3B bladder cancer
+
+Stage 3B bladder cancer
+
+Systemic therapy
+Systemic therapy affects the whole body, not
+just part of it. The goal of systemic therapy is
+to shrink the tumor as much as possible and,
+most importantly, kill any cancer cells outside
+of the bladder.
+
+Stage 3B bladder cancer is considered locally
+advanced. This means the cancer has grown
+outside the bladder and spread to multiple
+lymph nodes in the pelvis or to at least one
+lymph node in the upper pelvic region. But
+the cancer has not spread to organs or lymph
+nodes far from the bladder.
+
+The most common systemic therapies
+for locally advanced bladder cancer are
+chemotherapy, targeted therapy, and
+immunotherapy. The recommended treatment
+options are listed in Guide 8.
+
+The main treatment options for stage 3B
+bladder cancer are systemic therapy or
+chemoradiation. Additional treatment may
+be needed depending on how well the main
+therapy works.
+
+The standard treatment for locally advanced
+bladder cancer has long been platinum-based
+chemotherapy (cisplatin or carboplatin).
+More recently, cancer experts have begun
+treating locally advanced and metastatic
+bladder cancer with a combination of a
+
+Stage 3B and stage 4A
+bladder cancers
+Stage 3B bladder cancer
+has grown outside the
+bladder and spread to
+nearby lymph nodes or
+those in the upper pelvis.
+Stage 4A has grown
+through the bladder wall.
+It may have spread to the
+wall of the pelvis or the
+abdomen. It may also have
+spread to nearby and even
+to distant lymph nodes.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+56
+
+6 Treatment for muscle-invasive bladder cancer » Stage 3B bladder cancer
+
+targeted chemotherapy (Padcev) and an
+immunotherapy (Keytruda). This combination
+appears to be more effective than platinumbased chemotherapy for this stage of cancer.
+
+medicines are still recommended treatment
+options for stage 3B cancer.
+About 2 to 3 months after you’ve finished your
+initial therapy, you’ll have imaging tests to see
+if the treatment worked. If the tests show that
+the cancer didn’t grow or spread after systemic
+therapy, you can have maintenance treatment
+
+If you’re not able to have this combination
+treatment, platinum-based chemotherapy and
+other immunotherapy and targeted therapy
+
+Guide 8
+Systemic therapy options for stage 3B and stage 4A bladder cancers
+
+Preferred
+option
+
+Other
+options
+
+Options
+for certain
+cases
+
+Treatment
+
+Type of therapy
+
+Padcev (enfortumab vedotin-ejfv) and
+Keytruda (pembrolizumab)
+
+Targeted chemotherapy and
+immunotherapy
+
+Gemcitabine and cisplatin (or carboplatin)
+
+Chemotherapy
+
+Opdivo (nivolumab), gemcitabine, and
+cisplatin
+
+Immunotherapy and
+chemotherapy
+
+Dose-dense methotrexate, vinblastine,
+doxorubicin, and cisplatin (ddMVAC)
+
+Chemotherapy
+
+Gemcitabine
+
+Chemotherapy
+
+Gemcitabine and Taxol (paclitaxel)
+
+Chemotherapy
+
+Ifosfamide, doxorubicin, and gemcitabine
+
+Chemotherapy
+
+Keytruda
+
+Immunotherapy
+
+Tecentriq (atezolizumab)
+
+Immunotherapy
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+57
+
+6 Treatment for muscle-invasive bladder cancer » Stage 3B bladder cancer
+
+Follow-up
+For recommendations on follow-up care and
+monitoring for the return of cancer, see page
+61.
+
+to retain the benefits of therapy and to slow the
+cancer from growing. Bavencio (avelumab),
+a checkpoint inhibitor, is the preferred
+maintenance option.
+If no cancer is found after initial treatment,
+your next step depends on your specific
+circumstances:
+
+
+
+
+Chemoradiation
+The other main treatment option for locally
+advanced stage 3B bladder cancer is
+chemoradiation therapy—a combination of
+chemotherapy and radiation therapy. When
+given together, both treatments work better
+than either does alone.
+
+Monitoring without additional treatment.
+This doesn’t mean the cancer has been
+cured. You would begin follow-up and
+monitoring for the return of cancer.
+Additional therapy to wipe out any
+undetectable cancer cells that may be
+left behind. This is called consolidation
+therapy. Consolidation treatment options
+include:
+•
+
+•
+
+About 2 to 3 months after you’ve finished
+chemoradiation, you’ll have imaging tests to
+see how well the treatment worked.
+If no cancer is found after chemoradiation,
+no further treatment is needed. You can begin
+follow-up care and monitoring for cancer
+recurrence.
+
+Bladder removal surgery (radical
+cystectomy)
+Chemoradiation therapy
+
+If some cancer is found after
+chemoradiation, then you can have additional
+treatment to try a different strategy. Options for
+additional treatment include:
+
+If some cancer is found after
+chemotherapy, then you can have additional
+treatment to try a different strategy. Additional
+treatment options include:
+
+
+
+
+
+
+
+
+Radical cystectomy (for cancer in the
+bladder only)
+Chemoradiation therapy (for persistent
+cancer in the bladder)
+
+
+
+Treatment for metastatic disease (for
+cancer located outside the bladder)
+
+
+
+Radical cystectomy (for cancer in the
+bladder only)
+Treatment for metastatic disease (for
+cancer located outside the bladder)
+
+If the cancer continues to grow or spread even
+after chemoradiation, then the next step is to
+begin treatment for metastatic disease. See
+Chapter 7.
+
+If the cancer continues to grow or
+spread despite chemotherapy, then the
+next step is to begin treatment for metastatic
+disease. See Chapter 7.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Intravesical BCG therapy (if the tumor
+shrank enough so that it no longer
+invades the muscle layer of the bladder)
+
+58
+
+6 Treatment for muscle-invasive bladder cancer » Stage 4A bladder cancer
+
+Follow-up
+For recommendations on follow-up care and
+monitoring for the return of cancer, see page
+61.
+
+recommended systemic therapy options,
+
+see Guide 8.
+
+
+Stage 4A bladder cancer
+Stage 4A bladder cancer has grown through
+the bladder wall and may have spread to
+the wall of the pelvis or wall of the abdomen.
+Stage 4A may have spread to lymph nodes
+near the bladder and even to lymph nodes far
+from the bladder.
+
+After either type of treatment, you’ll need a few
+tests to see if the therapy worked. Testing is
+recommended after 2 to 3 cycles of systemic
+therapy, or 2 to 3 months after finishing
+chemoradiation. Tests include cystoscopy,
+TURBT, and examination and/or imaging of
+your abdomen and pelvis.
+
+Treatment options for stage 4A bladder
+cancer depend on whether the cancer has or
+hasn’t spread to the far away lymph nodes.
+Stage 4A bladder cancer that has spread to
+distant lymph nodes is considered metastatic.
+(See page 61.) Stage 4A cancer that hasn’t
+reached distant lymph nodes is called locally
+advanced.
+
+If the tests show that the cancer didn’t grow
+or spread after initial therapy, you can have
+maintenance treatment to retain the benefits
+of therapy and to prevent the cancer from
+growing. Bavencio (avelumab), a checkpoint
+inhibitor, is the preferred maintenance option.
+If no cancer is found after initial therapy,
+additional treatment may prevent the cancer
+from coming back. Options include:
+
+Stage 4A locally advanced
+If tests show that cancer has spread to the wall
+of the pelvis or abdomen, but has not spread
+to distant lymph nodes or organs, you may
+be treated with one of these initial therapy
+options:
+
+
+
+
+
+
+Systemic therapy that combines a
+targeted chemotherapy (Padcev) and
+an immunotherapy (Keytruda). This
+combination appears to be more effective
+than platinum-based chemotherapy
+for this stage of cancer. If you’re not
+able to have this combination therapy,
+platinum-based chemotherapy and
+other immunotherapy and targeted
+therapy medicines are still available. For
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Chemoradiation therapy. This is a
+combination of chemotherapy and
+radiation therapy. When given together,
+both treatments work better than either
+does alone.
+
+
+
+Systemic therapy to wipe out any
+undetectable cancer cells that may have
+been left behind. Systemic therapy may
+include immunotherapy or chemotherapy.
+Chemoradiation therapy (if you haven’t
+had radiation therapy before).
+Radical cystectomy (if the main treatment
+shrank the tumor enough).
+
+If cancer is found after initial treatment,
+you may choose to have further treatment to
+help get rid of more of the cancer. Additional
+treatment options include:
+
+59
+
+6 Treatment for muscle-invasive bladder cancer » Stage 4A bladder cancer
+
+Guide 9
+Next systemic therapy options for stage 4A bladder cancer
+What first-line therapy
+did you have?
+
+Preferred next treatment
+options
+
+Other recommended or
+useful treatment options
+
+• Keytruda (pembrolizumab)
+Chemotherapy
+
+Checkpoint
+inhibitor*
+and you’re able to
+have cisplatin
+
+Checkpoint
+inhibitor*
+but you’re not able to
+have cisplatin
+
+Platinum-based
+chemotherapy and
+checkpoint inhibitor*
+
+• Other preferred options:
+• Opdivo (nivolumab)
+• Bavencio (avelumab)
+• Balversa (erdafitinib)
+• Padcev (enfortumab vedotin-ejfv)
+
+• Taxol (paclitaxel)
+• docetaxel
+• gemcitabine
+• Keytruda and Padcev
+
+• gemcitabine and cisplatin
+• dose-dense methotrexate,
+vinblastine, doxorubicin, and
+cisplatin (ddMVAC)
+
+• ifosfamide, doxorubicin, and
+gemcitabine
+• gemcitabine and Taxol
+
+• Balversa
+
+• Padcev
+• gemcitabine and carboplatin
+• Balversa
+
+• Taxol
+• docetaxel
+• gemcitabine
+
+• Trodelvy (sacituzumab
+govitecan-hziy)
+• gemcitabine
+• Taxol
+• docetaxel
+• ifosfamide, doxorubicin, and
+gemcitabine
+• gemcitabine and Taxol
+• gemcitabine and cisplatin
+• ddMVAC
+• Enhertu (trastuzumab
+deruxtecan)
+
+• Padcev
+• Balversa
+
+* Checkpoint inhibitors include Bavencio, Keytruda, Opdivo, and Tecentriq.
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+60
+
+6 Treatment for muscle-invasive bladder cancer » Follow-up care
+
+
+
+Systemic therapy such as immunotherapy
+or chemotherapy. For treatment options,
+
+If the cancer stays the same or if
+it continues to grow, your next step is
+treatment for metastatic disease. See Chapter
+7. You can also consider joining a clinical trial.
+
+see Guide 9.
+
+
+
+
+Chemoradiation therapy (if you haven’t
+had radiation therapy before).
+
+Follow-up care
+
+Radical cystectomy (if the main treatment
+shrank the tumor enough).
+
+When you’ve finished initial treatment, the
+next phase of cancer care will begin. This is
+the follow-up (or surveillance) phase. During
+this time, you’ll have occasional tests to watch
+out for your cancer to return. As mentioned
+elsewhere in this book, bladder cancer can
+come back at any time. So be sure you
+don’t skip or forget to go to any follow-up
+appointments.
+
+Follow-up
+For recommendations on follow-up care and
+monitoring for cancer recurrence, see Followup care, on the right.
+
+Stage 4A metastatic
+Stage 4A cancer has spread to distant lymph
+nodes in the body (metastasized). The main
+treatment is systemic therapy, which is
+treatment that affects cancer cells throughout
+the body. For recommended systemic therapy
+options, see Guide 8.
+
+If you have any symptoms or problems, don’t
+wait until your next follow-up visit. Call your
+doctor or care team right away.
+The specific tests you should have—and how
+often you should have them—depend on
+whether your bladder was removed.
+
+After treatment, you’ll have a few tests to
+see if the therapy worked. Tests may include
+cystoscopy, TURBT, and imaging of your
+abdomen and pelvis. If the tests show that the
+cancer didn’t grow or spread after systemic
+therapy, you may have maintenance treatment
+to retain the benefits of therapy and to slow the
+cancer from growing. Bavencio (avelumab),
+a checkpoint inhibitor, is the preferred
+maintenance option.
+
+If your bladder was removed
+Even if you had surgery to remove your
+bladder, cancer can still come back in other
+areas, such as the upper urinary tract, the
+urethra, or elsewhere in your body. So you can
+expect to have follow-up tests and visits for
+many years.
+
+If no cancer is found or if there’s less
+cancer after initial therapy, then your doctor
+may ask you to consider local therapy with
+surgery or radiation to get rid of any cancer
+in the bladder that may be left behind. This
+treatment is mostly for people who want to
+be very aggressive with therapy and who had
+good results with systemic therapy.
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Follow-up after a radical cystectomy includes
+imaging, urine and blood tests, and tests to
+check your liver and kidney health. For the
+recommended schedule of follow-up testing
+after radical cystectomy, see Guide 10.
+Keep in mind that every person’s follow-up
+plan will be different.
+61
+
+6 Treatment for muscle-invasive bladder cancer » Follow-up care
+
+Urethral wash cytology is a test that looks
+for cancer in the urethra. For this test, the
+urethra is filled with a salt solution. The fluid is
+then flushed out and tested for cancer cells.
+Urethral wash cytology is recommended during
+the first 2 years of follow-up care for people
+who have a high risk of cancer recurrence.
+
+their vitamin B12 level should be checked once
+per year after the first year of follow-up care.
+
+If you have your bladder
+For those who were able to keep their bladder,
+there’s always a risk that cancer will return to
+the bladder, to another part of the urinary tract,
+or to other areas of the body.
+
+People who have had a urinary diversion may
+develop a loss of vitamin B12 over time. So
+
+Guide 10
+Follow-up tests after bladder removal for muscle-invasive bladder cancer
+Imaging
+
+Year 1
+
+Every 3–6 months:
+• Urogram (CT or MRI)
+• Chest CT or chest
+x-ray
+
+Blood tests
+Every 3–6 months:
+• Kidney function
+• Liver function
+• CBC and CMP (if you
+had chemotherapy)
+
+Urine tests
+
+Every 6–12 months:
+• Urine cytology
+• Urethral wash cytology
+(only if high risk of
+recurrence)
+
+Year 2
+Year 3
+Year 4
+Year 5
+Years 6–10
+
+After 10
+years
+
+Once a year:
+• CT or MRI of abdomen
+and pelvis
+• Chest CT or chest
+x-ray
+Once a year:
+• Ultrasound of the
+kidneys
+As directed by your
+doctor
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Once a year:
+• Kidney function
+• Liver function
+• B12 level
+
+Once a year:
+• B12 level
+
+62
+
+As directed by your
+doctor:
+• Urine cytology
+• Urethral wash cytology
+(only if high risk of
+recurrence)
+
+6 Treatment for muscle-invasive bladder cancer » Recurrence or persistence
+
+Recurrence or persistence
+
+Follow-up tests after bladder-preserving
+treatment include cystoscopy, imaging, urine
+and blood tests, and tests to check your liver
+and kidney health. For the recommended
+schedule of follow-up testing after bladderpreserving treatment, see Guide 11. Keep
+in mind that every person’s follow-up plan will
+be different.
+
+Bladder cancer comes back more often than
+almost any other type of cancer. Even people
+who received the most thorough treatment for
+bladder cancer can have recurrence.
+Follow-up care is all about carefully watching
+for recurrence. When cancer returns, or when
+treatment doesn’t work, it’s helpful to know
+how to deal with it. Treatment for recurrent
+
+Guide 11
+Follow-up tests after bladder preserving treatment for muscle-invasive
+bladder cancer
+Cystoscopy
+
+Year 1
+
+Imaging
+
+Blood tests
+
+Every 3–6 months:
+• Urogram (CT or
+MRI)
+Every 3 months
+• Chest CT or chest
+x-ray
+
+Every 3–6 months:
+• Kidney function
+• Liver function
+• CBC and CMP
+(if you had
+chemotherapy)
+
+Urine tests
+
+Every 6–12
+months:
+• Urine cytology
+
+Year 2
+Year 3
+
+Every 6 months
+
+Year 4
+Year 5
+Years
+6–10
+After
+10
+years
+
+Once a year:
+• CT or MRI of
+abdomen and pelvis
+• Chest CT or chest
+x-ray
+
+Once a year
+
+As directed by
+your doctor
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+As directed by your
+doctor
+
+63
+
+As directed by your
+doctor:
+• Kidney function
+• Liver function
+
+As directed by
+your doctor:
+• Urine cytology
+
+6 Treatment for muscle-invasive bladder cancer » Recurrence or persistence
+
+Cancer in another part of the urinary tract
+If urine cytology tests indicate cancer in the
+urinary tract, the next step is to find out where
+the cancer is located. Additional tests are
+used to check the upper urinary tract and the
+urethra. These cancers are rare, but they can
+also be very serious.
+
+or persistent muscle-invasive bladder cancer
+is based on the results of follow-up tests and
+whether your bladder was removed.
+
+If you have your bladder
+If cancer is found in a person with a preserved
+bladder, it’s important to know whether the
+cancer is in the bladder or in another part of
+the urinary tract.
+
+
+
+Cancer in the bladder
+If tests show recurrent cancer in the bladder,
+but not in other areas of the body, treatment
+depends on whether cancer has invaded the
+bladder’s muscle layer.
+
+
+
+
+
+
+Not invaded the muscle layer –
+These tumors are usually treated with
+intravesical BCG therapy or a radical
+cystectomy.
+Invaded the muscle layer – These
+tumors are usually treated with a radical
+cystectomy. Chemoradiation is also an
+option if you’ve never been treated with
+radiation therapy before. If you can’t have
+cystectomy or chemoradiation, other
+options are systemic therapy, such as
+immunotherapy or chemotherapy, as well
+as TURBT and palliative care for pain
+relief and other symptoms.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Cancer in the ureters or kidneys
+– To check the upper urinary tract, you
+may have additional urine cytology tests
+and possibly biopsies of the ureters
+or kidneys. If cancer cells are found,
+treatment of the upper urinary tract is
+needed.
+Cancer in the prostatic urethra – A
+biopsy is done to check the section of
+urethra that runs through the prostate
+gland. If the biopsy shows cancer cells,
+treatment is needed for this part of the
+urethra.
+
+If your bladder was removed
+If your bladder was removed but recurrent
+cancer is found, you’ll have more tests to
+locate exactly where the cancer is.
+Treatment for recurrent cancer may include
+systemic therapy, such as chemotherapy,
+immunotherapy, or targeted therapy and/or
+radiation therapy for relief of pain symptoms.
+
+64
+
+6 Treatment for muscle-invasive bladder cancer » What’s next? » Key points
+
+What’s next?
+
+Key points
+
+If you’ve been treated for recurrent or
+persistent cancer, you’ll continue to have tests
+and follow-up visits every so often to watch out
+for the cancer to return or progress. So be sure
+to continue to go to follow-up visits and stay in
+touch with your treatment team. Surveillance is
+a key part of the follow-up plan.
+
+
+
+
+
+Keep in mind that there are many new and
+exciting treatments for bladder cancer recently
+approved and on the horizon. As always, you
+can try to join a clinical trial at almost any point
+during cancer care.
+
+
+
+Just know that you can have bladder cancer
+and still lead a fulfilling life after diagnosis and
+treatment.
+Ask about supportive care, which can be
+helpful at any stage of cancer. For information
+about supportive care and other assistance,
+turn to Chapter 8.
+
+
+
+
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+65
+
+If a bladder tumor grows into the thick
+layer of muscle in the bladder wall, it’s
+called muscle-invasive bladder cancer.
+Stage 2, 3, and 4 bladder cancers are
+muscle-invasive.
+Radical cystectomy is the main treatment
+for people with stage 2 or 3A bladder
+cancer who are healthy enough for
+surgery. Cisplatin-based chemotherapy
+is often given beforehand to shrink the
+tumor prior to the surgery.
+Some people with stage 2 or 3A muscleinvasive bladder cancer can’t have or
+don’t want a radical cystectomy. For these
+people, treatment options include TURBT
+and chemoradiation, radiation therapy
+alone, or TURBT alone.
+The main treatment options for stage 3B
+and 4A bladder cancers are systemic
+therapy or chemoradiation.
+Follow-up testing after treatment for
+muscle-invasive bladder cancer includes
+imaging, urine and blood tests, and tests
+to check your liver and kidney health.
+
+7
+
+Treatment for metastatic
+bladder cancer
+68
+
+Tests to plan treatment
+
+68
+
+First-line therapy
+
+70
+
+Next treatment options
+
+71
+
+Other treatments
+
+73
+
+What’s next?
+
+73
+
+Key points
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+66
+
+7 Treatment for metastatic bladder cancer » What’s next?
+
+If cancer spreads to areas outside
+
+Although treatments are improving all the
+time, metastatic bladder cancer is frequently
+incurable, and symptoms are common. For
+this reason, treatment is aimed at relieving
+symptoms while also slowing the growth and
+spread of cancer. Joining a clinical trial is also
+a good option for people who have metastatic
+bladder cancer.
+
+the bladder, it’s called stage 4B
+or metastatic cancer. Treatment
+of metastatic bladder cancer is
+focused on helping you live as
+normally and as comfortably as
+possible, for as long as possible.
+
+Being diagnosed with metastatic bladder
+cancer is very difficult. It can cause a lot
+of anxiety and stress. Talking about it with
+doctors, nurses, therapists, or counselors, as
+well as other people with bladder cancer, can
+be helpful. Ask your treatment team about
+these and other resources.
+
+Stage 4B is metastatic bladder cancer. This
+cancer has grown through the bladder wall and
+has spread (metastasized) to lymph nodes or
+organs far from the bladder. Metastatic bladder
+cancer may have spread to areas like the
+bones, liver, or lungs.
+
+Stage 4B bladder
+cancer
+Stage 4B bladder
+cancer has grown
+through the bladder
+wall and has spread
+(metastasized) to
+lymph nodes or organs
+far from the bladder.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+67
+
+7 Treatment for metastatic bladder cancer » Tests to plan treatment » First-line therapy
+
+Tests to plan treatment
+
+First-line therapy
+
+Before having treatment, you’ll need to
+have a few more tests to find out how many
+metastases there are and where they are in
+the body. This information helps your treatment
+team plan the right care for you.
+
+NCCN experts recommend starting with one of
+the systemic therapy options in Guide 12.
+These are called “first-line” therapies because
+they have the best chance of working, so they
+should be used first.
+
+The main treatment for metastatic bladder
+cancer is usually systemic therapy. Systemic
+therapies—like chemotherapy, immunotherapy,
+and targeted therapy—affect the whole body.
+To determine which systemic therapy medicine
+is best for you, your care team will consider
+your overall health. This includes how your
+heart, liver, and kidneys are functioning, how
+far the cancer has progressed, and your ability
+to do day-to-day activities.
+
+The standard first-line treatment for metastatic
+bladder cancer has long been platinum-based
+chemotherapy (cisplatin or carboplatin). But
+cancer experts are now treating metastatic
+bladder cancer with a combination of a
+targeted chemotherapy (Padcev) and an
+immunotherapy (Keytruda). This combination
+appears to be more effective than platinumbased chemotherapy for metastatic bladder
+cancer.
+
+Tests may include:
+
+If you’re not able to have this combination
+treatment or if it’s unavailable, platinum-based
+chemotherapy and other immunotherapy
+and targeted therapy medicines are still
+recommended for treating metastatic bladder
+cancer.
+
+
+
+
+
+
+
+
+
+
+
+
+Bone scan or MRI to look for any cancer
+in your bones
+CT of your chest to look for cancer in your
+lungs and other organs
+
+Maintenance therapy
+
+CT or MRI imaging of your brain and
+spinal cord
+
+If you had platinum-based chemotherapy as
+your first-line therapy, and your cancer didn’t
+grow or spread as a result, then you may have
+maintenance treatment to retain the benefits of
+therapy and to slow the cancer from growing.
+Bavencio (avelumab), a checkpoint inhibitor, is
+the preferred maintenance option.
+
+Blood test to see if your kidneys can
+process chemotherapy drugs
+Biopsy of any suspicious areas
+Molecular or genomic testing to find
+biomarkers that show you can have
+certain targeted therapies.
+
+Maintenance therapy may not be required after
+other types of first-line systemic therapy.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+68
+
+7 Treatment for metastatic bladder cancer » First-line therapy
+
+Radiation for symptom relief
+
+commonly associated with radiation. Ask your
+treatment team if you’re able to have this kind
+of radiation treatment.
+
+For some people with metastatic bladder
+cancer, radiation therapy can be used to
+reduce symptoms and to ease pain or
+discomfort in your bones or elsewhere.
+Because this type of radiation doesn’t aim
+to cure the cancer, lower doses can be
+used, which lessens the side effects that are
+
+Clinical trials
+Joining a clinical trial is an option for anyone
+with cancer. It’s especially recommended for
+
+Guide 12
+First-line systemic therapy options for stage 4B metastatic bladder cancer
+
+Preferred
+option
+
+Other
+options
+
+Options
+for certain
+cases
+
+Treatment
+
+Type of therapy
+
+Padcev (enfortumab vedotin-ejfv) and
+Keytruda (pembrolizumab)
+
+Targeted chemotherapy and
+immunotherapy
+
+Gemcitabine and cisplatin (or carboplatin)
+
+Chemotherapy
+
+Opdivo (nivolumab), gemcitabine, and
+cisplatin
+
+Immunotherapy and
+chemotherapy
+
+Dose-dense methotrexate, vinblastine,
+doxorubicin, and cisplatin (ddMVAC)
+
+Chemotherapy
+
+Gemcitabine
+
+Chemotherapy
+
+Gemcitabine and Taxol (paclitaxel)
+
+Chemotherapy
+
+Ifosfamide, doxorubicin, and gemcitabine
+
+Chemotherapy
+
+Keytruda
+
+Immunotherapy
+
+Tecentriq (atezolizumab)
+
+Immunotherapy
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+69
+
+7 Treatment for metastatic bladder cancer » Next treatment options
+
+Next treatment options
+
+people whose bladder cancer continues to
+advance after first-line treatment.
+
+If cancer progresses after first-line therapy,
+there are other treatments you can have next.
+Recommended next treatment options are
+shown in Guide 14. Next treatment options
+depend on which first-line therapy you were
+treated with.
+
+Follow-up
+After you’ve been on therapy for a while, your
+treatment team will want to see how well the
+therapy is working. Follow-up tests are listed in
+
+Guide 13.
+
+If you had chemotherapy as your first-line
+treatment, then the preferred next treatment
+option is immunotherapy with Keytruda. Other
+preferred next treatment options include
+Opdivo (nivolumab), Bavencio, Padcev, or
+Balversa (if genetic testing shows you have a
+change in the FGFR3 gene.)
+
+If the cancer stays the same or improves,
+treatment is usually continued.
+If the cancer continues to grow or if the
+treatment is too harsh, a different treatment
+should be considered.
+
+Guide 13
+Follow-up tests after first-line treatment for metastatic bladder cancer
+Test
+
+Test frequency
+
+Cystoscopy
+
+As directed by your doctor
+
+Imaging
+
+Every 3–6 months, or sooner if there’s any change or new
+symptoms:
+• Urogram (CT or MRI)
+• CT or PET/CT scan of chest, abdomen, and pelvis
+
+Blood tests
+
+Urine tests
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Every 1–3 months:
+• CBC and CMP
+Once a year:
+• B12 level if you had a cystectomy
+As directed by your doctor:
+• Urine cytology
+
+70
+
+7 Treatment for metastatic bladder cancer » Other treatments
+
+Other treatments
+
+If you had platinum-based chemotherapy
+(cisplatin or carboplatin) as your first-line
+treatment more than 12 months ago, you
+may be able to have it again if your body can
+tolerate it.
+
+Surgery for metastases
+After systemic therapy, a small number of
+people may benefit from surgery to remove
+cancer that has grown in areas of the body
+other than the bladder (metastases). Surgery
+is most likely to help you if:
+
+If your first-line therapy was a checkpoint
+inhibitor (such as Keytruda, Bavencio, Opdivo,
+or Tecentriq), then the preferred next treatment
+option depends on whether you’re able to have
+cisplatin-based chemotherapy. If you can have
+it, then your options include gemcitabine and
+cisplatin or a combination of methotrexate,
+vinblastine, doxorubicin, and cisplatin
+(ddMVAC). If genetic testing finds you have a
+change in the FGFR3 gene, then Balversa is
+also an option for you
+
+Cancer isn’t advancing quickly
+
+
+
+Systemic therapy was effective
+
+
+
+
+
+If you’re not able to have cisplatin-based
+chemotherapy, then your options include
+Padcev or gemcitabine and carboplatin.
+Balversa is also an option if you have a genetic
+change in the FGFR3 gene.
+
+Metastases are limited to the lungs or
+lymph nodes
+Metastases are in only one area (only in
+the lung, for example)
+
+Supportive care
+Supportive care aims to improve your quality
+of life. It includes care for cancer symptoms
+and the side effects of cancer treatment. It also
+helps with other issues related to cancer. For
+more information about supportive care, turn to
+Chapter 8.
+
+Other treatments not listed in Guide 14 may
+be useful in certain situations, depending on
+the treatment you’ve already received.
+If you’ve had treatment with both platinumbased chemotherapy and a checkpoint
+inhibitor, the next preferred treatment option
+is Padcev. For people who have a genetic
+change in the FGFR3 gene, Balversa is also
+an option. Other possible options include
+the targeted therapy Trodelvy (sacituzumab
+govitecan-hziy), various chemotherapy
+combinations, or Enhertu (trastuzumab
+deruxtecan) in certain situations.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+
+
+71
+
+7 Treatment for metastatic bladder cancer » What’s next?
+
+Guide 14
+Next systemic therapy options for stage 4B metastatic bladder cancer
+What therapy did you
+already have?
+
+Preferred next treatment
+options
+
+Other recommended or
+useful treatment options
+
+• Keytruda (pembrolizumab)
+Chemotherapy
+
+Checkpoint
+inhibitor*
+and you’re able to
+have cisplatin
+
+Checkpoint
+inhibitor*
+but you’re not able to
+have cisplatin
+
+Platinum-based
+chemotherapy and
+checkpoint inhibitor*
+
+• Other preferred options:
+• Opdivo (nivolumab)
+• Bavencio (avelumab)
+• Balversa (erdafitinib)
+• Padcev (enfortumab vedotin-ejfv)
+
+• Taxol (paclitaxel)
+• docetaxel
+• gemcitabine
+• Keytruda and Padcev
+
+• gemcitabine and cisplatin
+• dose-dense methotrexate,
+vinblastine, doxorubicin, and
+cisplatin (ddMVAC)
+
+• ifosfamide, doxorubicin, and
+gemcitabine
+• gemcitabine and Taxol
+
+• Balversa
+
+• Padcev
+• gemcitabine and carboplatin
+• Balversa
+
+• Taxol
+• docetaxel
+• gemcitabine
+
+• Trodelvy (sacituzumab
+govitecan-hziy)
+• gemcitabine
+• Taxol
+• docetaxel
+• ifosfamide, doxorubicin, and
+gemcitabine
+• gemcitabine and Taxol
+• gemcitabine and cisplatin
+• ddMVAC
+• Enhertu (trastuzumab
+deruxtecan)
+
+• Padcev
+• Balversa
+
+* Checkpoint inhibitors include Bavencio, Keytruda, Opdivo, and Tecentriq.
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+72
+
+7 Treatment for metastatic bladder cancer » What’s next? » Key points
+
+What’s next?
+
+Key points
+
+After you’ve been treated for metastatic
+bladder cancer, you’ll continue to have tests
+and visits to watch out for cancer to return
+or progress, or to treat your existing cancer.
+Surveillance is a key part of your follow-up
+plan. So be sure to continue to go to followup visits and stay in touch with your treatment
+team. As always, you can ask to join a clinical
+trial.
+
+
+
+
+
+
+
+Know that you can have bladder cancer and
+still enjoy life after diagnosis and treatment.
+Try to enjoy life as much as possible. Join a
+support group if you need additional resources.
+
+
+
+Some people may reach a point where
+treatment stops working and there are no other
+treatments available. Even people who are
+still receiving treatment may feel at times like
+there’s no hope. It’s common to feel frustration,
+anger, regret, despair, and uncertainty—
+even all at the same time. Talk with family
+or friends. Or talk to your doctor or another
+member of your care team. They can point you
+to professionals who can help you deal with
+these feelings and guide you toward your next
+steps.
+
+
+
+
+
+For information about supportive care and
+other assistance, turn to Chapter 8.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+73
+
+Treatment of metastatic bladder cancer is
+focused on helping you live as normally
+and as comfortably as possible, for as
+long as possible.
+Talking about your diagnosis with doctors,
+nurses, therapists, or counselors, as well
+as other people with bladder cancer, can
+be helpful.
+You should expect further testing to find
+out how many metastases there are and
+where they are in the body.
+The main treatment for metastatic bladder
+cancer is systemic therapy. Systemic
+therapies include chemotherapy,
+immunotherapy (checkpoint inhibitors),
+and targeted therapy.
+Joining a clinical trial is strongly
+recommended for people with metastatic
+bladder cancer.
+Radiation therapy can be used to reduce
+symptoms and to ease pain or discomfort
+from bladder cancer.
+
+8
+
+Supportive care and other
+assistance
+75
+
+Supportive care
+
+76
+
+Anxiety and depression
+
+76
+
+Financial concerns
+
+77
+
+Advance care planning
+
+79
+
+Key points
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+74
+
+8 Supportive care and other assistance » Supportive care
+
+Supportive care addresses the
+
+It’s okay to ask for help
+
+symptoms and side effects
+of bladder cancer, as well as
+
+Depression, anxiety, fear, and distress
+are very common feelings for people
+with cancer. These feelings can make it
+harder to deal with cancer and cancer
+treatment. They can hold you back
+even when you want to move forward.
+Getting help when you’re feeling worried
+or hopeless is an important part of
+cancer care. If you’re feeling anxious or
+overwhelmed, ask your treatment team
+for help.
+
+psychological, social, financial,
+and spiritual issues. Many
+resources are available to help
+you feel better and to answer your
+questions.
+
+The main concern for most patients with
+cancer is to find treatment that works. Having
+cancer is about more than treatment, though.
+Cancer care is a rollercoaster that includes
+many additional physical and emotional
+challenges. It’s important to know that you can
+get support for these challenges.
+
+More information about cancer and
+distress is available at
+NCCN.org/patientguidelines and on the
+NCCN Patient Guides for Cancer app.
+
+Supportive care
+Supportive care is for relieving the symptoms
+of cancer and the side effects of cancer
+therapies, and other health issues related
+to the cancer. Supportive care—also
+called palliative care—can also help with
+psychological, social, and spiritual issues.
+Supportive care involves the whole person, not
+just their cancer.
+
+Notably, supportive care can help prevent
+or treat physical and emotional symptoms.
+Supportive care can also help with financial
+support, advance care planning, and end-oflife concerns.
+
+Supportive care can be given at any stage of
+disease, not just at the end of life.
+
+It’s important to talk openly with your treatment
+team about supportive care. Ask questions and
+reach out if you need more information about
+your next steps.
+
+Supportive care addresses many needs. It can
+help with making treatment decisions. It can
+also assist with coordinating care between
+health providers.
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+75
+
+8 Supportive care and other assistance » Anxiety and depression » Financial concerns
+
+More information about palliative care is
+available at NCCN.org/patientguidelines and
+on the NCCN Patient Guides for Cancer app.
+
+Exercise can make you feel
+better. Plus, research has shown
+that exercise helps some people
+with bladder cancer live longer.
+
+Financial concerns
+The financial cost of bladder cancer can be
+overwhelming. Bladder cancer has the highest
+cost over a patient’s lifetime of any cancer.
+As a result, many people with bladder cancer
+and their loved ones struggle with the cost of
+treatment, as well as the stress of paying for it.
+
+Anxiety and depression
+Many people with cancer experience
+symptoms of distress, such as anxiety and
+depression. You may feel anxious during
+testing, or you may experience depression
+during a hard part of treatment. Tell your
+treatment team so that you can get help.
+
+To make things worse, you may miss work
+during treatment or become unemployed. Or
+you may have trouble paying for or getting
+medicines. Or you may have too little or no
+health insurance.
+
+Help can include support groups, talk therapy,
+or medication. At your cancer center, cancer
+navigators, social workers, and other experts
+can help. Some people also feel better by
+exercising, talking with friends or loved ones,
+or relaxing.
+
+If you struggle to pay for food, housing,
+treatment, follow-up care, and other expenses,
+or you have difficulty getting to appointments,
+talk with your care team’s social worker,
+patient navigators, and hospital financial
+services. They may be able to help you find
+financial support and transportation options.
+
+Support groups
+Many people diagnosed with cancer find
+support groups to be helpful. Support groups
+often include people at different stages
+of treatment. Some people may be newly
+diagnosed, while others may be finished
+with treatment. If your hospital or community
+doesn’t have support groups for people with
+cancer, have a look at the online resources
+listed on page 90 of this book.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+You can also talk to your treatment team about
+work, insurance, or money problems. They’ll
+include information in the treatment plan to
+help you manage your finances and medical
+costs. If your doctors and care providers don’t
+talk about how to pay for treatment, it’s okay
+for you to ask them about it first.
+
+76
+
+8 Supportive care and other assistance » Advance care planning
+
+Advance care planning
+
+the best possible care at the end of your life.
+Patients with incurable cancer can set up
+an advance care plan early on to feel less
+stressed and better able to cope with their
+condition.
+
+When cancer is diagnosed very late or keeps
+progressing despite all treatment efforts, it
+may be time to consider what lies ahead. This
+exploration of what’s important to you is called
+advance care planning.
+
+The advance care planning process starts
+with an open and honest discussion with your
+care team about your prognosis—what you
+may experience in the coming months—and
+the medications or therapies that may give
+you the best quality of life. Quality of life
+refers to a person’s overall enjoyment of life,
+including their sense of well-being and ability
+to participate in their usual activities.
+
+Advance care planning is for everyone,
+not just for those who are very sick. Even
+when cancers are curable, talking about
+future scenarios should begin when starting
+treatment.
+Advance care planning means deciding what
+care you would want if you become unable to
+make medical decisions for yourself. It’s about
+making sure that your wishes are understood
+and respected. The focus is on you receiving
+
+This discussion should include your spouse
+or partner and other family members who love
+you and are likely to be with you at the end.
+
+Financial resources
+American Cancer Society (cancer.org/
+treatment/finding-and-paying-for-treatment.
+html) has general information about financial
+and insurance issues of cancer.
+
+National Cancer Institute (cancer.gov/
+about-cancer/managing-care/track-carecosts) has tips about managing the cancer
+costs.
+
+American Society of Clinical
+Oncology (cancer.net/navigating-cancercare/financial-considerations) offers
+information about financial considerations
+and dealing with the costs of cancer care.
+
+Patient Advocate Foundation
+(patientadvocate.org) provides case
+management services and financial aid to
+people with cancer or other severe illnesses.
+Triage Cancer (triagecancer.org) offers
+free education on practical and legal issues
+for people with cancer.
+
+HealthWell Foundation
+(healthwellfoundation.org) provides financial
+assistance to people with cancer or other
+chronic diseases who are underinsured.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+77
+
+8 Supportive care and other assistance » Advance care planning
+
+Make your wishes clear. It’s important that
+everyone clearly understands the goals of your
+care and your personal wishes about what
+should—and should not—be done.
+
+Note that hospice is a special kind of endof-life care. Hospice refers specifically to
+an insurance benefit for people whose life
+expectancy is 6 months or less. Hospice
+supports those at the end of life by bringing in
+additional care providers and resources such
+as home care.
+
+You can decide if there is a point where you
+might want to stop cancer treatment. You can
+also decide what treatments you would want
+for symptom relief.
+
+The goal of end-of-life care is to give people the
+best life possible with the time they have left.
+Care can be provided in your home, a hospice
+facility, or even in the hospital. A major goal is to
+keep you pain-free and make sure that you can
+leave this world comfortably and with dignity.
+Hospice doctors, nurses, social workers, and
+chaplains are experts in helping patients work
+through the spiritual and emotional challenges
+of coping with the end of life.
+
+Once you’ve made these decisions, you’ll fill out
+a legal document that explains what you want to
+be done if you aren’t able to tell your care team
+yourself. This document is called an advance
+directive. Doctors are required to follow the
+instructions in an advance directive when you’re
+too ill to make decisions about your care.
+Tell your care team and family about your
+advance directive and its contents. Give a
+copy of your advance directive to all your
+doctors. Make sure you give a copy to anyone
+you’ve authorized to make decisions on your
+behalf (health care proxy). If your family or
+loved ones disagree with your plan, speak
+to your care team. Sometimes they or other
+specialists can help you and your family
+navigate these difficult conversations.
+
+“Find a support network that understands
+your cancer type and the journey you are
+taking. Learning from others and having
+a safe place to ask questions is a huge
+benefit.”
+
+You can change your advance care plan at any
+time. Frequent conversations with your care
+team can help.
+
+End-of-life considerations
+End-of-life care provides medical,
+psychological, and spiritual support for people
+who are close to the end of life as well as the
+people who love them. The goal is comfort, not
+a cure. It may also be called comfort care or
+hospice.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+78
+
+8 Supportive care and other assistance » Key points
+
+“
+
+Providing support for family members is a
+key part of hospice care. Most programs offer
+counseling and support groups for family
+members, including support after the patient
+has died. This is referred to as bereavement.
+It can be very comforting to know that your
+loved ones will have that kind of support after
+you’re gone.
+
+Be your own advocate. Ask a lot
+of questions, even the ones you
+are afraid to ask. Don’t be afraid to
+ask for a second opinion. You have
+to protect yourself and ensure
+you make the best decisions for
+you, and get the best care for your
+particular situation.”
+
+Key points
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Supportive care is for relieving symptoms,
+side effects, and other health issues
+related to cancer.
+Supportive care is treatment that involves
+the whole person, not just their cancer.
+Supportive care is given at any stage of
+disease, not just at the end of life.
+If you’re feeling distressed, ask about
+ways to reduce anxiety or depression.
+If you need financial support or
+transportation, talk with your care team’s
+social worker, patient navigators, and
+hospital financial services.
+Advance care planning is done to
+ensure that your end-of-life wishes are
+understood and respected.
+Hospice care is for people who are close
+to the end of life. It’s focused on comfort
+and quality of life.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+79
+
+9
+
+Making treatment decisions
+81
+
+It’s your choice
+
+81
+
+Questions to ask
+
+90
+
+Resources
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+80
+
+9 Making treatment decisions » It’s your choice » Questions to ask
+
+It’s important to be comfortable
+
+Think about what you want from treatment.
+Discuss openly the risks and benefits of
+specific treatments and procedures. Weigh
+options and share concerns with your care
+team. If you can build a relationship with your
+team, you’ll feel supported when considering
+options and making treatment decisions.
+
+with the cancer treatment you
+choose. This choice starts with
+having an open and honest
+conversation with your care team.
+
+Second opinion
+It’s normal to want to start treatment as soon
+as possible. While cancer treatment shouldn’t
+be ignored, there is usually time to have
+another cancer care provider review your test
+results and suggest a treatment plan. This
+is called getting a second opinion, and it’s a
+normal part of cancer care. Even doctors get
+second opinions!
+
+It’s your choice
+Treatment decisions are very personal. What’s
+important to you may not be important to
+someone else.
+In shared decision-making, you and your care
+team share information, discuss the options,
+and agree on a treatment plan. It starts with an
+open and honest conversation between you
+and your team.
+
+Things you can do to prepare for a second
+opinion:
+
+
+Some things that may play a role in your
+decision-making:
+
+
+
+
+
+
+
+
+
+
+
+What you want and how that might differ
+from what others want
+
+
+
+Your religious and spiritual beliefs
+Your feelings about certain treatments like
+surgery or chemotherapy
+
+Make plans to have copies of all your
+records sent to the doctor you will see for
+your second opinion.
+
+Questions to ask
+
+Your feelings about pain or side effects
+Cost of treatment, travel to treatment
+centers, and time away from school or
+work
+
+Possible questions to ask your cancer care
+team are listed on the following pages. Feel
+free to use these or come up with your own.
+Be clear about your goals for treatment and
+find out what to expect from treatment. Have
+a notebook handy to jot down the answers to
+your questions.
+
+Quality of life and length of life
+How active you are and the activities that
+are important to you
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Check with your insurance company
+about its rules on second opinions. There
+may be out-of-pocket costs to see doctors
+who are not part of your insurance plan.
+
+81
+
+9 Making treatment decisions » Questions to ask
+
+Questions about cancer testing
+1. What tests will I have? How do I prepare for testing?
+2. Do the tests have any risks?
+3. Where do I go for testing, and how long will it take?
+4. Will any of the tests hurt?
+5. How often are these tests wrong?
+6. Should I bring someone with me to my appointments?
+7. How soon will I know the results and who will explain them to me?
+8. How can I get a copy of the pathology report and other test results?
+9. Who will talk to me about the next steps?
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+82
+
+9 Making treatment decisions » Questions to ask
+
+Questions about treatment options
+1. Can my type of bladder cancer be cured? If not, how well can treatment stop it from
+growing?
+2. What are my treatment options?
+3. Are you suggesting treatment options from the NCCN Guidelines, or have you modified
+the standard treatment in my situation?
+4. Does this hospital/center offer the best treatment for me?
+5. How do my age, sex, overall health, and other factors affect my options? What impact
+would quitting smoking have on my results?
+6. Are my chances any better for one option than another?
+7. What will happen if I do nothing?
+8. How do I get a second opinion?
+9. How long do I have to decide about treatment? Is there a social worker or someone who
+can help me decide?
+10. Do I have a choice of when to begin treatment?
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+83
+
+9 Making treatment decisions » Questions to ask
+
+Questions about getting treatment
+1. Where will I receive treatment—in a hospital, a clinic, your office, or at home?
+2. How long will the treatment last?
+3. Will the treatment hurt?
+4. What supportive care and services are available to me and my caregivers?
+5. Who should I contact with questions or concerns if the office is closed?
+6. How will you know if the treatment is working? What are my options if the treatment
+stops working?
+7. What are the chances of the cancer worsening or returning?
+8. What follow-up care is needed after treatment?
+9. Will I be able to return to my normal activities? If so, when?
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+84
+
+9 Making treatment decisions » Questions to ask
+
+Questions about side effects
+1. What are the possible complications and side effects of treatment?
+2. Does the cancer itself cause any side effects?
+3. Which side effects are most common and how long do they usually last?
+4. Are there any long-term or permanent side effects?
+5. Are there any side effects that are serious or life-threatening?
+6. What symptoms should I report right away, and who do I contact?
+7. What can be done to prevent or relieve the side effects of treatment?
+8. What can be done to preserve my sexual function?
+9. Do any side effects lessen or worsen in severity over time?
+10. Will you stop or change treatment if there are serious side effects?
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+85
+
+9 Making treatment decisions » Questions to ask
+
+Questions about clinical trials
+1. Are there clinical trial options for me?
+2. How do I find clinical trials that I can participate in?
+3. What are the treatments used in the clinical trial?
+4. Has the treatment been used for other types of cancer?
+5. What are the risks and benefits of this treatment?
+6. What side effects should I expect and how will they be managed?
+7. How long will I be in the clinical trial?
+8. Will I be able to get other treatment if this doesn’t work?
+9. How will you know if the treatment is working?
+10. Will the clinical trial cost me anything?
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+86
+
+9 Making treatment decisions » Questions to ask
+
+Questions about your care team’s experience
+1. Are you board certified? If yes, in what area?
+2. What is your experience as well as your team’s experience with treating the type of
+cancer I have?
+3. How many patients like me (of the same age, gender, race) have you treated?
+4. Will you be consulting with experts to discuss my care? Whom will you consult?
+5. Is this treatment (or procedure) a major part of your practice? How often have you done
+this treatment (or procedure) in the last year?
+6. How many of your patients have had complications? What were the complications?
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+87
+
+9 Making treatment decisions » Questions to ask
+
+Questions about affording care
+1. Will my insurance pay for all the tests you’re recommending?
+2. Will my insurance cover the treatments you’re recommending? How much will I have to
+pay myself?
+3. Is there another treatment that will work as well but cost less?
+4. Are there any grants or programs to help pay for testing or treatment?
+5. Does my insurance plan require preapproval before I start treatment?
+6. Who can I talk to about financial help or payment options?
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+88
+
+Notes
+
+Notes
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+89
+
+9 Making treatment decisions » Resources
+
+Resources
+American Bladder Cancer Society
+bladdercancersupport.org
+Bladder Cancer Advocacy Network
+bcan.org
+
+Let us know what
+you think!
+
+CancerCare
+cancercare.org
+
+Please take a moment to
+complete an online survey
+about the
+NCCN Guidelines for Patients.
+
+Cancer Hope Network
+cancerhopenetwork.org
+
+NCCN.org/patients/response
+
+Imerman Angels
+imermanangels.org
+National Cancer Institute
+cancer.gov/types/bladder
+National Coalition for Cancer Survivorship
+canceradvocacy.org
+Triage Cancer
+triagecancer.org
+United Ostomy Associations of America
+ostomy.org
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+90
+
+Ü
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+91
+
+Words to know
+
+Words to know
+bacillus Calmette-Guérin (BCG)
+An immunotherapy medicine put directly into
+the bladder to treat bladder cancer.
+
+consolidation therapy
+A treatment given after the initial therapy kills
+all visible cancer. Consolidation therapy is
+used to treat any cancer cells left behind by
+previous therapy.
+
+biomarker
+Something found in your body that can be
+measured to assess your health. Usually
+identified by a blood test or a test of tumor
+tissue.
+
+continent urinary reservoir
+A type of urinary diversion in which a portion of
+the large intestine is used as a pouch to hold
+urine. A section of the small intestine connects
+the pouch to a hole (stoma) in the wall of the
+abdomen. A catheter is used to drain urine
+from the reservoir. Also called an Indiana
+pouch.
+
+biopsy
+A procedure that removes fluid or tissue
+samples to be tested for disease.
+bone scan
+An imaging test used to view bones for cancer
+or other problems.
+
+cystectomy
+A surgical procedure that removes all or part of
+the bladder.
+
+cancer grade
+A rating of the difference between cancer cells
+and normal cells under the microscope. It’s
+used to predict how fast the cancer is likely to
+grow or spread.
+
+cystoscopy
+A procedure that allows a doctor to see inside
+the bladder using a special tool inserted
+through the urethra. Usually occurs in a
+procedure room in the doctor’s office.
+
+carcinoma in situ (CIS)
+A flat area of cancer cells that hasn’t grown
+any farther than where it started.
+
+dose-dense chemotherapy
+A method of speeding up chemotherapy
+by reducing the amount of time between
+treatments.
+
+chemoradiation
+Cancer treatment with both chemotherapy and
+radiation therapy.
+
+external beam radiation therapy (EBRT)
+A cancer treatment in which a machine outside
+the body sends radiation to cancer cells inside
+the body.
+
+chemotherapy
+Cancer drugs that stop the cell life cycle
+to kill the cancer cells. Chemotherapy for
+bladder cancer can be given as systemic or
+intravesical therapy.
+
+first-line therapy
+The first type of treatment given for a condition
+or disease. First-line therapy is the one
+considered to be the best treatment.
+
+computed tomography (CT)
+An imaging test that uses x-rays from many
+angles to make a picture of the inside of the
+body.
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+hematuria
+The presence of blood in urine.
+
+92
+
+Words to know
+
+ileal conduit
+A type of urinary diversion in which a piece of
+small intestine (ileum) is used as a pipeline
+(conduit) for urine to leave the body through a
+hole (stoma) in the abdomen.
+
+non–muscle-invasive
+Bladder cancer that hasn’t grown into the
+muscle layer of the bladder wall.
+positron emission tomography (PET)
+A test that uses radioactive material to see the
+shape and function of body parts.
+
+immunotherapy
+A drug treatment that helps the body’s immune
+system find and destroy cancer cells.
+
+radiation therapy
+A treatment that uses high-energy rays
+(radiation) to destroy cancer cells.
+
+intravesical therapy
+A treatment that uses a catheter to put
+medicine directly into the bladder.
+
+radical cystectomy
+A surgical procedure that removes the bladder,
+nearby lymph nodes, and other organs in the
+pelvis.
+
+local therapy
+A treatment given to a specific area or organ of
+the body. Examples are surgery and radiation.
+
+recurrence
+The return of cancer after a cancer-free period.
+
+magnetic resonance imaging (MRI)
+An imaging method that uses radio waves
+and powerful magnets to make pictures of the
+insides of the body.
+
+resection
+A surgical procedure that removes as much
+cancer as possible while leaving the rest of the
+tissue or organ in place.
+
+maintenance therapy
+Therapy meant to prolong positive results after
+a good response to treatment, usually given
+before progression may occur.
+
+stage
+A rating of the extent of cancer in the body.
+supportive care
+Health care that relieves symptoms caused by
+cancer or by its treatment.
+
+metastasis
+The spread of cancer from the place where it
+started to another part of the body.
+
+surveillance
+Ongoing testing after treatment ends to watch
+for cancer to return.
+
+muscle-invasive
+Bladder cancer that has invaded the muscle
+layer of the bladder wall.
+
+systemic therapy
+A type of treatment that works throughout the
+body.
+
+mutation
+An abnormal change in the genetic instructions
+for making and controlling cells.
+
+targeted therapy
+A cancer treatment that can target and attack
+specific types of cancer cells.
+
+neobladder
+A type of urinary diversion in which a piece
+of small intestine is made into a new urinary
+reservoir. This is connected directly to the
+urethra so you can pee more normally.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+93
+
+Words to know
+
+transurethral resection of bladder tumor
+(TURBT)
+A surgical procedure to remove bladder tumors
+through the urethra without having to cut into
+the abdomen.
+trimodal therapy
+A combination of three therapies—TURBT,
+chemotherapy, and radiation therapy—used
+to preserve the bladder in certain people with
+muscle-invasive bladder cancer.
+ureters
+A pair of tubes that carry urine from the
+kidneys to the bladder.
+ureteroscopy
+A procedure that allows a doctor to see inside
+the kidneys and ureters using a special tool
+called a ureteroscope.
+urinary diversion
+A type of surgery that creates a new way
+for urine to leave the body after radical
+cystectomy.
+urine cytology
+A lab test performed on urine to detect cancer
+or precancerous cells.
+urogram
+An imaging method that creates detailed
+pictures of the kidneys, ureters, and bladder.
+urothelial carcinoma
+Cancer that begins in the urothelial cells that
+line inside of the urinary tract.
+urothelium
+The stretchy inner lining of the bladder and
+other organs of the urinary tract.
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+94
+
+NCCN Contributors
+
+NCCN Contributors
+This patient guide is based on the NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®) for Bladder Cancer,
+Version 4.2024. It was adapted, reviewed, and published with help from the following people:
+Dorothy A. Shead, MS
+
+Senior Director
+Patient Information Operations
+
+John Murphy
+
+Senior Medical Writer
+
+Susan Kidney
+
+Senior Graphic Design Specialist
+
+The NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®) for Bladder Cancer, Version 4.2024 were
+developed by the following NCCN Panel Members:
+*Thomas W. Flaig, MD
+
+University of Colorado Cancer Center
+
+*Philippe E. Spiess, MD, MS
+Moffitt Cancer Center
+
+Michael Abern, MD
+Duke Cancer Institute
+
+*Neeraj Agarwal, MD
+
+Huntsman Cancer Institute
+at the University of Utah
+
+*Rick Bangs, MBA
+Patient Advocate
+
+Mark K. Buyyounouski, MD, MS
+
+Hristos Kaimakliotis, MD
+
+Indiana University Melvin and Bren Simon
+Comprehensive Cancer Center
+
+Amar U. Kishan, MD
+
+UCLA Jonsson
+Comprehensive Cancer Center
+
+Shilajit Kundu, MD
+
+Robert H. Lurie Comprehensive Cancer
+Center of Northwestern University
+
+Subodh M. Lele, MD
+
+Fred & Pamela Buffett Cancer Center
+
+Ronac Mamtani, MD, MSCE
+
+Stanford Cancer Institute
+
+Abramson Cancer Center
+at the University of Pennsylvania
+
+Kevin Chan, MD
+
+Omar Y. Mian, MD, PhD
+
+City of Hope National Medical Center
+
+Sam Chang, MD, MBA
+
+Vanderbilt-Ingram Cancer Center
+
+Paul Chang, MD
+
+Case Comprehensive Cancer Center/
+University Hospitals Seidman Cancer Center
+and Cleveland Clinic Taussig Cancer Institute
+
+Jeff Michalski, MD, MBA
+
+The UChicago Medicine
+Comprehensive Cancer Center
+
+Siteman Cancer Center at BarnesJewish Hospital and Washington
+University School of Medicine
+
+Terence Friedlander, MD
+
+Jeffrey S. Montgomery, MD, MHSA
+
+UCSF Helen Diller Family
+Comprehensive Cancer Center
+
+Richard E. Greenberg, MD
+Fox Chase Cancer Center
+
+Khurshid A. Guru, MD
+
+Roswell Park Comprehensive Cancer Center
+
+Harry W. Herr, MD
+
+Memorial Sloan Kettering Cancer Center
+
+Jean Hoffman-Censits, MD
+
+Johns Hopkins Kimmel Cancer Center
+
+University of Michigan Rogel Cancer Center
+
+Mamta Parikh, MD, MS
+
+UC Davis Comprehensive Cancer Center
+
+Anthony Patterson, MD
+
+Fox Chase Cancer Center
+
+Mark A. Preston, MD, MPH
+Dana-Farber/Brigham and
+Women’s Cancer Center
+
+*Kyle Richards, MD
+University of Wisconsin
+Carbone Cancer Center
+
+Wade J. Sexton, MD
+Moffitt Cancer Center
+
+Arlene O. Siefker-Radtke, MD
+The University of Texas
+MD Anderson Cancer Center
+
+Tyler Stewart, MD
+
+UC San Diego Moores Cancer Center
+
+Debasish Sundi, MD
+
+The Ohio State University Comprehensive
+Cancer Center - James Cancer Hospital
+and Solove Research Institute
+
+Matthew Tollefson, MD
+
+Mayo Clinic Comprehensive Cancer Center
+
+Jonathan Tward, MD, PhD
+Huntsman Cancer Institute
+at the University of Utah
+
+Jonathan L. Wright, MD, MS
+Fred Hutchinson Cancer Center
+
+St. Jude Children’s Research Hospital/
+The University of Tennessee
+Health Science Center
+
+NCCN
+
+Charles Peyton, MD
+
+Lisa Gurski, PhD
+Carly J. Cassara, MSc
+
+O’Neal Comprehensive
+Cancer Center at UAB
+
+* Reviewed this patient guide. For disclosures, visit NCCN.org/disclosures.
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+Elizabeth R. Plimack, MD, MS
+
+95
+
+NCCN Cancer Centers
+
+NCCN Cancer Centers
+Abramson Cancer Center
+at the University of Pennsylvania
+
+Mayo Clinic Comprehensive Cancer Center
+Phoenix/Scottsdale, Arizona
+Jacksonville, Florida
+Rochester, Minnesota
+480.301.8000 • Arizona
+904.953.0853 • Florida
+507.538.3270 • Minnesota
+mayoclinic.org/cancercenter
+
+Philadelphia, Pennsylvania
+800.789.7366 • pennmedicine.org/cancer
+
+Case Comprehensive Cancer Center/
+University Hospitals Seidman Cancer Center and
+Cleveland Clinic Taussig Cancer Institute
+Cleveland, Ohio
+UH Seidman Cancer Center
+800.641.2422 • uhhospitals.org/services/cancer-services
+CC Taussig Cancer Institute
+866.223.8100 • clevelandclinic.org/cancer
+Case CCC
+216.844.8797 • case.edu/cancer
+
+Memorial Sloan Kettering Cancer Center
+New York, New York
+800.525.2225 • mskcc.org
+
+Moffitt Cancer Center
+Tampa, Florida
+888.663.3488 • moffitt.org
+
+City of Hope National Medical Center
+
+O’Neal Comprehensive Cancer Center at UAB
+
+Duarte, California
+800.826.4673 • cityofhope.org
+
+Birmingham, Alabama
+800.822.0933 • uab.edu/onealcancercenter
+
+Dana-Farber/Brigham and Women’s Cancer Center |
+Mass General Cancer Center
+
+Robert H. Lurie Comprehensive Cancer Center
+of Northwestern University
+
+Boston, Massachusetts
+617.732.5500 • dana-farberbrigham.org
+617.726.5130 • massgeneral.org/cancer-center
+
+Chicago, Illinois
+866.587.4322 • cancer.northwestern.edu
+
+Duke Cancer Institute
+
+Roswell Park Comprehensive Cancer Center
+
+Fox Chase Cancer Center
+
+Siteman Cancer Center at Barnes-Jewish Hospital
+and Washington University School of Medicine
+
+Buffalo, New York
+877.275.7724 • roswellpark.org
+
+Durham, North Carolina
+888.275.3853 • dukecancerinstitute.org
+Philadelphia, Pennsylvania
+888.369.2427 • foxchase.org
+
+St. Louis, Missouri
+800.600.3606 • siteman.wustl.edu
+
+Fred & Pamela Buffett Cancer Center
+
+St. Jude Children’s Research Hospital/
+The University of Tennessee Health Science Center
+
+Omaha, Nebraska
+402.559.5600 • unmc.edu/cancercenter
+
+Memphis, Tennessee
+866.278.5833 • stjude.org
+901.448.5500 • uthsc.edu
+
+Fred Hutchinson Cancer Center
+Seattle, Washington
+206.667.5000 • fredhutch.org
+
+Stanford Cancer Institute
+
+Huntsman Cancer Institute at the University of Utah
+
+Stanford, California
+877.668.7535 • cancer.stanford.edu
+
+Salt Lake City, Utah
+800.824.2073 • healthcare.utah.edu/huntsmancancerinstitute
+
+The Ohio State University Comprehensive Cancer Center James Cancer Hospital and Solove Research Institute
+
+Indiana University Melvin and Bren Simon
+Comprehensive Cancer Center
+
+Columbus, Ohio
+800.293.5066 • cancer.osu.edu
+
+Indianapolis, Indiana
+888.600.4822 • www.cancer.iu.edu
+
+The UChicago Medicine Comprehensive Cancer Center
+
+Johns Hopkins Kimmel Cancer Center
+
+Chicago, Illinois
+773.702.1000 • uchicagomedicine.org/cancer
+
+Baltimore, Maryland
+410.955.8964
+www.hopkinskimmelcancercenter.org
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+The University of Texas MD Anderson Cancer Center
+Houston, Texas
+844.269.5922 • mdanderson.org
+
+96
+
+NCCN Cancer Centers
+
+UC Davis Comprehensive Cancer Center
+Sacramento, California
+916.734.5959 • 800.770.9261
+health.ucdavis.edu/cancer
+
+share with us.
+
+UC San Diego Moores Cancer Center
+La Jolla, California
+858.822.6100 • cancer.ucsd.edu
+
+UCLA Jonsson Comprehensive Cancer Center
+Los Angeles, California
+310.825.5268 • uclahealth.org/cancer
+
+UCSF Helen Diller Family
+Comprehensive Cancer Center
+
+Take our survey and help make the
+NCCN Guidelines for Patients
+better for everyone!
+
+San Francisco, California
+800.689.8273 • cancer.ucsf.edu
+
+University of Colorado Cancer Center
+Aurora, Colorado
+720.848.0300 • coloradocancercenter.org
+
+NCCN.org/patients/comments
+
+University of Michigan Rogel Cancer Center
+Ann Arbor, Michigan
+800.865.1125 • rogelcancercenter.org
+
+University of Wisconsin Carbone Cancer Center
+Madison, Wisconsin
+608.265.1700 • uwhealth.org/cancer
+
+UT Southwestern Simmons
+Comprehensive Cancer Center
+
+Dallas, Texas
+214.648.3111 • utsouthwestern.edu/simmons
+
+Vanderbilt-Ingram Cancer Center
+Nashville, Tennessee
+877.936.8422 • vicc.org
+
+Yale Cancer Center/Smilow Cancer Hospital
+New Haven, Connecticut
+855.4.SMILOW • yalecancercenter.org
+
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+97
+
+Index
+
+Index
+advance care planning 77–79
+
+PET/CT scan 18, 70
+
+bacillus Calmette-Guérin (BCG) 33–34,
+44–45, 58
+
+progression 35, 43, 44, 45, 48–49, 65, 68, 70,
+73, 77
+
+biopsy 8, 15–17, 19, 30, 44, 48, 64, 68
+
+radiation therapy 9, 14, 29, 36–37, 39, 53–54,
+55, 58, 59, 61, 64, 69
+
+cancer grade 23, 26, 44
+
+radical cystectomy 30–31, 37, 44–45, 48,
+51–53, 54–55, 58, 59, 61, 64
+
+carcinoma in situ (CIS) 25, 43, 54
+chemoradiation 36–37, 51, 54, 56, 58–59, 61,
+64
+
+recurrence 33, 34, 44, 45, 47, 48–49, 58, 61,
+62, 63–65
+
+chemotherapy 29, 34, 35, 36, 39, 52, 54, 55,
+56–58, 59–60, 64, 68–69, 71–72
+
+second opinion 79, 81
+side effects 9, 10, 14, 17, 21, 31, 33–34, 35,
+36, 37, 39–40, 57, 59, 68, 69, 71, 75
+
+cisplatin 35, 52–53, 55, 56–57, 60, 68–69,
+71–72
+
+smoking 8, 20–21
+
+clinical trial 9, 10, 29, 34, 37–38, 49, 61, 65,
+67, 69–70, 73
+
+staging 23–25
+
+CT scan 17–20, 46, 47, 52, 62, 63, 68, 70
+
+subtype 26, 45
+
+cystectomy 30–31, 37, 44–45, 48, 51, 52–54,
+55, 58, 59, 61, 64, 70
+
+supportive care 39, 45, 55, 71, 73, 75–76
+targeted therapy 9, 29, 36, 56–57, 59, 64,
+68–69, 71
+
+cystoscopy 8, 15–17, 19, 45, 46–47, 48, 59,
+61, 63, 70
+
+transurethral resection of bladder tumor
+(TURBT) 29–30, 33, 34, 36, 44, 48, 54–55, 59,
+61, 64
+
+genetic testing 20, 70, 71
+hematuria (blood in urine) 6, 15, 19, 30, 34,
+39
+
+ureteroscopy 17, 46, 48
+
+immunotherapy 14, 29, 35–36, 39, 53–54,
+56–57, 59, 61, 64, 68–69, 70
+
+urinary diversion 31, 32, 39, 52, 53, 62
+urine cytology 8, 15, 45, 47–48, 62, 63, 70
+
+intravesical therapy 14, 29, 30, 33–34, 35,
+39, 44–45, 58, 64
+
+urogram 19, 46–47, 62, 63, 70
+
+metastasis 9, 10, 17, 24, 25, 35, 41, 55, 56,
+58, 59, 61, 67–73
+MRI 17, 18–19, 46, 47, 52, 62, 63, 68, 70
+mutation 6, 34, 56, 67
+NCCN Guidelines for Patients®
+Bladder Cancer, 2024
+
+98
+
+Ü
+
+NCCN
+GUIDELINES
+FOR PATIENTS
+
+®
+
+Bladder Cancer
+2024
+To support the NCCN Guidelines for Patients, visit
+NCCNFoundation.org/Donate
+
+3025 Chemical Road, Suite 100
+Plymouth Meeting, PA 19462
+215.690.0300
+
+NCCN.org/patients – For Patients | NCCN.org – For Clinicians
+PAT-N-1814-0125
+
+

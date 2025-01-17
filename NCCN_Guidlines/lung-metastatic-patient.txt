@@ -1,0 +1,4262 @@
+NCCN
+GUIDELINES
+FOR PATIENTS
+
+2024
+
+®
+
+Metastatic
+Non-Small Cell
+Lung Cancer
+
+®
+
+NATIONAL COMPREHENSIVE CANCER NETWORK
+
+Presented with support from
+
+FOUNDATION
+Guiding Treatment. Changing Lives.
+
+Available online at
+NCCN.org/patientguidelines
+
+Ü
+
+Metastatic Non-Small Cell Lung Cancer
+
+About the NCCN Guidelines for Patients®
+
+Did you know that top cancer centers across the United
+States work together to improve cancer care? This
+alliance of leading cancer centers is called the National
+Comprehensive Cancer Network® (NCCN®).
+Cancer care is always changing. NCCN develops
+evidence-based cancer care recommendations used by health care providers
+worldwide. These frequently updated recommendations are the NCCN Clinical
+Practice Guidelines in Oncology (NCCN Guidelines®). The NCCN Guidelines for
+Patients plainly explain these expert recommendations for people with cancer
+and caregivers.
+
+These NCCN Guidelines for Patients are based on the NCCN
+Clinical Practice Guidelines in Oncology (NCCN Guidelines®)
+for Non-Small Cell Lung Cancer, Version 7.2024 —
+June 26, 2024.
+
+View the NCCN Guidelines
+
+Find an NCCN Cancer
+
+for Patients free online
+
+Center near you
+
+NCCN.org/patientguidelines
+
+NCCN.org/cancercenters
+
+Connect with us
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+1
+
+Metastatic Non-Small Cell Lung Cancer
+
+Supporters
+®
+
+NATIONAL COMPREHENSIVE CANCER NETWORK
+
+FOUNDATION
+Guiding Treatment. Changing Lives.
+
+NCCN Guidelines for Patients are supported by funding from the
+NCCN Foundation®
+NCCN Foundation gratefully acknowledges the following
+corporate supporters for helping to make available these
+NCCN Guidelines for Patients: AstraZeneca;
+Boehringer Ingelheim Pharmaceuticals, Inc.;
+Bristol Myers Squibb; Exact Sciences; Janssen Biotech, Inc.;
+Regeneron Pharmaceuticals, Inc.; and Sanofi Genzyme.
+NCCN independently adapts, updates, and hosts the NCCN
+Guidelines for Patients. Our corporate supporters do not participate
+in the development of the NCCN Guidelines for Patients and are not
+responsible for the content and recommendations contained therein.
+
+To make a gift or learn more, visit online or email
+NCCNFoundation.org/donate
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+PatientGuidelines@ NCCN.org
+
+2
+
+Metastatic Non-Small Cell Lung Cancer
+
+Contents
+4
+
+Lung cancer basics
+
+8
+
+Tests for metastatic NSCLC
+
+18
+
+Treatment of driver mutations
+
+29
+
+Treatment based on PD-L1
+
+36
+
+Treatment by cell type
+
+48
+
+Making treatment decisions
+
+58
+
+Words to know
+
+61
+
+NCCN Contributors
+
+62
+
+NCCN Cancer Centers
+
+64
+
+Index
+
+© 2024 National Comprehensive Cancer Network, Inc. All rights reserved. NCCN
+Guidelines for Patients and illustrations herein may not be reproduced in any form for
+any purpose without the express written permission of NCCN. No one, including doctors
+or patients, may use the NCCN Guidelines for Patients for any commercial purpose
+and may not claim, represent, or imply that the NCCN Guidelines for Patients that have
+been modified in any manner are derived from, based on, related to, or arise out of the
+NCCN Guidelines for Patients. The NCCN Guidelines are a work in progress that may be
+redefined as often as new significant data become available. NCCN makes no warranties
+of any kind whatsoever regarding its content, use, or application and disclaims any
+responsibility for its application or use in any way.
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+NCCN Foundation seeks to support the millions of patients and their families affected
+by a cancer diagnosis by funding and distributing NCCN Guidelines for Patients. NCCN
+Foundation is also committed to advancing cancer treatment by funding the nation’s
+promising doctors at the center of innovation in cancer research. For more details and the
+full library of patient and caregiver resources, visit NCCN.org/patients.
+National Comprehensive Cancer Network (NCCN) and NCCN Foundation
+3025 Chemical Road, Suite 100, Plymouth Meeting, PA 19462 USA
+
+3
+
+1
+
+Lung cancer basics
+5
+
+What is NSCLC?
+
+6
+
+What’s metastatic NSCLC?
+
+7
+
+What’s the best treatment?
+
+7
+
+Key points
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+4
+
+1 Lung cancer basics » What is NSCLC?
+
+If you’re reading this, you or
+
+Lung cancer cells grow out of control. They
+don’t die when they should and make many
+new cancer cells, which become tumors.
+
+someone you care about might
+have non-small cell lung cancer
+
+Lung cancer cells also don’t stay in place.
+They can break away from a tumor, spread
+outside the lung, and form more tumors.
+
+(NSCLC). It’s the most common
+type of lung cancer. In this
+chapter, you’ll learn what this type
+
+NSCLC is a type of lung carcinoma
+
+of cancer is and what it means if
+
+Almost all lung cancers are carcinomas (karsin-OH-mas). Lung carcinomas form from cells
+that line the airways of the lungs. The airways
+of the lungs are the bronchi, bronchioli, and
+alveoli.
+
+it’s metastatic.
+
+What is NSCLC?
+
+NSCLC is the most common lung
+carcinoma. Other lung carcinomas are
+neuroendocrine tumors. Information on lung
+neuroendocrine tumors can be found at
+
+Non-small cell lung cancer (NSCLC) is a type
+of lung cancer. Another type of lung cancer
+is small cell lung cancer, but it is a different
+cancer covered in another book.
+
+Airways of the lungs
+The air you breathe moves through a
+series of airways. It travels down your
+throat and through your windpipe
+(trachea). The windpipe splits into
+two airways called bronchi. Inside
+the lung, each bronchus divides into
+smaller airways called the bronchioli.
+At the end of the bronchioli are sacs
+called alveoli. Oxygen is transferred
+from air into the blood in the alveoli.
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+5
+
+1 Lung cancer basics » What’s metastatic NSCLC?
+
+NCCN.org/patientguidelines and on the NCCN
+Patient Guides for Cancer app.
+
+Cancers that have spread to the
+lungs are not lung cancers. For
+example, stomach cancer that
+has spread to the lungs is still
+stomach cancer.
+
+There are several types of NSCLC
+
+lung cancer are often written with Roman
+numerals—stages I (1), II (2), III (3), and
+IV (4). We will be listing stages as 1, 2, 3, and
+4 to make the stages easier to read.
+
+Each type of NSCLC forms from a particular
+kind of cell. Below are common types of
+NSCLC:
+
+
+
+
+
+
+Stage 4 lung cancer is metastatic cancer
+at diagnosis, but some earlier stages can
+become metastatic cancer as well.
+
+Adenocarcinoma (A-deh-noh-KAR-sihNOH-muh) often forms from cells that line
+the alveoli and make mucus. This is the
+most common type of NSCLC.
+
+Cancer in stages 1, 2, and 3 has grown from
+the airway into lung tissue. Some of these
+early and locally advanced cancers spread far
+after diagnosis. If this happens, the cancer’s
+stage doesn’t change. Instead, these cancers
+are referred to as metastatic lung cancer.
+
+Large cell carcinoma forms from
+any of the large cells that are found
+throughout the airways.
+Squamous cell carcinoma (squaymous) forms from cells that line the
+bronchi.
+
+This book focuses on metastatic NSCLC.
+Information on early and locally advanced
+NSCLC can be found at NCCN.org/
+patientguidelines and on the NCCN Patient
+Guides for Cancer app.
+
+What’s metastatic NSCLC?
+Metastatic NSCLC is lung cancer that has
+spread to other organs. NSCLC can spread
+the brain, liver, bone, and adrenal glands and
+from one lung to the other lung. Metastatic
+NSCLC also includes lung cancer that has
+spread to the lining of the lungs.
+
+Cancer stages and metastasis
+A cancer stage describes the extent of lung
+cancer in the body. The main stages of
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+6
+
+1 Lung cancer basics » What’s the best treatment? » Key points
+
+What’s the best treatment?
+
+you. More information on supportive care is in
+Chapter 2 and other chapters.
+
+There’s no single treatment for NSCLC that’s
+best for everyone. The best treatment is the
+treatment that’s right for you. The following
+chapters explain expert recommendations that
+are based on the latest research and current
+practices at leading cancer centers.
+
+Clinical trials offer hope to all
+people with lung cancer
+Clinical trials are a type of health research that
+tests new ways of fighting cancer. Ask your
+care team if there is a clinical trial that is a
+good fit for you. Learn more about clinical trials
+in Chapter 5.
+
+Systemic therapy is the most
+common treatment
+Systemic therapy is drug treatment for
+lung cancer anywhere in the body. Medical
+oncologists prescribe systemic therapy.
+
+Advocate for yourself
+You are an important member of your cancer
+care team. Discuss the recommendations in
+this book with your team. Together, you can
+make a care plan that’s best for you.
+
+Most people with metastatic lung cancer will be
+on systemic therapy for the rest of their lives.
+The type of systemic therapy you will receive
+is partly based on features of the cancer. More
+information is in Chapters 3, 4, and 5.
+
+There is a list of suggested questions in
+Chapter 6 to ask your team. You’re more likely
+to get the care you want by asking questions
+and making decisions with your team.
+
+Local treatment is helpful at times
+Local treatment may be used for a specific
+area of metastatic cancer. It includes surgery,
+radiation therapy, and chemoradiation.
+
+Key points
+
+
+Local treatment is commonly used to reduce
+symptoms caused by metastasis. Less often,
+it is used to try to cure limited metastases. An
+example is cancer that has spread to only the
+brain or an adrenal gland.
+
+
+
+Supportive care addresses the
+challenges of cancer
+
+
+
+Supportive care has been shown to extend
+and enhance life for people with lung cancer.
+Tell your care team about your symptoms and
+other needs to get the best supportive care for
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+7
+
+Non-small cell lung cancer (NSCLC) is a
+cancer of lung cells. Cancers that spread
+to the lungs are not lung cancer.
+Metastatic NSCLC is cancer that has
+spread far from the lung in which it
+started.
+Treatment for metastatic lung cancer
+varies among people based on what is
+best for them. It often involves a wholebody drug treatment called systemic
+therapy.
+
+2
+
+Tests for metastatic NSCLC
+9
+
+Goals of testing
+
+10
+
+Care team
+
+10
+
+Health history
+
+10
+
+Physical exam
+
+11
+
+Blood test
+
+11
+
+Imaging
+
+12
+
+Biopsy of metastasis
+
+14
+
+Biomarker tests
+
+16
+
+Pulmonary function tests
+
+16
+
+Supportive care
+
+17
+
+Key points
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+8
+
+2 Tests for metastatic NSCLC » Goals of testing
+
+Goals of testing
+
+Your care team will make a
+treatment plan just for you. To
+
+Not all non-small cell lung cancers (NSCLCs)
+are alike. Before you can be treated, you’ll
+need to undergo several tests to learn about
+the cancer and you. These tests are needed
+to:
+
+make the plan, they'll need to
+learn about your cancer and
+your general health. This chapter
+describes the tests and other care
+
+
+
+needed to make your treatment
+plan.
+
+
+
+
+
+Assess your general health and wellbeing
+Stage the cancer by testing areas where it
+may have spread, which may be done at
+the same time as diagnosis
+Profile the cancer by testing for defining
+features called biomarkers
+
+Tests for metastatic NSCLC are listed in
+
+Guide 1.
+
+Guide 1
+Initial tests and services for metastatic NSCLC
+Health history and exam
+
+• Medical history including weight loss and smoking history
+• Physical exam and performance status
+
+Blood tests
+
+• Complete blood count (CBC)
+• Chemistry profile
+
+Imaging
+
+• Diagnostic CT scan of the chest and upper abdomen with contrast
+• FDG-PET/CT scan
+• Brain MRI
+
+Cancer cell tests
+
+• Biopsy of metastasis
+• Molecular tests for driver mutations
+• PD-L1 test
+
+Lung tests
+
+• Pulmonary function tests
+
+Initial services
+
+• Supportive care
+• Treatment to quit smoking
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+9
+
+2 Tests for metastatic NSCLC » Care team » Health history » Physical exam
+
+Care team
+
+Health history
+
+It takes a team to plan treatment of NSCLC.
+Your team will use your test results to plan
+treatment. You are an important part of the
+team. Tell your team about your wishes for
+treatment and any challenges you are facing.
+Your input is just as important as tests for
+treatment planning.
+
+Expect your care team to review your health
+in detail. This is known as taking a medical
+history. Your team will want to know everything
+possible about your past and current health.
+You will likely be asked about:
+
+
+Your team may consist of many members:
+
+
+
+
+
+
+
+
+A pulmonologist, thoracic radiologist,
+interventional radiologist, thoracic
+surgeon, and pathologist to diagnose and
+stage the cancer
+
+
+
+
+
+A medical oncologist, radiation oncologist,
+and thoracic surgical oncologist to treat
+NSCLC
+
+
+
+A palliative care provider, social worker,
+mental health provider, and registered
+dietitian to provide supportive services
+
+Illnesses and injuries
+Symptoms like unexplained weight loss,
+trouble breathing, chest pain, and cough
+Prescribed and over-the-counter
+medicines and supplements
+Previous surgeries
+Lifestyle choices, including your diet, how
+active you are, and whether you smoke or
+drink alcohol
+
+Some cancers and other diseases run in
+families. Be prepared to discuss the health
+problems of your close blood relatives. Such
+family members include siblings, parents, and
+grandparents related to you by birth and not by
+adoption.
+
+Many of these experts are supported by
+nurses, technicians, or assistants who are
+often on the frontline of cancer care.
+
+Physical exam
+Bring a list of your medications,
+including herbals and
+supplements, to appointments.
+
+A team member will also perform a thorough
+physical exam of your body. This exam may
+include:
+
+
+
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+10
+
+Checking your vital signs—blood
+pressure, heart rate, breathing rate, and
+body temperature—and assessing your
+overall appearance
+Feeling and listening to organs, including
+your spleen and liver
+
+2 Tests for metastatic NSCLC » Blood test » Imaging
+
+
+
+
+
+Imaging
+
+Feeling for enlarged lymph nodes, which
+are small disease-fighting structures
+throughout your body
+
+Imaging takes pictures of the inside of your
+body. It is used to help stage the cancer by
+showing cancer in lung tissue and if the cancer
+has spread from the lung.
+
+Assessing your level of pain, if any, when
+you are touched
+
+Based on your health history and exam,
+your care team will rate your performance
+status. Performance status is your ability to
+do day-to-day activities. It is one of the most
+important factors that your team will use to
+plan treatment.
+
+A radiologist is a doctor who’s an expert in
+reading images like CT, MRI, or PET scans, or
+x-rays. This doctor will convey the test results
+to your care team.
+Scans that were done more than 60 days ago
+should not be used to decide your treatment.
+
+Blood test
+
+Diagnostic CT scan
+
+Blood tests are commonly used to screen
+for disease. They are also used to assess if
+cancer is affecting organs.
+
+A CT scan is a more detailed kind of x-ray. It
+takes many pictures from different angles. A
+computer combines the images to make 3D
+pictures.
+
+Samples of your blood will be removed with a
+needle inserted into one of your veins. This is
+called a blood draw.
+
+A diagnostic CT shows body tissue more
+clearly. It is often the first scan done to stage
+lung cancer. Images of your chest and upper
+abdomen including the adrenal glands are
+needed.
+
+Complete blood count
+A complete blood count (CBC) measures parts
+of the blood including counts of white blood
+cells, red blood cells, and platelets.
+
+A higher dose of radiation is used for
+diagnostic CT compared to regular CT. You'll
+receive an injection of contrast if it's safe
+for you. Contrast is a substance that makes
+images clearer. Contrast travels through your
+bloodstream, and you pee it out.
+
+Chemistry profile
+A chemistry profile assesses natural salts in
+your body and how well your liver and kidneys
+are working.
+
+FDG-PET/CT scan
+PET/CT is necessary if you haven’t had this
+scan already. It may detect cancer that was not
+found by CT alone.
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+11
+
+2 Tests for metastatic NSCLC » Biopsy of metastasis
+
+Biopsy of metastasis
+
+Your whole body will be scanned, or the scan
+will extend from your neck to the middle of
+your thighs.
+
+A biopsy is a procedure that removes body
+tissue or fluid for cancer testing. Often, tissue
+from the organ with the metastasis is taken
+rather than from the lungs. Your care team will
+use imaging to select the biopsy site, which is
+often the adrenal gland, liver, or bone.
+
+The PET scan highlights tissue in your body
+that may be cancerous. Before the scan, you
+will be injected with a sugar radiotracer called
+fluorodeoxyglucose (FDG). The tracer will pass
+out of your body in pee in about 2 days.
+
+The type of biopsy that will be done depends
+on the body part and the experience of your
+care team. Common types of biopsies for
+metastatic lung cancer are:
+
+Cancer cells take in more of the tracer than
+normal cells and show up as bright (or hot)
+spots on the scan.
+Multiple health problems can cause hot spots,
+so the cause of hot spots often needs to be
+confirmed by other testing.
+
+
+
+Brain MRI
+Lung cancer tends to spread to the brain.
+MRI may show small brain tumors that aren’t
+causing symptoms. If you have or may have
+metastatic lung cancer, a brain MRI is very
+important.
+
+
+
+MRI uses a safe magnetic field and radio
+waves to make pictures, so you don’t need
+to worry about radiation. Contrast will also be
+used unless it would not be safe for you. If you
+can’t have an MRI, you may get a CT scan of
+your head with contrast.
+
+
+
+An external needle biopsy involves
+guiding a thin needle through your skin
+and into a tumor. These biopsies include
+transthoracic needle aspiration (TTNA),
+core needle biopsies, pericardiocentesis,
+and thoracentesis.
+Down-the-throat biopsies involve
+guiding a thin tube down your throat into
+your airways (bronchus) or food pipe
+(esophagus). These procedures include
+many types of bronchoscopy.
+Keyhole surgeries involve making
+small openings in your chest. Small tools
+are inserted through the holes to remove
+tissue. Compared to open surgery, this
+method is minimally invasive. These
+surgeries include laparoscopy and
+thoracoscopy. Thoracoscopy is also called
+video-assisted thoracoscopic surgery
+(VATS).
+
+The removed tissue must be large
+enough for testing
+A doctor called a pathologist will assess the
+tissue. Pathologists are experts in tissue and
+cells and diagnosing cancer.
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+12
+
+2 Tests for metastatic NSCLC » Biopsy of metastasis
+
+very important for the treatment of metastatic
+cancer:
+
+The tissue must be large enough to run
+several special lab tests. At some cancer
+centers, the pathologist checks the tissue size
+right after removal. This method is called rapid
+on-site evaluation (ROSE). It helps to prevent
+having the same procedure a second time.
+
+A pathologist assesses for cancer
+The pathologist will prepare the biopsy
+tissue. This may take a couple of days. Then,
+the pathologist will look at the tissue with a
+microscope and classify the disease. This is
+called histologic typing. If NSCLC is found, the
+pathologist will identify the type, which is
+
+Adenocarcinoma
+
+
+
+Large cell lung carcinoma
+
+
+
+Squamous cell carcinoma
+
+
+
+Mixed and rare types
+
+The results of lab tests used for diagnosis are
+recorded in a pathology report. Ask your care
+team for a copy of the pathology report and to
+review the results with you. Always try to take
+notes and ask questions.
+
+Biopsy of metastasis
+If your care team suspects metastatic
+lung cancer, you may have a biopsy
+of the metastasis instead of the lung
+tumor. A biopsy of the metastasis can
+diagnose and stage the cancer at the
+same time. A needle biopsy through
+the skin may reach some metastases,
+such as in the liver (shown). Imaging is
+often used to help guide the needle to
+the correct spot.
+Credit: https://commons.wikimedia.org/wiki/File:Human_liver_biopsy.
+jpg
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+
+
+13
+
+2 Tests for metastatic NSCLC » Biomarker tests
+
+Biomarker tests
+
+All lung cancers should be tested for PD-L1. A
+lab method called immunohistochemistry (IHC)
+detects PD-L1.
+
+Biomarker tests look for biological clues, or
+markers, of cancer that differ between people.
+Because of biomarkers, a treatment that helps
+one person might not help you.
+
+What if there’s not enough tissue
+for biomarker testing?
+
+Biomarker tests are performed on tumor tissue
+removed with biopsy or during surgery, but
+a blood sample may be tested as well. See
+Guide 2 for a list of biomarkers and which
+cancers should be tested for them.
+
+If there’s not enough tissue, a second biopsy
+may need to be scheduled. Sometimes a blood
+sample can be drawn and the plasma in the
+blood sample is tested for biomarkers.
+
+What if the cancer has no
+biomarkers?
+
+Driver mutations cause normal cells to
+become cancer cells and support cancer
+growth. A driver mutation is found in at least 1
+in 3 people with metastatic adenocarcinoma
+but is much less common in squamous cell
+lung cancer. It is very rare for cancers to have
+more than one driver mutation.
+
+Some lung cancers do not have a known
+biomarker for which there is treatment.
+Treatment options for these cancers are
+based on the lung cell type, as discussed in
+Chapter 5.
+
+Molecular tests assess for mutations. Since
+very few squamous cell carcinomas have a
+driver mutation, molecular testing is decided
+on a person-by-person basis.
+
+“
+
+NCCN experts strongly advise broad molecular
+profiling of all mutations listed in Guide 2.
+There are other known mutations linked with
+lung cancer that may be tested, too. This
+testing will help many people get the best
+treatment for their cancer. Since many genes
+are tested, it can take up to 3 weeks to get the
+results.
+
+DO NOT be afraid to ask your
+medical team ANY questions at any
+time!!! Your questions will help you
+and them. No question is stupid.”
+
+PD-L1 is a protein on the surface of cells.
+PD-L1 on cancer cells stops white blood cells
+called T cells from killing them. The cancer
+cells then survive and make more cancer cells.
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+14
+
+2 Tests for metastatic NSCLC » Biomarker tests
+
+Guide 2
+Biomarker tests for metastatic NSCLC
+Adenocarcinoma,
+large cell carcinoma,
+and rare cell types
+
+Squamous cell
+lung cancer
+
+EGFR exon 19 deletion or L858R mutation
+
+●
+
+●
+
+EGFR S768I, L861Q, or G719X mutation
+
+●
+
+●
+
+EGFR exon 20 insertion
+
+●
+
+●
+
+ALK rearrangement
+
+●
+
+●
+
+ROS1 rearrangement
+
+●
+
+●
+
+BRAF V600E mutation
+
+●
+
+●
+
+NTRK gene fusion
+
+●
+
+●
+
+MET exon 14 skipping
+
+●
+
+●
+
+RET rearrangement
+
+●
+
+●
+
+KRAS G12C mutation
+
+●
+
+●
+
+ERBB2 (HER2) mutation
+
+●
+
+●
+
+●
+
+●
+
+Driver mutation
+
+Cell protein
+PD-L1
+
+● Testing is recommended for everyone
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+● Testing is a person-by-person decision
+
+15
+
+2 Tests for metastatic NSCLC » Pulmonary function tests » Supportive care
+
+Pulmonary function tests
+
+Supportive care addresses many needs other
+than symptom relief. You can get help with
+making treatment decisions and coordination
+of care between health providers. You can get
+emotional or spiritual support, financial aid, or
+family counseling.
+
+For some people, treatment of metastatic
+NSCLC includes radiation therapy or surgery.
+Treatment is based on how well the lungs
+work.
+
+A palliative care specialist may be a member
+of your cancer care team. This specialist has
+received specific training to provide additional
+support to you. Some cancer centers have
+palliative care programs.
+
+Pulmonary function tests assess how well you
+breathe:
+
+
+
+
+
+
+Spirometry involves blowing into a tube to
+measure how much air and how fast you
+breathe.
+
+Other specialists who may be involved in your
+care include:
+
+A gas diffusion test involves breathing in a
+special, harmless gas and measuring how
+much you breathe out. It tells how much
+oxygen travels from your lungs into your
+blood.
+Body plethysmography involves sitting in
+a small room and breathing into a tube.
+This test measures how much air your
+lungs can hold and how much air is left in
+your lungs after you breathe out.
+
+Respiratory therapists
+
+
+
+Rehabilitation specialists
+
+
+
+Registered dietitians
+
+
+
+Social workers
+
+The library of NCCN Guidelines for Patients
+has books on supportive care. These books
+focus on common physical and emotional
+effects of many cancers and their treatment.
+
+Supportive care
+
+One of the NCCN books is about distress.
+Everyone with cancer
+feels distressed at some
+point. It is normal to feel
+worried, sad, helpless,
+or angry. Distress can
+become severe and
+affect the way you live.
+
+Supportive care is cancer care that improves
+your quality of life. It is not just for people at
+the end of life who need hospice. It has been
+shown to extend and enhance life for people
+with lung cancer.
+
+Start supportive care early
+Supportive care is sometimes called palliative
+care since symptom relief is a main goal. You
+may undergo procedures that help you breathe
+and eat better and reduce coughing up blood.
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+
+
+16
+
+2 Tests for metastatic NSCLC » Key points
+
+Key points
+
+The library of NCCN Guidelines for Patients
+is available at NCCN.org/patientguidelines and
+on the NCCN Patient Guides for Cancer app.
+
+
+
+It’s never too late to quit smoking
+
+
+
+If you smoke, it is important to quit. Smoking
+can limit how well cancer treatment works.
+
+
+Nicotine addiction is one of the hardest
+addictions to stop. The stress of having cancer
+may make it harder to quit.
+
+
+There is help. Ask your care team about
+counseling and drugs to help you quit.
+If you tried to quit before, try again. Most
+people slip or relapse before quitting for good.
+
+
+
+“
+
+
+
+
+
+A common myth is that palliative
+care is only for terminally ill
+patients. It is so much more! It is
+worth reaching out to palliative
+care in your hospital or clinic. They
+treat the whole patient, not just
+cancer.”
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+17
+
+Your care team will make a treatment plan
+based on test results and your wishes.
+A member of your team will ask about
+your health, examine your body, and test
+blood samples.
+A diagnostic CT scan can help show
+where the cancer has spread. PET/CT
+may detect cancer that CT did not. You
+may get a brain MRI.
+To help stage the cancer, a body part that
+appears to have cancer and is far from
+the lung tumor will likely be tested.
+Biomarker tests look for small yet
+important features of cancer that differ
+between people. There are treatments for
+some markers.
+Supportive care aims to improve your
+quality of life. It is important for everyone,
+not just people at the end of life.
+Ask your care team for help to quit
+smoking. Quitting may improve treatment
+results.
+
+3
+
+Treatment of driver mutations
+19
+
+What are driver mutations?
+
+20
+
+Targeted therapy
+
+21
+
+EGFR mutations
+
+24
+
+KRAS G12C mutation
+
+24
+
+ALK rearrangement
+
+26
+
+ROS1 rearrangement
+
+26
+
+BRAF V600E mutation
+
+27
+
+NTRK gene fusion
+
+27
+
+MET exon 14 skipping
+
+28
+
+RET rearrangement
+
+28
+
+ERBB2 (HER2) mutation
+
+28
+
+Key points
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+18
+
+3 Treatment of driver mutations » What are driver mutations?
+
+For some, driver mutations
+
+Treating mutations is more precise
+
+promote the growth of cancer.
+
+Mutations aren’t just science fiction. All cancer
+cells have mutations, but not all mutations
+promote cancer. Mutations that support cancer
+growth are called driver mutations.
+
+Medicine that is targeted to
+those mutations can help slow
+the growth of cancer. Read this
+
+At this time, we know of several driver
+mutations in lung cancer. They can be
+detected with molecular testing. Researchers
+are looking for more driver mutations.
+
+chapter to learn more.
+
+Chemotherapy destroys fast-growing cells
+even if they’re not cancer cells. It was once the
+only treatment for metastatic lung cancer.
+
+What are driver mutations?
+A driver mutation is an abnormal gene that
+supports the growth of cancer cells. It enables
+cancer cells to quickly duplicate, survive, and
+spread in the body.
+
+Today, newer treatments target the effects of
+driver mutations and harm fewer normal cells.
+
+Driver mutation
+The nucleus is the control
+center or “brain” of cells.
+Within the nucleus is genetic
+information that tells the cells
+what to do. The information
+is stored in DNA, which looks
+like a twisted ladder.
+Genes are parts of DNA that
+contain instructions for the
+cell. Cancer cells often have
+abnormal genes. A driver
+mutation is an abnormal gene
+that supports the growth of
+cancer cells.
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+19
+
+3 Treatment of driver mutations » Targeted therapy
+
+Targeted therapy
+
+What if I already started
+a treatment other than
+targeted therapy?
+
+Driver mutations create cell proteins that help
+cancer cells grow. Targeted therapy works by
+stopping these proteins.
+
+Some cancers with known driver
+mutations should first be treated with
+other medicines that are described in
+Chapter 5.
+
+Kinase inhibitors
+Kinases are a type of cell protein. They are
+part of many chemical pathways, and some of
+them start cell growth. Kinase inhibitors stop
+the activity of kinases and, in turn, lower the
+number of new cancer cells being made. They
+are pills that can be taken at home.
+
+When targeted therapy is recommended
+as the first treatment, your options are:
+
+Antibody therapy
+Cells have receptors on their surface. Cell
+receptors receive and send signals like
+antennas. Antibodies can attach to receptors.
+Some types of antibody therapy target
+receptors on cancer cells, such as EGFR and
+MET. The antibodies stop signals that tell the
+cancer cells to grow.
+VEGF antibodies stop the growth of blood
+vessels on tumors. Without blood, cancer cells
+die.
+
+You may stop your current
+treatment early and start targeted
+therapy.
+
+•
+
+You may finish your current
+treatment (including the last
+phase called maintenance
+therapy) and then start targeted
+therapy.
+
+New targeted therapy for lung
+cancer
+
+You will need to go to a health care center to
+receive antibody therapy through a slow drip
+(infusion) from a needle into a vein.
+
+Other types of targeted therapy are being
+studied in clinical trials. Clinical trials are a type
+of medical research. Ask your treatment team
+if there is an open clinical trial that’s a good fit
+for you. More information on clinical trials is in
+Chapter 5: Treatment by cell type.
+
+Antibody-drug conjugate
+An antibody-drug conjugate combines two
+drugs in one medicine. One drug finds and
+binds to certain cancer cells, and then the
+other drug attacks the cancer. Antibody-drug
+conjugates are given by infusion.
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+•
+
+Side effects
+Side effects are unwanted health problems
+caused by treatment. All cancer treatments
+cause side effects. Side effects vary between
+20
+
+3 Treatment of driver mutations » EGFR mutations
+
+EGFR mutations
+
+people based on the type and length of
+treatment as well as differences among
+people.
+
+Some lung cancers have certain mutations in
+the gene that makes EGFR. These mutations
+cause the receptor to be overactive. EGFR
+overactivity makes the cancer cells grow
+quickly.
+
+Ask your treatment team for a complete list
+of side effects of your treatments. Also, tell
+your treatment team about any new or worse
+symptoms you get. There may be ways to help
+you feel better. There are also ways to prevent
+some side effects.
+
+Starting EGFR-targeted therapy
+Targeted therapy of EGFR-mutated NSCLC is
+based on the type of mutation. See Guide 3
+for treatment options.
+Some regimens in Guide 3 are marked as
+preferred. Preferred regimens work better, are
+
+Guide 3
+Options when starting EGFR-targeted therapy for metastatic NSCLC
+
+EGFR exon 19 deletion
+or EGFR exon 21
+L858R mutation
+
+• Osimertinib (preferred)
+• Osimertinib and pemetrexed (with cisplatin or carboplatin) for lung
+adenocarcinoma, large cell carcinoma, and rare cell types
+• Erlotinib
+• Afatinib
+• Gefitinib
+• Dacomitinib
+• Erlotinib and ramucirumab
+• Erlotinib and bevacizumab
+
+EGFR S768I, L861Q, or
+G719X mutation
+
+• Afatinib (preferred)
+• Osimertinib (preferred)
+• Erlotinib
+• Gefitinib
+• Dacomitinib
+
+EGFR exon 20 insertion
+
+• Amivantamab-vmjw, carboplatin, and pemetrexed for lung
+adenocarcinoma, large cell carcinoma, and rare cell types
+(preferred)
+• Amivantamab-vmjw is an option for all cell types that grow after
+treatment described in Chapter 5
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+21
+
+3 Treatment of driver mutations » EGFR mutations
+
+Options when cancer grows again
+
+safer, or cost less than other options or there
+are better data supporting their use.
+
+Within a few years of starting targeted therapy,
+lung cancer starts to grow again in most
+people. The next treatment options are listed
+in Guide 4 based on the type of EGFR
+mutation.
+
+Targeted therapy is recommended as the first
+treatment of NSCLC with EGFR deletions
+and mutations. EGFR kinase inhibitors are:
+
+
+Osimertinib (Tagrisso)
+
+
+
+Erlotinib (Tarceva)
+
+
+
+Gefitinib (Iressa)
+
+
+
+Afatinib (Gilotrif)
+
+
+
+Dacomitinib (Vizimpro)
+
+For lung cancer with EGFR exon 19
+deletion or 21 L858R, S768I, L861Q, or
+G719X mutations, you first may need to get
+a biopsy to check for:
+
+
+If your first treatment was immunotherapy,
+a short delay in starting osimertinib may be
+needed to prevent health problems.
+
+
+Some regimens for EGFR exon 19 deletion
+and exon 21 L858R mutation combine kinase
+inhibitors and other medicines. Osimertinib
+with chemotherapy is an option for lung
+adenocarcinoma, large cell carcinoma, and
+rare cell types. Erlotinib and a VEGF antibody
+(bevacizumab [Avastin] or ramucirumab
+[Cyramza]) are options. It is not safe to receive
+bevacizumab if you are coughing up blood
+(hemoptysis).
+
+A change in the type of cancer from
+adenocarcinoma to small cell lung cancer
+
+If the cancer did not spread to many more
+places, your oncologist may recommend
+local treatment and keeping you on targeted
+therapy. Local treatment is used to treat cancer
+in a specific area or organ:
+
+
+Treatment of lung cancers with EGFR exon
+20 insertion is based on the cell type. The
+preferred regimen for lung adenocarcinoma,
+large cell carcinoma, and rare cell types is
+chemotherapy with an EGFR-MET antibody
+called amivantamab-vmjw (Rybrevant).
+Otherwise, lung cancers with EGFR exon
+20 insertion are first treated as explained in
+Chapter 5, and if the cancer grows, targeted
+therapy with amivantamab-vmjw is started.
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+Mutations that stop targeted therapy from
+working—a T790M mutation is common
+after taking erlotinib with or without
+ramucirumab or bevacizumab, afatinib,
+gefitinib, or dacomitinib
+
+
+
+
+
+Radiation therapy uses very precise,
+high-dose x-ray beams to treat limited
+areas of metastatic lung cancer, such as
+stereotactic ablative radiotherapy (SABR).
+Surgery removes tumors or organs with
+cancer.
+Image-guided thermal ablation therapy
+uses extreme heat or cold to destroy
+cancer.
+
+The cancer may be growing again, but
+targeted therapy could be slowing its growth.
+You’ll likely stay on your current treatment if
+the cancer is growing again. Otherwise, the
+
+22
+
+3 Treatment of driver mutations » EGFR mutations
+
+If targeted therapy is not likely to help, your
+oncologist may recommend other treatment.
+See Chapter 5 for options.
+
+cancer may grow faster if targeted therapy is
+stopped.
+Switching to a different targeted therapy may
+help, especially if there are new mutations.
+Osimertinib after erlotinib, afatinib, gefitinib,
+or dacomitinib may be an option if there is
+a T790M mutation. Afatinib with an EGFR
+antibody called cetuximab (Erbitux) may be
+another option. For widespread cancer after
+osimertinib, treatment may be switched to
+amivantamab-vmjw with chemotherapy.
+
+For lung cancer with EGFR exon 20
+insertion, switching from regimens containing
+amivantamab-vmjw to treatment for cell type
+is recommended. More information is in
+Chapter 5.
+
+Guide 4
+Options after metastatic NSCLC grows during EGFR-targeted therapy
+
+Lung cancer with EGFR
+exon 19 deletion or
+L858R, S768I, L861Q,
+or G719X mutations
+
+• Local treatment of limited tumors and targeted therapy
+• Stay on the first targeted therapy if it has some benefit
+• Stay on osimertinib if the cancer didn’t spread to many more
+places
+• Stay on erlotinib, afatinib, gefitinib, or dacomitinib regimens if
+there is no T790M mutation and no widespread cancer
+• Switch to a different targeted therapy
+• Switch to osimertinib if there is a T790M mutation after taking
+erlotinib, afatinib, gefitinib, or dacomitinib
+• Switch to afatinib with cetuximab
+• Switch from osimertinib to the amivantamab-vmjw, carboplatin,
+and pemetrexed regimen for lung adenocarcinoma, large cell
+carcinoma, and rare cell types
+• Start treatment for cell type as listed in Chapter 5
+
+EGFR exon 20 insertion
+
+• Switch from regimens containing amivantamab-vmjw to treatment
+for cell type that is described in Chapter 5
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+23
+
+3 Treatment of driver mutations » KRAS G12C mutation » ALK rearrangement
+
+KRAS G12C mutation
+
+ALK rearrangement
+
+A signaling protein inside of lung cells called
+KRAS can be overactive causing the cells to
+quickly grow. A mutation in the KRAS G12C
+gene causes this overactivity.
+
+For some lung cancers, the ALK surface
+receptor is overactive, causing tumor cells
+to grow quickly. The overactivity is caused
+when parts of two genes switch places, called
+a gene rearrangement. Targeted therapy is
+recommended for the first treatment.
+
+Lung cancers with KRAS G12C mutation
+are first treated based on PD-L1 level. For
+treatment of lung cancer with PD-L1, see
+Chapter 4: Treatment based on low and high
+PD-L1. For treatment of PD-L1–negative
+cancer, see Chapter 5: Treatment by cell type.
+
+Starting ALK-targeted therapy
+There are 5 ALK inhibitors used to treat lung
+cancer. Preferred regimens include alectinib
+(Alecensa), brigatinib (Alunbrig), and lorlatinib
+(Lorbrena). Preferred regimens work better,
+are safer, or cost less than other options or
+there are better data supporting their use.
+Other options are ceritinib (Zykadia) and
+crizotinib (Xalkori). All options are listed in
+
+If the cancer grows, a KRAS inhibitor is
+recommended for the next treatment.
+Sotorasib (Lumakras) and adagrasib (Krazati)
+are options. If the cancer grows during
+targeted therapy, treatment options are based
+on cancer cell type.
+
+Guide 5.
+
+Options when cancer grows again
+Within a few years of starting targeted therapy,
+lung cancer starts to grow again in most
+people. You may need another biopsy to test
+for new mutations, which might change your
+treatment options. See Guide 6 for the next
+treatment options.
+
+Guide 5
+Options when starting ALK-targeted
+therapy for metastatic NSCLC
+• Alectinib (preferred)
+• Brigatinib (preferred)
+• Lorlatinib (preferred)
+• Ceritinib
+• Crizotinib
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+24
+
+3 Treatment of driver mutations » ALK rearrangement
+
+Switching to a different targeted therapy may
+help, especially if there are new mutations.
+Lorlatinib after alectinib, brigatinib, or ceritinib
+may be an option if there is a mutation, such
+as an ALK G1202R or L1196M mutation. After
+taking crizotinib, you may switch to alectinib,
+brigatinib, ceritinib, or lorlatinib.
+
+If the cancer did not spread to many more
+places, your doctor may recommend starting
+local treatment and staying on targeted
+therapy. Local treatment is used to treat cancer
+in a specific area or organ:
+
+
+
+
+
+
+Radiation therapy, such as SABR, uses
+very precise, high-dose x-ray beams
+to treat limited areas of metastatic lung
+cancer.
+
+If targeted therapy is not likely to help, your
+oncologist may recommend other treatments.
+See Chapter 5 for options.
+
+Surgery removes tumors or organs with
+cancer.
+Image-guided thermal ablation therapy
+uses extreme heat or cold to destroy
+cancer.
+
+The cancer may be growing again, but
+targeted therapy could be slowing down its
+growth. For this reason, you may stay on your
+current treatment. Otherwise, the cancer may
+grow faster if targeted therapy is stopped.
+
+Guide 6
+Options after metastatic NSCLC grows during ALK-targeted therapy
+Local treatment of limited tumors may be helpful for some people
+Stay on first-line therapy if it has some benefit
+• Stay on alectinib, brigatinib, ceritinib, or lorlatinib if the cancer didn’t spread to many more
+places
+• Stay on crizotinib if the cancer didn’t spread to the brain or many more places
+Switch to a newer ALK inhibitor
+• Switch to lorlatinib if there’s a mutation that stops alectinib, brigatinib, or ceritinib from working
+• Switch to alectinib, brigatinib, ceritinib, or lorlatinib if on crizotinib
+Start treatment for cell type as listed in Chapter 5
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+25
+
+3 Treatment of driver mutations » ROS1 rearrangement » BRAF V600E mutation
+
+ROS1 rearrangement
+
+be switched from crizotinib to entrectinib,
+repotrectinib, or lorlatinib, for example.
+Lorlatinib or repotrectinib may also be used to
+treat more widespread lung cancer.
+
+A cell surface receptor called ROS can be
+overactive, causing lung cells to quickly
+grow. The overactivity is caused by parts of
+two genes switching places called a gene
+rearrangement.
+
+If targeted therapy is not likely to help, your
+oncologist may recommend other treatments.
+See Chapter 5 for options.
+
+Entrectinib (Rozlytrek), crizotinib (Xalkori), or
+repotrectinib (Augtyro) are preferred options.
+Entrectinib or repotrectinib may work better
+for treating and preventing the spread of lung
+cancer in the brain. The other option is ceritinib
+(Zykadia).
+
+BRAF V600E mutation
+BRAF, a signaling protein, can be overactive,
+causing tumor cells to quickly grow. A BRAF
+V600E mutation causes its overactivity.
+
+In time, the cancer will grow despite ongoing
+targeted therapy. If the cancer didn’t spread
+to many more places, your oncologist may
+recommend local treatment, such as surgery
+or radiation therapy. You may also stay on your
+current treatment if there is some benefit.
+
+The preferred treatment is dabrafenib plus
+trametinib or encorafenib and binimetinib.
+Dabrafenib (Tafinlar) and encorafenib (Braftovi)
+stop growth signals from BRAF.
+MEK is a protein within the same signaling
+pathway as BRAF. Trametinib (Mekinist) and
+
+A different targeted therapy may be used. If
+lung cancer spreads to the brain, you may
+
+"Ask about clinical trials
+available to you and the
+services your hospital and
+other facilities provide
+to cancer patients, such
+as counseling, physical
+therapy, palliative care,
+and integrative medicine.
+Don’t be shy. Be your own
+advocate—or ask someone
+close to be one for you."
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+26
+
+3 Treatment of driver mutations » NTRK gene fusion » MET exon 14 skipping
+
+MET exon 14 skipping
+
+binimetinib (Mektovi) stop growth signals from
+MEK.
+
+Some lung cancers have too much of a cell
+surface receptor called MET. Too much MET
+causes fast cell growth. One of the causes of
+excess MET is a deleted (skipped) part of the
+MET gene called exon 14.
+
+If dabrafenib plus trametinib makes you too
+sick, you may receive dabrafenib alone or
+vemurafenib (Zelboraf). Vemurafenib also
+stops growth signals from BRAF.
+
+The preferred treatment is MET inhibitors.
+These treatments include capmatinib
+(Tabrecta) and tepotinib (Tepmetko). Crizotinib
+(Xalkori) is useful for some people. It inhibits
+MET and other kinases. Sometimes, treatment
+based on the cancer cell type is useful as the
+first treatment (see Chapter 5).
+
+Another option for initial treatment is systemic
+therapy based on cancer cell type (see
+Chapter 5).
+In time, the cancer will worsen on targeted
+therapy. After targeted therapy, treatment
+based on cell type may be received. If not
+used before, dabrafenib and trametinib or
+encorafenib and binimetinib may be started
+if the cancer grows with another type of
+treatment.
+
+In time, the cancer will worsen after targeted
+therapy. Your next treatment may be based on
+cell type. If not used before, a MET inhibitor
+may be started if the cancer grows on other
+types of treatment.
+
+NTRK gene fusion
+
+“
+
+Lung cells have a family of 3 cell surface
+receptors called TRK. NTRK genes contain
+instructions for making TRK. Some lung
+cancers have too much TRK, which causes
+fast cell growth. The cause of excess TRK is a
+joining (fusion) of NTRK with another gene.
+
+The good news is that today the
+medical industry has made great
+advances in treating cancer.
+They create a custom designed
+treatment specifically for you.”
+
+The preferred treatment is TRK inhibitors.
+These treatments include larotrectinib
+(Vitrakvi), entrectinib (Rozlytrek), and
+repotrectinib (Augtyro). Sometimes, treatment
+based on cancer cell type is useful as the first
+treatment (see Chapter 5).
+In time, the cancer will worsen on targeted
+therapy. Your next treatment may be based on
+cell type. If not used before, a TRK inhibitor
+may be started if the cancer grows on another
+type of treatment.
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+27
+
+3 Treatment of driver
+driver mutations
+mutations »»RET
+RETrearrangement
+rearrangement» ERBB2 (HER2) mutation » Key points
+
+RET rearrangement
+
+Key points
+
+A cell surface receptor kinase called RET can
+be overactive causing lung cells to multiply.
+The overactivity is caused by parts of genes
+switching places called a gene rearrangement.
+
+
+
+
+
+The preferred treatment is RET inhibitors.
+These treatments include selpercatinib
+(Retevmo) and pralsetinib (Gavreto).
+Cabozantinib (Cometriq, Cabometyx) is useful
+for some people. It inhibits RET and other
+kinases but doesn’t work as well as preferred
+treatments.
+
+
+
+
+
+In time, the cancer will worsen on targeted
+therapy. After targeted therapy, treatment used
+for cell type may be an option. See Chapter 5.
+If not used before, a RET inhibitor may be
+started if the cancer grows on other types of
+treatment.
+
+
+
+ERBB2 (HER2) mutation
+Lung cancer cells have a receptor on their
+surface called HER2. Certain mutations in the
+gene that makes HER2 cause the receptor to
+be overactive. HER2 overactivity makes the
+cancer cells grow quickly.
+Lung cancers with HER2 mutations are first
+treated by cancer cell type. See Chapter 5 for
+treatment options. If the cancer grows, you
+may receive an antibody-drug conjugate.
+Fam-trastuzumab deruxtecan-nxki (Enhertu) is
+the preferred treatment. Another option is adotrastuzumab emtansine (Kadcyla). Treatment
+options after a conjugate are again based on
+cancer cell type.
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+28
+
+A driver mutation causes normal cells to
+become cancer cells. Biomarker tests
+detect driver mutations.
+Targeted therapy is used to treat driver
+mutations of lung cancer.
+For almost all known driver mutations,
+there is at least one preferred targeted
+therapy and often other regimens. When
+cancer grows during targeted therapy,
+treatment may be continued or switched
+to a different targeted therapy.
+When targeted therapy is not likely to
+help, you may receive treatment for cell
+type.
+Ask your care team for a complete list of
+side effects of your treatments. Also, tell
+your treatment team about any new or
+worse symptoms you get.
+
+4
+
+Treatment based on PD-L1
+30
+
+Immune checkpoints
+
+30
+
+Immunotherapy
+
+32
+
+Treatment options
+
+35
+
+Key points
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+29
+
+4 Treatment based on PD-L1 » Immune checkpoints » Immunotherapy
+
+Immunotherapy
+
+There are some lung cancers that
+avoid death by stopping immune
+
+Immunotherapy is a treatment that uses
+the immune system to kill cancer cells.
+Immune checkpoint inhibitors are a type of
+immunotherapy that releases the brake pedals
+on T cells.
+
+T cells. Immunotherapy restores
+the killing ability of those T cells.
+Read this chapter to learn more
+about this survival skill of cancer
+
+There are 7 checkpoint inhibitors discussed in
+this chapter. These checkpoint inhibitors block
+proteins to keep the immune checkpoint turned
+off.
+
+cells.
+
+
+
+Immune checkpoints
+The immune system is the body’s natural
+defense against disease. White blood cells
+called T cells are a key part of this system. T
+cells that kill cancer cells are called cytotoxic,
+or killer, T cells.
+
+
+
+The immune system has “brakes” that prevent
+or slow down an immune response. These
+brakes are called immune checkpoints. They
+protect the body’s healthy cells. CTLA-4 and
+PD-1 are two types of brake pedals on T cells.
+
+
+
+In people with lung cancer, the brake pedals
+on T cells may be overused. PD-1 is activated
+when attached to PD-L1 on lung cancer cells.
+CTLA-4 is activated when attached to B7 on
+immune cells called dendritic cells. With the
+brakes on, T cells are not able to kill cancer
+cells.
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+Pembrolizumab (Keytruda), nivolumab
+(Opdivo), and cemiplimab-rwlc (Libtayo)
+are PD-1 inhibitors. They attach to PD-1
+on T cells to block PD-L1 on cancer cells
+from attaching.
+Atezolizumab (Tecentriq) and durvalumab
+(Imfinzi) are PD-L1 inhibitors. They attach
+to PD-L1 on cancer cells so PD-L1 on T
+cells can't attach.
+Ipilimumab (Yervoy) and tremelimumabactl (Imjudo) are CTLA-4 inhibitors. They
+attach to CTLA-4 on T cells and block
+attachment to B7.
+
+Checkpoint inhibitors are slowly injected into a
+vein (infusion). It may take 30 or 60 minutes to
+get the full dose. Infusions are received every
+few weeks.
+The number of weeks between treatments
+depends on the inhibitor used. Often, people
+get infusions for up to 2 years or until the
+treatments stop working.
+
+30
+
+4 Treatment based on PD-L1 » Immunotherapy
+
+When not to take immunotherapy
+
+Side effects
+
+Not all lung cancers should be treated with
+immunotherapy.
+
+Immune checkpoint inhibitors may allow your
+immune cells to attack your healthy cells.
+Immune-related side effects can occur during
+or after treatment.
+
+
+
+
+
+
+
+
+
+Cancers with known driver mutations
+should first be treated as explained in
+Chapter 3.
+
+Read about immune-related side effects at
+NCCN.org/patientguidelines and on the NCCN
+Patient Guides for Cancer app.
+
+Immunotherapy may not be safe if you
+have an autoimmune disease or are
+taking medications that suppress your
+immune system.
+Immunotherapy may not be safe if you've
+had an organ transplant.
+Immunotherapy is typically not safe if your
+performance status is poor. High scores
+of 3 or 4 reflect poorer health.
+
+PD-1 and PD-L1 inhibitors
+Some lung cancer cells have PD-L1
+on their surface. PD-L1 can attach
+to PD-1 on T cells and stop T cells
+from killing cancer cells. There are
+two types of immunotherapy used
+to stop PD-L1 on cancer cells. PDL1 inhibitors attach to cancer cells,
+and PD-1 inhibitors attach to T cells.
+When either inhibitor is attached,
+T cells can attack cancer cells.
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+31
+
+4 Treatment based on PD-L1 » Treatment options
+
+Treatment options
+
+
+
+Immunotherapy options are partly based
+on PD-L1. A pathologist will assess the
+percentage of cancer cells with PD-L1. A
+sample of a lung tumor is needed for testing.
+
+
+
+
+Low PD-L1 means that less than half of
+cancer cells have PD-L1 (1% to 49%).
+No PD-L1 means that fewer than 1 out of
+100 cells have PD-L1 (less than 1%).
+
+For lung cancer with PD-L1, see Guide 7 for
+a list of treatment options for adenocarcinoma,
+large cell carcinoma, and rare cell types.
+
+High PD-L1 means that at least half of the
+cancer cells have PD-L1 (50% or more).
+
+Guide 7
+Treatment of metastatic NSCLC with low or high PD-L1: Adenocarcinoma, large
+cell carcinoma, and rare cell types
+Regimens
+
+Low PD-L1
+
+High PD-L1
+
+●
+●
+●
+●
+●
+●
+●
+●
+●
+●
+●
+
+●
+●
+●
+●
+●
+●
+●
+●
+●
+●
+●
+●
+●
+
+●
+
+●
+
+●
+●
+●
+
+●
+●
+●
+
+Atezolizumab
+Cemiplimab-rwlc
+Pembrolizumab
+Pembrolizumab, carboplatin, pemetrexed
+Pembrolizumab, cisplatin, pemetrexed
+Cemiplimab-rwlc, carboplatin, pemetrexed
+Cemiplimab-rwlc, cisplatin, pemetrexed
+Atezolizumab, carboplatin, paclitaxel, bevacizumab
+Atezolizumab, carboplatin, albumin-bound paclitaxel
+Nivolumab, ipilimumab, carboplatin, pemetrexed
+Nivolumab, ipilimumab, cisplatin, pemetrexed
+Cemiplimab-rwlc, carboplatin, paclitaxel
+Cemiplimab-rwlc, cisplatin, paclitaxel
+Tremelimumab-actl, durvalumab, carboplatin, albumin-bound
+paclitaxel
+Tremelimumab-actl, durvalumab, carboplatin, pemetrexed
+Tremelimumab-actl, durvalumab, cisplatin, pemetrexed
+Nivolumab, ipilimumab
+
+● Preferred regimen because it works better, is safer, or costs less than other options or there
+are better data supporting its use
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+32
+
+4 Treatment based on PD-L1 » Treatment options
+
+Platinum-doublet chemotherapy consists of
+cisplatin or carboplatin and another type of
+chemotherapy. It may be used with checkpoint
+inhibitors. Platinum-doublet chemotherapy can
+cause serious side effects, so you must be
+healthy enough to get this chemotherapy.
+
+Treatment options for squamous cell
+carcinoma are listed in Guide 8.
+Treatment of lung cancer with no PD-L1 is
+discussed in Chapter 5: Treatment by cell type.
+
+First-line therapy
+
+Bevacizumab is a part of one atezolizumab
+regimen. It is a targeted therapy called a VEGF
+antibody. It stops the growth of blood vessels
+on tumors. Without blood, cancer cells die.
+
+Some lung cancers with high PD-L1 are
+treated only with an immune checkpoint
+inhibitor. Combining checkpoint inhibitors with
+chemotherapy is also an option whether PD-L1
+is high or low.
+
+Guide 8
+Treatment of metastatic NSCLC with PD-L1: Squamous cell carcinoma
+Regimens
+
+Low PD-L1
+
+High PD-L1
+
+●
+●
+●
+●
+●
+●
+
+●
+●
+●
+●
+●
+●
+●
+●
+
+●
+
+●
+
+●
+●
+●
+
+●
+●
+●
+
+Atezolizumab
+Cemiplimab-rwlc
+Pembrolizumab
+Pembrolizumab, carboplatin, paclitaxel
+Pembrolizumab, carboplatin, albumin-bound paclitaxel
+Cemiplimab-rwlc, carboplatin, paclitaxel
+Cemiplimab-rwlc, cisplatin, paclitaxel
+Nivolumab, ipilimumab, carboplatin, paclitaxel
+Tremelimumab-actl, durvalumab, carboplatin, albumin-bound
+paclitaxel
+Tremelimumab-actl, durvalumab, carboplatin, gemcitabine
+Tremelimumab-actl, durvalumab, cisplatin, gemcitabine
+Nivolumab, ipilimumab
+
+● Preferred regimen because it works better, is safer, or costs less than other options or there
+are better data supporting its use
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+33
+
+4 Treatment based on PD-L1 » Treatment options
+
+“
+
+Maintenance therapy
+If treatment results are good, you may shift
+to maintenance therapy, which includes
+some of your first-line therapy. This is called
+continuation maintenance.
+
+People will ask how they can help.
+Be specific. For example, you could
+say, ‘You can cook for me. Please
+pack meals in 4-ounce containers
+because that is all I can handle at
+any one time."
+
+The goal of maintenance therapy is to prolong
+the time until the cancer worsens. Options for
+maintenance therapy are listed in Guide 9.
+Within a few years on first-line therapy, lung
+cancer starts to grow again in most people.
+The next treatment is based on cell type as
+explained in Chapter 5.
+
+Guide 9
+Maintenance therapy for metastatic NSCLC with PD-L1
+
+Adenocarcinoma, large
+cell carcinoma, and rare
+cell types
+
+The maintenance regimen is based on your first-line therapy:
+• Pembrolizumab
+• Pembrolizumab, pemetrexed
+• Atezolizumab, bevacizumab
+• Atezolizumab
+• Nivolumab, ipilimumab
+• Cemiplimab-rwlc
+• Cemiplimab-rwlc, pemetrexed
+• Durvalumab
+• Durvalumab, pemetrexed
+
+Squamous cell
+lung cancer
+
+The maintenance regimen is based on your first-line therapy:
+• Pembrolizumab
+• Atezolizumab for NSCLC with high PD-L1
+• Nivolumab, ipilimumab
+• Cemiplimab-rwlc
+• Durvalumab
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+34
+
+4 Treatment based on PD-L1 » Key points
+
+Key points
+
+
+
+
+
+
+
+
+
+
+
+
+The body’s defense against disease is
+called the immune system. T cells are
+part of this system. They kill cancer cells.
+Immune checkpoints keep immune
+responses in check. PD-1 and CTLA-4
+are two types of immune checkpoints on
+T cells.
+
+Let us know what
+you think!
+
+In people with NSCLC, PD-1 and CTLA-4
+are often activated and stop T cells from
+killing cancer cells.
+
+Please take a moment to
+complete an online survey
+about the
+NCCN Guidelines for Patients.
+
+Immune checkpoint inhibitors are a type
+of immunotherapy that stops PD-1 and
+CTLA-4 from being activated.
+
+NCCN.org/patients/response
+
+There are many checkpoint inhibitor
+regimens. The one chosen for treatment
+is based on the level of PD-L1 and the
+type of NSCLC.
+If cancer growth slows down, you may
+stay on some of them to increase the
+time until the cancer grows again. This is
+called maintenance therapy.
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+35
+
+5
+
+Treatment by cell type
+37
+
+Planning treatment
+
+37
+
+Types of systemic therapy
+
+39
+
+First-line therapy
+
+42
+
+Monitoring
+
+43
+
+Maintenance therapy
+
+44
+
+Second-line therapy
+
+44
+
+Clinical trials
+
+47
+
+Key points
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+36
+
+5 Treatment by cell type » Planning treatment » Types of systemic therapy
+
+When it comes to lung cancer, no
+
+Supportive care aims to improve your quality of
+life. It is sometimes called palliative care.
+
+two people are alike. Lung cancer
+differs between people based on
+
+One of its goals is to treat the symptoms
+caused by the cancer. It also helps with
+mental, social, and spiritual issues. Discuss
+supportive care with your care team to get the
+best plan for you.
+
+the type of cell affected. Read this
+chapter to learn the best treatment
+options based on cell type.
+
+More information about palliative care is
+available at NCCN.org/patientguidelines and
+on the NCCN Patient Guides for Cancer app.
+
+Planning treatment
+Many non-small cell lung cancers (NSCLC)
+don’t have a known biomarker that can be
+used for treatment. Cancer care is based on
+other factors when there’s no such biomarker.
+One deciding factor is your ability to do day-today activities. This ability is called performance
+status. Cancer and other diseases can limit
+what you can do. If your ability is limited, some
+cancer treatments may cause serious health
+problems.
+
+Types of systemic therapy
+Your oncologist will prescribe a regimen for
+you. A regimen consists of one or more drugs
+that are taken at a specific dose, schedule,
+and length of time.
+
+The Eastern Cooperative Oncology Group
+(ECOG) Performance Status is a common
+scoring system. It consists of five scores
+ranging from 0 to 4. The lower the score, the
+better your ability to care for yourself.
+
+Chemotherapy
+The classic treatment of widespread metastatic
+lung cancer is chemotherapy. It kills fastgrowing cells, including cancer.
+
+A performance status of 0, 1, or 2
+means that you are fairly healthy. NCCN
+experts advise receiving systemic therapy.
+Systemic therapy treats cancer anywhere it is
+in the body. It can treat cancer in many places
+as well as hard-to-reach places.
+
+Chemotherapy for NSCLC is often a liquid that
+is injected into a vein. Some injections are
+done in the arm or hand, while others are done
+through an implanted device called a port. An
+infusion is a slow drip, controlled by a pump,
+that may take hours.
+
+A performance score of 3 or 4 suggests
+that cancer treatment will be harmful. NCCN
+experts advise receiving supportive care.
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+Chemotherapy causes side effects because
+it kills fast-growing normal cells as well as
+37
+
+5 Treatment by cell type » Types of systemic therapy
+
+Targeted therapy
+
+cancer cells. Each chemotherapy has its own
+set of side effects, so ask your care team
+about what to expect.
+
+Bevacizumab is a part of some regimens used
+to treat lung cancer. It is a targeted therapy
+called a VEGF antibody. It stops the growth
+of blood vessels on tumors. Without blood,
+cancer cells die.
+
+Information on
+common side effects
+of chemotherapy can
+be found at NCCN.org/
+patientguidelines and
+on the NCCN Patient
+Guides for Cancer app.
+
+Bevacizumab is given by infusion. The first
+dose takes about 90 minutes to receive. Later
+doses each take about 30 to 60 minutes.
+Some of the common side effects of
+bevacizumab are high blood pressure,
+headache, changes in taste, dry or inflamed
+skin, watery eyes, and back pain.
+Less common, but severe problems that may
+occur are tears in your digestive tract, wounds
+that don’t heal, serious bleeding, and blood
+clots in deep veins.
+
+Immunotherapy
+Immunotherapy is a treatment that uses
+the immune system to kill cancer cells.
+Immune checkpoint inhibitors are a type of
+immunotherapy. They restore the ability of
+immune T cells to kill lung cancer cells.
+Checkpoint inhibitors are given by infusion. It
+may take 30 or 60 minutes to get the full dose.
+Immune checkpoint
+inhibitors may cause
+your immune cells to
+attack your healthy
+cells. Read about
+the management of
+immune-related side
+effects at NCCN.org/
+patientguidelines and
+on the NCCN Patient Guides for Cancer app.
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+38
+
+5 Treatment by cell type » First-line therapy
+
+First-line therapy
+
+Immune checkpoint inhibitors treat lung cancer
+with PD-L1 as explained in Chapter 4. But they
+also extend life when lung cancer does not
+have PD-L1.
+
+The first treatment given to you is referred
+to as first-line therapy. Your oncologist will
+choose a regimen for you based on:
+
+
+
+
+
+
+
+Your health conditions and medications
+Your performance status (0, 1, or 2 is
+necessary for these treatments)
+
+
+
+The cell type—adenocarcinoma, large cell
+carcinoma, squamous cell carcinoma, or
+a rare type of NSCLC
+
+
+
+Rare cell types of NSCLC are sometimes
+described as not otherwise specified (NOS).
+
+Atezolizumab (Tecentriq) and durvalumab
+(Imfinzi) are PD-L1 inhibitors.
+Ipilimumab (Yervoy) and tremelimumabactl (Imjudo) are CTLA-4 inhibitors.
+
+Your oncologist will prescribe immune
+checkpoint inhibitors only if they are safe and
+work for you. They may not be safe if you had
+an organ transplant, have an autoimmune
+disease, or you are taking medications that
+suppress your immune system. They may
+not work well if the cancer has EGFR or ALK
+biomarkers.
+
+Regimens with immune checkpoint
+inhibitors
+If your performance status is either 0 or 1,
+immune checkpoint inhibitors may be part of
+cancer treatment.
+
+Types of non-small cell lung
+cancer
+There are 3 main types of non-small
+cell lung cancer. Adenocarcinoma
+is the most common type. It is a
+cancer of mucus-making cells.
+Large cell carcinoma starts in large
+cells of the lung. Squamous cell
+carcinoma starts in squamous
+cells.
+Credit: https://commons.wikimedia.org/wiki/File:Mucinous_lung_
+adenocarcinoma_--_high_mag.jpg
+https://commons.wikimedia.org/wiki/File:Large_cell_carcinoma_
+of_the_lung_.jpg
+https://commons.wikimedia.org/wiki/File:Lung_squamous_
+carcinoma_--_high_mag.jpg
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+Pembrolizumab (Keytruda), nivolumab
+(Opdivo), and cemiplimab-rwlc (Libtayo)
+are PD-1 inhibitors.
+
+39
+
+5 Treatment by cell type » First-line therapy
+
+either cisplatin or carboplatin. The second
+chemotherapy is either pemetrexed (Alimta,
+Pemfexy), paclitaxel, paclitaxel with human
+albumin (Abraxane), etoposide (Toposar,
+Etopophos), or gemcitabine (Gemzar,
+Infugem). Pemetrexed is not used for
+squamous cell carcinomas.
+
+Platinum-doublet chemotherapy is often
+used with immune checkpoint inhibitors.
+This combined treatment is called
+chemoimmunotherapy. See Guide 10 and
+Guide 11 for regimens.
+Platinum-doublet chemotherapy consists
+of two types of chemotherapy. One is
+
+Guide 10
+First-line therapy of metastatic NSCLC by performance status (PS):
+Adenocarcinoma, large cell carcinoma, and rare cell types
+Regimens with immune checkpoint inhibitors
+Carboplatin or cisplatin, pemetrexed, pembrolizumab
+Carboplatin or cisplatin, pemetrexed, cemiplimab-rwlc
+Carboplatin, paclitaxel, bevacizumab, atezolizumab
+Carboplatin, albumin-bound paclitaxel, atezolizumab
+Nivolumab, ipilimumab
+Carboplatin or cisplatin, pemetrexed, nivolumab, ipilimumab
+Carboplatin or cisplatin, paclitaxel, cemiplimab-rwlc
+Carboplatin, albumin-bound paclitaxel, durvalumab,
+tremelimumab-actl
+Carboplatin or cisplatin, pemetrexed, durvalumab, tremelimumabactl
+Regimens without immune checkpoint inhibitors
+Carboplatin, pemetrexed
+Carboplatin, paclitaxel, bevacizumab
+Carboplatin or cisplatin, pemetrexed, bevacizumab
+Carboplatin and one other chemotherapy
+Cisplatin and one other chemotherapy
+Gemcitabine and either docetaxel or vinorelbine
+Single-agent chemotherapy
+
+PS 0 or 1
+
+PS 2
+
+●
+●
+●
+●
+●
+●
+●
+●
+●
+●
+●
+●
+●
+●
+●
+
+●
+●
+●
+●
+
+● Preferred regimen because it works better, is safer, or costs less than other options or there
+are better data supporting its use
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+40
+
+5 Treatment by cell type » First-line therapy
+
+Regimens without immune
+checkpoint inhibitors
+
+In addition to chemoimmunotherapy,
+immunotherapy by itself may be another
+option for you. You may receive nivolumab and
+ipilimumab if your performance status is either
+0 or 1.
+
+When immunotherapy is not an option,
+chemotherapy is used for treatment. Platinumdoublet chemotherapy is most often used.
+Bevacizumab is a part of some regimens.
+
+Guide 11
+First-line therapy of metastatic NSCLC by performance status (PS): Squamous
+cell carcinoma
+Regimens with immunotherapy
+
+PS 0 or 1
+
+Carboplatin, paclitaxel, pembrolizumab
+Carboplatin, albumin-bound paclitaxel, pembrolizumab
+Carboplatin or cisplatin, paclitaxel, cemiplimab-rwlc
+Nivolumab, ipilimumab
+Carboplatin, paclitaxel, nivolumab, ipilimumab
+Carboplatin, albumin-bound paclitaxel, durvalumab,
+tremelimumab-actl
+Carboplatin or cisplatin, gemcitabine, durvalumab,
+tremelimumab-actl
+Regimens without immunotherapy
+
+●
+●
+●
+●
+●
+●
+●
+●
+●
+●
+●
+
+Carboplatin, albumin-bound paclitaxel
+Carboplatin, gemcitabine
+Carboplatin, paclitaxel
+Carboplatin, docetaxel
+Carboplatin, etoposide
+Cisplatin and either docetaxel, etoposide, gemcitabine, or
+paclitaxel
+Gemcitabine and either docetaxel or vinorelbine
+Single-agent chemotherapy
+
+PS 2
+
+●
+●
+●
+●
+●
+
+●
+●
+
+●
+●
+
+● Preferred regimen because it works better, is safer, or costs less than other options or there
+are better data supporting its use
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+41
+
+5 Treatment by cell type » Monitoring
+
+Monitoring
+
+Other options include gemcitabine with either
+docetaxel or vinorelbine. There are several
+options for single-agent chemotherapy,
+including:
+
+
+Albumin-bound paclitaxel
+
+
+
+Docetaxel
+
+
+
+Gemcitabine
+
+
+
+Paclitaxel
+
+
+
+Systemic therapy is given in cycles of
+treatment days, followed by rest days. One
+cycle typically lasts for 3 to 4 weeks.
+In general, systemic therapy is given for 4
+cycles. If treatment isn’t making you too sick, a
+total of 6 cycles may be completed.
+After two cycles, your oncologist will assess
+the results. The extent of the cancer can be
+seen on CT scans. Contrast may be used. The
+CT scan will be repeated after another 2 to 4
+cycles.
+
+Pemetrexed (only for non-squamous cell
+types)
+
+Systemic therapy
+Systemic therapy for lung
+cancer is often a liquid that is
+injected into a vein. An infusion
+is a slow drip controlled by a
+pump that may take hours.
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+42
+
+5 Treatment by cell type » Maintenance therapy
+
+Maintenance therapy
+
+Another option is changing to a medicine that
+you didn’t take as a first-line therapy. This
+is called switch maintenance. Options for
+maintenance therapy are listed in Guide 12.
+
+If a line of treatment works, you may receive
+maintenance therapy after the regimen is
+finished. The goal of maintenance therapy is to
+increase the time until the cancer grows.
+
+You may stay on maintenance therapy for
+2 years if your first-line therapy includes
+immunotherapy. If immunotherapy is part
+of second-line therapy, you’ll stay on
+maintenance therapy until the cancer grows.
+
+If results are good at the end of treatment, you
+may stay on at least one of the medicines. This
+is called continuation maintenance.
+
+Guide 12
+Maintenance therapy for metastatic NSCLC by cell type
+
+Adenocarcinoma, large
+cell carcinoma, and rare
+cell types
+
+Continuation maintenance
+• Bevacizumab
+• Pemetrexed
+• Bevacizumab, pemetrexed
+• Pembrolizumab, pemetrexed
+• Atezolizumab, bevacizumab
+• Cemiplimab-rwlc with or without pemetrexed
+• Atezolizumab
+• Nivolumab, ipilimumab
+• Durvalumab with or without pemetrexed
+• Gemcitabine
+Switch maintenance
+• Pemetrexed
+
+Squamous cell
+lung cancer
+
+Continuation maintenance
+• Cemiplimab-rwlc
+• Durvalumab
+• Pembrolizumab
+• Nivolumab and ipilimumab
+• Gemcitabine
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+43
+
+5 Treatment by cell type » Second-line therapy » Clinical trials
+
+Second-line therapy
+
+
+
+In time, lung cancer often starts to grow again
+after first-line therapy. Care options are based
+on performance status. This section describes
+treatment when performance status is 0, 1,
+or 2. NCCN experts recommend supportive
+care when performance status is either 3 or 4.
+
+Your oncologist will monitor treatment results.
+You will get a CT scan every 6 to 12 weeks.
+Contrast may be used.
+
+Clinical trials
+
+Second-line therapy is the second treatment
+used for cancer care. If more lines of therapy
+are needed, the options mentioned in this
+section may be received. Options for secondline therapy are listed in Guide 13.
+
+
+
+
+Single-agent chemotherapy (where you
+would receive one chemotherapy drug) is
+an option.
+
+Despite advances in treatment, more research
+is needed. Current treatment rarely cures
+metasatic lung cancer or gives people a long
+life. Improving treatment is made possible with
+clinical trials.
+
+Immune checkpoint inhibitors are
+preferred if not received before. If the
+cancer grows while taking a checkpoint
+inhibitor, switching to another checkpoint
+inhibitor is not advised.
+
+A clinical trial is a type of medical research
+study. After being developed and tested in
+a laboratory, potential new ways of fighting
+cancer need to be studied in people. If found
+to be safe and effective in a clinical trial, a
+
+Other options include docetaxel with
+ramucirumab. Ramucirumab is a VEGF
+antibody.
+
+Guide 13
+Second-line therapy for metastatic NSCLC
+Preferred options
+when you haven’t had
+immunotherapy before
+
+• Nivolumab
+• Pembrolizumab
+• Atezolizumab
+
+Other options
+whether you’ve had
+immunotherapy or not
+
+• Docetaxel
+• Gemcitabine
+• Ramucirumab, docetaxel
+• Albumin-bound paclitaxel
+• Pemetrexed for lung adenocarcinoma, large cell carcinoma, and
+rare cell types
+• Fam-trastuzumab deruxtecan-nxki
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+44
+
+5 Treatment by cell type » Clinical trials
+
+drug, device, or treatment approach may be
+approved by the FDA.
+Everyone with cancer should carefully consider
+all of the treatment options available for their
+cancer type, including standard treatments
+and clinical trials. Talk to your oncologist about
+whether a clinical trial may make sense for
+you.
+
+Finding a clinical trial
+In the United States
+
+Phases
+
+NCCN Cancer Centers
+NCCN.org/cancercenters
+
+Most cancer clinical trials focus on treatment.
+Treatment trials are done in phases.
+
+
+
+
+
+
+
+
+The National Cancer Institute (NCI)
+cancer.gov/about-cancer/treatment/
+clinical-trials/search
+
+Phase I trials study the dose, safety,
+and side effects of a drug or treatment
+approach. They also look for early signs
+that the drug or approach is helpful.
+
+Worldwide
+
+Phase II trials study how well the drug or
+approach works against a type of cancer.
+
+The U.S. National Library of Medicine
+(NLM)
+clinicaltrials.gov
+
+Phase III trials test the drug or approach
+against a standard treatment. If the
+results are good, it may be approved by
+the FDA.
+
+Need help finding a clinical trial?
+
+Phase IV trials study the long-term
+safety and benefit of an FDA-approved
+treatment.
+
+NCI’s Cancer Information Service (CIS)
+1.800.4.CANCER (1.800.422.6237)
+cancer.gov/contact
+
+Who can enroll?
+Every clinical trial has rules for joining, called
+eligibility criteria. The rules may be about age,
+cancer type and stage, treatment history, or
+general health. These requirements ensure
+that participants are alike in specific ways
+and that the trial is as safe as possible for the
+participants.
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+45
+
+5 Treatment by cell type » Clinical trials
+
+Informed consent
+
+Frequently asked questions
+
+Clinical trials are managed by a group of
+experts called a research team. The research
+team will review the study with you in detail,
+including its purpose and the risks and
+benefits of joining. All of this information is also
+provided in an informed consent form. Read
+the form carefully and ask questions before
+signing it. Take time to discuss it with family,
+friends, or others whom you trust. Keep in
+mind that you can leave and seek treatment
+outside the clinical trial at any time.
+
+There are many myths and misconceptions
+surrounding clinical trials. The possible
+benefits and risks are not well understood by
+many with cancer.
+Will I get a placebo?
+Placebos (inactive versions of real medicines)
+are almost never used alone in cancer clinical
+trials. It is common to receive either a placebo
+with a standard treatment or a new drug with
+a standard treatment. You will be informed,
+verbally and in writing, if a placebo is part of a
+clinical trial before you enroll.
+
+Start the conversation
+
+Are clinical trials free?
+There is no fee to enroll in a clinical trial. The
+study sponsor pays for research-related costs,
+including the study drug. You may, however,
+have costs indirectly related to the trial, such
+as the cost of transportation or childcare due
+to extra appointments. During the trial, you
+will continue to receive standard cancer care.
+This care is billed to—and often covered by—
+insurance. You are responsible for copays and
+any costs for this care that are not covered by
+your insurance.
+
+Don’t wait for your care team to bring up
+clinical trials. Start the conversation and learn
+about all of your treatment options. If you find
+a study that you may be eligible for, ask your
+treatment team if you meet the requirements.
+If you have already started standard treatment,
+you may not be eligible for certain clinical
+trials. Try not to be discouraged if you cannot
+join. New clinical trials are always becoming
+available.
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+46
+
+5 Treatment by cell type » Key points
+
+Key points
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Treatment of lung cancer without
+treatable biomarkers is partly based on
+performance status. Performance status
+is your ability to do day-to-day activities.
+
+share with us.
+
+Whole-body treatment called systemic
+therapy is used to treat people
+with a performance status of 0, 1,
+or 2. Supportive care is generally
+recommended if performance status is 3
+or 4.
+
+Take our survey and help make the
+NCCN Guidelines for Patients
+better for everyone!
+
+Chemotherapy with immunotherapy is
+recommended for fairly healthy people.
+Other options are chemotherapy by itself
+or chemotherapy with bevacizumab.
+
+NCCN.org/patients/comments
+
+Your oncologist will monitor the results of
+treatment. You may receive between 4
+and 6 cycles of treatment.
+Maintenance therapy slows down the
+growth of cancer. It consists of one or
+more drugs from your first treatment.
+The next treatment options for lung
+cancer are immunotherapy if not received
+before, chemotherapy with ramucirumab,
+and single-agent chemotherapy.
+Clinical trials are a type of research.
+New ways of fighting cancer are studied
+among people in clinical trials. A clinical
+trial may be an option in addition to
+standard treatment.
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+47
+
+6
+
+Making treatment decisions
+49
+
+It’s your choice
+
+49
+
+Questions to ask
+
+56
+
+Resources
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+48
+
+6 Making treatment decisions » It’s your choice » Questions to ask
+
+It’s important to be comfortable
+
+care team. If you take the time to build a
+relationship with your care team, it will help
+you feel supported when considering options
+and making treatment decisions.
+
+with the cancer treatment you
+choose. This choice starts with
+having an open and honest
+
+Second opinion
+
+conversation with your care team.
+
+It is normal to want to start treatment as soon
+as possible. While cancer can’t be ignored,
+there is time to have another doctor review
+your test results and suggest a treatment plan.
+This is called getting a second opinion, and it’s
+a normal part of cancer care. Even doctors get
+second opinions!
+
+It’s your choice
+In shared decision-making, you and your care
+team share information, discuss the options,
+and agree on a treatment plan. It starts with an
+open and honest conversation between you
+and your care team.
+
+Things you can do to prepare:
+
+
+Treatment decisions are very personal. What
+is important to you may not be important to
+someone else. Some things that may play a
+role in your decision-making:
+
+
+
+
+What you want and how that might differ
+from what others want
+
+Check with your insurance company
+about its rules on second opinions. There
+may be out-of-pocket costs to see doctors
+who are not part of your insurance plan.
+Make plans to have copies of all your
+records sent to the doctor you will see for
+your second opinion.
+
+
+
+Your religious and spiritual beliefs
+
+Support groups
+
+
+
+Your feelings about certain treatments
+
+
+
+Your feelings about pain or side effects
+
+Many people diagnosed with cancer find
+support groups to be helpful. Support groups
+often include people at different stages
+of treatment. Some people may be newly
+diagnosed, while others may be finished
+with treatment. If your hospital or community
+doesn’t have support groups for people with
+cancer, check out the websites listed in this
+book.
+
+
+
+
+
+
+Cost of treatment, travel to treatment
+centers, and time away from school or
+work
+Quality of life and length of life
+How active you are and the activities that
+are important to you
+
+Questions to ask
+
+Think about what you want from treatment.
+Discuss openly the risks and benefits of
+specific treatments and procedures. Weigh
+options and share concerns with your
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+Possible questions to ask your care team are
+listed on the following pages. Feel free to use
+these questions or come up with your own.
+49
+
+6 Making treatment decisions » Questions to ask
+
+Questions about cancer testing
+1. What tests will I have?
+2. Will enough biopsy tissue be removed for future testing? Where and for how long will my
+tissue be kept?
+3. Do the tests have any risks?
+4. Do I need to do anything to prepare for testing?
+5. Where do I go for testing, and how long will it take?
+6. If any of the tests hurt, what will you do to make me comfortable?
+7. How soon will I know the results and who will explain them to me?
+8. How can I get a copy of the pathology report and other test results?
+9. Is there an online portal with my test results?
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+50
+
+6 Making treatment decisions » Questions to ask
+
+Questions about treatment options
+1. What are my treatment options?
+2. What will happen if I do nothing?
+3. Are you suggesting options other than what NCCN recommends? If yes, why?
+4. How do my age, sex, overall health, and other factors affect my options?
+5. What if I am pregnant, breastfeeding, or planning to become pregnant?
+6. Does any option offer a cure or long-term cancer control?
+7. How do I get a second opinion?
+8. How long do I have to decide about treatment, and is there a social worker or someone
+who can help me decide?
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+51
+
+6 Making treatment decisions » Questions to ask
+
+Questions about what to expect
+1. Do I have a choice of when to begin treatment?
+2. How often will I need to come to the cancer clinic? How long will the treatment last?
+3. Will my care require any special arrangements like housing or a certain diet?
+4. What may prevent me from getting the care I need?
+5. How can I know if what I’m feeling is normal or if I need help?
+6. Who should I contact with questions or concerns if the office is closed?
+7. How will you know if treatment is working?
+8. What are the chances of the cancer worsening or returning?
+9. What follow-up care is needed after treatment?
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+52
+
+6 Making treatment decisions » Questions to ask
+
+Questions about side effects
+1. What are the possible side effects of treatment?
+2. Does the cancer itself cause any side effects?
+3. Which side effects are most common and how long do they usually last?
+4. Which side effects are serious or life-threatening?
+5. Are there any long-term or permanent side effects?
+6. What symptoms should I report right away, and who do I contact?
+7. What can I do to prevent or relieve the side effects of treatment?
+8. Do any medications worsen side effects?
+9. Will you stop or change treatment if there are serious side effects?
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+53
+
+6 Making treatment decisions » Questions to ask
+
+Questions about clinical trials
+1. Do you recommend that I consider a clinical trial for treatment?
+2. How do I find clinical trials that I can participate in?
+3. What are the treatments used in the clinical trial?
+4. Has the treatment been used for other types of cancer?
+5. What are the risks and benefits of this treatment?
+6. What side effects should I expect and how will they be managed?
+7. How long will I be in the clinical trial?
+8. Will I be able to get other treatment if this doesn’t work?
+9. How will you know if the treatment is working?
+10. Will the clinical trial cost me anything?
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+54
+
+6 Making treatment decisions » Questions to ask
+
+Questions about resources and support
+1. Who can I talk to about help with housing, food, and other basic needs?
+2. What assistance is available for transportation, childcare, and home care?
+3. Who can tell me what my options for health insurance are and assist me with applying
+for insurance coverage?
+4. How much will I have to pay for my treatment? What help is available to pay for
+medicines and other treatment?
+5. Who can help me with my concerns about work or school?
+6. How can I connect with others and build a support system?
+7. How can I get help to quit smoking?
+8. Who can I talk to if I don’t feel safe at home, at work, or in my neighborhood?
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+55
+
+6 Making treatment decisions » Resources
+
+Resources
+American Lung Association
+lung.org/lung-health-diseases/lung-diseaselookup/lung-cancer
+
+LUNGevity
+lungevity.org
+National Coalition for Cancer Survivorship
+canceradvocacy.org
+
+Bag It Cancer
+bagitcancer.org
+
+Triage Cancer
+triagecancer.org
+
+CancerCare
+Cancercare.org
+Cancer Hope Network
+cancerhopenetwork.org
+Caring Ambassadors Program, Inc.
+LungCancerCAP.org
+Free Me from Lung Cancer
+freemefromlungcancer.org
+Go2 Foundation for Lung Cancer
+go2foundation.org
+Imerman Angels
+Imermanangels.org
+LiveLung (Dusty Joy Foundation)
+dustyjoy.org
+Lung Cancer Action Network (LungCAN)
+lungcan.org
+Lung Cancer Research Foundation
+lungcancerresearchfoundation.org
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+56
+
+Ü
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+57
+
+Words to know
+
+Words to know
+adenocarcinoma
+A cancer of cells that line organs and make
+fluids or hormones.
+
+chemoradiation
+A cancer treatment with both cell-killing drugs
+and high-energy rays.
+
+adrenal gland
+A small organ on top of each kidney that
+makes hormones.
+
+chemistry profile
+A lab test of the amount of 8 chemicals in a
+sample of blood. Also called metabolic panel.
+
+AJCC
+American Joint Committee on Cancer
+
+chemotherapy
+Treatment with cancer drugs that kill fastgrowing cells.
+
+alveoli
+The tiny sacs in the lungs where gases are
+transferred in and out of the blood.
+
+clinical trial
+A type of research that assesses how well
+health tests or treatments work in people.
+
+biomarker
+Any molecule in your body that can be
+measured to assess your health.
+
+complete blood count (CBC)
+A lab test that measures the parts of the blood.
+
+biopsy
+A procedure that removes fluid or tissue
+samples to be tested for a disease.
+
+computed tomography (CT)
+A test that uses x-rays from many angles to
+make a picture of the insides of the body.
+
+body plethysmograph
+A test of how much air is in your lungs after
+inhaling or exhaling.
+
+continuation maintenance
+A treatment phase using one or more first-line
+drugs to prolong good treatment results.
+
+bronchioli
+Small airways within the lungs.
+
+contrast
+A substance put into your body to make clearer
+pictures during imaging.
+
+bronchus
+One of the two main airways that extends into
+the lungs.
+
+core needle biopsy
+A procedure that removes tissue samples with
+a hollow needle. Also called core biopsy.
+
+cancer stage
+A rating of the outlook of a cancer based on its
+growth and spread.
+
+diagnosis
+An identification of an illness based on tests.
+DNA
+deoxyribonucleic acid
+
+carcinoma
+A cancer of cells that line the inner or outer
+surfaces of the body.
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+ECOG
+Eastern Cooperative Oncology Group
+
+58
+
+Words to know
+
+mutation
+Abnormal changes in coded instructions within
+cells (genes).
+
+FDG
+fluorodeoxyglucose
+gas diffusion
+A test that uses harmless gas to measure how
+much you can breathe out.
+
+NCCN
+National Comprehensive Cancer Network
+
+gene
+Coded instructions in cells for making new
+cells and controlling how cells behave.
+
+non-small cell lung cancer (NSCLC)
+A cancer that starts in lung cells that are not
+small.
+
+gene rearrangement
+A coded instruction within a cell that is made
+from parts of other coded instructions.
+
+NOS
+Not otherwise specified
+pathologist
+A doctor who’s an expert in testing cells and
+tissue to find disease.
+
+immunohistochemistry (IHC)
+A special lab test done on a tissue sample.
+
+performance status
+A rating of one’s ability to do daily activities.
+
+immunotherapy
+A treatment with drugs that help the body find
+and destroy cancer cells.
+
+pericardiocentesis
+A procedure that removes fluid from around
+the heart with a needle.
+
+large-cell lung carcinoma
+A cancer of lung cells that lack features to
+classify as another type of lung cancer.
+
+physical exam
+A review of the body by a health expert for
+signs of disease.
+
+lymph node
+A small, bean-shaped, disease-fighting
+structure.
+
+platinum-doublet chemotherapy
+A treatment with two cell-killing drugs, one of
+which contains the chemical platinum.
+
+magnetic resonance imaging (MRI)
+A test that uses radio waves and powerful
+magnets to make pictures of the insides of the
+body.
+
+positron emission tomography (PET)
+A test that uses radioactive material to see the
+shape and function of body parts.
+
+maintenance therapy
+A treatment phase that is given to prolong
+good treatment results.
+
+positron emission tomography/computed
+tomography (PET/CT)
+A test that uses two picture-making methods to
+show the shape and function of tissue.
+
+medical history
+A report of all your health events and
+medications.
+
+prognosis
+The likely course and outcome of a disease
+based on tests.
+
+metastasis
+The spread of cancer from the first tumor to a
+new site.
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+59
+
+Words to know
+
+pulmonary function tests
+A set of breathing tests to test the strength of
+the lungs.
+
+switch maintenance
+A treatment phase with a new drug that is
+given to prolong good treatment results.
+
+radiation oncologist
+A doctor who’s an expert in treating cancer
+with radiation.
+
+targeted therapy
+A drug treatment that impedes the growth
+process specific to cancer cells.
+
+radiation therapy
+A treatment that uses intense energy to kill
+cancer cells.
+
+thoracic radiologist
+A doctor who’s an expert in reading imaging
+tests of the chest.
+
+rapid on-site evaluation (ROSE)
+A size assessment of removed tissue during a
+medical procedure.
+
+thoracoscopy
+A procedure to do work in the chest with a
+device passed through a small cut in the skin.
+Also called video-assisted thoracoscopic
+surgery (VATS).
+
+respiratory system
+The group of organs that transfers gases in
+and out of the body.
+
+trachea
+The airway between the throat and airway into
+the lungs. Also called the windpipe.
+
+side effect
+An unhealthy or unpleasant physical or
+emotional response to treatment.
+
+transthoracic needle aspiration (TTNA)
+A procedure that removes tissue samples with
+a thin needle guided through the ribs.
+
+small cell lung cancer (SCLC)
+A cancer of small, round lung cells.
+
+ultrasound
+A test that uses sound waves to take pictures
+of the inside of the body.
+
+spirometry
+A test that uses a tube to measure how fast
+you breathe.
+
+VATS
+video-assisted thoracoscopic surgery
+
+squamous cell carcinoma
+A type of cancer of thin and flat cells that line
+the surface of organs.
+stereotactic ablative radiotherapy (SABR)
+Treatment with high-dose radiation within one
+or a few sessions. Also called stereotactic
+body radiation therapy (SBRT).
+supportive care
+Health care that includes symptom relief but
+not cancer treatment. Also sometimes called
+palliative care.
+surgery
+An operation to remove or repair a part of the
+body.
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+60
+
+NCCN Contributors
+
+NCCN Contributors
+This patient guide is based on the NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®) for Non-Small Cell
+Lung Cancer, Version 7.2024. It was adapted, reviewed, and published with help from the following people:
+Dorothy A. Shead, MS
+
+Senior Director
+Patient Information Operations
+
+Laura J. Hanisch, PsyD
+
+Patient Information Program Manager
+
+Laura Phillips
+Graphic Artist
+
+Tim Rinehart
+Medical Writer
+
+The NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®) for Non-Small Cell Lung Cancer,
+Version 7.2024 were developed by the following NCCN Panel Members:
+Gregory J. Riely, MD, PhD/Chair
+
+Scott Gettinger, MD
+
+Douglas E. Wood, MD/Vice Chair
+
+Travis E. Grotz, MD
+
+Dara L. Aisner, MD, PhD
+
+Matthew A. Gubens, MD, MS
+
+Memorial Sloan Kettering Cancer Center
+Fred Hutchinson Cancer Center
+
+University of Colorado Cancer Center
+
+Wallace Akerley, MD
+
+Huntsman Cancer Institute
+at the University of Utah
+
+Jessica R. Bauman, MD
+Fox Chase Cancer Center
+
+Ankit Bharat, MD
+
+Yale Cancer Center/Smilow Cancer Hospital
+Mayo Clinic Comprehensive Cancer Center
+UCSF Helen Diller Family
+Comprehensive Cancer Center
+
+Aditya Juloori, MD
+
+The UChicago Medicine
+Comprehensive Cancer Center
+
+Rudy P. Lackner, MD
+
+Fred & Pamela Buffett Cancer Center
+
+Robert H. Lurie Comprehensive Cancer
+Center of Northwestern University
+
+Michael Lanuti, MD
+
+Debora S. Bruno, MD, MS
+
+Jules Lin, MD
+
+Case Comprehensive Cancer Center/
+University Hospitals Seidman Cancer
+Center and Cleveland Clinic Taussig
+Cancer Institute
+
+Joe Y. Chang, MD, PhD
+The University of Texas
+MD Anderson Cancer Center
+
+Lucian R. Chirieac, MD
+Dana-Farber/Brigham and
+Women’s Cancer Center
+
+Malcolm DeCamp, MD
+University of Wisconsin
+Carbone Cancer Center
+
+Aakash P. Desai, MD
+O'Neal Comprehensive
+Cancer Center at UAB
+
+Thomas J. Dilling, MD, MS
+Moffitt Cancer Center
+
+Jonathan Dowell, MD
+
+UT Southwestern Simmons
+Comprehensive Cancer Center
+
+Gregory A. Durm, MD
+
+Mass General Cancer Center
+University of Michigan Rogel Cancer Center
+
+Billy W. Loo, Jr., MD, PhD
+Stanford Cancer Institute
+
+Christine M. Lovly, MD, PhD
+Vanderbilt-Ingram Cancer Center
+
+Fabien Maldonado, MD
+
+Vanderbilt-Ingram Cancer Center
+
+Erminia Massarelli, MD, PhD, MS
+City of Hope National Medical Center
+
+*Daniel Morgensztern, MD
+
+Siteman Cancer Center at BarnesJewish Hospital and Washington
+University School of Medicine
+
+Trey C. Mullikin, MD
+Duke Cancer Institute
+
+Thomas Ng, MD
+
+The University of Tennessee
+Health Science Center
+
+*Dawn Owen, MD, PhD
+
+Dwight H. Owen, MD, MSc
+
+The Ohio State University Comprehensive
+Cancer Center - James Cancer Hospital
+and Solove Research Institute
+
+Sandip P. Patel, MD
+
+UC San Diego Moores Cancer Center
+
+Tejas Patil, MD
+
+University of Colorado Cancer Center
+
+Patricio M. Polanco, MD
+
+UT Southwestern Simmons
+Comprehensive Cancer Center
+
+Jonathan Riess, MD
+
+UC Davis Comprehensive Cancer Center
+
+*Theresa A. Shapiro, MD, PhD
+Johns Hopkins Kimmel Cancer Center
+
+Aditi P. Singh, MD
+
+Abramson Cancer Center
+at the University of Pennsylvania
+
+James Stevenson, MD
+
+Case Comprehensive Cancer Center/
+University Hospitals Seidman Cancer
+Center and Cleveland Clinic Taussig
+Cancer Institute
+
+Alda Tam, MD
+
+The University of Texas
+MD Anderson Cancer Center
+
+Tawee Tanvetyanon, MD, MPH
+Moffitt Cancer Center
+
+Jane Yanagawa, MD
+
+UCLA Jonsson
+Comprehensive Cancer Center
+
+Stephen C. Yang, MD
+
+Johns Hopkins Kimmel Cancer Center
+
+Edwin Yau, MD, PhD
+
+Roswell Park Comprehensive Cancer Center
+
+Mayo Clinic Comprehensive Cancer Center
+
+NCCN
+
+Indiana University Melvin and Bren Simon
+Comprehensive Cancer Center
+
+Kristina Gregory, RN, MSN, OCN
+
+Senior Vice President, Clinical Information
+Programs
+
+Lisa Hang, PhD
+
+Oncology Scientist/Senior Medical Writer
+
+* Reviewed this patient guide. For disclosures, visit NCCN.org/disclosures.
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+61
+
+NCCN Cancer Centers
+
+NCCN Cancer Centers
+Abramson Cancer Center
+at the University of Pennsylvania
+
+O’Neal Comprehensive Cancer Center at UAB
+Birmingham, Alabama
+800.822.0933 • uab.edu/onealcancercenter
+
+Philadelphia, Pennsylvania
+800.789.7366 • pennmedicine.org/cancer
+
+Robert H. Lurie Comprehensive Cancer Center
+of Northwestern University
+
+Case Comprehensive Cancer Center/
+University Hospitals Seidman Cancer Center and
+Cleveland Clinic Taussig Cancer Institute
+
+Chicago, Illinois
+866.587.4322 • cancer.northwestern.edu
+
+Roswell Park Comprehensive Cancer Center
+
+Cleveland, Ohio
+UH Seidman Cancer Center
+800.641.2422 • uhhospitals.org/services/cancer-services
+CC Taussig Cancer Institute
+866.223.8100 • my.clevelandclinic.org/departments/cancer
+Case CCC
+216.844.8797 • case.edu/cancer
+
+Buffalo, New York
+877.275.7724 • roswellpark.org
+
+Siteman Cancer Center at Barnes-Jewish Hospital
+and Washington University School of Medicine
+St. Louis, Missouri
+800.600.3606 • siteman.wustl.edu
+
+City of Hope National Medical Center
+Duarte, California
+800.826.4673 • cityofhope.org
+
+St. Jude Children’s Research Hospital/
+The University of Tennessee Health Science Center
+
+Dana-Farber/Brigham and Women’s Cancer Center |
+Mass General Cancer Center
+
+Memphis, Tennessee
+866.278.5833 • stjude.org
+901.448.5500 • uthsc.edu
+
+Boston, Massachusetts
+877.442.3324 • youhaveus.org
+617.726.5130 • massgeneral.org/cancer-center
+
+Stanford Cancer Institute
+
+Stanford, California
+877.668.7535 • cancer.stanford.edu
+
+Duke Cancer Institute
+
+Durham, North Carolina
+888.275.3853 • dukecancerinstitute.org
+
+The Ohio State University Comprehensive Cancer Center James Cancer Hospital and Solove Research Institute
+
+Fox Chase Cancer Center
+
+Columbus, Ohio
+800.293.5066 • cancer.osu.edu
+
+Philadelphia, Pennsylvania
+888.369.2427 • foxchase.org
+
+The UChicago Medicine Comprehensive Cancer Center
+
+Fred & Pamela Buffett Cancer Center
+
+Chicago, Illinois
+773.702.1000 • uchicagomedicine.org/cancer
+
+Omaha, Nebraska
+402.559.5600 • unmc.edu/cancercenter
+
+The University of Texas MD Anderson Cancer Center
+
+Fred Hutchinson Cancer Center
+
+Houston, Texas
+844.269.5922 • mdanderson.org
+
+Seattle, Washington
+206.667.5000 • fredhutch.org
+
+UC Davis Comprehensive Cancer Center
+
+Huntsman Cancer Institute at the University of Utah
+
+Sacramento, California
+916.734.5959 • 800.770.9261
+health.ucdavis.edu/cancer
+
+Salt Lake City, Utah
+800.824.2073 • healthcare.utah.edu/huntsmancancerinstitute
+
+UC San Diego Moores Cancer Center
+
+Indiana University Melvin and Bren Simon
+Comprehensive Cancer Center
+
+La Jolla, California
+858.822.6100 • cancer.ucsd.edu
+
+Indianapolis, Indiana
+888.600.4822 • www.cancer.iu.edu
+
+UCLA Jonsson Comprehensive Cancer Center
+Los Angeles, California
+310.825.5268 • uclahealth.org/cancer
+
+Johns Hopkins Kimmel Cancer Center
+Baltimore, Maryland
+410.955.8964
+www.hopkinskimmelcancercenter.org
+
+UCSF Helen Diller Family
+Comprehensive Cancer Center
+
+Mayo Clinic Comprehensive Cancer Center
+
+San Francisco, California
+800.689.8273 • cancer.ucsf.edu
+
+Phoenix/Scottsdale, Arizona
+Jacksonville, Florida
+Rochester, Minnesota
+480.301.8000 • Arizona
+904.953.0853 • Florida
+507.538.3270 • Minnesota
+mayoclinic.org/cancercenter
+
+University of Colorado Cancer Center
+Aurora, Colorado
+720.848.0300 • coloradocancercenter.org
+
+University of Michigan Rogel Cancer Center
+
+Memorial Sloan Kettering Cancer Center
+
+Ann Arbor, Michigan
+800.865.1125 • rogelcancercenter.org
+
+Moffitt Cancer Center
+
+Madison, Wisconsin
+608.265.1700 • uwhealth.org/cancer
+
+New York, New York
+800.525.2225 • mskcc.org
+
+University of Wisconsin Carbone Cancer Center
+
+Tampa, Florida
+888.663.3488 • moffitt.org
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+62
+
+NCCN Cancer Centers
+
+UT Southwestern Simmons
+Comprehensive Cancer Center
+
+Dallas, Texas
+214.648.3111 • utsouthwestern.edu/simmons
+
+Vanderbilt-Ingram Cancer Center
+Nashville, Tennessee
+877.936.8422 • vicc.org
+
+Yale Cancer Center/Smilow Cancer Hospital
+New Haven, Connecticut
+855.4.SMILOW • yalecancercenter.org
+
+We want your
+feedback!
+Our goal is to provide helpful and
+easy-to-understand information
+on cancer.
+Take our survey to let us know
+what we got right and what we
+could do better.
+NCCN.org/patients/feedback
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+63
+
+Index
+
+Index
+targeted therapy 20–28, 33, 38
+
+ablation 22, 25
+biomarker 9, 39
+biopsy 12–14, 22, 24
+bronchoscopy 12
+cancer stage 6
+chemoradiation 7
+chemotherapy 22–23, 33, 37–38, 40–42, 44
+clinical trial 7, 20, 44–46
+driver mutation 9, 14, 19–20, 28, 31
+imaging 12
+immunotherapy 22, 30–31, 38, 41, 43–44
+medical history 10
+NCCN Cancer Centers 62
+NCCN Contributors 61
+pathology report 13, 50
+performance status 9, 11, 31, 37, 39, 40–41,
+44
+physical exam 10
+radiation therapy 7, 16, 26
+second opinion 49
+side effect 20–22, 28, 31, 33, 37–38, 45, 49
+smoking 9,17
+stereotactic ablative radiotherapy (SABR)
+22, 25
+supportive care 7, 16, 37, 44
+surgery 7, 12, 14, 16, 26
+
+NCCN Guidelines for Patients®
+Metastatic Non-Small Cell Lung Cancer, 2024
+
+64
+
+Ü
+
+NCCN
+GUIDELINES
+FOR PATIENTS
+
+®
+
+Metastatic
+Non-Small Cell
+Lung Cancer
+2024
+To support the NCCN Guidelines for Patients, visit
+NCCNFoundation.org/Donate
+
+3025 Chemical Road, Suite 100
+Plymouth Meeting, PA 19462
+215.690.0300
+
+NCCN.org/patients – For Patients | NCCN.org – For Clinicians
+PAT-N-1779-0924
+
+

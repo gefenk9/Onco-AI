@@ -1,0 +1,5199 @@
+NCCN
+GUIDELINES
+FOR PATIENTS
+
+2024
+
+®
+
+Myeloproliferative
+Neoplasms
+
+®
+
+NATIONAL COMPREHENSIVE CANCER NETWORK
+
+Presented with support from
+
+FOUNDATION
+Guiding Treatment. Changing Lives.
+
+Available online at
+NCCN.org/patientguidelines
+
+Ü
+
+Myeloproliferative Neoplasms
+
+About the NCCN Guidelines for Patients®
+
+Did you know that top cancer centers across the United
+States work together to improve cancer care? This
+alliance of leading cancer centers is called the National
+Comprehensive Cancer Network® (NCCN®).
+Cancer care is always changing. NCCN develops
+evidence-based cancer care recommendations used by health care providers
+worldwide. These frequently updated recommendations are the NCCN Clinical
+Practice Guidelines in Oncology (NCCN Guidelines®). The NCCN Guidelines for
+Patients plainly explain these expert recommendations for people with cancer
+and caregivers.
+
+These NCCN Guidelines for Patients are based on the NCCN
+Clinical Practice Guidelines in Oncology (NCCN Guidelines®)
+for Myeloproliferative Neoplasms, Version 1.2024 —
+December 21, 2023.
+
+View the NCCN Guidelines
+
+Find an NCCN Cancer
+
+for Patients free online
+
+Center near you
+
+NCCN.org/patientguidelines
+
+NCCN.org/cancercenters
+
+Connect with us
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+1
+
+Myeloproliferative Neoplasms
+
+Supporters
+®
+
+NATIONAL COMPREHENSIVE CANCER NETWORK
+
+FOUNDATION
+Guiding Treatment. Changing Lives.
+
+NCCN Guidelines for Patients are supported by funding from the
+NCCN Foundation®
+NCCN Foundation gratefully acknowledges the following corporate
+supporters for helping to make available these NCCN Guidelines
+for Patients: AbbVie, GSK, Incyte Corporation
+and Sobi.
+NCCN independently adapts, updates, and hosts the NCCN Guidelines for
+Patients. Our corporate supporters do not participate in the development of
+the NCCN Guidelines for Patients and are not responsible for the content
+and recommendations contained therein.
+
+Additional support is provided by
+
+MPN Research Foundation is dedicated to funding and advancing original
+research in pursuit of new treatments—and eventually a cure—for essential
+thrombocythemia (ET), polycythemia vera (PV), and myelofibrosis (MF),
+blood cancers that are known collectively as myeloproliferative neoplasms
+(MPN). Founded in 1999, MPNRF was the first organization in the MPN
+space and is the only one focused on advancing research.
+https://bit.ly/24nccn
+
+To make a gift or learn more, visit online or email
+NCCNFoundation.org/donate
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+PatientGuidelines@ NCCN.org
+
+2
+
+Myeloproliferative Neoplasms
+
+Contents
+4
+
+MPN basics
+
+10
+
+Tests for MPN
+
+20
+
+Symptoms and surveys
+
+25
+
+Clotting in PV and ET
+
+36
+
+Myelofibrosis
+
+49
+
+Supportive care
+
+57
+
+Making treatment decisions
+
+68
+
+Words to know
+
+72
+
+NCCN Contributors
+
+73
+
+NCCN Cancer Centers
+
+76
+
+Index
+
+© 2024 National Comprehensive Cancer Network, Inc. All rights reserved. NCCN
+Guidelines for Patients and illustrations herein may not be reproduced in any form for
+any purpose without the express written permission of NCCN. No one, including doctors
+or patients, may use the NCCN Guidelines for Patients for any commercial purpose
+and may not claim, represent, or imply that the NCCN Guidelines for Patients that have
+been modified in any manner are derived from, based on, related to, or arise out of the
+NCCN Guidelines for Patients. The NCCN Guidelines are a work in progress that may be
+redefined as often as new significant data become available. NCCN makes no warranties
+of any kind whatsoever regarding its content, use, or application and disclaims any
+responsibility for its application or use in any way.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+NCCN Foundation seeks to support the millions of patients and their families affected
+by a cancer diagnosis by funding and distributing NCCN Guidelines for Patients. NCCN
+Foundation is also committed to advancing cancer treatment by funding the nation’s
+promising doctors at the center of innovation in cancer research. For more details and the
+full library of patient and caregiver resources, visit NCCN.org/patients.
+National Comprehensive Cancer Network (NCCN) and NCCN Foundation
+3025 Chemical Road, Suite 100, Plymouth Meeting, PA 19462 USA
+
+3
+
+1
+
+MPN basics
+5
+
+What are MPNs?
+
+7
+
+What are the classic MPNs?
+
+8
+
+What’s the best treatment?
+
+9
+
+Key points
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+4
+
+1 MPN basics » What are MPNs?
+
+Myeloproliferative neoplasms are
+
+MPNs are not…
+
+a type of blood cancer. Also called
+MPNs, these cancers grow slowly,
+
+Myelodysplastic syndromes (MDS)
+
+Like MPNs, MDS are cancers of blood stem
+cells within the myeloid cell line. MDS cause
+low numbers of blood cells.
+
+so many people with MPNs have
+long lives. The impact of MPNs
+on quality of life greatly varies
+
+Myelodysplastic syndromes/
+myeloproliferative neoplasms (MDS/
+MPN)
+
+between people. For some, MPNs
+cause life-changing symptoms.
+
+MDS/MPN is a group of cancers distinct from
+MPN and MDS. The mature blood cells are
+abnormal, and there are high numbers of blood
+cells.
+
+What are MPNs?
+
+Systemic mastocytosis
+
+Myeloproliferative neoplasms (MPNs) are a
+group of rare blood cancers with an unusual
+name. What exactly does the name mean?
+
+
+
+
+
+
+Systemic mastocytosis is a buildup of a type of
+white blood cells, called mast cells, in the body,
+excluding the skin. A subtype called systemic
+mastocytosis with an associated hematologic
+neoplasm (SM-AHN) can occur with MPN.
+
+The first part of the first word—myelo —
+refers to bone marrow. Almost all bones
+have a soft center, called marrow, where
+most blood cells are formed.
+
+Acute myeloid leukemia (AML)
+
+AML is a cancer of myeloid cells in bone
+marrow. It causes many abnormal myeloid
+blasts, which cannot become mature blood
+cells. An MPN may transform into AML although
+it rarely does.
+
+The second part of the first word—
+proliferative —refers to the rapid growth
+of cells.
+A neoplasm is an abnormal growth of
+cells.
+
+Put together, the name myeloproliferative
+neoplasms means cancers of blood cells in
+the bone marrow. There are many types of
+blood cells, so there are many types of blood
+cancers. Let’s review in the next section how
+blood cells are made to further understand
+what MPNs are.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+The full library of NCCN Guidelines for
+Patients is available at
+NCCN.org/patientguidelines
+
+5
+
+1 MPN basics » What are MPNs?
+
+MPNs affect very young blood cells
+
+make different cells that are a step closer to
+being blood cells. These different cells are
+called progenitor cells.
+
+Blood cells do not live long, so they need to be
+replaced often. They arise from changes in a
+series of cells. The process can be simplified
+into 3 steps:
+
+2. Progenitor cells belong to one of two
+families of blood cells—myeloid or
+lymphoid cell lines. Progenitor cells change
+into blast cells. Blasts, for short, are young
+(or immature) blood cells.
+
+1. Hematopoietic stem cells develop into
+every type of blood cell, including red blood
+cells, white bloods cells, and platelets.
+They make exact copies of themselves and
+
+Blood cells
+Blood stem cells are the cells from which all blood cells are formed. They go through a series
+of changes to become mature blood cells. The three main types of blood cells are red blood
+cells (erythrocytes), white blood cells (granulocytes, monocytes, and lymphocytes), and
+platelets (thrombocytes).
+Blood
+stem cell
+
+Lymphoid
+progenitor cell
+
+Myeloid
+progenitor cell
+
+Erythroblast
+
+Megakaryoblast
+
+Myeloblast
+
+Lymphoblast
+
+Megakaryocyte
+
+Red blood
+cell
+Erythrocyte
+
+Platelet
+Thrombocyte
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+White blood
+cell
+Granulocyte
+
+6
+
+White blood
+cell
+Monocyte
+
+White blood
+cell
+Lymphocyte
+
+1 MPN basics » What are the classic MPNs?
+
+What are the classic
+MPNs?
+
+3. Each type of blast is set to become a
+certain type of mature blood cell. Mature
+blood cells are fully developed cells that
+perform specific functions. The main types
+of blood cells are red blood cells, white
+blood cells, and platelets.
+
+There are several types of MPNs, but this book
+is about the most common (or classic) types:
+
+
+MPNs affect cells in the first step of blood cell
+formation. They are cancers of blood stem
+cells but only affect the myeloid family of cells.
+Myeloid blasts mature into blood cells, but
+too many blood cells are made. The type of
+mature blood cell that is in excess depends on
+the type of MPN.
+
+
+
+
+
+Essential thrombocythemia (ET)
+causes an excess of platelets.
+Primary myelofibrosis causes an
+excess of megakaryocytes that trigger
+a buildup of scarring (fibrosis) in bone
+marrow.
+
+More information on the classic types of MPN
+is in Chapter 2: Tests for MPN.
+
+“
+
+Chronic myeloid leukemia (CML) is an MPN
+with too many granulocytes, a type of white
+blood cell. Some people call it a classic MPN,
+but it is often discussed by itself. Its treatment
+is based on a cancer marker that the other
+classic MPNs do not have.
+
+MPNs are classified as a blood
+cancer, but it is a cancer with a
+very small c! It is easy to become
+fearful and obsessed when first
+diagnosed (I know I was!), but
+MPNs are for most people highly
+treatable. Find a doctor that is an
+MPN specialist and join reputable
+online MPN patient forums, it
+makes all the difference."
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+Polycythemia vera (PV) causes an
+excess of red blood cells.
+
+More information on CML is available NCCN.
+org/patientguidelines and on the NCCN Patient
+Guides for Cancer app.
+
+7
+
+1 MPN basics » What’s the best treatment?
+
+What’s the best treatment?
+
+Preventing complications
+Your care team will watch for 3 major
+complications of MPNs:
+
+There’s no treatment for MPNs that’s best for
+everyone. The best treatment is the treatment
+that’s right for you. Your treatment plan should
+follow best practices—cancer care based on
+science and expert consensus. The following
+chapters explain the best practices of testing
+for and treating classic MPNs.
+
+Abnormal bleeding
+
+
+
+Blood clots
+
+
+
+Disease progression
+
+Abnormal bleeding (hemorrhage) and blood
+clots (thrombi) are most common in PV and
+ET. But both also occur with myelofibrosis.
+Abnormal bleeding is often minor but can be
+severe. Blood clots can block blood vessels.
+They can be fatal, though this is rare.
+
+Treatment may not be needed
+MPNs are chronic cancers. Chronic cancers
+can be stable for several years and typically
+progress slowly. Treatment may not be needed
+right away or ever, but these blood cancers are
+not typically cured.
+
+MPNs can progress into more severe diseases
+but most do not. ET and PV can progress
+into myelofibrosis. Though rare, MPNs can
+progress into acute myeloid leukemia (AML).
+When MPNs progress to AML, the term MPN
+blast-phase (MPN-BP) is commonly used.
+
+People with MPN often live many years with
+proper treatment. Many people have nearnormal lifespans. But for some, the cancer
+worsens more quickly. The course of the
+cancer depends on the MPN type, features of
+the cancer, and your age and health.
+
+Preventing complications is discussed in
+Chapter 4: Clotting in PV and ET and in
+Chapter 5: Myelofibrosis.
+
+Relief of symptoms
+MPNs cause a wide range of symptoms―
+fatigue, headaches, and abdominal pain, just
+to name a few. In recent years, valid surveys
+to assess symptoms have been developed. To
+learn more, read Chapter 3: Symptoms and
+surveys.
+
+Advocate for yourself
+You are a member of your cancer care team.
+Discuss the recommendations in this book with
+your team. Together, you can make a care plan
+that’s best for you.
+
+The burden of MPN symptoms varies greatly
+between people. For many people, though,
+the burden is intense and reduces their quality
+of life. Symptoms may restrict everyday
+activities and work hours. Relief of symptoms
+is discussed in Chapter 6: Supportive care.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+
+
+There is a list of suggested questions in
+Chapter 7 to ask your team. You’re more likely
+to get the care you want by asking questions
+and making decisions with your team.
+
+8
+
+1 MPN basics » Key points
+
+“
+
+Key points
+
+
+
+
+
+
+
+
+Myeloproliferative neoplasms, also called
+MPNs, are a type of blood cancer. MPNs
+cause high numbers of blood cells.
+
+You need to be your own advocate,
+particularly since this is a rare
+cancer and the significant majority
+of healthcare experts are not
+aware of MPNs. If I didn't observe
+my own blood work, push for
+appointments with hematologists,
+and not stop asking 'why,' I still
+would not know about my diagnosis
+and may not have learned until it
+was potentially too late."
+
+The three classic MPNs are polycythemia
+vera (PV), essential thrombocythemia
+(ET), and primary myelofibrosis (PMF).
+MPNs are chronic cancers, which means
+they worsen slowly.
+With treatment, most people live a long
+life, though many struggle with intense
+symptoms. For others, the cancer
+may worsen quickly or cause a fatal
+complication.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+9
+
+2
+
+Tests for MPN
+11
+
+Tests to take
+
+12
+
+Health history
+
+12
+
+Physical exam
+
+13
+
+Blood tests
+
+14
+
+Bone marrow tests
+
+15
+
+Biomarker tests
+
+16
+
+How to diagnose MPNs
+
+18
+
+Challenges to diagnosis
+
+19
+
+Key points
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+10
+
+2 Tests for MPN » Tests to take
+
+Several tests are needed if your
+
+myelofibrosis (PMF)—requires blood work.
+Tests of bone marrow are also very common.
+See Guide 1 for a list of tests used to
+diagnose and plan treatment of MPNs.
+
+health care provider suspects
+a myeloproliferative neoplasm
+(MPN). These tests are described
+
+Ask for copies of your test results and take
+notes as your health care provider explains
+the reports. Don’t let your nerves stop you
+from asking questions. MPNs can be hard to
+understand.
+
+in this chapter.
+
+Tests to take
+
+Bringing someone with you to your
+appointments can be helpful. Keep your
+reports and other paperwork handy and
+organized in a file (such as a binder) for when
+you need them again.
+
+Testing does not differ much between
+the myeloproliferative neoplasm (MPN)
+types. Each type—polycythemia vera (PV),
+essential thrombocythemia (ET), and primary
+
+Guide 1
+Tests for myeloproliferative neoplasms
+Health history
+and exam
+
+• Medical history including transfusions and medicines
+• Physical exam
+• Symptom scale
+
+Blood tests
+
+• Complete blood count (CBC) with differential
+• Blood smear
+• Comprehensive metabolic panel, liver function tests, lactate
+dehydrogenase (LDH), uric acid
+• Erythropoietin (EPO) and iron
+• Human leukocyte antigen and coagulation tests are sometimes
+needed
+
+Bone marrow tests
+
+• Bone marrow biopsy and aspirate
+• Study of bone marrow using special stains and a microscope
+
+Biomarker tests
+
+• Fluorescence in situ hybridization (FISH) or multiplex RT-PCR for
+BCR-ABL1
+• Molecular tests or multigene next-generation sequencing (NGS) for
+JAK2, CALR, and MPL mutations
+• Cytogenetics using karyotype with or without FISH
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+11
+
+2 Tests for MPN » Health history » Physical exam
+
+Health history
+
+Physical exam
+
+Expect your health care provider to review
+your health in detail. This is known as taking a
+medical history. Your health care provider will
+want to know a lot about your past and current
+health. You will likely be asked about:
+
+Your health care provider will also perform a
+thorough physical exam of your body. This
+exam may include:
+
+
+
+
+
+
+
+
+
+
+Illnesses and diseases
+Prescribed and over-the-counter
+medicines and supplements, surgeries,
+and blood transfusions
+
+
+
+Lifestyle choices including your diet, how
+active you are, and whether you smoke or
+drink alcohol
+
+
+
+Feeling and listening to organs, including
+your spleen and liver
+Assessing your level of pain, if any, when
+you are touched
+
+“
+
+Symptoms and complications of MPNs,
+such as headache, bone pain, abdominal
+pain, itching or tingling, extreme fatigue
+
+MPNs rarely run in families. It is very rare to
+be born with an abnormal gene that causes an
+MPN. Most people acquire changes in genes
+after birth that may lead to an MPN.
+
+Much diagnosis and treatment
+is blood work number based
+and can be done virtually. Get
+a second opinion or third. Had I
+not sought out an amazing MPN
+expert and instead trusted my first
+oncologist–I am sure I would not
+be where I am now–healthy, good
+numbers, and confident in my MPN
+treatment journey and medical
+team."
+
+Some other types of cancers and health
+conditions do run in families. Be prepared
+to discuss the health problems of your close
+blood relatives. These include your siblings,
+parents, and grandparents.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+Checking your vital signs—blood
+pressure, heart rate, breathing rate, and
+body temperature—and assessing your
+overall appearance
+
+12
+
+2 Tests for MPN » Blood tests
+
+Blood tests
+
+features of blood cells can be a clue as to what
+disease you have.
+
+Blood tests can measure blood cells, proteins,
+and chemicals in the bloodstream. They are
+commonly used to screen for disease and to
+plan treatment of blood cancers.
+
+A blood smear can also show if there are
+immature blood cells called blasts in the blood.
+Normally, blasts are only in bone marrow, but
+sometimes myelofibrosis forces them out.
+
+Some blood tests are done with a machine
+while others need a pathologist to complete.
+A pathologist is a doctor who’s an expert in
+tissues and cells.
+
+Metabolic panel and liver tests
+A comprehensive metabolic panel measures
+up to 14 types of chemicals that come from
+your organs. It is a screening test for many
+diseases. It can also show if the MPN is
+affecting your organs, such as your bones and
+liver.
+
+For MPN, a doctor called a hematopathologist
+may be part of your care team. A
+hematopathologist is an expert at diagnosing
+cancers of blood and immune cells.
+
+Likewise, liver function tests are used to
+assess if the MPN is affecting your liver. These
+tests measure a yellow-colored fluid called bile
+and liver proteins and enzymes.
+
+Complete blood count with
+differential
+A complete blood count (CBC) with differential
+is a very common lab test. Test results include:
+
+
+
+
+
+
+
+
+Lactate dehydrogenase and uric
+acid
+
+Counts of white blood cells, red blood
+cells, and platelets
+
+Most cells have a protein called lactate
+dehydrogenase (LDH) and a chemical called
+uric acid. High levels of LDH and uric acid
+may be signs of myelofibrosis. During certain
+phases, myelofibrosis causes many blood cells
+to die. Dying blood cells release LDH and uric
+acid.
+
+The percentage of red blood cells in blood
+(called hematocrit)
+The amount of a protein called
+hemoglobin within red blood cells
+Counts of the most common types of
+white blood cells in the blood—basophils,
+neutrophils, eosinophils, monocytes, and
+lymphocytes
+
+Erythropoietin and iron
+Erythropoietin (EPO) is a hormone made by
+the kidneys. It helps to make red blood cells,
+and iron is needed to make hemoglobin in red
+blood cells. Blood tests of EPO and iron help
+diagnose PV. In PV, high red blood cell counts
+suppress EPO levels. Also, iron levels may be
+low despite having high hemoglobin levels.
+
+Blood smear
+A pathologist will inspect your blood using a
+microscope. This is known as a blood smear.
+With a microscope, a pathologist can see
+the size and shape of blood cells. Abnormal
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+13
+
+2 Tests for MPN » Bone marrow tests
+
+Bone marrow tests
+
+Other blood tests
+Other blood tests are sometimes needed.
+People who will have a treatment called
+an allogeneic hematopoietic cell transplant
+(HCT) need human leukocyte antigen testing.
+To learn more about allogeneic HCT, read
+Chapter 5: Myelofibrosis.
+
+Bone marrow is the soft center in the middle of
+most bones. It is like a sponge holding liquid
+and cells.
+A bone marrow biopsy removes a core sample
+of marrow. A bone marrow aspiration removes
+liquid and cells. These procedures are often
+done at the same time. They’re performed on
+the back of the hip bone. You may receive an
+injected pain blocker or light sedative to relax
+you beforehand.
+
+Coagulation testing may be done to assess
+how well your blood clots. Some people are
+diagnosed with acquired von Willebrand
+syndrome (aVWS) or another blood clotting
+disorder based on these tests.
+
+A pathologist will inspect your bone marrow
+using a microscope. This is known as bone
+marrow histology. Histology can detect
+abnormal numbers of bone marrow cells. It can
+also show how much bone marrow is scarred
+(fibrosis).
+
+Removing bone marrow
+samples
+Samples of your bone
+marrow might be removed
+and tested for diagnosis or
+treatment planning. A bone
+marrow aspiration removes
+a small amount of liquid
+bone marrow. A bone marrow
+biopsy removes a small piece
+of bone with marrow. These
+procedures are often done on
+the back of the hip one after
+the other.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+14
+
+2 Tests for MPN » Biomarker tests
+
+Biomarker tests
+
+prognosis if it wasn’t done before. A prognosis
+predicts how the cancer will behave and
+respond to treatment.
+
+Biomarker tests look for biological clues, or
+markers, of cancer. Molecular tests are a type
+of biomarker test that look for abnormal genes
+called mutations. Some people call them
+genetic tests. Cytogenetic tests show if there
+are abnormal chromosomes.
+
+Biomarker tests for abnormal
+chromosomes
+Cytogenetics are useful for diagnosis and
+treatment planning. Results can help with
+identifying MPN subtypes, grading bone
+marrow fibrosis, and assessing the prognosis
+of the cancer.
+
+Biomarker test for CML mutation
+The hallmark of chronic myeloid leukemia
+(CML) is the BCR-ABL1 fusion gene.
+Fluorescence in situ hybridization (FISH) and
+multiplex RT-PCR are molecular tests that
+detect BCR-ABL1 in either a blood or bone
+marrow sample. If BCR-ABL1 is missing, CML
+is ruled out.
+
+A picture of chromosomes called a karyotype
+is used for cytogenetics. A FISH test may
+be done, too. These tests are done on bone
+marrow aspirate or a blood sample.
+
+“
+
+Biomarker tests for MPN mutations
+If CML is ruled out, molecular testing is used to
+look for markers of classic MPNs.
+
+I'm happy I found the right
+hematologist after 2 tries. Make
+sure your doctor is an MPN
+researcher, and does the right
+genetic tests for mutations."
+
+Tests for diagnosis
+One of the markers is the JAK2 V617F
+mutation. If this marker is not found, the next
+markers to be tested are:
+
+
+
+
+JAK2 exon 12 mutations if PV is
+suspected
+CALR and MPL mutations if ET or PMF is
+suspected
+
+A newer technology called next-generation
+sequencing (NGS) can test for multiple genetic
+markers at the same time. It may be used
+instead of single molecular tests.
+Tests for prognosis
+If tests confirm that you have an MPN,
+NGS testing is recommended to assess for
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+15
+
+2 Tests for MPN » How to diagnose MPNs
+
+How to diagnose MPNs
+
+To be considered PMF, the minor criterion—
+another sign of myelofibrosis—must be
+detected with blood tests. This sign may
+be low red blood cell counts or hemoglobin
+(anemia), high levels of white blood cells or
+LDH, or an enlarged spleen. Another sign of
+overt PMF is blasts in a blood smear.
+
+The International Consensus Classification
+(ICC) and World Health Organization (WHO)
+have created diagnostic standards for MPN.
+These standards include major criteria and
+related minor criteria. A pathologist will use the
+tests described in this chapter to decide if the
+criteria for an MPN are met.
+
+Polycythemia vera
+The first major criterion for PV is a high
+hemoglobin, hematocrit, or red cell mass. Your
+health care provider may reorder blood work to
+check that a high level persists.
+
+Primary myelofibrosis
+Myelofibrosis is called primary myelofibrosis
+or PMF if it is the only MPN that you have
+had. There are 2 stages of PMF based on the
+amount of scarring (fibrosis) in bone marrow:
+
+
+Prefibrotic PMF (pre-PMF or early PMF)
+
+
+
+Overt PMF
+
+
+
+
+
+The first criterion of myelofibrosis is a high
+number of abnormal megakaryocytes in bone
+marrow. The bone marrow in pre-PMF has
+either minor or no scarring, whereas there is
+major scarring in overt PMF. In pre-PMF, the
+number of bone marrow cells is higher than
+normal, although at times the production of red
+blood cells may be low.
+
+
+
+Myelofibrosis can only be diagnosed after
+other blood cancers have been excluded. The
+second criterion requires other types of MPN,
+myelodysplastic syndromes (MDS), and other
+myeloid neoplasms to be ruled out.
+
+Hematocrit is the percentage of red
+blood cells in blood. Hematocrit is high
+when greater than 49 percent in those
+born male and 48 percent in those born
+female.
+Red cell mass is the volume of red blood
+cells in the blood. It is a nuclear medicine
+test and is not often used to diagnose
+MPNs. The red cell mass is high when
+it is 25 percent greater than the normal
+value.
+
+The second criterion for PV is a high number
+of myeloid blood cells compared to fat cells in
+bone marrow. This is called hypercellularity.
+Myeloid blood cells include red blood cells,
+platelets, and granulocytes. For more
+information on blood cells, read Chapter 1:
+MPN basics.
+
+The third criterion is having a JAK2, CALR, or
+MPL mutation. A JAK2 mutation is the most
+common, and a CALR mutation is the second
+most common. About 1 out of 10 people with
+PMF don’t have any of these three mutations.
+In these cases, the MPN is described as triple
+negative.
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+Hemoglobin is a protein within red blood
+cells. Hemoglobin is high when it is
+greater than 16.5 g/dL if assigned male at
+birth or 16.0 g/dL for female.
+
+The third criterion for PV is a JAK2 mutation,
+but it is not required for diagnosis. Almost
+
+16
+
+2 Tests for MPN » How to diagnose MPNs
+
+everyone with PV has a JAK2 V617F mutation.
+The few people without this mutation most
+often have a JAK2 exon 12 mutation instead.
+
+Know your MPN
+
+3 What is the subtype?
+3 What are the mutations, if any?
+3 What treatment are you on?
+
+If no JAK2 mutation is found, PV is diagnosed
+if the first two major criteria are met, and you
+have low EPO levels (the minor criterion).
+
+It is important to tell any clinician who
+treats you about the MPN and treatment.
+Otherwise, you could receive care that is
+harmful.
+
+Essential thrombocythemia
+The first major criterion for ET is a high platelet
+count. A high platelet count is 450 × 109/L or
+above.
+
+“
+
+The second criterion is a high number of
+abnormal megakaryocytes in bone marrow.
+Megakaryocytes in ET are larger than normal.
+Their nucleus—the brain of the cell—has more
+divisions (lobes) than normal.
+
+My friend, a nurse, advised that
+I get a second opinion for my ET
+diagnosis. He went with me, and
+at the end he asked, 'What's the
+prognosis?' Doc says, 'I understand
+you ride a road bike and stay in
+shape. More than likely, if you
+follow your hematologist advice,
+you'll live 20 years, unless you get
+hit by a bus.' That was 12 years
+ago, and I am still pedaling. I am
+almost 79 years old."
+
+ET can only be diagnosed after other blood
+cancers have been excluded. The third
+criterion requires other types of MPN, MDS,
+and other myeloid neoplasms to be ruled out.
+The fourth criterion is having a JAK2, CALR,
+or MPL mutation, but it is not required for
+diagnosis. A JAK2 mutation is the most
+common, and a CALR mutation is the second
+most common. About 1 out of 10 people with
+ET don’t have any of these three mutations.
+In these cases, the MPN is described as triple
+negative.
+When the fourth criterion is not met, ET can be
+diagnosed based on the minor criteria. These
+criteria include another genetic marker or no
+underlying cause of the high platelet count.
+Other causes of high platelet counts include
+low iron, chronic inflammation, and effects of
+medicine.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+17
+
+2 Tests for MPN » Challenges to diagnosis
+
+Challenges to diagnosis
+
+
+
+Making a diagnosis of MPN can be tricky.
+Some of the challenges to diagnosis are as
+follows:
+
+
+
+
+
+
+Signs and symptoms of MPNs can have
+other causes, too. Other causes need to
+be ruled out.
+
+Why am I so tired?
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+Symptoms and test results differ between
+the early, middle, and late phases of
+an MPN. Health care providers need
+to know what each MPN looks like as it
+progresses.
+
+The pathologist will identify the MPN subtype
+when possible. Although rare, there are
+times when the MPN subtype is not clear.
+These cancers are called MPN, not otherwise
+specified (NOS).
+
+The classic MPNs can have very similar
+test results. Early PMF may look like ET
+because there may be little bone marrow
+scarring.
+
+Symptoms caused by MPNs
+can also be caused by other
+conditions. The overlap may
+make a diagnosis of MPN
+challenging. Take fatigue,
+for example. Fatigue is the
+most common symptom of
+MPNs. Fatigue is also caused
+by some medications, many
+diseases, and poor mental
+health and physical fitness.
+
+Recent bleeding can change test results
+and hide the correct diagnosis.
+
+Myeloproliferative
+neoplasms
+Some
+medications
+
+Being overweight or
+too inactive
+
+Kidney disease
+
+Fatigue
+Depression,
+stress, and
+anxiety
+
+18
+
+Thyroid and lung
+conditions
+Infections
+
+Heart disease
+
+2 Tests for MPN » Key points
+
+“
+
+Key points
+
+
+
+
+
+
+
+
+
+
+If an myeloproliferative neoplasm (MPN)
+is suspected, a group of tests is needed
+for diagnosis. Testing does not differ much
+between the MPN types.
+
+I am grateful for science, and for
+ongoing research that has turned
+some kinds of cancers into chronic
+diseases, not death sentences. I
+am grateful to have a good doctor
+and treatments that are working
+for me. In some ways, my cancer
+turned out to be lucky because
+it has inspired me to live in a
+healthier, more mindful way."
+
+Be ready to tell your care team about any
+health problems and treatments you’ve
+had in your lifetime.
+Your health care provider will examine
+your body for signs of disease. The exam
+will include touching parts of your body to
+see if anything feels abnormal.
+You will also need to provide samples of
+blood, bone marrow, or both. Your blood
+and bone marrow will be sent to a lab to
+be tested for signs of MPNs and other
+diseases.
+Despite criteria to diagnose MPN types,
+diagnosis can be challenging. Most MPNs
+have a genetic marker. These markers
+include JAK2, CALR, and MPL mutations.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+19
+
+3
+
+Symptoms and surveys
+21
+
+MPN symptoms
+
+21
+
+Microvascular symptoms
+
+21
+
+Enlarged spleen symptoms
+
+22
+
+Constitutional symptoms
+
+23
+
+Assessing symptoms with surveys
+
+23
+
+The MPN-10
+
+24
+
+Key points
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+20
+
+3 Symptoms and surveys » MPN symptoms » Microvascular symptoms » Spleen symptoms
+
+Microvascular symptoms
+
+Symptoms of myeloproliferative
+neoplasms (MPNs) can have
+
+Microvascular symptoms are caused by
+slow blood flow in small blood vessels called
+capillaries.
+
+a major impact on life. A short
+survey is often used to check for
+symptoms. This chapter explains
+
+PV symptoms
+
+the symptoms that you might
+
+PV reduces blood flow due to high
+numbers of red blood cells. This can lead
+to headaches and blurred vision. It can also
+cause a condition called erythromelalgia.
+Erythromelalgia includes a burning pain in
+skin, reddened skin, and warm skin.
+
+experience with an MPN.
+
+MPN symptoms
+
+ET symptoms
+
+A symptom is a physical or mental change that
+may be related to a disease. Most people with
+myeloproliferative neoplasms (MPNs) have
+symptoms related to the cancer. Symptom
+burden is often severe even in people
+with polycythemia vera (PV) or essential
+thrombocythemia (ET).
+
+In ET, high numbers of platelets can cause
+headaches, vision problems, dizziness,
+high-pitched ringing in the ears (tinnitus),
+and numbness and tingling in the limbs
+(paresthesia). Other microvascular symptoms
+include poor concentration, sleep problems,
+and sexual problems.
+
+MPNs cause a wide range of symptoms.
+Generally, there are 3 types of symptoms that
+your care team will plan treatment with:
+
+
+Microvascular symptoms
+
+
+
+Enlarged spleen symptoms
+
+
+
+Constitutional symptoms
+
+Enlarged spleen symptoms
+Among people with MPNs, bone marrow may
+become unable to make enough healthy blood
+cells. When the bone marrow makes too few
+blood cells, other parts of the body may start
+producing the cells instead.
+
+These symptoms are described next. For
+information on treating symptoms, read
+Chapter 6: Supportive care.
+
+The spleen is a very common backup to bone
+marrow for blood cell production. It is a small
+organ to the left of the stomach.
+When the spleen supplies the body with blood
+cells, it gets bigger. An enlarged spleen is
+called splenomegaly. Your health care provider
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+21
+
+3 Symptoms and surveys » Constitutional symptoms
+
+will be able to feel an enlarged spleen during
+an exam.
+
+and muscle. The rise in body temperature may
+trigger excessive sweating called night sweats.
+
+An enlarged spleen causes symptoms
+because it presses against other body parts.
+It may partly fill the space where the stomach
+is. In turn, you will feel full quicker when eating
+(early satiety).
+
+Bone pain in the limbs may be due to the
+rapid making of blood cells, which causes
+inflammation in the covering of the bone.
+Another common cytokine-related symptom is
+itchy skin (pruritus). Itchy skin is triggered by
+water, so it can interfere with body hygiene.
+
+The spleen may press against the diaphragm,
+which prevents the lung from fully expanding.
+In turn, you may have shortness of breath or a
+cough.
+
+“
+
+An enlarged spleen can also cause discomfort
+or pain if it presses on a nerve. Many people
+become less active due to these symptoms.
+
+The impact of MPNs can be quite
+wide-ranging. There is more to
+these conditions than the risk of
+thrombosis. The secondary or
+constitutional symptoms can be
+more problematic and deserve
+equal attention."
+
+Constitutional symptoms
+Constitutional symptoms are the result of a
+condition that affects the whole body. They are
+very general and can be caused by more than
+one factor.
+In MPNs, experts believe that constitutional
+symptoms are related to high levels of small
+proteins called cytokines. Cytokines trigger
+inflammation—a defensive reaction—in the
+body.
+One of the most common constitutional
+symptoms of MPNs is fatigue. Cancer-related
+fatigue is a distressing, ongoing tiredness that
+limits one’s ability to do day-to-day tasks. It is a
+major contributor to poor quality of life among
+people living with an MPN.
+You may lose weight and have fevers because
+an MPN can cause a rapid breakdown of fat
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+22
+
+3 Symptoms and surveys » Assessing symptoms with surveys » The MPN-10
+
+Assessing symptoms with
+surveys
+
+The MPN-10
+The MPN Symptom Assessment Form
+Total Symptom Score (MPN-SAF TSS) is a
+commonly used survey. It’s also simply called
+the MPN-10 because it has 10 questions.
+See Guide 2 for a list of the 10 symptoms
+the survey looks for.
+
+Surveys are commonly used in research to
+assess symptoms. Surveys used for research
+may also be used in clinical practice. For
+MPNs, there are several reasons to assess
+symptoms:
+
+
+
+
+
+The 10 symptoms in the MPN-10 are the most
+important and common ones. Each symptom
+is rated on a scale from 0 to 10. Higher scores
+point to worse symptoms. An online version of
+the survey can be found at thehematologist.
+org/mpn-total-symptom-score.
+
+Symptoms often reduce quality of life
+Symptoms may relate to the outcomes of
+an MPN
+Tracking symptoms will show if a
+treatment provides relief
+
+Guide 2
+The top 10 symptoms of myeloproliferative neoplasms
+Symptom
+
+Medical term
+
+Ongoing, extreme tiredness
+
+Fatigue
+
+Feeling full quickly when eating
+
+Early satiety
+
+Pain in the belly area
+
+Abdominal pain
+
+Inactivity
+
+Sedentary
+
+Unable to focus for an extended time
+
+Poor concentration
+
+Night sweats
+
+Sleep hyperhidrosis
+
+Itchy skin
+
+Pruritus
+
+Bone pain
+
+Osteodynia
+
+Fevers
+
+Pyrexia
+
+Weight loss
+
+Cachexia
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+23
+
+3 Symptoms and surveys » Key points
+
+“
+
+Key points
+
+
+
+
+
+
+
+
+
+
+Most people with myeloproliferative
+neoplasms (MPNs) have symptoms
+related to the cancer.
+
+I take each day at a time.
+Sometimes the fatigue is greater
+than other days. You must
+persevere."
+
+Microvascular symptoms are caused by
+slow blood flow in capillaries. Examples
+of these symptoms are headaches,
+dizziness, and tingling in the limbs.
+The spleen gets bigger when it starts
+making blood cells. An enlarged spleen
+may cause you to feel full quickly when
+eating. It may also cause belly pain or
+discomfort, cough, and shortness of
+breath.
+Constitutional symptoms are related to
+high levels of cytokines. Examples of
+these symptoms include fatigue, losing
+weight, and fevers.
+The MPN-10 is a short survey of MPN
+symptoms used in clinical practice to
+identify and track symptoms over time.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+24
+
+4
+
+Clotting in PV and ET
+26
+
+What is a blood clot?
+
+27
+
+Calculating clot risk
+
+27
+
+Preventing blood clots
+
+31
+
+Clot prevention during pregnancy
+
+32
+
+Blood clots and surgery
+
+32
+
+PV and ET checkups
+
+33
+
+Changing preventive care
+
+35
+
+PV and ET progression
+
+35
+
+Key points
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+25
+
+4 Clotting in PV and ET » What is a blood clot?
+
+In polycythemia vera (PV) and
+
+there’s more than one). A thrombus that breaks
+free from the vessel wall and travels in the
+bloodstream is called an embolus.
+
+essential thrombocythemia (ET),
+it’s important to prevent blood
+
+For our purposes, we’ll refer to thrombi (or
+thrombosis) as blood clots for the remainder of
+this chapter.
+
+clots. Left unchecked, blood clots
+are the leading cause of death.
+This chapter explains how blood
+
+People with polycythemia vera (PV) and
+essential thrombocythemia (ET) are prone to
+get blood clots. Both slow down blood flow
+because of the increase in blood cells, and the
+extra blood cells stick together. Slow-moving,
+sticky blood cells are likely to form blood clots.
+
+clots are prevented.
+
+What is a blood clot?
+
+Blood clots are the most frequent, sometimes
+life-threatening, complication of PV and ET.
+As blood clots worsen, they can block enough
+blood flow (thrombosis) to cause symptoms.
+Blocked blood flow can cause organ damage
+or failure, including heart attack, or a stroke.
+
+A blood clot is a gel-like clump of blood.
+Normally, blood clots develop to stop bleeding
+and then dissolve when the bleeding is over.
+Sometimes a blood clot can form inside a
+blood vessel when there is no bleeding. This
+type of clot is called a thrombus (or thrombi if
+
+Blood clot in a leg
+People with MPNs are at
+risk for blood clots. This
+image shows a blood clot
+forming in a leg vein. Deep
+vein thrombosis is the most
+common type of blood clot.
+If not treated, the clot could
+break free and get stuck
+in an artery within a lung.
+This is called a pulmonary
+embolism. Pulmonary
+embolisms can be deadly.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+Embolus
+Deep veins of the leg
+
+26
+
+Normal
+blood flow
+
+Deep vein
+thrombosis
+
+4 Clotting in PV and ET » Calculating clot risk » Preventing blood clots
+
+Preventive care reduces the chance of getting
+blood clots. With prevention, many people with
+PV or ET live for many years.
+
+intermediate-, or high-risk levels based on age,
+prior blood clots, and a JAK2 V617F mutation.
+
+Preventing blood clots
+
+Calculating clot risk
+
+The plan to prevent clots differs between
+people. Your plan will be based on what MPN
+type you have, your risk of clots, and if you
+have symptoms of an MPN. Options for initial
+preventive care based on risk level are listed
+in Guide 3 for PV and Guide 4 for ET and
+are described next.
+
+The risk of blood clots is not the same for
+everyone living with an myeloproliferative
+neoplasm (MPN). Your health care provider
+will assess your risk and plan treatment based
+on your risk level. This process is called risk
+stratification.
+People with PV are stratified into one of two
+groups—low or high risk. Risk is based on age
+and history of blood clots.
+
+Managing cardiovascular risk
+factors
+Your cardiovascular system consists of
+your heart, blood vessels, and blood.
+Cardiovascular risk factors are things that
+will likely damage this system. Having a
+
+For ET, a tool called the International
+Prognostic Score of Thrombosis (IPSETthrombosis) is used for risk stratification.
+People are assigned to very-low- low-,
+
+Guide 3
+Initial preventive care for blood clots related to polycythemia vera
+Risk level
+
+Prevention options
+
+Low risk of blood clots
+
+• Manage cardiovascular risk factors
+• Aspirin
+• Phlebotomy
+
+You are under 60 years of age and
+never had a blood clot.
+
+High risk of blood clots
+You are 60 or more years of age or you
+have had a blood clot.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+• Manage cardiovascular risk factors
+• Aspirin
+• Phlebotomy
+• Cytoreductive therapy to reduce blood counts:
+• Hydroxyurea (preferred)
+• Ropeginterferon alfa-2b-njft (preferred)
+• Peginterferon alfa-2a
+• Ruxolitinib is sometimes useful
+
+27
+
+4 Clotting in PV and ET » Preventing blood clots
+
+Aspirin
+
+cardiovascular risk factor may increase your
+chance of getting a blood clot.
+
+Taking a baby aspirin every day reduces
+the risk of blood clots. It prevents clots by
+making platelets less sticky. It may reduce
+microvascular symptoms in ET.
+
+Your health care provider will assess for and
+help you manage cardiovascular risks that can
+be changed:
+
+
+Smoking
+
+
+
+Overweight and obesity
+
+
+
+Too little exercise
+
+
+
+High blood pressure (hypertension)
+
+
+
+High blood sugar (diabetes)
+
+NCCN experts recommend taking 80 to 100
+milligrams of aspirin each day for most people
+with PV or ET. If you’re still experiencing
+symptoms, you can take aspirin twice a day.
+Aspirin prevents blood clots among people
+with either low- or high-risk PV. It also works
+
+Guide 4
+Initial preventive care for blood clots related to essential thrombocythemia
+Risk level
+Very low risk of blood clots
+You are 60 years of age or under, never
+had a blood clot, and do not have a
+JAK2 mutation.
+Low risk of blood clots
+You are 60 years of age or under and
+never had a blood clot. You do have a
+JAK2 mutation.
+Intermediate risk of blood clots
+You are at least 61 years of age. You
+never had a blood clot and do not have
+a JAK2 mutation.
+High risk of blood clots
+You are at least 61 years of age, have
+had a blood clot, and have a JAK2
+mutation.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+Prevention options
+
+• Manage cardiovascular risk factors
+• Aspirin if you have microvascular symptoms
+
+• Manage cardiovascular risk factors
+• Aspirin
+
+• Manage cardiovascular risk factors
+• Aspirin
+• Manage cardiovascular risk factors
+• Aspirin
+• Cytoreductive therapy to reduce blood counts:
+• Hydroxyurea (preferred)
+• Peginterferon alfa-2a
+• Anagrelide
+
+28
+
+4 Clotting in PV and ET » Preventing blood clots
+
+well among people with ET, but not everyone
+with ET needs it.
+
+Smoking blocks the action of
+aspirin. If you smoke, you’ll
+have to quit for aspirin to
+work. Ask your health care
+providers about counseling
+and medicine to help you quit.
+
+Aspirin can cause more harm than good
+in people with very-low-risk ET, especially
+those with acquired von Willebrand syndrome
+(aVWS).
+Bleeding is a side effect of aspirin for some
+people. People with aVWS are likely to have
+bleeding because their blood doesn’t clot as it
+should.
+
+receiving phlebotomy therapy, don’t take iron
+supplements unless they’re prescribed by your
+care team.
+
+Higher doses should be avoided for most
+people. High doses increase the chance of
+bleeding in your bowels. Your blood counts
+may need to be lowered before starting
+aspirin. High blood counts increase the risk of
+bleeding.
+
+Blood clots aren’t as likely if the bloodstream
+is less congested with red blood cells. After
+phlebotomy, you may also get quick relief from
+MPN symptoms—headaches, itchiness, and
+blurred vision.
+
+Phlebotomy
+
+Your health care provider will assess how often
+you need phlebotomy. Some people need it
+every other week. If your hematocrit is high,
+you may need it once or twice a week. Once
+the hematocrit and MPN symptoms are under
+control, the time between phlebotomies can be
+lengthened.
+
+Hematocrit is a measure of red blood cells
+compared to the total amount of blood.
+Although aspirin works well for PV, the main
+way to prevent blood clots is to reduce
+hematocrit.
+At diagnosis, hematocrit is often above 55
+percent (55%). Hematocrit should be below 45
+percent for most people. Some people need a
+target of below 42 percent.
+
+Cytoreductive therapy
+People who are highly likely to get blood
+clots may take medication that lowers blood
+counts. These cytoreductive therapies are also
+sometimes given to relieve symptoms when
+blood clots aren’t likely.
+
+Phlebotomy is the key strategy to reducing
+hematocrit. It is a procedure that removes a
+small amount of blood with a needle, like when
+donating blood.
+
+Some cytoreductive therapies are preferred
+by NCCN experts. Preferred therapies work
+better, are safer, or cost less than other options
+or there is better research supporting their use.
+
+Phlebotomy works by removing the ironcarrying red blood cells from the blood.
+With less iron in the body, bone marrow
+makes fewer red blood cells. If you are
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+29
+
+4 Clotting in PV and ET » Preventing blood clots
+
+Hydroxyurea
+Hydroxyurea (Hydrea) has been a standard
+cytoreductive therapy for a long time. It’s a
+preferred initial treatment in high-risk PV and
+ET. For many people, it lowers blood counts
+and prevents blood clots for years.
+
+Anagrelide
+Anagrelide (Agrylin) is an antiplatelet medicine
+for high-risk ET. It lowers the number of
+platelets that your body makes. Anagrelide is a
+capsule that is taken twice a day. It may cause
+headaches, digestive problems, anemia, and
+heart palpitations.
+
+Hydroxyurea works by stopping new cells from
+being made. It is made as a capsule, so you
+can take it at home. It is given in low doses, so
+many people can tolerate its side effects.
+
+Ruxolitinib
+Ruxolitinib is sometimes useful for highrisk PV. It is a medicine that is called a JAK
+inhibitor. Read more about ruxolitinib in
+Chapter 5: Myelofibrosis.
+
+Hydroxyurea can cause below-normal blood
+counts, fatigue, skin changes, diarrhea,
+constipation, and skin cancer.
+
+“
+
+Interferon alpha
+Interferon alpha naturally exists in your body
+and helps fight infections. It can also be
+created in the lab as a treatment. Interferon
+curbs the making of blood cells in bone
+marrow.
+
+I found out in 2018 at my annual
+physical that my platelet count was
+elevated and that led to a diagnosis
+of ET with JAK 2 genetic mutation.
+I have no symptoms and my only
+treatment is two low-dose aspirin
+per day. I don't believe that this
+needs to be called blood cancer.
+I tell people that I have a blood
+disorder so it isn't so frightening."
+
+The two interferons used to treat MPNs are:
+
+
+
+
+Pegylated interferon, usually called
+peginterferon (PEGASYS), is a treatment
+option for high-risk PV and ET. It is
+sometimes given to people who are
+younger, pregnant, or delay taking similar
+medicines like hydroxyurea.
+Ropeginterferon alfa-2b-njft (BESREMi) is
+a preferred treatment option for high-risk
+PV.
+
+You can take interferon at home. It is injected
+under the skin every 2 weeks. Over time, it
+may be needed less often.
+Interferon can cause flu-like illness, joint
+pain, fatigue, itching, throat swelling,
+musculoskeletal pain, and depression.
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+30
+
+4 Clotting in PV and ET » Clot prevention during pregnancy
+
+Clot prevention during
+pregnancy
+
+
+
+Consider meeting with an obstetrician who’s
+an expert in high-risk pregnancies before
+getting pregnant. This doctor can assess for
+and manage health risks during pregnancy.
+
+If you need an anticoagulant (commonly
+referred to as a blood thinner) while
+breastfeeding, the safe ones to take are
+unfractionated heparin, LMWH, warfarin, and
+fondaparinux. Direct oral anticoagulants should
+be avoided.
+
+Pregnancy is at high risk if you have had a
+blood clot, bleeding due to PV or ET, or related
+problems during prior pregnancies.
+
+If you have PV, the hematocrit target is based
+on the trimester. Hematocrit should be under
+41 percent (41%) for the first trimester, under
+38 percent for the second trimester, and under
+39 percent during the third trimester.
+
+Pregnancy care for standard risk includes:
+
+
+
+
+
+
+Taking a baby aspirin every day until the
+baby is born.
+
+“
+
+After birth, many people take lowmolecular-weight heparin (LMWH) for 6
+weeks.
+Aspirin can be restarted once LMWH is
+finished.
+
+Getting the news and diagnosis of
+ET with the JAK2+ mutation, wasn't
+going to be the end of my story.
+In fact, it has been the best part
+of my story. It has been the most
+challenging, yet praising God in the
+worst and best times, marrying my
+husband, preparing for a family via
+IVF and a surrogate, meeting new
+people through this diagnosis, and
+fighting to one day find a cure. I'm
+so proud of myself!"
+
+Pregnancy care for high risk includes:
+
+
+
+
+
+
+After a positive pregnancy test, take baby
+aspirin every day.
+Many people also take LMWH throughout
+pregnancy and for 6 weeks after giving
+birth.
+If blood counts are high, they can be
+lowered with interferon.
+
+Pregnancy care for everyone includes:
+
+
+Hydroxyurea should not be taken while
+trying to get pregnant, during pregnancy,
+or while breastfeeding. Hydroxyurea may
+harm your baby.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+You may take peginterferon alfa-2a to
+lower blood counts, but research on its
+use during pregnancy is needed.
+
+31
+
+4 Clotting in PV and ET » Blood clots and surgery » PV and ET checkups
+
+Blood clots and surgery
+
+PV and ET checkups
+
+Surgery increases the chance for blood clots
+and bleeding. Your surgeon may contact your
+MPN team to get your health history.
+
+After starting preventive care, you will need to
+meet with your care team often. Your team will
+assess if the MPN is causing health problems
+and if it is progressing. They will also assess
+the results of treatment.
+
+Your surgeon needs to know about any blood
+clots, bleeding, and your medications.
+
+Visits with your care team
+
+Before surgery, your blood counts should be
+close to normal to prevent blood clots and
+bleeding.
+
+
+
+
+
+
+During visits, you will be asked about new or
+worsening symptoms and new diagnoses.
+You may be given a symptom survey called
+the MPN-10 to complete. For information on
+treating symptoms, read Chapter 6: Supportive
+care.
+
+You may be put on anticoagulants and
+cytoreductive therapy before surgery.
+People with PV may need more
+phlebotomies to stay below 45 percent for
+3 months before surgery.
+
+If you have PV, your health care provider will
+want to know how many phlebotomies you’ve
+had since the last visit.
+
+If the surgery has a high risk for venous
+thromboembolism, you may be given lowmolecular-weight heparin.
+
+Your health care provider will perform a
+physical exam of your body. The size of your
+spleen and liver will be checked. Your health
+care provider will look for signs of blood clots
+and bleeding.
+
+Just before surgery, you will need to stop
+taking some medicines. Aspirin is stopped 1
+week before surgery.
+You may stay on cytoreductive therapy until
+the surgery unless your surgeon tells you
+to stop. The time to stop an anticoagulant
+depends on how long it stays in your body.
+
+Blood work may be needed. Your health
+care provider will monitor your blood counts
+and other blood values. Liver and kidney
+functioning tests may be ordered as well. Now
+and then, a peripheral blood smear may be
+done. A bone marrow aspiration and biopsy
+may be needed to rule out progression to
+myelofibrosis.
+
+After surgery, you will be monitored for blood
+clots and bleeding. You may restart your
+medicines if the bleeding risk is low. Aspirin is
+often restarted 24 hours after surgery.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+32
+
+4 Clotting in PV and ET » Changing preventive care
+
+Changing preventive care
+
+If a change in preventive care is needed, a
+clinical trial may be an option. A clinical trial is
+a type of medical research study. Read more
+about clinical trials in Chapter 5: Myelofibrosis.
+
+Your care will likely not change if symptoms
+greatly improve. Little to no relief in symptoms
+or worsening symptoms may trigger a change.
+See Guide 5 for a full list of events that
+signal when a change in care may be needed.
+
+If not received before, cytoreductive therapy
+may be the next step of care. It may be started
+
+Guide 5
+Events that signal that it may be time to change preventive care
+Event
+
+Polycythemia vera
+
+●
+
+Blood clot
+
+Essential thrombocythemia
+
+●
+●
+
+Acquired von Willebrand syndrome
+Major bleeding
+
+●
+
+●
+
+Enlarged spleen
+
+●
+
+●
+
+High or increasing blood counts
+
+●
+
+●
+
+New symptoms
+
+●
+
+●
+
+Ongoing microvascular symptoms
+despite taking aspirin
+
+●
+
+More phlebotomies are needed to keep
+blood counts low or phlebotomies are
+causing problems
+
+●
+
+Cytoreductive therapy isn’t lowering
+blood counts or is causing problems
+
+●
+
+●
+
+Bone marrow fibrosis
+
+●
+
+●
+
+Blast cells in bloodstream
+
+●
+
+●
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+33
+
+4 Clotting in PV and ET » Changing preventive care
+
+“
+
+if you now have high-risk disease, symptoms,
+or abnormal bleeding.
+
+I am now in my 10th year after a
+diagnosis of PV and only within the
+last month or so changed my daily
+regime of hydroxyurea 500 mg two
+times a day. I am fortunate in being
+largely asymptomatic, though the
+hydroxyurea does cause skin issues!
+Learn all you can about MPNs, be
+persistent in your questions, and be
+comfortable with your oncologist."
+
+Sometimes cytoreductive treatment works at
+first then stops. Sometimes, it doesn’t work
+enough or at all. In these cases, changing to a
+care option listed in Guide 6 is needed.
+
+Guide 6
+Next options after initial preventive care for blood clots
+Polycythemia vera
+
+Essential thrombocythemia
+
+• Clinical trial (preferred)
+• Ropeginterferon alfa2b-njft (preferred)
+• Hydroxyurea
+• Peginterferon alfa-2a
+
+• Hydroxyurea (preferred)
+• Peginterferon alfa-2a
+• Anagrelide
+
+Stop current
+cytoreductive therapy
+and start a new
+treatment
+
+• Clinical trial (preferred)
+• Ruxolitinib (preferred) when
+hydroxyurea is stopped
+• Ropeginterferon alfa-2b-njft,
+hydroxyurea, peginterferon
+alfa-2a if not taken before
+
+• Clinical trial (preferred)
+• Hydroxyurea (preferred) if not
+taken before
+• Peginterferon alfa-2a or
+anagrelide if not taken before
+• Ruxolitinib is sometimes useful
+• Removing platelets from blood
+(plateletpheresis) in emergency
+situations
+
+New treatment plan
+if MPN changed into
+myelofibrosis
+
+Read Chapter 5 for options
+
+Read Chapter 5 for options
+
+Start cytoreductive
+therapy if never taken
+before
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+34
+
+4 Clotting in PV and ET » PV and ET progression » Key points
+
+PV and ET progression
+
+
+
+PV and ET can progress into myelofibrosis.
+Progression happens in about 1 out of 10
+people with PV or ET. It is unknown why these
+MPNs progress. Researchers are studying the
+role of inflammation and abnormal genes.
+
+
+
+The risk of progression increases the longer
+you have PV or ET. It is rare for these MPNs
+to progress right into the blast phase of
+myelofibrosis, which is like acute myeloid
+leukemia (AML). If PV and ET do progress,
+they typically progress into chronic-phase
+myelofibrosis and then into advanced phases.
+
+
+
+Once progression starts, it may be slow and
+take place over many years. An early sign of
+progression is a steady decline in the need for
+treatment to reduce blood counts. Your health
+care provider may reduce or stop treatment
+to see if your blood counts stop falling. If they
+don’t, you may have myelofibrosis. Treatment
+of myelofibrosis is discussed in Chapter 5.
+
+
+
+
+
+If PV or ET is getting worse, your
+treatment may be changed. The next
+treatment will depend on the current clot
+risk level, your prior treatment, and if
+there is progression to myelofibrosis.
+
+“
+
+People with polycythemia vera (PV) and
+essential thrombocythemia (ET) are prone
+to getting blood clots. With preventive
+care, most people live for many years.
+Preventive care is based on your risk for
+blood clots. Having a healthy heart and
+blood vessels is a goal for everyone.
+Aspirin is also commonly used to prevent
+clots.
+For PV, phlebotomy is performed to
+reduce hematocrit. For high-risk PV/ET,
+cytoreductive treatment may be an option
+to reduce blood counts.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+You will need to meet with your care
+team often. During visits, the status of the
+cancer and the results of preventive care
+will be checked.
+
+Knowledge is power. Do not settle
+if your questions and concerns
+are not properly addressed. There
+are many skilled MPN specialists
+throughout the nation that can
+provide relief, comfort, and
+improved quality of life. Advocate
+for yourself and your needs."
+
+Key points
+
+
+Your care may change if you become
+pregnant and change again after giving
+birth. Your care may also be changed if
+you need surgery because it increases
+the risk of clots and bleeding.
+
+35
+
+5
+
+Myelofibrosis
+37
+
+Types of myelofibrosis
+
+37
+
+Predicting prognosis
+
+39
+
+Treating myelofibrosis without anemia
+
+42
+
+Treating myelofibrosis with anemia
+
+44
+
+Treating advanced phases of myelofibrosis
+
+45
+
+Participating in clinical trials
+
+47
+
+Myelofibrosis checkups
+
+47
+
+Changing treatment
+
+48
+
+Key points
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+36
+
+5 Myelofibrosis » Types of myelofibrosis » Predicting prognosis
+
+Predicting prognosis
+
+Myelofibrosis is almost hidden
+in some people but rapidly
+
+The prognosis is the likely course and outcome
+of the myelofibrosis you have. Experts and
+care teams use risk stratification scoring
+systems to assess prognosis.
+
+progresses in others. Its treatment
+is discussed in this chapter
+including the newest ways to treat
+
+Scoring systems
+
+myelofibrosis with anemia.
+
+For PMF, NCCN experts prefer the MIPPS-70
+and MIPSS-70 Plus Version 2.0. These scoring
+systems are for people who are 70 years of
+age or under and require broad molecular
+testing. Other scoring systems for people of
+any age are the DIPSS and DIPSS-Plus.
+
+Types of myelofibrosis
+Myelofibrosis is a blood cancer that causes
+scarring of the bone marrow, called fibrosis. It
+can occur in people with or without a history of
+a myeloproliferative neoplasm (MPN).
+
+The risk stratification system used for post-PV
+and post-ET myelofibrosis is the MYSEC-PM.
+Risk is based on your medical information.
+Points are given for each response that
+conveys a risk of poor outcomes. Based on the
+total number of points, people are assigned a
+risk level.
+
+If myelofibrosis is a person's first MPN, it is
+called primary myelofibrosis (PMF). It can
+also occur when polycythemia vera (PV) or
+essential thrombocythemia (ET) progresses.
+In these cases, it is called secondary
+myelofibrosis or post-PV and post-ET
+myelofibrosis.
+
+Ask your provider what your risk level is and
+what system was used to calculate it. Risk
+levels for each system are listed on the next
+page in Guide 7.
+
+Myelofibrosis greatly differs between people.
+It differs in terms of its course, speed of
+progression, and symptoms.
+
+NCCN risk groups
+
+Treatment is partly based on how aggressive
+the myelofibrosis is predicted to be.
+Myelofibrosis slowly progresses in many
+people. It can be stable for many years.
+
+NCCN experts divide the total points into 2 risk
+groups—lower and higher—to plan treatment.
+In the next section, treatment for lower- and
+higher-risk myelofibrosis without anemia is
+discussed. But most people with myelofibrosis
+have anemia. If you do, read the section in
+this chapter called Treating myelofibrosis with
+anemia.
+
+For others, the MPN is more active. The first
+step of treatment planning is to assess the
+prognosis.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+37
+
+5 Myelofibrosis » Predicting prognosis
+
+“
+
+Your journey is your own unique journey. Allow it to unfold
+without trying to predict the outcome."
+
+Guide 7
+Risk systems to assess prognosis of myelofibrosis
+System
+
+System risk levels
+
+NCCN risk levels
+
+MIPSS-70
+
+• Low risk is a score of 0 or 1
+• Intermediate risk is a score of 2, 3, or 4
+• High risk is a score of 5 or above
+
+• Lower risk is a score of 3 or below
+• Higher risk is a score of 4 or
+above
+
+MIPSS70-plus
+version 2.0
+
+• Very low risk is a score of 0
+• Low risk is a score of 1 or 2
+• Intermediate risk is a score of 3 or 4
+• High risk is a score of 5, 6, 7, or 8
+• Very high risk is a score of 9 or above
+
+• Lower risk is a score of 3 or below
+• Higher risk is a score of 4 or
+above
+
+DIPSS
+
+• Low risk is a score of 0
+• Intermediate-1 risk is a score of 1 or 2
+• Intermediate-2 risk is a score of 3 or 4
+• High risk is a score of 5 or 6
+
+• Lower risk is a score of 2 or below
+• Higher risk is a score of 3 or
+above
+
+DIPSS-PLUS
+
+• Low risk is a score of 0
+• Intermediate-1 risk is a score of 1
+• Intermediate-2 risk is a score of 2 or 3
+• High risk is a score of 4 or 5
+
+• Lower risk is a score of 1 or 0
+• Higher risk is a score of 2 or
+above
+
+MYSEC-PM
+
+• Low risk is a score of 11 or below
+• Intermediate-1 risk is a score of 12 or 13
+• Intermediate-2 risk is a score of 14 or 15
+• High risk is a score of 16 or above
+
+• Lower risk is a score of 13 or
+below
+• Higher risk is a score of 14 or
+above
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+38
+
+5 Myelofibrosis » Treating myelofibrosis without anemia
+
+Treating myelofibrosis
+without anemia
+
+Based on this information, the goals of your
+treatment may include:
+
+Planning treatment of myelofibrosis is based
+on various information, not just prognosis. Your
+symptoms will be tracked. Your health care
+provider will assess the size of your spleen
+during exams. Blood cell and blast counts will
+be monitored.
+
+
+
+Relieve symptoms
+
+
+
+Improve blood counts
+
+
+
+Prevent or delay progression to advanced
+myelofibrosis or leukemia
+
+Treatment options for myelofibrosis are
+described on the next pages and are listed in
+
+Guide 8.
+
+Guide 8
+Treatment for myelofibrosis without anemia
+Risk level
+
+Clinical status
+
+Treatment options
+
+Lower risk
+
+You do not have symptoms
+
+• Watch and wait
+• Clinical trial
+
+Lower risk
+
+You do have symptoms
+
+• Clinical trial
+• It is sometimes useful to receive:
+• Ruxolitinib
+• Peginterferon alfa-2a
+• Hydroxyurea if lowering blood counts would
+relieve symptoms
+• Pacritinib if platelets are less than 50,000
+• Momelotinib
+
+Higher risk
+
+• Allogeneic hematopoietic cell transplant to try to
+cure the MPN
+Your number of platelets falls
+or
+within the low to high range
+(50,000 or higher)
+• Clinical trial, ruxolitinib, fedratinib, momelotinib,
+pacritinib
+
+Higher risk
+
+• Allogeneic hematopoietic cell transplant to try to
+cure the MPN
+You have a very low number
+or
+of platelets (below 50,000)
+• Clinical trial, pacritinib (preferred regimen), or
+momelotinib
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+39
+
+5 Myelofibrosis » Treating myelofibrosis without anemia
+
+Clinical trial
+
+Which JAK inhibitor is recommended?
+For lower-risk myelofibrosis, ruxolitinib
+has been often used to treat symptoms when
+needed. Pacritinib is an option for when
+platelet levels are very low. Momelotinib may
+be an option, but more research is needed
+among people with lower-risk myelofibrosis.
+
+If available, a clinical trial is recommended. A
+clinical trial is a type of medical research study.
+For more information on clinical trials, read the
+section in this chapter called Participating in
+clinical trials.
+
+Watch and wait
+
+For higher-risk myelofibrosis, NCCN
+experts recommend specific JAK inhibitors
+based on platelet levels.
+
+Lower-risk myelofibrosis is likely to be stable
+or slowly progress. People with lower-risk
+myelofibrosis that isn’t causing symptoms may
+start “watch and wait.” Also called observation
+or watchful waiting, watch and wait is a
+period of testing to assess for changes in
+myelofibrosis. Treatment may be started if
+symptoms appear.
+
+Ruxolitinib, momelotinib, and fedratinib are
+recommended when platelet levels range from
+low to high. Pacritinib studies in this platelet
+range are needed.
+When platelet levels are very low, NCCN
+experts prefer pacritinib for treatment.
+Momelotinib needs to be studied more among
+people with very low platelets.
+
+Cytoreductive therapy
+Cytoreductive therapy is an option for lowerrisk myelofibrosis that is causing symptoms.
+The therapies used for myelofibrosis are
+peginterferon alfa-2a or hydroxyurea. More
+information on these therapies is in Chapter 4:
+Clotting in PV and ET.
+
+What does treatment involve?
+JAK inhibitors are a pill you take at home.
+Your health care provider will determine
+which medications and dosing is right for you
+and adjust as needed. Don’t stop taking the
+medicine unless your health care provider
+directs you to do so.
+
+JAK inhibitors
+JAK is a cell protein that helps cells grow. It is
+key to blood stem cells developing into mature
+blood cells. JAK is overactive in people with
+myelofibrosis whether or not there is a JAK
+mutation.
+
+Allogeneic HCT
+A hematopoietic stem cell is a cell that
+develops into every type of blood cell. In
+myelofibrosis, hematopoietic stem cells and
+bone marrow are diseased.
+
+JAK inhibitors stop JAK and reduce the
+number of new blood cells being made. In turn,
+they reduce spleen size and core symptoms.
+Ruxolitinib (Jakafi), fedratinib (INREBIC),
+pacritinib (Vonjo), and momelotinib (Ojjaara)
+are JAK inhibitors.
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+An allogeneic hematopoietic cell transplant
+(HCT) uses donor cells to form healthy bone
+marrow and blood cells in you. It extends life
+and may cure myelofibrosis.
+
+40
+
+5 Myelofibrosis » Treating myelofibrosis without anemia
+
+An allogeneic HCT is not safe for everyone. It
+is an intense treatment, so many people can’t
+get it. A transplant specialist will assess if you
+can have a transplant. The specialist will also
+assess donor options
+
+cells. It also weakens the immune system,
+so your body does not kill the donor cells.
+3. Next, you’ll receive the donor cells
+through a transfusion. A transfusion is
+a slow injection of blood products into a
+vein. New, healthy blood cells will form
+over the next 2 to 4 weeks. This is called
+engraftment.
+
+When is an allogeneic HCT an option?
+Allogeneic HCT is rarely used to treat lowerrisk myelofibrosis but may be an option if
+platelets are low or the cancer cells have
+complex cytogenetics. A complex karyotype is
+when there are 3 or more unrelated defects in
+chromosomes that occur in 2 or more cells.
+
+4. You’ll have to be extra careful to avoid
+germs for the first few weeks after the
+transplant. That’s because your infectionfighting immune system will be almost
+gone. You may be given antibiotics to
+prevent or treat infection. You may receive
+medicine called immunosuppressants to
+prevent GVHD.
+
+Everyone with higher-risk myelofibrosis
+should receive a transplant evaluation since a
+transplant is the only chance for a cure. The
+benefits of a transplant may be worth the risks
+for PMF that has high-risk mutations, such as
+ASXL1, EZH2, and RAS.
+
+More information
+about GVHD is
+available at NCCN.org/
+patientguidelines and on
+the NCCN Patient Guides
+for Cancer app.
+
+What does treatment involve?
+There are 4 steps to receiving an allogeneic
+HCT, which can be a grueling process. You
+may stay on a JAK inhibitor to reduce spleen
+size and improve symptoms until you get a
+transplant.
+
+“
+
+Your care team will give you detailed
+information about an allogeneic HCT and
+answer your questions. To give you a general
+idea of the process, here's a brief description:
+
+Do it for the little things...
+grandchildren, that is.
+Had I not undergone the stem cell
+transplant I wouldn't be here to
+enjoy them."
+
+1. Your blood will be tested for cell proteins
+called human leukocyte antigens (HLAs).
+A donor’s HLAs must be a near-perfect
+match to yours for a transplant to work.
+Even with a near-perfect match, donor
+cells may attack your body. This is called
+graft-versus-host disease (GVHD).
+2. You’ll receive a treatment called
+conditioning to kill your bone marrow
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+41
+
+5 Myelofibrosis » Treating myelofibrosis with anemia
+
+Treating myelofibrosis with
+anemia
+
+may be reduced, or the treatment may be
+paused or stopped. There are other options
+that don’t require avoiding or stopping JAK
+inhibitors.
+
+Anemia is a term for low levels of hemoglobin.
+Most people with myelofibrosis develop
+anemia within 1 year after diagnosis. Anemia
+may cause you to feel tired and cold or look
+pale. These symptoms are caused by cells not
+getting enough oxygen.
+
+
+
+If you have anemia, your provider will make a
+treatment plan based on whether you:
+
+
+
+
+
+
+
+Have anemia for reasons other than
+myelofibrosis
+Are taking a JAK inhibitor now
+
+
+Have anemia symptoms or myelofibrosis
+symptoms
+
+Depending on the causes of the anemia, your
+care team might prescribe supplements to
+replace low iron, folate, or vitamin B12 levels.
+Treatment options for anemia related to
+myelofibrosis are listed in Guide 9.
+
+A second option is to take pacritinib.
+Anemia may not be severe during
+pacritinib because it doesn’t suppress the
+number of new blood cells being made
+and it may even increase hemoglobin.
+For people taking ruxolitinib, the third
+option is to keep taking it and start
+anemia treatment. Luspatercept-aamt,
+an erythropoiesis-stimulating agent, or
+danazol can be added to ruxolitinib to
+treat anemia. But these add-ons don’t
+improve anemia for a prolonged time in
+many people or may not help at all.
+
+Red blood cell drugs
+
+Clinical trials
+
+If a JAK inhibitor isn’t needed, you may receive
+anemia treatment that increases the number of
+red blood cells. Such anemia drugs include:
+
+NCCN experts prefer clinical trials for
+treatment of anemia. Further research is
+needed to test current treatments in more
+people. And despite recent improvements in
+treatment, better treatment is still needed. For
+more information on clinical trials, read the
+section in this chapter called Participating in
+clinical trials.
+
+
+
+
+JAK inhibitors
+
+
+
+JAK inhibitors reduce spleen size and core
+symptoms but may make anemia worse.
+Because of anemia, the dose of a JAK inhibitor
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+One option is to take momelotinib.
+Momelotinib can improve anemia
+as well as myelofibrosis symptoms.
+More information is needed on its use
+among people who have anemia but no
+myelofibrosis symptoms.
+
+
+
+42
+
+Luspatercept-aamt
+Erythropoiesis-stimulating agents, such
+as darbepoetin alfa and epoetin alfa, if
+a hormone called erythropoietin is lower
+than 500 mU/mL in your blood
+Danazol
+Lenalidomide with prednisone for
+myelofibrosis with an abnormal gene
+called 5q deletion
+
+5 Myelofibrosis » Treating myelofibrosis with anemia
+
+Red blood cell transfusions
+
+from donated blood as this will help prevent
+the donated blood from attacking your
+body. It will also prevent you from getting a
+cytomegalovirus (CMV) infection.
+
+The standard treatment of anemia that causes
+symptoms is a red blood cell transfusion.
+Red blood cell transfusions are a common
+procedure for receiving donated blood.
+Most white blood cells should be removed
+
+Guide 9
+Treatment for myelofibrosis with anemia
+
+Treatment for anemia
+when a JAK inhibitor is
+controlling myelofibrosis
+symptoms
+
+The recommended options are:
+• Clinical trial (preferred)
+• Add luspatercept-aamt, an erythropoiesis-stimulating agent, or
+danazol to ruxolitinib
+• Switching current JAK inhibitor to either momelotinib or
+pacritinib is sometimes useful
+• In addition to the options above, you may receive red blood cell
+transfusions if the anemia is causing symptoms
+
+Treatment for anemia
+and uncontrolled
+myelofibrosis symptoms
+
+The recommended options are:
+• Clinical trial (preferred)
+• Momelotinib (preferred)
+• Pacritinib
+• Add luspatercept-aamt, an erythropoiesis-stimulating agent, or
+danazol to ruxolitinib
+• In addition to the options above, you may receive red blood cell
+transfusions if the anemia is causing symptoms
+
+Treatment for anemia
+if you don’t have
+myelofibrosis symptoms
+
+The recommended options are:
+• Clinical trial (preferred)
+• Luspatercept-aamt
+• Erythropoiesis-stimulating agents if erythropoietin in your
+blood is lower than 500 mU/mL
+• Danazol
+• Momelotinib
+• Pacritinib
+• Lenalidomide with prednisone for 5q deletion
+• In addition to the options above, you may receive red blood cell
+transfusions if the anemia is causing symptoms
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+43
+
+5 Myelofibrosis » Treating advanced phases of myelofibrosis
+
+Treating advanced phases
+of myelofibrosis
+
+Treatment planning
+Right after progression is confirmed, you
+and your care team will discuss treatment.
+Treatment may include chemotherapy or
+chemotherapy followed by an allogeneic HCT.
+If a transplant is an option, you will be referred
+to a transplant specialist.
+
+Myelofibrosis can progress to an accelerated
+or blast phase. Over 20 years, progression
+occurs in about 1 in 20 people with PV or ET.
+For PMF, it's about 3 out of 20 people.
+The marker of progression is a high
+percentage of immature blood cells, called
+myeloblasts, in the bone marrow or the
+bloodstream. Myeloblasts (simply called
+blasts) are usually only in bone marrow.
+
+Clinical trial
+Whether or not you will get a transplant, NCCN
+experts recommend clinical trials. Ask your
+treatment team if there is an open clinical trial
+that’s a good fit for you. For more information
+on clinical trials, read the section in this
+chapter called Participating in clinical trials.
+
+Normally, the blast count in bone marrow
+is less than 5 percent. In the accelerated
+phase of myelofibrosis, the blast count
+is between 10 and 19 percent. The blast
+phase of myelofibrosis [also called postMPN acute myeloid leukemia (AML)] has at
+least a 20 percent blast count. AML may be
+diagnosed with less than 20 percent blasts if
+chromosomes have certain abnormal changes.
+
+Low-intensity chemotherapy
+When a transplant isn’t an option, low-intensity
+chemotherapy is often used for treatment.
+One type of low-intensity chemotherapy is
+hypomethylating agents, such as azacitidine
+and decitabine. Learn about other low-intensity
+chemotherapy options for AML available at
+NCCN.org/patientguidelines and on the NCCN
+Patient Guides for Cancer app.
+
+Lab tests
+To confirm progression, lab tests on bone
+marrow are needed. If bone marrow can’t
+be removed, blood samples may be used.
+You may know some of the lab tests used
+for progression as they are used for MPN
+diagnosis (see Chapter 2):
+
+
+
+
+
+Cytogenetics using karyotype with or
+without fluorescence in situ hybridization
+(FISH)
+
+Sometimes a JAK inhibitor or venetoclax
+(Venclexta) is included with a hypomethylating
+agent. A JAK inhibitor may reduce spleen size
+and myelofibrosis symptoms. Venetoclax is
+a pill that may help control MPN growth by
+targeting a protein called BCL2. But it can
+cause serious health problems and more
+
+Flow cytometry
+Next-generation sequencing (NGS) of
+mutations related to AML
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+44
+
+5 Myelofibrosis » Participating in clinical trials
+
+Participating in clinical trials
+
+information is needed to see if people with
+MPNs benefit from it.
+
+NCCN experts recommend a clinical trial
+for many people with MPNs. A clinical trial
+is a type of medical research study. It tests
+potential new ways of fighting cancer and
+its negative effects in people. After being
+developed and tested in a laboratory, potential
+new ways of fighting cancer need to be studied
+in humans. If found to be safe and effective
+in a clinical trial, a drug, device, or treatment
+approach may be approved by the U.S. Food
+and Drug Administration (FDA).
+
+Induction therapy
+Some people who are well enough are treated
+with induction therapy, which involves a
+combination of drugs. The goal of induction
+therapy is to rid the marrow of blasts.
+Chemotherapy used to treat AML is often used
+for induction.
+
+Allogeneic HCT
+If you’re already taking a JAK inhibitor, it may
+be continued until you get a transplant.
+
+Everyone with cancer should carefully consider
+all of the treatment options available for their
+cancer type, including standard treatments
+and clinical trials. Talk to your care team about
+whether a clinical trial may make sense for you.
+
+For advanced myelofibrosis, the first step of
+care is to receive induction therapy before a
+transplant. Transplants are more successful
+when induction therapy has good results.
+Instead of induction, some people take a
+hypomethylating agent with or without a JAK
+inhibitor.
+
+Phases
+Most cancer clinical trials focus on treatment.
+Treatment trials are done in phases.
+
+There are several steps to receiving an
+allogeneic transplant. These steps are
+described earlier in this chapter in the section
+called Treating myelofibrosis without anemia.
+
+
+
+“
+
+
+
+
+
+Always be prepared for the worstcase scenario, but maintain a
+positive outlook and hope for the
+best. Above all, never give up!"
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+
+
+45
+
+Phase 1 trials study the dose, safety,
+and side effects of an investigational drug
+or treatment approach. They also look for
+early signs that the drug or approach is
+helpful.
+Phase 2 trials study how well the drug
+or approach works against a specific type
+of cancer.
+Phase 3 trials test the drug or
+approach against a standard treatment. If
+the results are good, it may be approved
+by the FDA.
+Phase 4 trials study the long-term
+safety and benefit of an FDA-approved
+treatment.
+
+5 Myelofibrosis » Participating in clinical trials
+
+Who can enroll?
+Every clinical trial has rules for joining, called
+eligibility criteria. The rules may be about age,
+cancer type and stage, treatment history, or
+general health. These requirements ensure
+that participants are alike in specific ways
+and that the trial is as safe as possible for the
+participants.
+
+Finding a clinical trial
+In the United States
+NCCN Cancer Centers
+NCCN.org/cancercenters
+
+Informed consent
+Clinical trials are managed by a group of
+experts called a research team. The research
+team will review the study with you in detail,
+including its purpose and the risks and
+benefits of joining. All of this information is also
+provided in an informed consent form. Read
+the form carefully and ask questions before
+signing it. Take time to discuss it with family,
+friends, or others you trust. Keep in mind that
+you can leave and seek treatment outside of
+the clinical trial at any time.
+
+The National Cancer Institute (NCI)
+cancer.gov/about-cancer/treatment/
+clinical-trials/search
+
+Worldwide
+The U.S. National Library of Medicine
+(NLM)
+clinicaltrials.gov/
+
+Start the conversation
+
+Need help finding a clinical trial?
+
+Don’t wait for your team to bring up clinical
+trials. Start the conversation and learn about
+all of your treatment options. If you find a
+study that you may be eligible for, ask your
+team if you meet the requirements. If you have
+already started standard treatment, you may
+not be eligible for certain clinical trials. Try
+not to be discouraged if you cannot join. New
+clinical trials are always becoming available.
+
+NCI’s Cancer Information Service (CIS)
+1.800.4.CANCER (1.800.422.6237)
+cancer.gov/contact
+
+Will I get a placebo?
+Placebos (inactive versions of real medicines)
+are almost never used alone in cancer clinical
+trials. It is common to receive either a placebo
+with a standard treatment or a new drug with
+a standard treatment. You will be informed,
+verbally and in writing, if a placebo is part of a
+clinical trial before you enroll.
+
+Frequently asked questions
+There are many myths and misconceptions
+surrounding clinical trials. The possible
+benefits and risks are not well understood by
+many with cancer.
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+46
+
+5 Myelofibrosis » Myelofibrosis checkups » Changing treatment
+
+Treatment response
+
+Are clinical trials free?
+There is no fee to enroll in a clinical trial. The
+study sponsor pays for research-related costs,
+including the study drug. You may, however,
+have costs indirectly related to the trial, such
+as the cost of transportation or child care due
+to extra appointments. During the trial, you
+will continue to receive standard cancer care.
+This care is billed to—and often covered by—
+insurance. You are responsible for copays and
+any costs for this care that are not covered by
+your insurance.
+
+In research, there are standards for assessing
+the results of medicines. Know that your
+treatment may be working but may not match
+these standards. Your health care provider
+will assess treatment results mostly based on
+whether symptoms are improving.
+
+Changing treatment
+Your treatment will likely not change if
+symptoms improve and your blood counts are
+acceptable. Reasons to change treatment
+include little to no symptom relief or worsening
+symptoms. Also, worsening blood counts or
+signs of progression may trigger a change in
+treatment.
+
+Myelofibrosis checkups
+After starting treatment, you will need to meet
+with your care team often. NCCN experts
+advise having a visit every 3 to 6 months for
+lower-risk myelofibrosis under observation.
+You may need visits more often if receiving
+active treatment, such as JAK inhibitors.
+
+Treatment decisions may be guided by
+molecular testing. Testing may find new
+mutations since the last testing was done.
+Next-generation sequencing (NGS) tests
+on biopsy samples can detect higher-risk
+mutations, such as ASXL1, EZH2, and
+RAS. These mutations suggest that the
+myelofibrosis is likely to progress and a
+transplant may be needed.
+
+Visits with your care team
+During visits, you will be asked about new or
+worsening symptoms and new diagnoses.
+You may be given a symptom survey called
+the MPN-10 to complete. For information on
+treating symptoms, read Chapter 6: Supportive
+care.
+
+If myelofibrosis worsens but doesn’t progress,
+the next treatment is based on the current risk
+level and prior treatment. New anemia may be
+treated with medications that improve blood
+counts.
+
+Your health care provider will perform a
+physical exam of your body. The size of your
+spleen and liver will be checked.
+Blood work will be ordered. Your health care
+provider will monitor your blood counts and
+other blood values. You may undergo a bone
+marrow biopsy and aspiration if symptoms
+worsen or there are signs of possible
+progression.
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+47
+
+5 Myelofibrosis » Key points
+
+“
+
+Key points
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Myelofibrosis is a blood cancer that
+results in scarring of the bone marrow
+(fibrosis). How quickly it worsens greatly
+differs between people.
+
+The initial diagnosis and new
+reality can be very overwhelming
+since not much is known about
+MPNs. While myelofibrosis is very
+rare, there are helpful resources
+from MPN research and education
+organizations as well as informal
+patient networks that provide the
+opportunity to share questions,
+fears, symptoms, and treatments. It
+is comforting to know there is new
+research and potential treatment
+options emerging that should help
+improve and extend our lives."
+
+The first step of treatment planning
+is to assess the prognosis using
+a risk stratification system. NCCN
+recommendations for treatment are based
+on two risk levels—lower and higher.
+If you don’t have anemia, watch-and-wait
+is an option for lower-risk myelofibrosis
+that isn’t causing symptoms. Symptoms
+and higher-risk myelofibrosis are often
+treated with a JAK inhibitor. Some people
+are healthy enough to get an allogeneic
+hematopoietic cell transplant (HCT) .
+If you have anemia, treatment may
+include a JAK inhibitor, medication that
+increases red blood cell counts, or both.
+Standard treatment of anemia that’s
+causing symptoms is a red blood cell
+transfusion.
+Advanced phases of myelofibrosis are
+often treated with chemotherapy, which
+can vary in intensity. Chemotherapy may
+be followed by an allogeneic transplant for
+some people.
+NCCN experts recommend clinical trials
+for people with MPNs. A clinical trial tests
+new ways of stopping cancer or reducing
+symptoms in people. Ask your care team
+if there are clinical trials that are a good fit
+for you.
+You will meet with your care team often
+after diagnosis. During visits, the status of
+the cancer will be checked as well as how
+you feel.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+48
+
+6
+
+Supportive care
+50
+
+Bleeding
+
+51
+
+Blood clots
+
+53
+
+Bone pain
+
+53
+
+Headaches and tinnitus
+
+53
+
+Itching
+
+54
+
+Infections
+
+54
+
+Tumor lysis syndrome
+
+54
+
+Iron overload
+
+54
+
+Supportive care guidelines
+
+56
+
+Key points
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+49
+
+6 Supportive care » Bleeding
+
+The goal of supportive care is to
+
+of your cancer care team. This specialist has
+received specific training to provide additional
+support to you. Some cancer centers have
+palliative care programs.
+
+maintain or improve your quality
+of life. This chapter discusses
+some of the supportive needs of
+people with myeloproliferative
+
+Bleeding
+
+neoplasms (MPNs).
+
+People with MPNs are at increased risk for
+bleeding. Also called hemorrhaging, bleeding
+is often mild and occurs when platelet counts
+are high or low.
+
+Supportive care is very important for all people
+with myeloproliferative neoplasms (MPNs). It is
+not just for people at the end of life who need
+hospice.
+
+Bleeding occurs most often in myelofibrosis
+compared to polycythemia vera (PV) and
+essential thrombocythemia (ET). It can be
+severe, especially in people who have anemia
+or low platelets.
+
+Supportive care is sometimes called palliative
+care since symptom relief is a main goal. But
+supportive care addresses many other needs.
+You can get help with food, financial aid, or
+family counseling.
+
+Bleeding events differ between people. Some
+people bruise easily while others get nose
+bleeds. Menstrual periods may be heavier than
+normal. Bleeding may occur in your digestive
+tract. You may see blood in your urine.
+
+Tell your care team about your symptoms and
+other needs to get the best supportive care.
+A palliative care specialist may be a member
+
+"Please ensure that your
+hematologist/MPN specialist
+listens and actually hears
+what you're saying. It
+doesn't matter what the
+symptoms are. You could
+be the first to experience
+something 'outside of the
+radar.' They're there for
+you."
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+50
+
+6 Supportive care » Blood clots
+
+Ask your care team which types of bleeding
+events need immediate medical attention.
+
+from getting infected with cytomegalovirus
+(CMV).
+
+Causes of bleeding
+
+Transfusions may not stop bleeding. In this
+case, antifibrinolytic agents may be used.
+These drugs help your blood to clot.
+
+Normally, bleeding is stopped when cells
+called platelets plug the hole in blood vessels
+with help from clotting factors. A lot of bleeding
+may occur when the blood doesn’t clot
+properly.
+
+Bleeding in PV and ET
+Your health care provider will identify and
+treat all causes of bleeding. Coagulation
+tests to assess for acquired von Willebrand
+Syndrome (aVWS) may be done. Levels of
+von Willebrand factor may be low due to high
+platelet counts.
+
+There are several causes of bleeding in PV
+and ET:
+
+
+
+
+
+
+
+
+
+Platelets may not work correctly.
+The number of platelets may be very
+high. High levels of platelets may lower a
+clotting factor called von Willebrand.
+Prevention of blood clots with aspirin may
+thin the blood too much.
+
+Aspirin will be stopped until the platelet count
+is normal. Treatment to reduce platelet counts
+may be given. If you have ET, you may receive
+plateletpheresis if bleeding is severe but this is
+rare.
+
+Prevention of blood clots with antiplatelet
+or cytoreductive therapy may reduce
+blood counts to very low levels.
+
+Blood clots
+
+Treating blood clots with anticoagulants
+may slow down clotting time too much.
+
+You may get a blood clot even though you took
+steps to prevent it. Many blood clots are safely
+managed with anticoagulants. Coagulation is
+another word for blood clotting. Despite being
+called blood thinners, anticoagulants slow
+down the clotting of blood.
+
+The cause of bleeding is simpler in
+myelofibrosis. Bleeding is typically caused by a
+low number of platelets.
+
+Bleeding in myelofibrosis
+
+Anticoagulants
+
+You may receive a platelet transfusion to
+prevent bleeding if your platelet count is lower
+than 10,000 m3. Platelet transfusions are
+also used for the treatment of bleeding. Most
+white blood cells should be removed from the
+donated blood. This will help prevent the blood
+from attacking your body. It also prevents you
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+Research has shown that anticoagulants
+help treat blood clots in general practice. But
+there is little to no research on anticoagulants
+in people with an MPN. It is unknown if one
+anticoagulant works better than another.
+It is also unknown exactly how long an
+anticoagulant is needed.
+
+51
+
+6 Supportive care » Blood clots
+
+Your health care provider will decide how
+long you’ll take an anticoagulant based on the
+severity of the blood clot. Three common types
+of anticoagulants are:
+
+
+
+
+betrixaban (Bevyxxa), dabigatran
+(Pradaxa), edoxaban (Savaysa), and
+rivaroxaban (Xarelto).
+
+
+Low-molecular-weight heparin
+(LMWH) – This medicine enhances the
+effect of a natural anticoagulant in your
+body. It is injected into the skin and can
+be taken at home.
+Direct oral anticoagulants – These
+pills disable proteins that help the blood
+to clot. They include apixaban (Eliquis),
+
+Vitamin K blockers – Among
+these medicines, warfarin (Coumadin,
+Jantoven) is the most often used. It is a
+pill taken at home. Warfarin stops the liver
+from using vitamin K, which is needed
+to make clotting proteins. When taking
+warfarin, regular testing will be necessary
+to measure how quickly or slowly your
+blood is clotting.
+
+Warning signs of blood clots
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+52
+
+6 Supportive care » Bone pain » Headaches and tinnitus » Itching
+
+Headaches and tinnitus
+
+Anticoagulants increase the risk of bleeding.
+The risk is higher when taking aspirin
+or treatment that lowers platelet counts.
+Your health care provider may stop these
+treatments while you’re on an anticoagulant.
+People with cardiovascular risk factors
+may stay on aspirin, but this may change
+depending on the situation.
+
+You may have a blood clot if you start to have
+headaches. Also, sounds made by the body
+and not heard by others (tinnitus), such as
+high-pitch ringing, may be a symptom of a
+blood clot. Tell your health care provider if you
+have these symptoms.
+Headaches as well as other vascular
+symptoms may be relieved with low-dose
+aspirin. If symptoms persist, taking aspirin
+twice a day or taking an antiplatelet agent
+(clopidogrel) may have better results. Aspirin
+may be taken with an antiplatelet agent.
+Taking an NSAID with aspirin should be done
+with caution and not without your physician’s
+knowledge. Always tell an urgent care or
+emergency care practitioner if you are taking
+daily aspirin.
+
+Plateletpheresis
+If you have a sudden life-threatening clot, you
+may receive plateletpheresis. This procedure
+withdraws your blood and removes platelets.
+Your platelet-reduced blood will then be
+returned to your body.
+Plateletpheresis is rarely done as it only
+slightly decreases platelets and for a short
+time. It’s useful in ET when people have
+life-threatening bleeds or clots or are not
+responding to medication.
+
+There are several options in addition to aspirin.
+Headaches in people with PV may be relieved
+with phlebotomy or ruxolitinib. For all MPNs,
+cytoreduction therapy reduces headaches and
+other vascular symptoms. Migraine headaches
+may be prevented as well as treated with
+triptans or topiramate.
+
+Bone pain
+Your health care provider will evaluate if any
+bone pain is caused by the MPN. This is
+needed because treatment of MPN-related
+bone pain differs from treatment of joint pain.
+
+Itching
+
+In one MPN study, ruxolitinib stabilized bone
+and muscle pain. For some people, loratadine
+and non-steroidal anti-inflammatory drugs
+(NSAIDs) may provide relief. A low dose of
+radiation may provide short-term relief of bone
+pain.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+Itching (pruritus) is a common problem among
+people with MPNs. It can be severe, even lifealtering.
+The first approach to relieve itching is to
+practice sensitive skin care. This care includes
+taking short showers, using mild soap,
+and moisturizing your skin. Antihistamines
+(cetirizine, diphenhydramine) and topical
+steroids may also be helpful.
+53
+
+6 Supportive care » Infections » Tumor lysis syndrome » Iron overload » Guidelines
+
+If needed, the next step to relieve itching will
+be based on the benefits and downsides of
+treatments. Ruxolitinib relieves itching. Early
+research on selective serotonin reuptake
+inhibitors (SSRIs) and narrow-band ultraviolet
+B shows promise.
+
+Induction chemotherapy may cause TLS.
+Induction chemotherapy is a treatment for
+advanced myelofibrosis or acute myeloid
+leukemia (AML). This treatment kills many
+cancer cells and results in too much waste too
+quickly.
+
+Other medicines that may be tried include
+peginterferon alfa-2a, gabapentin, aprepitant,
+and immunosuppressant agents, such as
+cyclosporine, methotrexate, azathioprine,
+mycophenolate mofetil, or dupilumab.
+
+TLS may be prevented by high amounts of
+fluids during chemotherapy. Fluids may help
+clear out the cell waste. Decreasing uric acid
+levels with allopurinol or rasburicase is another
+option. Rasburicase may be given as the first
+treatment if you have high uric acid or if it’s
+affecting your kidneys.
+
+Infections
+
+Iron overload
+
+You may be prone to infections because of
+myelofibrosis or its treatment. Ask your health
+care provider which vaccinations are safe for
+you. They may prescribe the recombinant
+(killed) zoster vaccine if taking a JAK inhibitor.
+
+Iron overload is a term for too much iron in
+your body. It can occur if you’ve had many
+red blood cell transfusions. Iron chelation is a
+type of drug that removes extra iron from your
+body. It is an option at times for lower-risk
+myelofibrosis. Your health care provider may
+prescribe iron chelation if you’ve had more
+than 20 transfusions or your blood ferritin level
+is greater than 2500 ng/mL.
+
+If you get infections often, your health
+care provider may prescribe antibiotics for
+prevention. Instead of antibiotics, you may
+receive granulocyte colony-stimulating factor
+(G-CSF) or granulocyte-macrophage colonystimulating factor (GM-CSF) if you have low
+neutrophil counts. These medicines should
+be used with caution because, though rare,
+enlarged spleens can rupture.
+
+Supportive care guidelines
+The library of NCCN Guidelines for Patients
+has several books on supportive care. These
+books focus on the treatment of common
+physical and emotional effects of many
+cancers. One book is about healthy living and
+shares recommendations for exercise, food
+and supplements, and vaccines.
+
+Tumor lysis syndrome
+Tumor lysis syndrome (TLS) occurs when the
+waste released by dead cells is not quickly
+cleared out of the body. The waste can cause
+kidney damage and severe blood electrolyte
+disturbances. TLS can be life-threatening.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+54
+
+6 Supportive care » Supportive care guidelines
+
+Supportive care guidelines
+Distress
+
+Fatigue
+
+Graft-Versus-Host Disease
+
+Everyone with cancer feels
+distress at some point. It is
+normal to be worried, sad,
+helpless, or angry. Distress
+can become severe and affect
+the way you live.
+
+A side effect of allogeneic
+hematopoietic cell
+transplants is graft-versushost disease. This side effect
+is caused by donor cells
+attacking your healthy cells.
+
+Late and long-term effects
+
+Cancer-related fatigue is
+not the typical tiredness that
+follows an active or long day.
+It is a lack of energy that is
+distressing, does not improve
+with normal resting or sleep,
+and disrupts life.
+
+Cancer and its treatment can
+cause long-term and late
+effects. Long-term effects
+start during treatment and
+persist after treatment is
+done. Less often, effects
+start long after treatment has ended. Late
+and long-term effects include heart disease,
+fatigue, poor sleep, pain, and depression.
+
+Palliative care
+
+Palliative care is an approach
+to health care for people
+living with serious illnesses,
+including cancer. It focuses
+on providing relief from the
+symptoms and stress of
+having cancer.
+
+Healthy living
+
+It’s important to start or
+keep a healthy lifestyle.
+Healthy living may help
+prevent disease and improve
+well-being. Topics covered
+include physical activity,
+food, and vaccinations.
+
+Nausea and vomiting
+
+Chemotherapy can cause
+nausea and vomiting.
+Nausea is the feeling that
+you are going to throw
+up. Vomiting is forcefully
+throwing up what’s in your
+stomach.
+
+The full library of NCCN Guidelines for Patients is available at
+NCCN.org/patientguidelines
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+55
+
+6 Supportive care » Key points
+
+“
+
+Key points
+
+
+
+
+
+
+
+
+
+
+
+
+Supportive care is health care that
+improves quality of life. It provides
+symptom relief and help for other needs.
+
+Living with an MPN diagnosis
+can be challenging. It's not a
+life-defining condition but a life
+altering experience. It requires
+understanding and managing the
+physical symptoms, such as fatigue
+and pain, as well as the emotional
+impact of living with a chronic
+condition."
+
+Bleeding is most common in myelofibrosis
+compared to PV and ET. Treatment
+options vary between MPN types to target
+the cause of bleeding.
+Blood clots are a focus of treatment for
+PV and ET, but also occur in people
+with myelofibrosis. They are treated with
+anticoagulants and antiplatelet medicines.
+Bone pain, headaches, tinnitus, and
+itching occur across all MPNs and greatly
+impact quality of life. More research is
+needed to find the best treatment of these
+symptoms among people with MPN.
+People with myelofibrosis may develop
+frequent infections, tumor lysis syndrome,
+and high levels of iron. Vaccinations may
+be your best defense against infections.
+Fluids to clear out cell waste may prevent
+TLS. Iron chelation is a treatment for high
+levels of iron.
+The library of NCCN Guidelines for
+Patients includes books on supportive
+care. These books focus on common
+effects of cancer and its treatment, such
+as distress, fatigue, nausea and vomiting,
+and poor sleep.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+56
+
+7
+
+Making treatment decisions
+58
+
+It’s your choice
+
+59
+
+Questions to ask
+
+66
+
+Resources
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+57
+
+7 Making treatment decisions » It’s your choice
+
+It is important to be comfortable
+
+options and share concerns with your
+care team. If you take the time to build a
+relationship with your team, it will help you
+feel supported when considering options and
+making treatment decisions.
+
+with the cancer treatment you
+choose. This choice starts with
+having an open and honest
+conversation with your care team.
+
+Second opinion
+It is normal to want to start treatment as soon
+as possible. While cancer should not be
+ignored, there is time to have another care
+provider review your test results and suggest a
+treatment plan. This is called getting a second
+opinion, and it’s a normal part of cancer care.
+Even experts get second opinions!
+
+It’s your choice
+In shared decision-making, you and your care
+team share information, discuss the options,
+and agree on a treatment plan. It starts with an
+open and honest conversation between you
+and your team.
+
+Things you can do to prepare:
+
+
+Treatment decisions are very personal. What
+is important to you may not be important to
+someone else. Some things that may play a
+role in your decision-making:
+
+
+
+
+What you want and how that might differ
+from what others want
+
+Check with your insurance company
+about its rules on second opinions. There
+may be out-of-pocket costs to see health
+care providers who are not part of your
+insurance plan.
+Make plans to have copies of all your
+records sent to the health care provider
+you will see for your second opinion.
+
+
+
+Your religious and spiritual beliefs
+
+
+
+Your feelings about certain treatments
+
+Support groups
+
+
+
+Your feelings about pain or side effects
+
+Many people diagnosed with cancer find
+support groups to be helpful. Support groups
+often include people at different stages
+of treatment. Some people may be newly
+diagnosed, while others may be finished with
+treatment. If your hospital or community doesn’t
+have support groups for people with cancer,
+check out the websites listed in this book.
+
+
+
+
+
+
+Cost of treatment, travel to treatment
+centers, and time away from school or
+work
+Quality of life and length of life
+How active you are and the activities that
+are important to you
+
+Think about what you want from treatment.
+Discuss openly the risks and benefits of
+specific treatments and procedures. Weigh
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+58
+
+7 Making treatment decisions » Questions to ask
+
+Questions to ask
+Possible questions to ask your care team are listed on the following pages. Feel free to use
+these or come up with your own.
+
+Questions about cancer testing
+1. What tests will I have? What is involved if I need a biopsy?
+2. Do the tests have any risks?
+3. Do I need to do anything to prepare for testing?
+4. Should I bring someone with me to the appointments?
+5. Where do I go for testing, and how long will it take?
+6. If any of the tests will hurt, what will you do to make me comfortable?
+7. How soon will I know the results and who will explain them to me?
+8. How can I get a copy of the pathology report and other test results?
+9. Is there an online portal with my test results?
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+59
+
+7 Making treatment decisions » Questions to ask
+
+Questions about MPN
+1. What type of MPN do I have?
+2. Is this a fast- or slow-growing MPN?
+3. What are the possible complications of MPN?
+4. How do I find an MPN specialist?
+5. What are the goals of treatment?
+6. What are my chances that the MPN will become myelofibrosis or leukemia?
+7. What are the symptoms and signs that the MPN may be changing?
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+60
+
+7 Making treatment decisions » Questions to ask
+
+Questions about treatment options
+1. What are my treatment options?
+2. What will happen if I do nothing?
+3. Are you suggesting options other than what NCCN recommends? If yes, why?
+4. How do my age, sex, overall health, and other factors affect my options?
+5. What if I am pregnant, or planning to become pregnant?
+6. Does any option offer a cure or long-term cancer control?
+7. How do I get a second opinion?
+8. How long do I have to decide about treatment, and is there a social worker or someone
+who can help me decide?
+9. What are my options if the MPN progresses?
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+61
+
+7 Making treatment decisions » Questions to ask
+
+Questions about clinical trials
+1. Do you recommend that I consider a clinical trial for treatment?
+2. How do I find clinical trials that I can participate in?
+3. What is the study drug used in the clinical trial and will everyone get it?
+4. Has the study drug been used for other types of cancer?
+5. What are the risks and benefits of this drug?
+6. What side effects should I expect and how will they be managed?
+7. How long will I be in the clinical trial?
+8. Will I be able to get other treatment if this doesn’t work?
+9. How will you know if the treatment is working?
+10. Will the clinical trial cost me anything?
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+62
+
+7 Making treatment decisions » Questions to ask
+
+Questions about what to expect
+1. Does this hospital or cancer center offer the best treatment for me?
+2. Do I have a choice of when to begin treatment?
+3. How long will treatment last?
+4. How might the recommended treatment interact with other medications that I am already
+taking?
+5. Who should I call if I have concerns or questions about my treatment after I start taking
+it?
+6. Who should I contact with questions or concerns if the office is closed?
+7. How will you know if treatment is working?
+8. What are the chances of the cancer worsening?
+9. What follow-up care is needed after treatment?
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+63
+
+7 Making treatment decisions » Questions to ask
+
+Questions about side effects
+1. What are the possible complications and side effects of treatment?
+2. Does the cancer itself cause any side effects?
+3. Which side effects are most common and how long do they usually last?
+4. Which side effects are serious or life-threatening?
+5. Are there any long-term or permanent side effects?
+6. What symptoms should I report right away, and who do I contact?
+7. What can I do to prevent or relieve the side effects of treatment?
+8. Do any medications worsen side effects?
+9. Do any side effects lessen or worsen in severity over time?
+10. Will you stop or change treatment if there are serious side effects?
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+64
+
+7 Making treatment decisions » Questions to ask
+
+Questions about resources and support
+1. Who can I talk to about help with housing, food, and other basic needs?
+2. What assistance is available for transportation, childcare, and home care?
+3. Who can tell me what my options for health insurance are and assist me with applying
+for insurance coverage?
+4. How much will I have to pay for my treatment? What help is available to pay for
+medicines and other treatment?
+5. Who can help me with my concerns about work or school?
+6. How can I connect with others and build a support system?
+7. Who can I talk to if I don’t feel safe at home, at work, or in my neighborhood?
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+65
+
+7 Making treatment decisions » Resources
+
+Resources
+AnCan Foundation
+ancan.org
+
+We want your
+feedback!
+
+Be The Match
+BeTheMatch.org/one-on-one
+
+Our goal is to provide helpful and
+easy-to-understand information
+on cancer.
+
+CancerCare
+cancercare.org
+Imerman Angels
+imermanangels.org
+
+Take our survey to let us know
+what we got right and what we
+could do better.
+
+MPN Cancer Connection
+mpncancerconnection.org
+
+NCCN.org/patients/feedback
+
+MPN Research Foundation
+https://bit.ly/24nccn
+National Coalition for Cancer Survivorship
+canceradvocacy.org
+The Leukemia & Lymphoma Society (LLS)
+LLS.org/PatientSupport
+Triage Cancer
+triagecancer.org
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+66
+
+Ü
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+67
+
+Words to know
+
+Words to know
+acute myeloid leukemia (AML)
+A blood cancer of young white blood cells
+called myeloblasts.
+
+bone marrow
+A soft, spongy material inside of bones where
+most blood cells are made.
+
+allogeneic hematopoietic cell transplant
+(HCT)
+A cancer treatment that replaces blood stem
+cells with donor stem cells, which in turn make
+a new, healthy bone marrow.
+
+bone marrow aspiration
+The removal of a small amount of liquid bone
+marrow to test for disease.
+bone marrow biopsy
+The removal of a small amount of solid bone
+and bone marrow to test for disease.
+
+anemia
+Low levels of healthy red blood cells that
+cannot provide enough oxygen to tissue.
+
+chromosome
+A long but tightly coiled structure within cells
+that contains coded instructions for cell
+behavior.
+
+anticoagulant
+A treatment that slows down the clotting of
+blood.
+
+chronic myeloid leukemia (CML)
+A blood cancer that causes too many white
+blood cells called granulocytes to form.
+
+artery
+A blood vessel that moves blood away from
+the heart to the rest of the body.
+
+clinical trial
+Research on a test or treatment to assess its
+safety or how well it works.
+
+BCR-ABL1
+An abnormal gene that is the hallmark of
+chronic myeloid leukemia.
+
+CMV
+cytomegalovirus
+
+biomarker test
+A lab test of a molecule in your body to assess
+your health.
+
+coagulation test
+A test of the proteins that cause blood to clot.
+
+blast
+An early form of a blood cell that is unable to
+function like a mature blood cell.
+
+complete blood count (CBC)
+A test of the number of blood cells in a sample.
+comprehensive metabolic panel
+Tests of up to 14 chemicals in your blood.
+
+blood clot
+A gel-like clump of blood. Also called
+thrombus.
+
+constitutional symptom
+A physical condition that is a general effect of a
+disease.
+
+blood smear
+A test that involves viewing a drop of blood
+with a microscope to assess features of blood
+cells.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+68
+
+Words to know
+
+cytogenetics
+The study of chromosomes using a
+microscope.
+
+fibrosis
+The scarring of supportive fibers in tissue.
+fluorescence in situ hybridization (FISH)
+A lab test that uses special dyes to look for
+abnormal changes in a cell’s genes and
+chromosomes.
+
+cytokine
+A protein that boosts or activates the immune
+system.
+cytoreductive therapy
+A treatment that reduces the number of blood
+cells.
+
+G-CSF
+granulocyte colony-stimulating factor
+gene
+A set of coded instructions within cells that
+control cell behavior.
+
+diabetes
+A disease that causes high levels of blood
+sugar.
+diagnosis
+The identification of an illness based on tests.
+
+GM-CSF
+granulocyte-macrophage colony-stimulating
+factor
+
+differential
+Measurement of the different types of white
+blood cells in a blood sample.
+
+graft-versus-host disease (GVHD)
+An attack on normal cells by blood stem cells
+from a donor.
+
+DIPSS
+Dynamic International Prognostic Scoring
+System
+
+granulocyte
+A type of white blood cell.
+hematocrit
+The percentage of red blood cells in blood.
+
+embolus
+A blood clot that is not attached to a base and
+moves through the bloodstream.
+
+hematologist
+A health care provider who’s an expert in
+diseases of the blood.
+
+erythropoiesis-stimulating agent
+A drug that helps bone marrow to make more
+red blood cells.
+
+hematopoietic stem cell
+A cell from which all other types of blood cells
+are made. Also called blood stem cell.
+
+erythropoietin (EPO)
+A hormone made by the kidneys.
+
+hemoglobin
+A protein in red blood cells that carries oxygen.
+
+essential thrombocythemia (ET)
+A cancer of blood stem cells that make
+too many platelets. Also called essential
+thrombocytosis.
+
+hemorrhage
+Blood loss inside or on the outside of the body.
+Also called bleeding.
+
+fatigue
+A feeling of extreme tiredness, even
+with enough sleep, that limits a person’s
+functioning.
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+human leukocyte antigen (HLA)
+Special proteins on the surface of cells that
+help the body to tell its own cells apart from
+foreign cells.
+
+69
+
+Words to know
+
+hypercellularity
+A high number of cells.
+
+MPN-SAF TSS
+MPN Symptom Assessment Form Total
+Symptom Score
+
+hypertension
+High blood pressure.
+
+mutation
+An abnormal set of coded instructions in cells
+(gene).
+
+IPSET-thrombosis
+International Prognostic Score of Thrombosis.
+
+myeloproliferative neoplasm (MPN)
+A cancer of blood-forming cells that causes an
+excess of blood cells or bone marrow scarring.
+
+iron
+A mineral needed to make new red blood cells.
+karyotype
+A test that uses a microscope to examine a
+cell’s chromosomes.
+
+MYSEC-PM
+Myelofibrosis Secondary to PV and ETPrognostic Model
+
+lactate dehydrogenase (LDH)
+A protein that helps to make energy in cells.
+
+NGS
+next-generation sequencing
+
+leukocyte
+A type of white blood cell.
+
+NOS
+not otherwise specified
+
+liver function tests (LFTs)
+Tests that measure chemicals made or
+processed by the liver.
+
+NSAID
+non-steroidal anti-inflammatory drug
+paresthesia
+A burning or prickling sensation in the body.
+
+LMWH
+low-molecular-weight heparin
+
+pathologist
+A doctor who’s an expert in testing cells and
+tissue to find disease.
+
+MDS
+myelodysplastic syndromes
+medical history
+A report of all your health events and
+medications.
+
+peripheral smear
+The study of a drop of blood using a
+microscope.
+
+megakaryocyte
+A bone marrow cell that makes blood-clotting
+platelets.
+
+phlebotomy
+Withdrawal of blood.
+physical exam
+A review of the body by a health expert for
+signs of disease.
+
+MIPPS
+Mutation-Enhanced International Prognostic
+Score System
+
+platelet
+A type of blood cell that helps control bleeding.
+Also called thrombocyte.
+
+molecular test
+A lab test of an abnormal gene inside cells.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+70
+
+Words to know
+
+plateletpheresis
+A procedure that withdraws blood, removes
+platelets, and then returns your altered blood
+to your body.
+
+SM-AHN
+systemic mastocytosis with an associated
+hematologic neoplasm
+spleen
+A small organ to the left of your stomach that is
+part of the immune system.
+
+polycythemia vera (PV)
+Cancer of blood-forming cells that causes too
+many red blood cells.
+
+splenomegaly
+An abnormally large spleen.
+
+post-ET myelofibrosis
+Advanced essential thrombocythemia with
+scarring in the bone marrow.
+
+SSRI
+selective serotonin reuptake inhibitor
+
+post-PV myelofibrosis
+Advanced polycythemia vera with scarring in
+the bone marrow.
+
+supportive care
+Treatment for the symptoms or health
+conditions caused by cancer or cancer
+treatment.
+
+pre-PMF
+Prefibrotic primary myelofibrosis.
+
+thrombosis
+A blockage of blood flow in blood vessels
+caused by a blood clot.
+
+primary myelofibrosis (PMF)
+Scarring of the bone marrow not due to other
+bone marrow problems.
+
+tinnitus
+Sounds that are produced by the body and not
+heard by others, such as high-pitched ringing.
+
+prognosis
+The likely course and outcome of a disease
+based on tests.
+progression
+A worsening of cancer.
+
+tumor lysis syndrome (TLS)
+A health condition caused by the rapid death of
+many cancer cells.
+
+pruritus
+Itchy skin.
+
+uric acid
+A chemical that is in most cells.
+
+reverse transcription polymerase chain
+reaction (RT-PCR)
+A lab test that detects a cancer marker even if
+it’s in a few cells.
+
+vein
+A blood vessel that moves blood back to the
+heart.
+venous thromboembolism (VTE)
+A blood clot that formed in a deep vein and
+may now be stuck in a lung artery.
+
+risk stratification
+An assessment of the likelihood of an event
+based on proven predictors.
+
+von Willebrand syndrome (VWS)
+A blood disorder that causes blood not to clot.
+
+satiety
+A feeling of fullness from eating.
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+71
+
+NCCN Contributors
+
+NCCN Contributors
+This patient guide is based on the NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®) for
+Myeloproliferative Neoplasms, Version 1.2024. It was adapted, reviewed, and published with help from the following people:
+Dorothy A. Shead, MS
+
+Senior Director
+Patient Information Operations
+
+Laura J. Hanisch, PsyD
+
+Patient Information Program Manager
+
+Susan Kidney
+
+Senior Graphic Design Specialist
+
+Tim Rinehart
+Medical Writer
+
+The NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®) for Myeloproliferative Neoplasms, Version
+1.2024 were developed by the following NCCN Panel Members:
+Aaron T. Gerds, MD, MS/Chair
+
+Case Comprehensive Cancer Center/
+University Hospitals Seidman Cancer Center
+and Cleveland Clinic Taussig Cancer Institute
+
+Jason Gotlib, MD, MS/Vice-Chair
+Stanford Cancer Institute
+
+Peter Abdelmessieh, DO, MSc
+Fox Chase Cancer Center
+
+Haris Ali, MD
+
+Paul R. Kaesberg, MD
+
+UC Davis Comprehensive Cancer Center
+
+Andrew T. Kuykendall, MD
+Moffitt Cancer Center
+
+Yazan Madanat, MD
+
+*Ruth Fein Revell
+
+Lucia Masarova, MD
+
+The University of Texas
+MD Anderson Cancer Center
+
+Jori May, MD
+
+Memorial Sloan Kettering Cancer Center
+
+O'Neal Comprehensive
+Cancer Center at UAB
+
+Tracy I. George, MD
+
+Brandon McMahon, MD
+
+Steven Green, MD
+
+Roswell Park Comprehensive Cancer Center
+
+Krishna Gundabolu, MBBS
+
+Yale Cancer Center/Smilow Cancer Hospital
+
+Naveen Manchanda, MD
+
+Mariana Castells, MD, PhD
+
+Huntsman Cancer Institute
+at the University of Utah
+
+Nikolai Podoltsev, MD, PhD
+*Lindsay Rein, MD
+
+City of Hope National Medical Center
+
+Andrew Dunbar, MD
+
+The UChicago Medicine
+Comprehensive Cancer Center
+
+UT Southwestern Simmons
+Comprehensive Cancer Center
+Indiana University Melvin and Bren Simon
+Comprehensive Cancer Center
+
+Adjunct Panel Member
+Dana-Farber/Brigham and Women’s
+Cancer Center
+
+*Anand A. Patel, MD
+
+University of Colorado Cancer Center
+
+Sanjay R. Mohan, MD, MSCI
+Vanderbilt-Ingram Cancer Center
+
+Kalyan V. Nadiminti, MD
+
+Duke Cancer Institute
+Patient Advocate
+
+Rachel Salit, MD
+
+Fred Hutchinson Cancer Center
+
+Moshe Talpaz, MD
+
+University of Michigan Rogel Cancer Center
+
+Martha Wadleigh, MD
+Dana-Farber/Brigham and
+Women’s Cancer Center
+
+Sarah Wall, MD, MPH
+
+The Ohio State University Comprehensive
+Cancer Center - James Cancer Hospital
+and Solove Research Institute
+
+Fred & Pamela Buffett Cancer Center
+
+University of Wisconsin
+Carbone Cancer Center
+
+NCCN Staff
+
+Elizabeth Hexner, MD, MS
+
+Stephen Oh, MD, PhD
+
+Guidelines Coordinator
+
+Abramson Cancer Center
+at the University of Pennsylvania
+
+Tania Jain, MBBS
+
+The Sidney Kimmel Comprehensive
+Cancer Center at Johns Hopkins
+
+Siteman Cancer Center at BarnesJewish Hospital and Washington
+University School of Medicine
+
+Jeanne Palmer
+
+Mayo Clinic Comprehensive Cancer Center
+
+Catriona Jamieson, MD, PhD
+
+UC San Diego Moores Cancer Center
+
+* Reviewed this patient guide. For disclosures, visit NCCN.org/disclosures.
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+72
+
+Mary Anne Bergman
+Cindy Hochstetler, PhD
+
+Oncology Scientist/Medical Writer
+
+NCCN Cancer Centers
+
+NCCN Cancer Centers
+Abramson Cancer Center
+at the University of Pennsylvania
+
+Memorial Sloan Kettering Cancer Center
+New York, New York
+800.525.2225 • mskcc.org
+
+Philadelphia, Pennsylvania
+800.789.7366 • pennmedicine.org/cancer
+
+Moffitt Cancer Center
+
+Case Comprehensive Cancer Center/
+University Hospitals Seidman Cancer Center and
+Cleveland Clinic Taussig Cancer Institute
+
+Tampa, Florida
+888.663.3488 • moffitt.org
+
+O’Neal Comprehensive Cancer Center at UAB
+
+Cleveland, Ohio
+UH Seidman Cancer Center
+800.641.2422 • uhhospitals.org/services/cancer-services
+CC Taussig Cancer Institute
+866.223.8100 • my.clevelandclinic.org/departments/cancer
+Case CCC
+216.844.8797 • case.edu/cancer
+
+Birmingham, Alabama
+800.822.0933 • uab.edu/onealcancercenter
+
+Robert H. Lurie Comprehensive Cancer Center
+of Northwestern University
+Chicago, Illinois
+866.587.4322 • cancer.northwestern.edu
+
+City of Hope National Medical Center
+
+Roswell Park Comprehensive Cancer Center
+
+Duarte, California
+800.826.4673 • cityofhope.org
+
+Buffalo, New York
+877.275.7724 • roswellpark.org
+
+Dana-Farber/Brigham and Women’s Cancer Center |
+Mass General Cancer Center
+
+Siteman Cancer Center at Barnes-Jewish Hospital
+and Washington University School of Medicine
+
+Boston, Massachusetts
+877.442.3324 • youhaveus.org
+617.726.5130 • massgeneral.org/cancer-center
+
+St. Louis, Missouri
+800.600.3606 • siteman.wustl.edu
+
+St. Jude Children’s Research Hospital/
+The University of Tennessee Health Science Center
+
+Duke Cancer Institute
+
+Durham, North Carolina
+888.275.3853 • dukecancerinstitute.org
+
+Memphis, Tennessee
+866.278.5833 • stjude.org
+901.448.5500 • uthsc.edu
+
+Fox Chase Cancer Center
+Philadelphia, Pennsylvania
+888.369.2427 • foxchase.org
+
+Stanford Cancer Institute
+
+Stanford, California
+877.668.7535 • cancer.stanford.edu
+
+Fred & Pamela Buffett Cancer Center
+Omaha, Nebraska
+402.559.5600 • unmc.edu/cancercenter
+
+The Ohio State University Comprehensive Cancer Center James Cancer Hospital and Solove Research Institute
+
+Fred Hutchinson Cancer Center
+
+Columbus, Ohio
+800.293.5066 • cancer.osu.edu
+
+Seattle, Washington
+206.667.5000 • fredhutch.org
+
+Huntsman Cancer Institute at the University of Utah
+
+The Sidney Kimmel Comprehensive
+Cancer Center at Johns Hopkins
+
+Indiana University Melvin and Bren Simon
+Comprehensive Cancer Center
+
+The UChicago Medicine Comprehensive Cancer Center
+
+Baltimore, Maryland
+410.955.8964
+www.hopkinskimmelcancercenter.org
+
+Salt Lake City, Utah
+800.824.2073 • healthcare.utah.edu/huntsmancancerinstitute
+
+Indianapolis, Indiana
+888.600.4822 • www.cancer.iu.edu
+
+Chicago, Illinois
+773.702.1000 • uchicagomedicine.org/cancer
+
+Mayo Clinic Comprehensive Cancer Center
+
+The University of Texas MD Anderson Cancer Center
+Houston, Texas
+844.269.5922 • mdanderson.org
+
+Phoenix/Scottsdale, Arizona
+Jacksonville, Florida
+Rochester, Minnesota
+480.301.8000 • Arizona
+904.953.0853 • Florida
+507.538.3270 • Minnesota
+mayoclinic.org/cancercenter
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+UC Davis Comprehensive Cancer Center
+Sacramento, California
+916.734.5959 • 800.770.9261
+health.ucdavis.edu/cancer
+
+73
+
+NCCN Cancer Centers
+
+UC San Diego Moores Cancer Center
+La Jolla, California
+858.822.6100 • cancer.ucsd.edu
+
+UCLA Jonsson Comprehensive Cancer Center
+
+share with us.
+
+Los Angeles, California
+310.825.5268 • uclahealth.org/cancer
+
+UCSF Helen Diller Family
+Comprehensive Cancer Center
+San Francisco, California
+800.689.8273 • cancer.ucsf.edu
+
+University of Colorado Cancer Center
+Aurora, Colorado
+720.848.0300 • coloradocancercenter.org
+
+University of Michigan Rogel Cancer Center
+
+Take our survey and help make the
+NCCN Guidelines for Patients
+better for everyone!
+
+University of Wisconsin Carbone Cancer Center
+
+NCCN.org/patients/comments
+
+Ann Arbor, Michigan
+800.865.1125 • rogelcancercenter.org
+Madison, Wisconsin
+608.265.1700 • uwhealth.org/cancer
+
+UT Southwestern Simmons
+Comprehensive Cancer Center
+
+Dallas, Texas
+214.648.3111 • utsouthwestern.edu/simmons
+
+Vanderbilt-Ingram Cancer Center
+Nashville, Tennessee
+877.936.8422 • vicc.org
+
+Yale Cancer Center/Smilow Cancer Hospital
+New Haven, Connecticut
+855.4.SMILOW • yalecancercenter.org
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+74
+
+Notes
+
+Notes
+
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+75
+
+Index
+
+Index
+acute myeloid leukemia (AML) 5, 8, 35,
+44–45, 54
+
+plateletpheresis 34, 51, 53
+post-ET myelofibrosis 37
+
+allogeneic hemopoietic cell transplant (HCT)
+40–41, 45
+
+post-PV myelofibrosis 37
+primary myelofibrosis (PMF) 11, 15–16, 18,
+37, 41
+
+anemia 16, 30, 37, 39, 42–43, 47
+anticoagulant 31–32, 51–52
+
+second opinion 58
+
+aspirin 28–31, 33, 51, 53
+
+shared decision-making 58
+
+acquired von Willebrand syndrome (aVWS)
+14, 29, 51
+
+supportive care 50, 54–55
+triple negative 16–17
+
+bone marrow aspiration 14, 47
+
+watch and wait 40
+
+bone marrow biopsy 14, 47
+CALR 11, 15–17, 19
+chemotherapy 44, 54
+chronic myeloid leukemia (CML) 7, 15
+clinical trial 33, 36, 40, 42, 44–47
+coagulation 11
+complete blood count (CBC) 11, 13
+cytoreductive therapy 29–30, 32–34, 40, 51
+human leukocyte antigen (HLA) 14
+JAK inhibitor 30, 40–45, 47, 54
+JAK2 11, 15–17, 27–28
+medical history 11–12
+MPL 11, 15–17
+myelodysplastic syndromes (MDS) 5, 16
+NCCN Cancer Centers 73–74
+NCCN Contributors 72
+phlebotomy 29, 53
+NCCN Guidelines for Patients®
+Myeloproliferative Neoplasms, 2024
+
+76
+
+Ü
+
+NCCN
+GUIDELINES
+FOR PATIENTS
+
+®
+
+Myeloproliferative
+Neoplasms
+2024
+To support the NCCN Guidelines for Patients, visit
+NCCNFoundation.org/Donate
+
+3025 Chemical Road, Suite 100
+Plymouth Meeting, PA 19462
+215.690.0300
+
+NCCN.org/patients – For Patients | NCCN.org – For Clinicians
+PAT-N-1774-0524
+
+
