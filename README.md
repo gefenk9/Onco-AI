@@ -1,13 +1,13 @@
 1. In your project directory, create a virtual environment.
 
 ```bash
-python -m venv claude-env
+python -m venv .venv
 ```
 
 2. Activate the virtual environment using:
 
-- On macOS or Linux, `source claude-env/bin/activate`
-- On Windows, `claude-env\Scripts\activate`
+- On macOS or Linux, `source .venv/bin/activate`
+- On Windows, `.venv\Scripts\activate`
 
 3. Install dependencies:
 
