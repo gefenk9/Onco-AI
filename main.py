@@ -28,7 +28,7 @@ for filename, content in guidelines_preview.items():
     file_selection_prompt += f"\n{'='*20}\n" f"GUIDELINE FILE: {filename}\n" f"{'='*20}\n" f"{content}\n" f"{'='*20}\n"
 
 file_selection_prompt += (
-    "\nBased on the following patient description, respond ONLY with the exact filename "
+    "\nBased on the following patient description, respond ONLY with exact filename "
     "(including .txt extension) that best matches the patient's condition. "
     "Provide no other text in your response."
 )
@@ -48,7 +48,7 @@ print(f"INFO: Recommended file '{recommended_file}' ({message.usage}).")
 # Verify file exists and read appropriate guideline
 try:
     if not os.path.exists(os.path.join('NCCN_Guidlines', recommended_file)):
-        print(f"WARNING: Recommended file '{recommended_file}' not found. Using all-patient.txt as fallback.")
+        print(f"WARNING: Recommended file '{recommended_file}' not found. Using 'all-patient.txt' as fallback.")
         recommended_file = 'all-patient.txt'
 
     with open(os.path.join('NCCN_Guidlines', recommended_file), 'r', encoding='utf-8') as file:
@@ -63,10 +63,10 @@ SYSTEM_PROMPT_BASE = (
     "כרופא אונקולוג, אני זקוק לסיוע בגיבוש תוכנית טיפול מקיפה עבור מטופלים שאובחנו לאחרונה עם סרטן. "
     "אתה הולך לקבל מידע על המטופל. אנא ספק מתווה מפורט של אפשרויות טיפול פוטנציאליות, "
     "כולל משטרי כימותרפיה, גישות כירורגיות, שיקולי טיפול בקרינה, וטיפולים ממוקדים על בסיס "
-    "הנחיות אונקולוגיות עדכניות.בנוסף הצע בדיקות דם מתאימות לאבחנה, בנוסף, הצע אסטרטגיות לניהול תופעות לוואי נפוצות ותאר נקודות מפתח "
+    "הנחיות אונקולוגיות עדכניות. בנוסף הצע בדיקות דם מתאימות לאבחנה (תפרט בבקשה את הבדיקות באופן ספציפי), בנוסף, הצע אסטרטגיות לניהול תופעות לוואי נפוצות ותאר נקודות מפתח "
     "לחינוך המטופלת בנוגע לפרוגנוזה ושינויים באורח החיים. ענה בעברית בלבד. "
     "לכל המלצה הסבר את הסיבה להמלצה"
-    "להלן NCCN Guidelines לפיהן עליך לענות:"
+    "להלן NCCN & ESMO Guidelines לפיהן עליך לענות:"
 )
 
 # Concatenate the base prompt with the guidelines content
@@ -74,6 +74,8 @@ SYSTEM_PROMPT = f"{SYSTEM_PROMPT_BASE}\n\n{guidelines_content}\n\n"
 
 with open('./user_prompt.txt', 'r', encoding='utf-8') as file:
     user_prompt = file.read()
+
+print("\n\nLLM+RAG\n\n")
 
 message = client.messages.create(
     model="claude-3-5-sonnet-20241022",
