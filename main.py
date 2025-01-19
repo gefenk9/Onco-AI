@@ -2,18 +2,15 @@ import anthropic
 import os
 import re
 import sys
+import json
 
 API_KEY = "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"
 
 client = anthropic.Anthropic(api_key=API_KEY)
 
-# Read all guideline files (first 300 lines)
-guidelines_preview = {}
-for filename in os.listdir('NCCN_Guidlines/'):
-    if filename.endswith('.txt'):
-        with open(os.path.join('NCCN_Guidlines', filename), 'r', encoding='utf-8') as file:
-            lines = file.readlines()[:300]
-            guidelines_preview[filename] = re.sub(r' +', ' ', ' '.join(lines))
+# Read descriptions of all guideline files
+with open('guidelines_descriptions.json', 'r') as f:
+    guidelines_preview = json.load(f)
 
 # Read user prompt
 with open('./user_prompt.txt', 'r', encoding='utf-8') as file:
@@ -28,7 +25,7 @@ file_selection_prompt = (
 )
 
 for filename, content in guidelines_preview.items():
-    file_selection_prompt += f"\n{'='*80}\n" f"GUIDELINE FILE: {filename}\n" f"{'='*80}\n" f"{content}\n" f"{'='*80}\n"
+    file_selection_prompt += f"\n{'='*20}\n" f"GUIDELINE FILE: {filename}\n" f"{'='*20}\n" f"{content}\n" f"{'='*20}\n"
 
 file_selection_prompt += (
     "\nBased on the following patient description, respond ONLY with the exact filename "
@@ -39,14 +36,14 @@ file_selection_prompt += (
 # Get the recommended guideline file
 message = client.messages.create(
     model="claude-3-5-sonnet-20241022",
-    max_tokens=20,
+    max_tokens=50,
     temperature=0,
     system=file_selection_prompt,
     messages=[{"role": "user", "content": [{"type": "text", "text": user_prompt}]}],
 )
 
 recommended_file = message.content[0].text.strip()
-print(f"INFO: Recommended file '{recommended_file}'.")
+print(f"INFO: Recommended file '{recommended_file}' ({message.usage}).")
 
 # Verify file exists and read appropriate guideline
 try:
@@ -86,16 +83,5 @@ message = client.messages.create(
     messages=[{"role": "user", "content": [{"type": "text", "text": user_prompt}]}],
 )
 
+print(f"Final result ({message.usage}):\n")
 print(message.content[0].text)
-
-# print ("\n\nLLM+SYSTEM+RAG\n\n")
-#
-# message_rag = client.messages.create(
-#     model="claude-3-5-sonnet-20241022",
-#     max_tokens=1000,
-#     temperature=0,
-#     system="RAG_PROMPT",
-#     messages=[{"role": "user", "content": [{"type": "text", "text": user_prompt}]}],
-# )
-#
-# print(message_rag.content[0].text)
