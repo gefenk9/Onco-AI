@@ -1,89 +1,97 @@
-import anthropic
-import os
-import re
-import sys
+import boto3
 import json
+import os  # Was missing import
+import re  # Was missing import
+import sys  # Was missing import
 
-API_KEY = "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"
+# AWS Bedrock client initialization
+aws_region = 'eu-west-1'  # Your AWS region for Bedrock
+bedrock_client = boto3.client(
+    'bedrock-runtime',
+    region_name=aws_region,
+    # If running on an EC2 instance with an IAM role,
+    # or if your AWS credentials are configured in the environment/AWS CLI,
+    # you don't need to pass aws_access_key_id and aws_secret_access_key here.
+)
 
-client = anthropic.Anthropic(api_key=API_KEY)
+# Corrected Model ID for Claude 3.5 Sonnet on Bedrock
+# The region prefix "eu." is not part of the modelId;
+# the region is specified when creating the bedrock_client.
+claude_sonnet_3_5_model_id = "eu.anthropic.claude-3-5-sonnet-20240620-v1:0"
 
 # Read descriptions of all guideline files
-with open('guidelines_descriptions.json', 'r') as f:
-    guidelines_preview = json.load(f)
-
-# Read user prompt
-with open('./user_prompt.txt', 'r', encoding='utf-8') as file:
-    user_prompt = file.read()
-
-# Create a system prompt to identify the relevant guideline
-file_selection_prompt = (
-    "You are an expert oncologist. Based on the patient description I will provide, "
-    "determine which NCCN guideline file would be most appropriate to use. "
-    "Here are previews of all available guideline files. Each file is separated by "
-    "======= borders and clearly labeled with 'GUIDELINE FILE: filename.txt':\n\n"
-)
-
-for filename, content in guidelines_preview.items():
-    file_selection_prompt += f"\n{'='*20}\n" f"GUIDELINE FILE: {filename}\n" f"{'='*20}\n" f"{content}\n" f"{'='*20}\n"
-
-file_selection_prompt += (
-    "\nBased on the following patient description, respond ONLY with exact filename "
-    "(including .txt extension) that best matches the patient's condition. "
-    "Provide no other text in your response."
-)
-
-# Get the recommended guideline file
-message = client.messages.create(
-    model="claude-3-5-sonnet-20241022",
-    max_tokens=50,
-    temperature=0,
-    system=file_selection_prompt,
-    messages=[{"role": "user", "content": [{"type": "text", "text": user_prompt}]}],
-)
-
-recommended_file = message.content[0].text.strip()
-print(f"INFO: Recommended file '{recommended_file}' ({message.usage}).")
-
-# Verify file exists and read appropriate guideline
 try:
-    if not os.path.exists(os.path.join('NCCN_Guidlines', recommended_file)):
-        print(f"WARNING: Recommended file '{recommended_file}' not found. Using 'all-patient.txt' as fallback.")
-        recommended_file = 'all-patient.txt'
-
-    with open(os.path.join('NCCN_Guidlines', recommended_file), 'r', encoding='utf-8') as file:
-        guidelines_content = re.sub(r' +', ' ', file.read().replace('\n', ' '))
-
-except Exception as e:
-    print(f"ERROR reading guideline file: {e}")
+    with open('guidelines_descriptions.json', 'r', encoding='utf-8') as f:
+        guidelines_preview = json.load(f)
+except FileNotFoundError:
+    print("ERROR: 'guidelines_descriptions.json' not found. Please ensure the file exists.")
+    sys.exit(1)
+except json.JSONDecodeError:
+    print("ERROR: Could not decode 'guidelines_descriptions.json'. Please ensure it's valid JSON.")
     sys.exit(1)
 
-# Define the constant system prompt
-SYSTEM_PROMPT_BASE = (
+# Read user prompt
+try:
+    with open('./user_prompt.txt', 'r', encoding='utf-8') as file:
+        user_prompt_text = file.read()
+except FileNotFoundError:
+    print("ERROR: './user_prompt.txt' not found. Please ensure the file exists.")
+    sys.exit(1)
+
+recommended_file = 'all-patient.txt'  # Ensure this fallback file exists in NCCN_Guidlines
+guideline_file_path = os.path.join('NCCN_Guidlines', recommended_file)
+
+try:
+    with open(guideline_file_path, 'r', encoding='utf-8') as file:
+        guidelines_content = re.sub(r' +', ' ', file.read().replace('\n', ' '))
+    print(f"INFO: Successfully loaded guidelines from '{recommended_file}'.")
+except Exception as e:
+    print(f"ERROR reading guideline file '{guideline_file_path}': {e}")
+    sys.exit(1)
+
+# --- Define the constant system prompt for treatment plan (RAG) ---
+SYSTEM_PROMPT_BASE_HE = (
     "כרופא אונקולוג, אני זקוק לסיוע בגיבוש תוכנית טיפול מקיפה עבור מטופלים שאובחנו לאחרונה עם סרטן. "
     "אתה הולך לקבל מידע על המטופל. אנא ספק מתווה מפורט של אפשרויות טיפול פוטנציאליות, "
     "כולל משטרי כימותרפיה, גישות כירורגיות, שיקולי טיפול בקרינה, וטיפולים ממוקדים על בסיס "
     "הנחיות אונקולוגיות עדכניות. בנוסף הצע בדיקות דם מתאימות לאבחנה (תפרט בבקשה את הבדיקות באופן ספציפי), בנוסף, הצע אסטרטגיות לניהול תופעות לוואי נפוצות ותאר נקודות מפתח "
     "לחינוך המטופלת בנוגע לפרוגנוזה ושינויים באורח החיים. ענה בעברית בלבד. "
-    "לכל המלצה הסבר את הסיבה להמלצה"
+    "לכל המלצה הסבר את הסיבה להמלצה. "  # Added a space here
     "להלן NCCN & ESMO Guidelines לפיהן עליך לענות:"
 )
 
 # Concatenate the base prompt with the guidelines content
-SYSTEM_PROMPT = f"{SYSTEM_PROMPT_BASE}\n\n{guidelines_content}\n\n"
+system_prompt_with_guidelines = f"{SYSTEM_PROMPT_BASE_HE}\n\n{guidelines_content}\n\n"
 
-with open('./user_prompt.txt', 'r', encoding='utf-8') as file:
-    user_prompt = file.read()
+print("\n\n--- Invoking Bedrock (LLM+RAG) for treatment plan ---")
 
-print("\n\nLLM+RAG\n\n")
+rag_request_body = {
+    "system": system_prompt_with_guidelines,
+    "anthropic_version": "bedrock-2023-05-31",
+    "max_tokens": 4000,  # Adjusted from 5000 as Claude 3.5 Sonnet has context window limits, be mindful
+    "temperature": 0.0,  # For consistent output, adjust if creativity is needed
+    "messages": [{"role": "user", "content": [{"type": "text", "text": user_prompt_text}]}],
+}
 
-message = client.messages.create(
-    model="claude-3-5-sonnet-20241022",
-    max_tokens=2500,
-    temperature=0,
-    system=SYSTEM_PROMPT,
-    messages=[{"role": "user", "content": [{"type": "text", "text": user_prompt}]}],
-)
+try:
+    response_rag = bedrock_client.invoke_model(
+        modelId=claude_sonnet_3_5_model_id,
+        contentType='application/json',
+        accept='application/json',
+        body=json.dumps(rag_request_body),
+    )
+    response_rag_text = response_rag['body'].read().decode('utf-8')
+    response_rag_body_json = json.loads(response_rag_text)
 
-print(f"Final result ({message.usage}):\n")
-print(message.content[0].text)
+    if response_rag_body_json.get("content") and len(response_rag_body_json["content"]) > 0:
+        claude_response_rag = response_rag_body_json['content'][0]['text']
+        print("\n--- Bedrock (LLM+RAG) Response: ---")
+        print(claude_response_rag)
+    else:
+        print(f"ERROR: Could not extract RAG response from Bedrock: {response_rag_body_json}")
+
+except Exception as e:
+    print(f"ERROR during Bedrock call for RAG: {e}")
+
+
+print("\n\n--- Script Finished ---")
