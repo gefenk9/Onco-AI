@@ -4,6 +4,10 @@ import os
 import re
 import sys
 import csv
+import time  # Import the time module
+
+# --- Configuration ---
+REQUEST_DELAY_SECONDS = 60  # Delay in seconds between requests
 
 # AWS Bedrock client initialization
 aws_region = 'eu-west-1'  # Your AWS region for Bedrock
@@ -93,6 +97,10 @@ try:
         writer.writeheader()
 
         for i, row in enumerate(reader):
+            if i > 0:  # If it's not the first record, wait before processing this new record
+                print(f"\n--- Waiting {REQUEST_DELAY_SECONDS} seconds before processing record {i+1}... ---")
+                time.sleep(REQUEST_DELAY_SECONDS)  # Wait for the configured duration
+
             print(f"\n\n--- Processing record {i+1} from CSV ---")
 
             current_disease_text = row.get(ORIGINAL_FIELDNAMES_HE[0], "")
@@ -127,6 +135,12 @@ try:
                     print(f"ERROR: Could not extract RAG response from Bedrock: {response_rag_body_json}")
             except Exception as e:
                 print(f"ERROR during Bedrock call for RAG (record {i+1}): {e}")
+
+            # Wait before the second AI request for the current record
+            print(
+                f"\n--- Waiting {REQUEST_DELAY_SECONDS} seconds before AI vs Doctor comparison request for record {i+1}... ---"
+            )
+            time.sleep(REQUEST_DELAY_SECONDS)
 
             # 2. Second Bedrock Call: Get AI vs Doctor comparison
             print("\n--- Invoking Bedrock for AI vs Doctor comparison ---")
