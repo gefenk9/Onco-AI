@@ -1,8 +1,9 @@
 import boto3
 import json
-import os  # Was missing import
-import re  # Was missing import
-import sys  # Was missing import
+import os
+import re
+import sys
+import csv
 
 # AWS Bedrock client initialization
 aws_region = 'eu-west-1'  # Your AWS region for Bedrock
@@ -30,15 +31,7 @@ except json.JSONDecodeError:
     print("ERROR: Could not decode 'guidelines_descriptions.json'. Please ensure it's valid JSON.")
     sys.exit(1)
 
-# Read user prompt
-try:
-    with open('./user_prompt.txt', 'r', encoding='utf-8') as file:
-        user_prompt_text = file.read()
-except FileNotFoundError:
-    print("ERROR: './user_prompt.txt' not found. Please ensure the file exists.")
-    sys.exit(1)
-
-recommended_file = 'all-patient.txt'  # Ensure this fallback file exists in NCCN_Guidlines
+recommended_file = './all-patient.txt'  # Ensure this fallback file exists in NCCN_Guidlines
 guideline_file_path = os.path.join('NCCN_Guidlines', recommended_file)
 
 try:
@@ -63,35 +56,139 @@ SYSTEM_PROMPT_BASE_HE = (
 # Concatenate the base prompt with the guidelines content
 system_prompt_with_guidelines = f"{SYSTEM_PROMPT_BASE_HE}\n\n{guidelines_content}\n\n"
 
-print("\n\n--- Invoking Bedrock (LLM+RAG) for treatment plan ---")
+# --- Define the constant system prompt for AI vs Doctor comparison ---
+SYSTEM_PROMPT_COMPARISON_HE = (
+    "אתה עוזר AI שתפקידך הוא להשוות בין המלצת טיפול שנוצרה על ידי מודל שפה גדול (LLM) לבין סיכום, מסקנות והמלצות שניתנו על ידי רופא אנושי. "
+    "אנא ספק ניתוח השוואתי מפורט. התמקד בנקודות הבאות:\n"
+    "1.  **דמיון**: מהן נקודות הדמיון העיקריות בין המלצת ה-LLM לבין המלצות הרופא?\n"
+    "2.  **הבדלים**: מהם ההבדלים המרכזיים? האם ה-LLM הציע משהו שהרופא לא, או להיפך?\n"
+    "3.  **שלמות**: האם המלצת ה-LLM מקיפה כמו זו של הרופא? האם חסרים בה אלמנטים קריטיים?\n"
+    "4.  **דיוק קליני**: בהתחשב במידע המוגבל, האם המלצת ה-LLM נראית סבירה מבחינה קלינית בהשוואה לרופא? (ציין שזו הערכה ראשונית).\n"
+    "5.  **הערות נוספות**: כל תובנה או הערה רלוונטית אחרת שעולה מההשוואה.\n"
+    "ענה בעברית בלבד, בצורה ברורה ומובנית."
+)
 
-rag_request_body = {
-    "system": system_prompt_with_guidelines,
-    "anthropic_version": "bedrock-2023-05-31",
-    "max_tokens": 4000,  # Adjusted from 5000 as Claude 3.5 Sonnet has context window limits, be mindful
-    "temperature": 0.0,  # For consistent output, adjust if creativity is needed
-    "messages": [{"role": "user", "content": [{"type": "text", "text": user_prompt_text}]}],
-}
+
+input_csv_path = './cases.csv'
+output_csv_path = 'cases_with_ai_analysis.csv'
+
+ORIGINAL_FIELDNAMES_HE = ['current_disease', 'summery_conclusion', 'recommendations']
+NEW_FIELDNAMES_AI = ['ai_summery_conclusion', 'ai_vs_doctor_comparision']
+output_fieldnames = ORIGINAL_FIELDNAMES_HE + NEW_FIELDNAMES_AI
 
 try:
-    response_rag = bedrock_client.invoke_model(
-        modelId=claude_sonnet_3_5_model_id,
-        contentType='application/json',
-        accept='application/json',
-        body=json.dumps(rag_request_body),
-    )
-    response_rag_text = response_rag['body'].read().decode('utf-8')
-    response_rag_body_json = json.loads(response_rag_text)
+    with open(input_csv_path, 'r', encoding='utf-8') as infile, open(
+        output_csv_path, 'w', newline='', encoding='utf-8'
+    ) as outfile:
 
-    if response_rag_body_json.get("content") and len(response_rag_body_json["content"]) > 0:
-        claude_response_rag = response_rag_body_json['content'][0]['text']
-        print("\n--- Bedrock (LLM+RAG) Response: ---")
-        print(claude_response_rag)
-    else:
-        print(f"ERROR: Could not extract RAG response from Bedrock: {response_rag_body_json}")
+        reader = csv.DictReader(infile)
+        # Ensure the reader uses the correct fieldnames if they are not exactly as expected
+        if reader.fieldnames != ORIGINAL_FIELDNAMES_HE:
+            print(
+                f"WARNING: CSV headers in '{input_csv_path}' are {reader.fieldnames}, expected {ORIGINAL_FIELDNAMES_HE}."
+            )
+            # If critical, you might want to sys.exit(1) or adapt ORIGINAL_FIELDNAMES_HE
 
+        writer = csv.DictWriter(outfile, fieldnames=output_fieldnames)
+        writer.writeheader()
+
+        for i, row in enumerate(reader):
+            print(f"\n\n--- Processing record {i+1} from CSV ---")
+
+            current_disease_text = row.get(ORIGINAL_FIELDNAMES_HE[0], "")
+            doctor_summary_text = row.get(ORIGINAL_FIELDNAMES_HE[1], "")
+            doctor_recommendations_text = row.get(ORIGINAL_FIELDNAMES_HE[2], "")
+
+            ai_summary_conclusion = "Error: RAG call failed or no content."
+            ai_vs_doctor_comparison = "Error: Comparison call failed or no content."
+
+            # 1. First Bedrock Call: Get AI summary/conclusion (RAG)
+            print("--- Invoking Bedrock (LLM+RAG) for treatment plan ---")
+            rag_request_body = {
+                "system": system_prompt_with_guidelines,
+                "anthropic_version": "bedrock-2023-05-31",
+                "max_tokens": 4000,
+                "temperature": 0.0,
+                "messages": [{"role": "user", "content": [{"type": "text", "text": current_disease_text}]}],
+            }
+            try:
+                response_rag = bedrock_client.invoke_model(
+                    modelId=claude_sonnet_3_5_model_id,
+                    contentType='application/json',
+                    accept='application/json',
+                    body=json.dumps(rag_request_body),
+                )
+                response_rag_text = response_rag['body'].read().decode('utf-8')
+                response_rag_body_json = json.loads(response_rag_text)
+
+                if response_rag_body_json.get("content") and len(response_rag_body_json["content"]) > 0:
+                    ai_summary_conclusion = response_rag_body_json['content'][0]['text']
+                else:
+                    print(f"ERROR: Could not extract RAG response from Bedrock: {response_rag_body_json}")
+            except Exception as e:
+                print(f"ERROR during Bedrock call for RAG (record {i+1}): {e}")
+
+            # 2. Second Bedrock Call: Get AI vs Doctor comparison
+            print("\n--- Invoking Bedrock for AI vs Doctor comparison ---")
+            comparison_user_prompt = f"""
+הנך מתבקש להשוות את שני הטקסטים הבאים:
+
+טקסט 1: המלצת טיפול שנוצרה על ידי LLM:
+---
+{ai_summary_conclusion}
+---
+
+טקסט 2: סיכום, מסקנות והמלצות של רופא אנושי:
+---
+סיכום ומסקנות הרופא:
+{doctor_summary_text}
+
+המלצות הרופא:
+{doctor_recommendations_text}
+---
+
+אנא ספק את ניתוח ההשוואה שלך בהתאם להנחיות שקיבלת.
+"""
+            comparison_request_body = {
+                "system": SYSTEM_PROMPT_COMPARISON_HE,
+                "anthropic_version": "bedrock-2023-05-31",
+                "max_tokens": 4000,  # Adjust if comparison needs more/less
+                "temperature": 0.0,
+                "messages": [{"role": "user", "content": [{"type": "text", "text": comparison_user_prompt}]}],
+            }
+            try:
+                response_comparison = bedrock_client.invoke_model(
+                    modelId=claude_sonnet_3_5_model_id,
+                    contentType='application/json',
+                    accept='application/json',
+                    body=json.dumps(comparison_request_body),
+                )
+                response_comparison_text = response_comparison['body'].read().decode('utf-8')
+                response_comparison_body_json = json.loads(response_comparison_text)
+
+                if response_comparison_body_json.get("content") and len(response_comparison_body_json["content"]) > 0:
+                    ai_vs_doctor_comparison = response_comparison_body_json['content'][0]['text']
+                else:
+                    print(f"ERROR: Could not extract comparison response from Bedrock: {response_comparison_body_json}")
+            except Exception as e:
+                print(f"ERROR during Bedrock call for comparison (record {i+1}): {e}")
+
+            # Write data to output CSV
+            output_row = {
+                ORIGINAL_FIELDNAMES_HE[0]: current_disease_text,
+                ORIGINAL_FIELDNAMES_HE[1]: doctor_summary_text,
+                ORIGINAL_FIELDNAMES_HE[2]: doctor_recommendations_text,
+                NEW_FIELDNAMES_AI[0]: ai_summary_conclusion,
+                NEW_FIELDNAMES_AI[1]: ai_vs_doctor_comparison,
+            }
+            writer.writerow(output_row)
+            print(f"--- Finished processing and wrote record {i+1} to '{output_csv_path}' ---")
+
+except FileNotFoundError:
+    print(f"ERROR: Input CSV file '{input_csv_path}' not found.")
+    sys.exit(1)
 except Exception as e:
-    print(f"ERROR during Bedrock call for RAG: {e}")
-
+    print(f"An unexpected error occurred: {e}")
+    sys.exit(1)
 
 print("\n\n--- Script Finished ---")
