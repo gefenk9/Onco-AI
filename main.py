@@ -1,10 +1,9 @@
 import boto3
 import json
-import os
 import re
 import sys
 import csv
-import time  # Import the time module
+import time
 
 # Configs
 REQUEST_DELAY_SECONDS = 31  # Delay in seconds between requests (current rate limit is 2 req/sec)
@@ -69,7 +68,7 @@ try:
             print(
                 f"WARNING: CSV headers in '{input_csv_path}' are {reader.fieldnames}, expected {ORIGINAL_FIELDNAMES_HE}."
             )
-            # If critical, you might want to sys.exit(1) or adapt ORIGINAL_FIELDNAMES_HE
+            sys.exit(1)
 
         writer = csv.DictWriter(outfile, fieldnames=output_fieldnames)
         writer.writeheader()
@@ -77,7 +76,7 @@ try:
         for i, row in enumerate(reader):
             if i > 0:  # If it's not the first record, wait before processing this new record
                 print(f"\n--- Waiting {REQUEST_DELAY_SECONDS} seconds before processing record {i+1}... ---")
-                time.sleep(REQUEST_DELAY_SECONDS)  # Wait for the configured duration
+                time.sleep(REQUEST_DELAY_SECONDS)  # Respect rate limits
 
             print(f"\n\n--- Processing record {i+1} from CSV ---")
 
@@ -115,14 +114,14 @@ try:
             except Exception as e:
                 print(f"ERROR during Bedrock call for LLM (record {i+1}): {e}")
 
-            # Wait before the second AI request for the current record
+            # Wait before the second LLM request for the current record
             print(
                 f"\n--- Waiting {REQUEST_DELAY_SECONDS} seconds before AI vs Doctor comparison request for record {i+1}... ---"
             )
             time.sleep(REQUEST_DELAY_SECONDS)
 
-            # 2. Second Bedrock Call: Get AI vs Doctor comparison
-            print("\n--- Invoking Bedrock for AI vs Doctor comparison ---")
+            # 2. Second Bedrock Call: Get LLM vs Doctor comparison
+            print("\n--- Invoking Bedrock for LLM vs Doctor comparison ---")
             comparison_user_prompt = f"""
 הנך מתבקש להשוות את שני הטקסטים הבאים:
 
@@ -162,7 +161,7 @@ try:
                 if response_comparison_body_json.get("content") and len(response_comparison_body_json["content"]) > 0:
                     raw_comparison_text = response_comparison_body_json['content'][0]['text']
 
-                    # Extract score and clean the text
+                    # Extract numerical score and clean the text
                     score_extraction_pattern = r"ציון דמיון מספרי \(0-1\):\s*(0-1?)"
                     score_match = re.search(score_extraction_pattern, raw_comparison_text)
 
