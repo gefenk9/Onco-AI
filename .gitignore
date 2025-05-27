@@ -1,2 +1,4 @@
 .venv
 .idea
+cross_analysis_output.txt
+__pycache__
