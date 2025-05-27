@@ -53,8 +53,8 @@ input_csv_path = './cases.csv'
 output_csv_path = 'cases_with_analysis.csv'
 DEFAULT_SCORE_ON_ERROR = 0.0
 
-ORIGINAL_FIELDNAMES_HE = ['current_disease', 'summery_conclusion', 'recommendations']
-NEW_FIELDNAMES = ['llm_summery_conclusion', 'llm_vs_doctor_comparision', 'llm_vs_doctor_comparison_score']
+ORIGINAL_FIELDNAMES_HE = ['current_disease', 'summary_conclusion', 'recommendations']
+NEW_FIELDNAMES = ['llm_summary_conclusion', 'llm_vs_doctor_comparision', 'llm_vs_doctor_comparison_score']
 output_fieldnames = ORIGINAL_FIELDNAMES_HE + NEW_FIELDNAMES
 
 try:
