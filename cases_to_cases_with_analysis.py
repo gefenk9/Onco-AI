@@ -1,27 +1,17 @@
-import boto3
 import json
 import re
 import sys
 import csv
 import time
+import os
+from llm_client import invoke_llm  # Import the new common function
 
 # Configs
 REQUEST_DELAY_SECONDS = 31  # Delay in seconds between requests (current rate limit is 2 req/sec)
 
-# AWS Bedrock client initialization
-aws_region = 'eu-west-1'  # Your AWS region for Bedrock
-bedrock_client = boto3.client(
-    'bedrock-runtime',
-    region_name=aws_region,
-    # If running on an EC2 instance with an IAM role,
-    # or if your AWS credentials are configured in the environment/AWS CLI,
-    # you don't need to pass aws_access_key_id and aws_secret_access_key here.
-)
-
-# Corrected Model ID for Claude 3.5 Sonnet on Bedrock
-# The region prefix "eu." is not part of the modelId;
-# the region is specified when creating the bedrock_client.
-claude_sonnet_3_5_model_id = "eu.anthropic.claude-3-5-sonnet-20240620-v1:0"
+# Model ID for Claude 3.5 Sonnet on Bedrock (as used in this script)
+# This specific ID will be passed to the invoke_llm function.
+BEDROCK_CLAUDE_MODEL_ID = "eu.anthropic.claude-3-5-sonnet-20240620-v1:0"
 
 # Define the constant system prompt for treatment plan
 SYSTEM_PROMPT_BASE_HE = (
@@ -90,29 +80,26 @@ try:
 
             # 1. First Bedrock Call: Get AI summary/conclusion
             print("--- Invoking Bedrock LLM for treatment plan ---")
-            llm_request_body = {
-                "system": SYSTEM_PROMPT_BASE_HE,
-                "anthropic_version": "bedrock-2023-05-31",
-                "max_tokens": 1000,
-                "temperature": 0.0,
-                "messages": [{"role": "user", "content": [{"type": "text", "text": current_disease_text}]}],
-            }
-            try:
-                response_llm = bedrock_client.invoke_model(
-                    modelId=claude_sonnet_3_5_model_id,
-                    contentType='application/json',
-                    accept='application/json',
-                    body=json.dumps(llm_request_body),
-                )
-                response_llm_text = response_llm['body'].read().decode('utf-8')
-                response_llm_body_json = json.loads(response_llm_text)
 
-                if response_llm_body_json.get("content") and len(response_llm_body_json["content"]) > 0:
-                    llm_summary_conclusion = response_llm_body_json['content'][0]['text']
-                else:
-                    print(f"ERROR: Could not extract LLM response from Bedrock: {response_llm_body_json}")
-            except Exception as e:
-                print(f"ERROR during Bedrock call for LLM (record {i+1}): {e}")
+            llm_response_text = invoke_llm(
+                system_prompt=SYSTEM_PROMPT_BASE_HE,
+                user_prompt_text=current_disease_text,
+                max_tokens=1000,
+                temperature=0.0,
+                # provider_override can be used here if needed, e.g., os.getenv("LLM_PROVIDER_CASES", "bedrock")
+            )
+
+            if llm_response_text.startswith("ERROR:"):
+                print(f"ERROR during LLM call for treatment plan (record {i+1}): {llm_response_text}")
+                # llm_summary_conclusion remains "Error: LLM call failed or no content." (its default)
+            else:
+                llm_summary_conclusion = llm_response_text
+
+            # Ensure llm_summary_conclusion has a value for the next step, even if it's an error message
+            if llm_summary_conclusion == "Error: LLM call failed or no content." and not llm_response_text.startswith(
+                "ERROR:"
+            ):
+                llm_summary_conclusion = llm_response_text  # Should not happen if logic is correct
 
             # Wait before the second LLM request for the current record
             print(
@@ -141,26 +128,21 @@ try:
 
 אנא ספק את ניתוח ההשוואה שלך בהתאם להנחיות שקיבלת.
 """
-            comparison_request_body = {
-                "system": SYSTEM_PROMPT_COMPARISON_HE,
-                "anthropic_version": "bedrock-2023-05-31",
-                "max_tokens": 3000,
-                "temperature": 0.0,
-                "messages": [{"role": "user", "content": [{"type": "text", "text": comparison_user_prompt}]}],
-            }
-            try:
-                response_comparison = bedrock_client.invoke_model(
-                    modelId=claude_sonnet_3_5_model_id,
-                    contentType='application/json',
-                    accept='application/json',
-                    body=json.dumps(comparison_request_body),
-                )
-                response_comparison_text = response_comparison['body'].read().decode('utf-8')
-                response_comparison_body_json = json.loads(response_comparison_text)
 
-                if response_comparison_body_json.get("content") and len(response_comparison_body_json["content"]) > 0:
-                    raw_comparison_text = response_comparison_body_json['content'][0]['text']
+            comparison_response_text = invoke_llm(
+                system_prompt=SYSTEM_PROMPT_COMPARISON_HE,
+                user_prompt_text=comparison_user_prompt,
+                max_tokens=3000,
+                temperature=0.0,
+            )
 
+            if comparison_response_text.startswith("ERROR:"):
+                print(f"ERROR during Bedrock call for comparison (record {i+1}): {comparison_response_text}")
+                # llm_vs_doctor_comparison remains "Error: Comparison call failed or no content."
+                # llm_comparison_score remains DEFAULT_SCORE_ON_ERROR
+            else:
+                raw_comparison_text = comparison_response_text
+                try:
                     # Extract numerical score and clean the text
                     score_extraction_pattern = r"ציון דמיון מספרי \(0-1\):\s*(0-1?)"
                     score_match = re.search(score_extraction_pattern, raw_comparison_text)
@@ -192,13 +174,10 @@ try:
                         )
                         llm_vs_doctor_comparison = raw_comparison_text  # Use raw text if score line not found
                         llm_comparison_score = DEFAULT_SCORE_ON_ERROR
-                else:
-                    print(f"ERROR: Could not extract comparison response from Bedrock: {response_comparison_body_json}")
+                except Exception as e:  # Catch any other unexpected error during parsing
+                    print(f"ERROR processing comparison response (record {i+1}): {e}")
+                    llm_vs_doctor_comparison = raw_comparison_text  # Keep raw text
                     llm_comparison_score = DEFAULT_SCORE_ON_ERROR
-            except Exception as e:
-                print(f"ERROR during Bedrock call for comparison (record {i+1}): {e}")
-                llm_comparison_score = DEFAULT_SCORE_ON_ERROR
-
             # Write data to output CSV
             output_row = {
                 ORIGINAL_FIELDNAMES_HE[0]: current_disease_text,

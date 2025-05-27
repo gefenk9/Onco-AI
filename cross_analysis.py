@@ -1,13 +1,11 @@
-import boto3
 import json
 import csv
 import sys
 import argparse
+import os
+from llm_client import invoke_llm  # Import the new common function
 
 # --- Configuration ---
-AWS_REGION = 'eu-west-1'  # AWS region for Bedrock
-# Corrected Model ID for Claude 3.5 Sonnet on Bedrock
-CLAUDE_SONNET_3_5_MODEL_ID = "eu.anthropic.claude-3-5-sonnet-20240620-v1:0"
 INPUT_CSV_PATH = './cases.csv'
 OUTPUT_TXT_PATH = 'cross_analysis_output.txt'
 DEFAULT_MAX_RECORDS = 50
@@ -29,16 +27,6 @@ SYSTEM_PROMPT_CROSS_ANALYSIS_HE = (
     "הניתוח צריך להיות מעמיק ומבוסס על הנתונים שסופקו. "
     "ענה בעברית בלבד."
 )
-
-# --- AWS Bedrock Client Initialization ---
-try:
-    bedrock_client = boto3.client(
-        'bedrock-runtime',
-        region_name=AWS_REGION,
-    )
-except Exception as e:
-    print(f"Error initializing AWS Bedrock client: {e}")
-    sys.exit(1)
 
 
 def prepare_llm_user_prompt(cases_data_list):
@@ -74,45 +62,6 @@ def prepare_llm_user_prompt(cases_data_list):
     return (
         intro + "\n".join(cases_str_parts) + "\n\nאנא ספק את הניתוח המבוקש, תוך התייחסות להנחיות שקיבלת בפרומפט המערכת."
     )
-
-
-def invoke_llm(system_prompt, user_prompt_text):
-    """
-    Invokes the Bedrock LLM and returns the text response.
-    """
-    if not user_prompt_text:
-        return "Error: No user prompt text provided (likely no data)."
-
-    print("--- Invoking Bedrock LLM for cross-analysis ---")
-    llm_request_body = {
-        "system": system_prompt,
-        "anthropic_version": "bedrock-2023-05-31",
-        "max_tokens": 4000,
-        "temperature": 0.1,  # Low temperature for more factual and structured analysis
-        "messages": [{"role": "user", "content": [{"type": "text", "text": user_prompt_text}]}],
-    }
-    try:
-        response_llm = bedrock_client.invoke_model(
-            modelId=CLAUDE_SONNET_3_5_MODEL_ID,
-            contentType='application/json',
-            accept='application/json',
-            body=json.dumps(llm_request_body),
-        )
-        response_llm_text = response_llm['body'].read().decode('utf-8')
-        response_llm_body_json = json.loads(response_llm_text)
-
-        if response_llm_body_json.get("content") and len(response_llm_body_json["content"]) > 0:
-            analysis_text = response_llm_body_json['content'][0]['text']
-            print("--- LLM invocation successful ---")
-            return analysis_text
-        else:
-            error_message = f"ERROR: Could not extract LLM response content from Bedrock: {response_llm_body_json}"
-            print(error_message)
-            return error_message
-    except Exception as e:
-        error_message = f"ERROR during Bedrock call for LLM: {e}"
-        print(error_message)
-        return error_message
 
 
 def main():
@@ -193,7 +142,21 @@ def main():
         print("Failed to generate user prompt (no data). Exiting.")
         sys.exit(1)
 
-    llm_analysis_result = invoke_llm(SYSTEM_PROMPT_CROSS_ANALYSIS_HE, user_prompt)
+    print("--- Invoking LLM for cross-analysis ---")
+    llm_analysis_result = invoke_llm(
+        system_prompt=SYSTEM_PROMPT_CROSS_ANALYSIS_HE,
+        user_prompt_text=user_prompt,
+        max_tokens=4000,
+        temperature=0.1,
+        # provider_override can be used here if needed
+    )
+
+    if llm_analysis_result.startswith("ERROR:"):
+        print(f"LLM cross-analysis failed: {llm_analysis_result}")
+        # Decide if to exit or write the error to file
+        # Current behavior is to write the error to file
+    else:
+        print("--- LLM cross-analysis successful ---")
 
     try:
         with open(OUTPUT_TXT_PATH, 'w', encoding='utf-8') as outfile:

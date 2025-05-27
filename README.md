@@ -1,4 +1,4 @@
-This project contains scripts for processing and analyzing oncological case data, primarily using AI/LLM capabilities via AWS Bedrock. The workflow typically involves converting patient data from an Excel file to CSV, then performing individual case analysis and cross-case analysis using LLMs.
+This project contains scripts for processing and analyzing oncological case data using AI/LLM capabilities. It supports interactions with LLMs via AWS Bedrock or directly through the Anthropic API, configurable via an `.env` file. The workflow typically involves converting patient data from an Excel file to CSV, then performing individual case analysis and cross-case analysis using the configured LLM.
 
 # Table of Contents
 
@@ -20,12 +20,15 @@ This project contains scripts for processing and analyzing oncological case data
   - [Input CSV Format:](#input-csv-format-1)
   - [Usage:](#usage-2)
   - [Example Workflow Step:](#example-workflow-step-1)
+- [LLM Configuration (`llm_client.py` and `.env`)](#llm-configuration-llm_clientpy-and-env)
 - [Cleaning Up](#cleaning-up)
 
 # Prerequisites
 
 - Python 3.x
-- An AWS account configured with access to AWS Bedrock and the Anthropic Claude 3.5 Sonnet model (`eu.anthropic.claude-3-5-sonnet-20240620-v1:0`). Ensure your AWS credentials (e.g., via AWS CLI configuration, IAM roles, or environment variables) are set up for `boto3` to use.
+- LLM Access:
+  - **AWS Bedrock**: If using Bedrock, an AWS account configured with access to AWS Bedrock and the Anthropic Claude 3.5 Sonnet model (specifically `eu.anthropic.claude-3-5-sonnet-20240620-v1:0`, which is used by default in `llm_client.py`). Ensure your AWS credentials (e.g., via AWS CLI configuration, IAM roles, or environment variables) are set up for `boto3` to use.
+  - **Anthropic API**: If using the direct Anthropic API, you'll need an Anthropic API key. The default model used is `claude-3-5-sonnet-20240620`.
 - `make` (optional, but recommended for using Makefile shortcuts).
 
 # Setup
@@ -56,6 +59,29 @@ This project contains scripts for processing and analyzing oncological case data
     source .venv/bin/activate  # On Windows: .venv\Scripts\activate
     pip install -r requirements.txt
     ```
+
+3.  **Configure LLM Provider (Create `.env` file):**
+    Create a `.env` file in the root of the project (e.g., `/home/assafmo/workspace/onco-ai/.env`) to specify your LLM provider and API keys.
+
+    Example `.env` content:
+
+    ```env
+    # --- LLM Configuration ---
+
+    # Specify the LLM provider: "bedrock" or "anthropic"
+    # If not set, defaults to "bedrock"
+    LLM_PROVIDER=bedrock
+
+    # --- AWS Bedrock Configuration (if LLM_PROVIDER is "bedrock") ---
+    # AWS Region for Bedrock client. If not set, defaults to "eu-west-1" in llm_client.py
+    AWS_REGION=eu-west-1
+
+    # --- Anthropic API Configuration (if LLM_PROVIDER is "anthropic") ---
+    # Your Anthropic API key. Required if LLM_PROVIDER is "anthropic".
+    ANTHROPIC_API_KEY=sk-ant-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    ```
+
+    Replace `sk-ant-xxxxxxxx...` with your actual Anthropic API key if you choose `LLM_PROVIDER=anthropic`.
 
 # Scripts and Workflow
 
@@ -113,9 +139,11 @@ This `patients.csv` will then be used as input for the subsequent scripts (poten
 
 This script processes individual patient cases from a CSV file. For each case, it:
 
-1.  Sends the patient's current disease information to an LLM (Claude 3.5 Sonnet via AWS Bedrock) to generate a suggested treatment plan.
-2.  Sends the LLM's generated plan along with the original doctor's summary and recommendations to the LLM again for a comparative analysis and a similarity score.
+1.  Sends the patient's current disease information to the configured LLM (via `llm_client.py`, using either AWS Bedrock or the Anthropic API with Claude 3.5 Sonnet) to generate a suggested treatment plan.
+2.  Sends the LLM's generated plan along with the original doctor's summary and recommendations to the configured LLM again for a comparative analysis and a similarity score.
 3.  Saves the original case data, the LLM's treatment plan, the comparative analysis, and the score to a new output CSV file (default: `cases_with_analysis.csv`).
+
+LLM interactions are managed by `llm_client.py`, which respects the `LLM_PROVIDER` setting in your `.env` file.
 
 ## Input CSV Format:
 
@@ -167,11 +195,14 @@ The script expects an input CSV file named `cases.csv` in the project root direc
 
 This script performs a "cross-analysis" of multiple oncology cases. It reads case data (disease description and doctor's recommendations) from `cases.csv`. It then compiles this information and sends it in a single batch request to an LLM (Claude 3.5 Sonnet via AWS Bedrock). The LLM is prompted to identify common characteristics, patterns, or relationships between treatment recommendations and case features across all provided cases. The LLM's analysis is saved to a text file (default: `cross_analysis_output.txt`).
 
+The LLM interaction is handled by `llm_client.py`, using the provider specified in your `.env` file (AWS Bedrock or direct Anthropic API). For Bedrock, it defaults to Claude 3.5 Sonnet (`eu.anthropic.claude-3-5-sonnet-20240620-v1:0`). For direct Anthropic, it uses `claude-3-5-sonnet-20240620`.
+
 ## Input CSV Format:
 
 Similar to `cases_to_cases_with_analysis.py`, this script expects an input CSV file named `cases.csv` with at least:
 
 - `current_disease`
+- `summary_conclusion`
 - `recommendations`
 
 ## Usage:
@@ -211,6 +242,16 @@ Similar to `cases_to_cases_with_analysis.py`, this script expects an input CSV f
     python cross_analysis.py
     ```
     The output will be `cross_analysis_output.txt`.
+
+# LLM Configuration (`llm_client.py` and `.env`)
+
+All LLM interactions are centralized in `llm_client.py`. This module:
+
+- Initializes the appropriate LLM client (AWS Bedrock or Anthropic) based on the `LLM_PROVIDER` environment variable.
+- Reads configuration (like `AWS_REGION`, `ANTHROPIC_API_KEY`) from an `.env` file or environment variables.
+- Uses specific model IDs by default:
+  - For AWS Bedrock: `eu.anthropic.claude-3-5-sonnet-20240620-v1:0`
+  - For direct Anthropic API: `claude-3-5-sonnet-20240620`
 
 # Cleaning Up
 
