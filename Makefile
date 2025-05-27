@@ -8,16 +8,12 @@ VENV_SPACY = $(VENV_DIR)/bin/spacy
 
 PIP_INSTALL = $(VENV_PIP) install
 
-OUTPUT_CSV = cases_with_analysis.csv
-
 DEFAULT_GOAL := help
 
 help:
 	@echo "Available commands:"
-	@echo "  make setup-env       Create virtual environment (if needed) and install Python dependencies (including hebspacy)"
 	@echo "  make setup           Setup the Python environment and install dependencies"
-	@echo "  make run             Run the main.py script using the venv"
-	@echo "  make clean           Remove generated files (e.g., ${OUTPUT_CSV}) and the virtual environment"
+	@echo "  make clean           Remove generated files (e.g., ${OUTPUT_CSV}, ${XLSX_CONVERT_OUTPUT}) and the virtual environment"
 	@echo "  make help            Show this help message"
 
 setup:
@@ -33,14 +29,9 @@ setup:
 	$(VENV_PIP) install -r requirements.txt
 	@echo "--- Python environment setup complete ---"
 
-run: setup-env # Ensure venv is setup before running
-	@echo "--- Running main.py script ---"
-	$(VENV_PYTHON) main.py
-	@echo "--- main.py script finished ---"
-
 clean:
 	@echo "--- Cleaning generated files ---"
-	rm -f $(OUTPUT_CSV)
+	rm -f $(OUTPUT_CSV) $(XLSX_CONVERT_OUTPUT)
 	@echo "Removing virtual environment $(VENV_DIR)..."
 	rm -rf $(VENV_DIR)
 	@echo "--- Cleaning complete ---"
