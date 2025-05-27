@@ -6,8 +6,8 @@ import sys
 import csv
 import time  # Import the time module
 
-# --- Configuration ---
-REQUEST_DELAY_SECONDS = 60  # Delay in seconds between requests
+# Configs
+REQUEST_DELAY_SECONDS = 31  # Delay in seconds between requests (current rate limit is 2 req/sec)
 
 # AWS Bedrock client initialization
 aws_region = 'eu-west-1'  # Your AWS region for Bedrock
@@ -24,7 +24,7 @@ bedrock_client = boto3.client(
 # the region is specified when creating the bedrock_client.
 claude_sonnet_3_5_model_id = "eu.anthropic.claude-3-5-sonnet-20240620-v1:0"
 
-# --- Define the constant system prompt for treatment plan (RAG) ---
+# Define the constant system prompt for treatment plan
 SYSTEM_PROMPT_BASE_HE = (
     "כרופא אונקולוג, אני זקוק לסיוע בגיבוש תוכנית טיפול מקיפה עבור מטופלים שאובחנו לאחרונה עם סרטן. "
     "אתה הולך לקבל מידע על המטופל. אנא ספק מתווה מפורט של אפשרויות טיפול פוטנציאליות, "
@@ -36,7 +36,7 @@ SYSTEM_PROMPT_BASE_HE = (
 )
 
 
-# --- Define the constant system prompt for AI vs Doctor comparison ---
+# Define the constant system prompt for AI vs Doctor comparison
 SYSTEM_PROMPT_COMPARISON_HE = (
     "אתה עוזר AI שתפקידך הוא להשוות בין המלצת טיפול שנוצרה על ידי מודל שפה גדול (LLM) לבין סיכום, מסקנות והמלצות שניתנו על ידי רופא אנושי. "
     "אנא ספק ניתוח השוואתי מפורט. התמקד בנקודות הבאות:\n"
@@ -83,34 +83,34 @@ try:
             doctor_summary_text = row.get(ORIGINAL_FIELDNAMES_HE[1], "")
             doctor_recommendations_text = row.get(ORIGINAL_FIELDNAMES_HE[2], "")
 
-            ai_summary_conclusion = "Error: RAG call failed or no content."
+            ai_summary_conclusion = "Error: LLM call failed or no content."
             ai_vs_doctor_comparison = "Error: Comparison call failed or no content."
 
-            # 1. First Bedrock Call: Get AI summary/conclusion (RAG)
-            print("--- Invoking Bedrock (LLM+RAG) for treatment plan ---")
-            rag_request_body = {
+            # 1. First Bedrock Call: Get AI summary/conclusion
+            print("--- Invoking Bedrock LLM for treatment plan ---")
+            llm_request_body = {
                 "system": SYSTEM_PROMPT_BASE_HE,
                 "anthropic_version": "bedrock-2023-05-31",
-                "max_tokens": 4000,
+                "max_tokens": 1000,
                 "temperature": 0.0,
                 "messages": [{"role": "user", "content": [{"type": "text", "text": current_disease_text}]}],
             }
             try:
-                response_rag = bedrock_client.invoke_model(
+                response_llm = bedrock_client.invoke_model(
                     modelId=claude_sonnet_3_5_model_id,
                     contentType='application/json',
                     accept='application/json',
-                    body=json.dumps(rag_request_body),
+                    body=json.dumps(llm_request_body),
                 )
-                response_rag_text = response_rag['body'].read().decode('utf-8')
-                response_rag_body_json = json.loads(response_rag_text)
+                response_llm_text = response_llm['body'].read().decode('utf-8')
+                response_llm_body_json = json.loads(response_llm_text)
 
-                if response_rag_body_json.get("content") and len(response_rag_body_json["content"]) > 0:
-                    ai_summary_conclusion = response_rag_body_json['content'][0]['text']
+                if response_llm_body_json.get("content") and len(response_llm_body_json["content"]) > 0:
+                    ai_summary_conclusion = response_llm_body_json['content'][0]['text']
                 else:
-                    print(f"ERROR: Could not extract RAG response from Bedrock: {response_rag_body_json}")
+                    print(f"ERROR: Could not extract LLM response from Bedrock: {response_llm_body_json}")
             except Exception as e:
-                print(f"ERROR during Bedrock call for RAG (record {i+1}): {e}")
+                print(f"ERROR during Bedrock call for LLM (record {i+1}): {e}")
 
             # Wait before the second AI request for the current record
             print(
@@ -142,7 +142,7 @@ try:
             comparison_request_body = {
                 "system": SYSTEM_PROMPT_COMPARISON_HE,
                 "anthropic_version": "bedrock-2023-05-31",
-                "max_tokens": 4000,  # Adjust if comparison needs more/less
+                "max_tokens": 3000,
                 "temperature": 0.0,
                 "messages": [{"role": "user", "content": [{"type": "text", "text": comparison_user_prompt}]}],
             }
