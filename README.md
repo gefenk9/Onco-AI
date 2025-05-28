@@ -149,9 +149,9 @@ LLM interactions are managed by `llm_client.py`, which respects the `LLM_PROVIDE
 
 The script expects an input CSV file named `cases.csv` in the project root directory. This file should contain at least the following columns (headers are in Hebrew as defined in the script):
 
-- `current_disease` (תיאור המחלה הנוכחי)
-- `summary_conclusion` (סיכום ומסקנות הרופא)
-- `recommendations` (המלצות הרופא)
+- `Current_Disease` (תיאור המחלה הנוכחי)
+- `Summary_Conclusions` (סיכום ומסקנות הרופא)
+- `Recommendations` (המלצות הרופא)
 
 ## Usage:
 
@@ -201,9 +201,9 @@ The LLM interaction is handled by `llm_client.py`, using the provider specified 
 
 Similar to `cases_to_cases_with_analysis.py`, this script expects an input CSV file named `cases.csv` with at least:
 
-- `current_disease`
-- `summary_conclusion`
-- `recommendations`
+- `Current_Disease`
+- `Summary_Conclusions`
+- `Recommendations`
 
 ## Usage:
 

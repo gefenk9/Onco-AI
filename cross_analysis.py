@@ -1,18 +1,16 @@
-import json
 import csv
 import sys
 import argparse
-import os
 from llm_client import invoke_llm  # Import the new common function
 
 # --- Configuration ---
 INPUT_CSV_PATH = './cases.csv'
 OUTPUT_TXT_PATH = 'cross_analysis_output.txt'
 DEFAULT_MAX_RECORDS = 50
-CSV_FIELD_DISEASE = 'current_disease'
-CSV_FIELD_RECOMMENDATIONS = 'recommendations'
-CSV_FIELD_SUMMARY_CONCLUSION = 'summary_conclusion'
-EXPECTED_CSV_HEADERS = ['current_disease', 'summary_conclusion', 'recommendations']
+CSV_FIELD_DISEASE = 'Current_Disease'
+CSV_FIELD_SUMMARY_CONCLUSION = 'Summary_Conclusions'
+CSV_FIELD_RECOMMENDATIONS = 'Recommendations'
+EXPECTED_CSV_HEADERS = ['Current_Disease', 'Summary_Conclusions', 'Recommendations']
 
 
 # --- System Prompt for LLM ---
@@ -45,13 +43,13 @@ def prepare_llm_user_prompt(cases_data_list):
         case_str = f"""
 --- מקרה {i+1} ---
 תיאור המחלה:
-{case_data['disease']}
+{case_data[CSV_FIELD_DISEASE]}
 
 סיכום ומסקנות הרופא:
-{case_data['summary_conclusion']}
+{case_data[CSV_FIELD_SUMMARY_CONCLUSION]}
 
 המלצות הרופא:
-{case_data['recommendations']}
+{case_data[CSV_FIELD_RECOMMENDATIONS]}
 --- סוף מקרה {i+1} ---
 """
         cases_str_parts.append(case_str)
@@ -113,15 +111,15 @@ def main():
 
                 if not disease_info or not recommendations_info or not summary_conclusion_info:
                     print(
-                        f"Warning: Skipping record {i+1} due to missing disease, summary/conclusion, or recommendations."
+                        f"Warning: Skipping record {i+1} due to missing {CSV_FIELD_DISEASE}, {CSV_FIELD_SUMMARY_CONCLUSION}, or {CSV_FIELD_RECOMMENDATIONS}."
                     )
                     continue
 
                 cases_data.append(
                     {
-                        "disease": disease_info,
-                        "summary_conclusion": summary_conclusion_info,
-                        "recommendations": recommendations_info,
+                        CSV_FIELD_DISEASE: disease_info,
+                        CSV_FIELD_SUMMARY_CONCLUSION: summary_conclusion_info,
+                        CSV_FIELD_RECOMMENDATIONS: recommendations_info,
                     }
                 )
             print(f"Read {len(cases_data)} records from CSV.")

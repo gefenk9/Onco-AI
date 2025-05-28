@@ -43,9 +43,9 @@ input_csv_path = './cases.csv'
 output_csv_path = 'cases_with_analysis.csv'
 DEFAULT_SCORE_ON_ERROR = 0.0
 
-ORIGINAL_FIELDNAMES_HE = ['current_disease', 'summary_conclusion', 'recommendations']
-NEW_FIELDNAMES = ['llm_summary_conclusion', 'llm_vs_doctor_comparision', 'llm_vs_doctor_comparison_score']
-output_fieldnames = ORIGINAL_FIELDNAMES_HE + NEW_FIELDNAMES
+ORIGINAL_FIELDNAMES = ['Current_Disease', 'Summary_Conclusions', 'Recommendations']
+NEW_FIELDNAMES = ['Llm_Summary_Conclusions', 'Llm_Vs_Doctor_Comparision', 'Llm_Vs_Doctor_Comparison_Score']
+output_fieldnames = ORIGINAL_FIELDNAMES + NEW_FIELDNAMES
 
 try:
     with open(input_csv_path, 'r', encoding='utf-8') as infile, open(
@@ -54,9 +54,9 @@ try:
 
         reader = csv.DictReader(infile)
         # Ensure the reader uses the correct fieldnames if they are not exactly as expected
-        if reader.fieldnames != ORIGINAL_FIELDNAMES_HE:
+        if reader.fieldnames != ORIGINAL_FIELDNAMES:
             print(
-                f"WARNING: CSV headers in '{input_csv_path}' are {reader.fieldnames}, expected {ORIGINAL_FIELDNAMES_HE}."
+                f"WARNING: CSV headers in '{input_csv_path}' are {reader.fieldnames}, expected {ORIGINAL_FIELDNAMES}."
             )
             sys.exit(1)
 
@@ -70,9 +70,9 @@ try:
 
             print(f"\n\n--- Processing record {i+1} from CSV ---")
 
-            current_disease_text = row.get(ORIGINAL_FIELDNAMES_HE[0], "")
-            doctor_summary_text = row.get(ORIGINAL_FIELDNAMES_HE[1], "")
-            doctor_recommendations_text = row.get(ORIGINAL_FIELDNAMES_HE[2], "")
+            current_disease_text = row.get(ORIGINAL_FIELDNAMES[0], "")
+            doctor_summary_text = row.get(ORIGINAL_FIELDNAMES[1], "")
+            doctor_recommendations_text = row.get(ORIGINAL_FIELDNAMES[2], "")
 
             llm_summary_conclusion = "Error: LLM call failed or no content."
             llm_vs_doctor_comparison = "Error: Comparison call failed or no content."
@@ -91,7 +91,7 @@ try:
 
             if llm_response_text.startswith("ERROR:"):
                 print(f"ERROR during LLM call for treatment plan (record {i+1}): {llm_response_text}")
-                # llm_summary_conclusion remains "Error: LLM call failed or no content." (its default)
+                # llm_Summary_Conclusions remains "Error: LLM call failed or no content." (its default)
             else:
                 llm_summary_conclusion = llm_response_text
 
@@ -180,9 +180,9 @@ try:
                     llm_comparison_score = DEFAULT_SCORE_ON_ERROR
             # Write data to output CSV
             output_row = {
-                ORIGINAL_FIELDNAMES_HE[0]: current_disease_text,
-                ORIGINAL_FIELDNAMES_HE[1]: doctor_summary_text,
-                ORIGINAL_FIELDNAMES_HE[2]: doctor_recommendations_text,
+                ORIGINAL_FIELDNAMES[0]: current_disease_text,
+                ORIGINAL_FIELDNAMES[1]: doctor_summary_text,
+                ORIGINAL_FIELDNAMES[2]: doctor_recommendations_text,
                 NEW_FIELDNAMES[0]: llm_summary_conclusion,
                 NEW_FIELDNAMES[1]: llm_vs_doctor_comparison,
                 NEW_FIELDNAMES[2]: llm_comparison_score,
