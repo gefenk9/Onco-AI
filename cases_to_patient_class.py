@@ -5,10 +5,17 @@ import csv
 import time
 import os
 from collections import Counter  # Added for analysis
+from dotenv import load_dotenv  # To read .env file for LLM_PROVIDER
 from llm_client import invoke_llm  # Import the new common function
 
+# Load environment variables from .env file if it exists, to check LLM_PROVIDER
+load_dotenv()
+
 # Configs
-REQUEST_DELAY_SECONDS = 31  # Delay in seconds between requests (current rate limit is 2 req/sec)
+LLM_PROVIDER_CONFIG = os.getenv("LLM_PROVIDER", "bedrock").lower()
+REQUEST_DELAY_SECONDS = 0 if LLM_PROVIDER_CONFIG == "anthropic" else 31
+
+print(f"--- LLM Provider: {LLM_PROVIDER_CONFIG}, Request Delay: {REQUEST_DELAY_SECONDS}s ---")
 
 # Model ID for Claude 3.5 Sonnet on Bedrock (as used in this script)
 # This specific ID will be passed to the invoke_llm function.
@@ -64,9 +71,134 @@ SYSTEM_PROMPT_PATIENT_EXTRACTION_EN = (
     "7.  **PDL1 Score**: (Float between 0.0 and 1.0. If a percentage is mentioned (e.g., \"PD-L1 50%\", \"PDL1 >50%\", \"PDL1 <1%\"), convert it to a decimal (e.g., 0.5 for 50%, 0.5 for >50% if no more specific value, 0.01 for <1% if no more specific value). If a general term like \"high\" or \"low\" is used without a number, or if testing is recommended but no result given, use null. If not mentioned at all, use null.)\n"
     "8.  **Dosage Change**: (Float: Applicable only if 'Treatment Type' is \"Immunotherapy and Chemotherapy\". If a dosage change (e.g., reduction by 20%, increase by 10%) for chemotherapy is mentioned, provide the percentage of change as a float (e.g., -20.0 for a 20% reduction, 10.0 for a 10% increase). If no change is mentioned or it's explicitly stated as no change, use 0.0. If a change is mentioned but not quantifiable (e.g., \"dose adjustment\"), use -1.0 (representing 'unquantifiable change'). If not applicable (e.g. treatment is 'Immunotherapy Only' or 'Other/Unclear'), use null.)\n"
     "9.  **Chemotherapy Medication Type**: (String: Applicable only if 'Treatment Type' is \"Immunotherapy and Chemotherapy\". List the type(s) of chemotherapy medication mentioned, e.g., \"R-CHOP\", \"Paclitaxel\". If multiple, join with a comma. If not applicable or not mentioned, use \"N/A\".)\n\n"
-    "Provide the output as a JSON object with keys: \"cancer_type\", \"metastasized\", \"age\", \"background_illnesses\", \"treatment_type\", \"reason_for_treatment_choice\", \"pdl1_score\", \"dosage_change\", \"chemotherapy_medication_type\".\n"
-    "Ensure all string fields are populated, using \"Not Specified\", \"N/A\", or \"Unknown\" where appropriate if information cannot be extracted. For lists, use an empty list if no information. For numbers/booleans, use null if not determinable.\n"
+    "Your entire response MUST be a single, valid JSON object. Do not include any explanatory text, markdown, or any characters outside of this JSON object.\n"
+    "The JSON object must have the following keys: \"cancer_type\", \"metastasized\", \"age\", \"background_illnesses\", \"treatment_type\", \"reason_for_treatment_choice\", \"pdl1_score\", \"dosage_change\", \"chemotherapy_medication_type\".\n"
+    "Ensure all string fields are populated, using \"Not Specified\", \"N/A\", or \"Unknown\" where appropriate if information cannot be extracted. For lists, use an empty list if no information. For numbers/booleans, use null if not determinable."
 )
+
+
+def perform_analysis_and_print_results(patients: list[Patient]):
+    print("\n\n--- Performing Analyses ---")
+
+    if not patients:
+        print("No patients to analyze.")
+        return
+
+    # Filter patients
+    immuno_only_patients = [p for p in patients if p.treatment_type == "Immunotherapy Only"]
+    combo_patients = [p for p in patients if p.treatment_type == "Immunotherapy and Chemotherapy"]
+
+    # 1. Average age of patients that only got immunotherapy
+    # 5. Avg age of patients that got only immunotherapy (Points 1 and 5 are the same)
+    print("\n--- Analysis 1 & 5: Average age of patients who received Immunotherapy Only ---")
+    ages_immuno_only = [p.age for p in immuno_only_patients if p.age is not None]
+    if ages_immuno_only:
+        avg_age_immuno_only = sum(ages_immuno_only) / len(ages_immuno_only)
+        print(f"Average age: {avg_age_immuno_only:.2f} years (based on {len(ages_immuno_only)} patients)")
+    else:
+        print("No patients with 'Immunotherapy Only' treatment and known age found.")
+
+    # 2. Reasons for getting immunotherapy, sorted by most common first
+    print("\n--- Analysis 2: Reasons for getting Immunotherapy Only (Most common first) ---")
+    if immuno_only_patients:
+        reasons_immuno_only = [p.reason_for_treatment for p in immuno_only_patients if p.reason_for_treatment]
+        if reasons_immuno_only:
+            reason_counts = Counter(reasons_immuno_only)
+            print("Reasons:")
+            for reason, count in reason_counts.most_common():
+                print(f"- \"{reason}\": {count} occurrences")
+        else:
+            print("No reasons specified for 'Immunotherapy Only' patients.")
+    else:
+        print("No patients with 'Immunotherapy Only' treatment found.")
+
+    # 3. Percentage of patients that got only immunotherapy and their PDL1 is lower than 0.5
+    print("\n--- Analysis 3: Percentage of 'Immunotherapy Only' patients with PDL1 < 0.5 ---")
+    if immuno_only_patients:
+        # Ensure there are patients to avoid division by zero if the list is empty after filtering
+        if len(immuno_only_patients) > 0:
+            low_pdl1_immuno_only = [p for p in immuno_only_patients if p.pdl1_score is not None and p.pdl1_score < 0.5]
+            percentage_low_pdl1 = (len(low_pdl1_immuno_only) / len(immuno_only_patients)) * 100
+            print(
+                f"{percentage_low_pdl1:.2f}% ({len(low_pdl1_immuno_only)} out of {len(immuno_only_patients)}) "
+                f"of 'Immunotherapy Only' patients had a PDL1 score < 0.5."
+            )
+        else:
+            print("No 'Immunotherapy Only' patients with PDL1 score data found to calculate percentage.")
+    else:
+        print("No patients with 'Immunotherapy Only' treatment found to calculate PDL1 percentage.")
+
+    # 4. For patients that got immunotherapy and chemo, percentage of them that had their dosage changed
+    #    Show the medications that got changed, and for each medication the avg change of dosage
+    print("\n--- Analysis 4: Dosage changes for 'Immunotherapy and Chemotherapy' patients ---")
+    if combo_patients:
+        if len(combo_patients) > 0:
+            # Patients whose dosage was specifically changed (not 0, not None, not -1.0 for unquantifiable)
+            dosage_quantifiably_changed_patients = [
+                p
+                for p in combo_patients
+                if p.dosage_change is not None and p.dosage_change != 0.0 and p.dosage_change != -1.0
+            ]
+            percentage_dosage_changed = (len(dosage_quantifiably_changed_patients) / len(combo_patients)) * 100
+            print(
+                f"{percentage_dosage_changed:.2f}% ({len(dosage_quantifiably_changed_patients)} out of {len(combo_patients)}) "
+                f"of 'Immunotherapy and Chemotherapy' patients had a quantifiable dosage change."
+            )
+
+            if dosage_quantifiably_changed_patients:
+                med_dosage_changes = {}  # {med_type: [change1, change2, ...]}
+                for p in dosage_quantifiably_changed_patients:
+                    if p.chemotherapy_medication_type and p.chemotherapy_medication_type != "N/A":
+                        # Handle multiple medications if comma-separated
+                        meds = [med.strip() for med in p.chemotherapy_medication_type.split(',')]
+                        for med_name in meds:
+                            if med_name not in med_dosage_changes:
+                                med_dosage_changes[med_name] = []
+                            if p.dosage_change is not None:  # Should always be true due to filter
+                                med_dosage_changes[med_name].append(p.dosage_change)
+
+                if med_dosage_changes:
+                    print("Average dosage change by medication (for those with quantifiable changes):")
+                    for med, changes in med_dosage_changes.items():
+                        if changes:
+                            avg_change = sum(changes) / len(changes)
+                            print(f"- {med}: {avg_change:.2f}% (based on {len(changes)} instance(s) of change)")
+                        # else case for med with no changes shouldn't be hit due to prior filtering
+                else:
+                    print("No specific medications with quantifiable dosage changes were recorded for this group.")
+            else:
+                print("No patients in this group had a quantifiable dosage change.")
+        else:
+            print("No 'Immunotherapy and Chemotherapy' patients found to calculate dosage change percentage.")
+    else:
+        print("No patients with 'Immunotherapy and Chemotherapy' treatment found.")
+
+    # 6. For patients that got only immunotherapy, show their background disease by percentage and sort by most common first
+    print("\n--- Analysis 5: Background diseases for 'Immunotherapy Only' patients (by percentage) ---")
+    if immuno_only_patients:
+        if len(immuno_only_patients) > 0:
+            all_background_illnesses_immuno_only = []
+            for p in immuno_only_patients:
+                all_background_illnesses_immuno_only.extend(p.background_illnesses)
+
+            if all_background_illnesses_immuno_only:
+                illness_counts = Counter(all_background_illnesses_immuno_only)
+                total_immuno_only_patients = len(immuno_only_patients)
+                print(
+                    f"Background disease prevalence among {total_immuno_only_patients} 'Immunotherapy Only' patients:"
+                )
+                sorted_illnesses = sorted(illness_counts.items(), key=lambda item: item[1], reverse=True)
+                for illness, count in sorted_illnesses:
+                    percentage = (count / total_immuno_only_patients) * 100
+                    print(f"- {illness}: {percentage:.2f}% ({count} patients)")
+            else:
+                print("No background illnesses recorded for 'Immunotherapy Only' patients.")
+        else:
+            print("No 'Immunotherapy Only' patients found for background disease analysis.")
+    else:
+        print("No patients with 'Immunotherapy Only' treatment found for background disease analysis.")
+
+    print("\n--- End of Analyses ---")
 
 
 input_csv_path = './cases.csv'
@@ -136,7 +268,13 @@ Please extract the patient details based on the above information and provide a 
                 )
             else:
                 try:
-                    extracted_data = json.loads(llm_response_text)
+                    # Extract the JSON part from the LLM response,
+                    # in case there's introductory/explanatory text around it.
+                    json_match = re.search(r"(\{[\s\S]*\})", llm_response_text)
+                    if not json_match:
+                        raise json.JSONDecodeError("No JSON object found in LLM response", llm_response_text, 0)
+                    json_to_parse = json_match.group(1)
+                    extracted_data = json.loads(json_to_parse)
 
                     treatment_type = extracted_data.get("treatment_type", "Other/Unclear")
                     if treatment_type not in ["Immunotherapy and Chemotherapy", "Immunotherapy Only"]:
@@ -157,9 +295,9 @@ Please extract the patient details based on the above information and provide a 
                         dosage_change=extracted_data.get("dosage_change"),  # None if missing or not applicable
                         chemotherapy_medication_type=extracted_data.get("chemotherapy_medication_type", "N/A"),
                     )
-                except json.JSONDecodeError:
+                except json.JSONDecodeError as e:
                     print(
-                        f"ERROR: Could not parse JSON response from LLM for record {i+1}. Response: {llm_response_text}"
+                        f"ERROR: Could not parse JSON response from LLM for record {i+1}. Error: {e}. Response: {llm_response_text}"
                     )
                     patient = Patient(
                         cancer_type="Error: JSON Parse Failed",
@@ -187,123 +325,5 @@ except FileNotFoundError:
 except Exception as e:
     print(f"An unexpected error occurred: {e}")
     sys.exit(1)
-
-
-def perform_analysis_and_print_results(patients: list[Patient]):
-    print("\n\n--- Performing Analyses ---")
-
-    if not patients:
-        print("No patients to analyze.")
-        return
-
-    # Filter patients
-    immuno_only_patients = [p for p in patients if p.treatment_type == "Immunotherapy Only"]
-    combo_patients = [p for p in patients if p.treatment_type == "Immunotherapy and Chemotherapy"]
-
-    # 1. Average age of patients that only got immunotherapy
-    print("\n--- Analysis 1: Average age of patients who received Immunotherapy Only ---")
-    ages_immuno_only = [p.age for p in immuno_only_patients if p.age is not None]
-    if ages_immuno_only:
-        avg_age_immuno_only = sum(ages_immuno_only) / len(ages_immuno_only)
-        print(f"Average age: {avg_age_immuno_only:.2f} years (based on {len(ages_immuno_only)} patients)")
-    else:
-        print("No patients with 'Immunotherapy Only' treatment and known age found.")
-
-    # 2. Reasons for getting immunotherapy, sorted by most common first
-    print("\n--- Analysis 2: Reasons for getting Immunotherapy Only (Most common first) ---")
-    if immuno_only_patients:
-        reasons_immuno_only = [p.reason_for_treatment for p in immuno_only_patients if p.reason_for_treatment]
-        if reasons_immuno_only:
-            reason_counts = Counter(reasons_immuno_only)
-            print("Reasons:")
-            for reason, count in reason_counts.most_common():
-                print(f"- \"{reason}\": {count} occurrences")
-        else:
-            print("No reasons specified for 'Immunotherapy Only' patients.")
-    else:
-        print("No patients with 'Immunotherapy Only' treatment found.")
-
-    # 3. Percentage of patients that got only immunotherapy and their PDL1 is lower than 0.5
-    print("\n--- Analysis 3: Percentage of 'Immunotherapy Only' patients with PDL1 < 0.5 ---")
-    if immuno_only_patients:
-        low_pdl1_immuno_only = [p for p in immuno_only_patients if p.pdl1_score is not None and p.pdl1_score < 0.5]
-        percentage_low_pdl1 = (len(low_pdl1_immuno_only) / len(immuno_only_patients)) * 100
-        print(
-            f"{percentage_low_pdl1:.2f}% ({len(low_pdl1_immuno_only)} out of {len(immuno_only_patients)}) "
-            f"of 'Immunotherapy Only' patients had a PDL1 score < 0.5."
-        )
-    else:
-        print("No patients with 'Immunotherapy Only' treatment found to calculate PDL1 percentage.")
-
-    # 4. For patients that got immunotherapy and chemo, percentage of them that had their dosage changed
-    #    Show the medications that got changed, and for each medication the avg change of dosage
-    print("\n--- Analysis 4: Dosage changes for 'Immunotherapy and Chemotherapy' patients ---")
-    if combo_patients:
-        # Patients whose dosage was specifically changed (not 0, not None, not -1.0 for unquantifiable)
-        dosage_quantifiably_changed_patients = [
-            p
-            for p in combo_patients
-            if p.dosage_change is not None and p.dosage_change != 0.0 and p.dosage_change != -1.0
-        ]
-        percentage_dosage_changed = (len(dosage_quantifiably_changed_patients) / len(combo_patients)) * 100
-        print(
-            f"{percentage_dosage_changed:.2f}% ({len(dosage_quantifiably_changed_patients)} out of {len(combo_patients)}) "
-            f"of 'Immunotherapy and Chemotherapy' patients had a quantifiable dosage change."
-        )
-
-        if dosage_quantifiably_changed_patients:
-            med_dosage_changes = {}  # {med_type: [change1, change2, ...]}
-            for p in dosage_quantifiably_changed_patients:
-                if p.chemotherapy_medication_type and p.chemotherapy_medication_type != "N/A":
-                    # Handle multiple medications if comma-separated
-                    meds = [med.strip() for med in p.chemotherapy_medication_type.split(',')]
-                    for med_name in meds:
-                        if med_name not in med_dosage_changes:
-                            med_dosage_changes[med_name] = []
-                        if p.dosage_change is not None:  # Should always be true due to filter
-                            med_dosage_changes[med_name].append(p.dosage_change)
-
-            if med_dosage_changes:
-                print("Average dosage change by medication (for those with quantifiable changes):")
-                for med, changes in med_dosage_changes.items():
-                    if changes:
-                        avg_change = sum(changes) / len(changes)
-                        print(f"- {med}: {avg_change:.2f}% (based on {len(changes)} instance(s) of change)")
-                    else:
-                        print(
-                            f"- {med}: No quantifiable changes recorded (or only unquantifiable changes)."
-                        )  # Should not happen with current logic
-            else:
-                print("No specific medications with quantifiable dosage changes were recorded.")
-        else:
-            print("No patients in this group had a quantifiable dosage change.")
-    else:
-        print("No patients with 'Immunotherapy and Chemotherapy' treatment found.")
-
-    # 6. For patients that got only immunotherapy, show their background disease by percentage and sort by most common first
-    print("\n--- Analysis 5: Background diseases for 'Immunotherapy Only' patients (by percentage) ---")
-    if immuno_only_patients:
-        all_background_illnesses_immuno_only = []
-        for p in immuno_only_patients:
-            all_background_illnesses_immuno_only.extend(p.background_illnesses)
-
-        if all_background_illnesses_immuno_only:
-            illness_counts = Counter(all_background_illnesses_immuno_only)
-            total_immuno_only_patients = len(immuno_only_patients)
-            print(f"Background disease prevalence among {total_immuno_only_patients} 'Immunotherapy Only' patients:")
-
-            # Sort by count (which translates to percentage here)
-            sorted_illnesses = sorted(illness_counts.items(), key=lambda item: item[1], reverse=True)
-
-            for illness, count in sorted_illnesses:
-                percentage = (count / total_immuno_only_patients) * 100
-                print(f"- {illness}: {percentage:.2f}% ({count} patients)")
-        else:
-            print("No background illnesses recorded for 'Immunotherapy Only' patients.")
-    else:
-        print("No patients with 'Immunotherapy Only' treatment found for background disease analysis.")
-
-    print("\n--- End of Analyses ---")
-
 
 print("\n\n--- Script Finished ---")
