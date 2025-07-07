@@ -13,7 +13,7 @@ AWS_REGION = os.getenv("AWS_REGION", "eu-west-1")  # Used if LLM_PROVIDER is "be
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")  # Used if LLM_PROVIDER is "anthropic"
 
 ANTHROPIC_CLAUDE_3_5_SONNET_MODEL_NAME = "claude-3-5-sonnet-20240620"
-BEDROCK_CLAUDE_3_5_SONNET_MODEL_NAME = "eu.anthropic.claude-3-5-sonnet-20240620-v1:0"
+BEDROCK_CLAUDE_3_5_SONNET_MODEL_NAME = "eu.anthropic.claude-3-7-sonnet-20250219-v1:0"
 # Note: Bedrock model IDs are passed by the calling script
 
 _bedrock_client = None
