@@ -9,7 +9,8 @@ INPUT_CSV_PATH_CASES = './cases.csv'
 INPUT_CSV_PATH_DOCTORS = './doctors.csv'
 OUTPUT_RAW_DATA_FOLDER = './raw_data'
 DEFAULT_MAX_RECORDS_PER_DOCTOR = 100
-CSV_FIELD_PAT_ID = 'PatID'
+CSV_FIELD_PAT_ID_CASES = 'PatId'
+CSV_FIELD_PAT_ID_DOCTORS = 'PatID'
 
 # --- System Prompt for LLM (in Hebrew) ---
 SYSTEM_PROMPT_CROSS_ANALYSIS_HE = (
@@ -62,12 +63,12 @@ def main():
 
     # --- Load and Merge Data ---
     try:
-        cases_df = pd.read_csv(INPUT_CSV_PATH_CASES, dtype={CSV_FIELD_PAT_ID: str})
-        doctors_df = pd.read_csv(INPUT_CSV_PATH_DOCTORS, dtype={CSV_FIELD_PAT_ID: str})
+        cases_df = pd.read_csv(INPUT_CSV_PATH_CASES, dtype={CSV_FIELD_PAT_ID_CASES: str})
+        doctors_df = pd.read_csv(INPUT_CSV_PATH_DOCTORS, dtype={CSV_FIELD_PAT_ID_DOCTORS: str})
         print(f'קריאת {len(cases_df)} מקרים ו-{len(doctors_df)} רשומות רופאים הושלמה.')
 
         # Merge the dataframes on the patient ID
-        merged_df = pd.merge(cases_df, doctors_df, on=CSV_FIELD_PAT_ID)
+        merged_df = pd.merge(cases_df, doctors_df, left_on=CSV_FIELD_PAT_ID_CASES, right_on=CSV_FIELD_PAT_ID_DOCTORS)
         print(f'נמצאו {len(merged_df)} מקרים עם התאמה לרופאים.')
 
         if merged_df.empty:
