@@ -3,3 +3,4 @@ openpyxl
 pandas
 anthropic
 python-dotenv
+openai

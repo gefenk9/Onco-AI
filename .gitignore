@@ -4,4 +4,5 @@ cross_analysis_output.txt
 __pycache__
 /raw_data
 doctors.csv
-/*xlsx
+*xlsx
+.env
