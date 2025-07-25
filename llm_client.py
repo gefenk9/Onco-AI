@@ -77,7 +77,7 @@ def invoke_llm(
         if current_provider == "azure_openai":
             client = get_azure_openai_client()
 
-            messages = [{"role": "system", "content": system_prompt}, {"role": "user", "content": user_prompt_text}]
+            messages = [{"role": "system", "content": system_prompt}, {"role": "user", "content": user_prompt_text}]  # type: ignore
 
             response = client.chat.completions.create(
                 model=OPEN_AI_MODEL, messages=messages, max_tokens=max_tokens, temperature=temperature
