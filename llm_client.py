@@ -14,6 +14,7 @@ LLM_PROVIDER = os.getenv("LLM_PROVIDER", "azure_openai").lower()  # "azure_opena
 # Azure OpenAI Configuration
 AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
 AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
+AZURE_OPENAI_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION", "2024-02-01")
 OPEN_AI_MODEL = os.getenv("OPEN_AI_MODEL", "o4-mini")
 
 # AWS Bedrock Configuration
@@ -43,7 +44,7 @@ def get_azure_openai_client():
             )
         try:
             _azure_openai_client = AzureOpenAI(
-                api_key=AZURE_OPENAI_API_KEY, azure_endpoint=AZURE_OPENAI_ENDPOINT, api_version="2024-02-01"
+                api_key=AZURE_OPENAI_API_KEY, azure_endpoint=AZURE_OPENAI_ENDPOINT, api_version=AZURE_OPENAI_API_VERSION
             )
             print("Azure OpenAI client initialized.")
         except Exception as e:
