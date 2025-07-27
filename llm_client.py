@@ -102,7 +102,7 @@ def invoke_llm(
             messages = [{"role": "system", "content": system_prompt}, {"role": "user", "content": user_prompt_text}]  # type: ignore
 
             response = client.chat.completions.create(
-                model=OPEN_AI_MODEL, messages=messages, max_tokens=max_tokens, temperature=temperature  # type: ignore
+                model=OPEN_AI_MODEL, messages=messages, max_completion_tokens=max_tokens  # type: ignore
             )
 
             if response.choices and len(response.choices) > 0 and response.choices[0].message.content:
