@@ -42,7 +42,9 @@ SYSTEM_PROMPT_COMPARISON_HE = (
 input_csv_path = './cases.csv'
 output_csv_path = 'cases_with_analysis.csv'
 DEFAULT_SCORE_ON_ERROR = 0.0
-
+CSV_FIELD_DISEASE = 'Current_Disease'
+CSV_FIELD_SUMMARY_CONCLUSION = 'Summary_Conclusions'
+CSV_FIELD_RECOMMENDATIONS = 'Recommendations'
 ORIGINAL_FIELDNAMES = ['Current_Disease', 'Summary_Conclusions', 'Recommendations']
 NEW_FIELDNAMES = ['Llm_Summary_Conclusions', 'Llm_Vs_Doctor_Comparision', 'Llm_Vs_Doctor_Comparison_Score']
 output_fieldnames = ORIGINAL_FIELDNAMES + NEW_FIELDNAMES
