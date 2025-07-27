@@ -58,6 +58,16 @@ try:
             print(
                 f"WARNING: CSV headers in '{input_csv_path}' are {reader.fieldnames}, expected {ORIGINAL_FIELDNAMES}."
             )
+        sys.exit(1)
+        # Check if essential columns are present
+        if not (
+            CSV_FIELD_DISEASE in reader.fieldnames
+            and CSV_FIELD_SUMMARY_CONCLUSION in reader.fieldnames
+            and CSV_FIELD_RECOMMENDATIONS in reader.fieldnames
+        ):
+            print(
+                f"ERROR: Essential columns ('{CSV_FIELD_DISEASE}', '{CSV_FIELD_SUMMARY_CONCLUSION}', '{CSV_FIELD_RECOMMENDATIONS}') not found in CSV headers. Exiting."
+            )
             sys.exit(1)
 
         writer = csv.DictWriter(outfile, fieldnames=output_fieldnames)
