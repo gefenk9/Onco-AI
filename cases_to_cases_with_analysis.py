@@ -7,11 +7,9 @@ import os
 from llm_client import invoke_llm  # Import the new common function
 
 # Configs
+LLM_PROVIDER = os.getenv("LLM_PROVIDER", "azure_openai").lower()
 REQUEST_DELAY_SECONDS = 31  # Delay in seconds between requests (current rate limit is 2 req/sec)
-
-# Model ID for Claude 3.5 Sonnet on Bedrock (as used in this script)
-# This specific ID will be passed to the invoke_llm function.
-BEDROCK_CLAUDE_MODEL_ID = "eu.anthropic.claude-3-5-sonnet-20240620-v1:0"
+ANTHROPIC_NO_RATE_LIMIT = LLM_PROVIDER == "anthropic"
 
 # Define the constant system prompt for treatment plan
 SYSTEM_PROMPT_BASE_HE = (
@@ -45,7 +43,7 @@ DEFAULT_SCORE_ON_ERROR = 0.0
 CSV_FIELD_DISEASE = 'Current_Disease'
 CSV_FIELD_SUMMARY_CONCLUSION = 'Summary_Conclusions'
 CSV_FIELD_RECOMMENDATIONS = 'Recommendations'
-ORIGINAL_FIELDNAMES = ['Current_Disease', 'Summary_Conclusions', 'Recommendations']
+ORIGINAL_FIELDNAMES = ['PatId', 'Current_Disease', 'Summary_Conclusions', 'Recommendations']
 NEW_FIELDNAMES = ['Llm_Summary_Conclusions', 'Llm_Vs_Doctor_Comparision', 'Llm_Vs_Doctor_Comparison_Score']
 output_fieldnames = ORIGINAL_FIELDNAMES + NEW_FIELDNAMES
 
@@ -60,9 +58,8 @@ try:
             print(
                 f"WARNING: CSV headers in '{input_csv_path}' are {reader.fieldnames}, expected {ORIGINAL_FIELDNAMES}."
             )
-        sys.exit(1)
         # Check if essential columns are present
-        if not (
+        if not reader.fieldnames or not (
             CSV_FIELD_DISEASE in reader.fieldnames
             and CSV_FIELD_SUMMARY_CONCLUSION in reader.fieldnames
             and CSV_FIELD_RECOMMENDATIONS in reader.fieldnames
@@ -76,22 +73,25 @@ try:
         writer.writeheader()
 
         for i, row in enumerate(reader):
-            if i > 0:  # If it's not the first record, wait before processing this new record
+            if (
+                i > 0 and not ANTHROPIC_NO_RATE_LIMIT
+            ):  # If it's not the first record, wait before processing this new record
                 print(f"\n--- Waiting {REQUEST_DELAY_SECONDS} seconds before processing record {i+1}... ---")
                 time.sleep(REQUEST_DELAY_SECONDS)  # Respect rate limits
 
             print(f"\n\n--- Processing record {i+1} from CSV ---")
 
-            current_disease_text = row.get(ORIGINAL_FIELDNAMES[0], "")
-            doctor_summary_text = row.get(ORIGINAL_FIELDNAMES[1], "")
-            doctor_recommendations_text = row.get(ORIGINAL_FIELDNAMES[2], "")
+            pat_id = row.get('PatId', "")
+            current_disease_text = row.get('Current_Disease', "")
+            doctor_summary_text = row.get('Summary_Conclusions', "")
+            doctor_recommendations_text = row.get('Recommendations', "")
 
             llm_summary_conclusion = "Error: LLM call failed or no content."
             llm_vs_doctor_comparison = "Error: Comparison call failed or no content."
             llm_comparison_score = DEFAULT_SCORE_ON_ERROR
 
-            # 1. First Bedrock Call: Get AI summary/conclusion
-            print("--- Invoking Bedrock LLM for treatment plan ---")
+            # 1. First LLM Call: Get AI summary/conclusion
+            print("--- Invoking LLM for treatment plan ---")
 
             llm_response_text = invoke_llm(
                 system_prompt=SYSTEM_PROMPT_BASE_HE,
@@ -113,14 +113,15 @@ try:
             ):
                 llm_summary_conclusion = llm_response_text  # Should not happen if logic is correct
 
-            # Wait before the second LLM request for the current record
-            print(
-                f"\n--- Waiting {REQUEST_DELAY_SECONDS} seconds before AI vs Doctor comparison request for record {i+1}... ---"
-            )
-            time.sleep(REQUEST_DELAY_SECONDS)
+            if not ANTHROPIC_NO_RATE_LIMIT:
+                # Wait before the second LLM request for the current record
+                print(
+                    f"\n--- Waiting {REQUEST_DELAY_SECONDS} seconds before AI vs Doctor comparison request for record {i+1}... ---"
+                )
+                time.sleep(REQUEST_DELAY_SECONDS)
 
-            # 2. Second Bedrock Call: Get LLM vs Doctor comparison
-            print("\n--- Invoking Bedrock for LLM vs Doctor comparison ---")
+            # 2. Second LLM Call: Get LLM vs Doctor comparison
+            print("\n--- Invoking LLM vs Doctor comparison ---")
             comparison_user_prompt = f"""
 הנך מתבקש להשוות את שני הטקסטים הבאים:
 
@@ -149,7 +150,7 @@ try:
             )
 
             if comparison_response_text.startswith("ERROR:"):
-                print(f"ERROR during Bedrock call for comparison (record {i+1}): {comparison_response_text}")
+                print(f"ERROR during LLM call for comparison (record {i+1}): {comparison_response_text}")
                 # llm_vs_doctor_comparison remains "Error: Comparison call failed or no content."
                 # llm_comparison_score remains DEFAULT_SCORE_ON_ERROR
             else:
@@ -192,9 +193,10 @@ try:
                     llm_comparison_score = DEFAULT_SCORE_ON_ERROR
             # Write data to output CSV
             output_row = {
-                ORIGINAL_FIELDNAMES[0]: current_disease_text,
-                ORIGINAL_FIELDNAMES[1]: doctor_summary_text,
-                ORIGINAL_FIELDNAMES[2]: doctor_recommendations_text,
+                'PatId': pat_id,
+                'Current_Disease': current_disease_text,
+                'Summary_Conclusions': doctor_summary_text,
+                'Recommendations': doctor_recommendations_text,
                 NEW_FIELDNAMES[0]: llm_summary_conclusion,
                 NEW_FIELDNAMES[1]: llm_vs_doctor_comparison,
                 NEW_FIELDNAMES[2]: llm_comparison_score,
