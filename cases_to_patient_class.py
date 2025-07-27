@@ -228,6 +228,22 @@ def perform_analysis_and_print_results(patients: list[Patient]):
                 print("No reasons specified for 'Immuno Only Low pdl1' patients.")
     else:
         print("No patients with 'Immuno Only' treatment found.")
+
+    # 9. Reasons for getting chemo and immuno sorted by most common first
+        print("\n--- Analysis 2: Reasons for getting chemo and immuno (Most common first) ---")
+        if combo_patients:
+            if len(combo_patients) > 0:
+                reasons_chemo = [p.reason_for_treatment for p in combo_patients if p.reason_for_treatment]
+                if reasons_chemo:
+                    reason_counts = Counter(reasons_chemo)
+                    print("Reasons:")
+                    for reason, count in reason_counts.most_common():
+                        print(f"- \"{reason}\": {count} occurrences")
+                else:
+                    print("No reasons specified for 'immuno and chemo' patients.")
+        else:
+            print("No patients with 'immuno and chemo' treatment found.")
+
     print("\n--- End of Analyses ---")
 
 
