@@ -15,7 +15,7 @@ LLM_PROVIDER = os.getenv("LLM_PROVIDER", "azure_openai").lower()  # "azure_opena
 AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
 AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
 AZURE_OPENAI_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION", "2024-02-01")
-OPEN_AI_MODEL = os.getenv("OPEN_AI_MODEL", "o4-mini")
+OPEN_AI_MODEL = os.getenv("OPEN_AI_MODEL", "o1")
 
 # AWS Bedrock Configuration
 AWS_REGION = os.getenv("AWS_REGION", "eu-west-1")
