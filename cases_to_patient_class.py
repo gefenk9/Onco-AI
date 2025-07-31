@@ -184,7 +184,7 @@ def perform_analysis_and_print_results(patients: list[Patient]):
             if immuno_only_with_pdl1:
                 percentage_low_pdl1 = (len(low_pdl1_immuno_only) / len(immuno_only_with_pdl1)) * 100
                 print(
-                    f"{percentage_low_pdl1:.2f}% ({len(low_pdl1_immuno_only)} out of {len(immuno_only_with_pdl1)}) "
+                    f"{len(low_pdl1_immuno_only)} out of {len(immuno_only_with_pdl1)} ({percentage_low_pdl1:.2f}%) "
                     f"of 'Immunotherapy Only' patients with PDL1 data had a PDL1 score < 0.5."
                 )
 
@@ -351,7 +351,7 @@ def perform_analysis_and_print_results(patients: list[Patient]):
             ]
 
             print(
-                f"Patients with any dosage change: {len(dosage_changed_all)*100/len(combo_patients):.1f}% ({len(dosage_changed_all)} out of {combo_patients})"
+                f"Patients with any dosage change: {len(dosage_changed_all)} out of {len(combo_patients)} ({len(dosage_changed_all)*100/len(combo_patients):.1f}%)"
             )
             print(
                 f"- Quantifiable dosage changes: {len(dosage_quantifiably_changed_patients)} ({len(dosage_quantifiably_changed_patients)*100/len(combo_patients):.1f}%)"
