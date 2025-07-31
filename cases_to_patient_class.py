@@ -8,6 +8,24 @@ from collections import Counter  # Added for analysis
 from dotenv import load_dotenv  # To read .env file for LLM_PROVIDER
 from llm_client import invoke_llm  # Import the new common function
 
+# Global file handle for output logging
+output_file = None
+# Save reference to original print function
+_original_print = print
+
+def tee_print(*args, **kwargs):
+    """Custom print function that outputs to both stdout and file"""
+    # Print to stdout as normal
+    _original_print(*args, **kwargs)
+    
+    # Also write to file if it's open
+    if output_file:
+        _original_print(*args, **kwargs, file=output_file)
+        output_file.flush()  # Ensure immediate write
+
+# Override the built-in print function
+print = tee_print
+
 # Load environment variables from .env file if it exists, to check LLM_PROVIDER
 load_dotenv()
 
@@ -591,7 +609,16 @@ def perform_analysis_and_print_results(patients: list[Patient]):
 
 
 input_csv_path = './cases.csv'
+output_log_path = './cases_to_patient_class_output.txt'
 ORIGINAL_FIELDNAMES = ['Current_Disease', 'Summary_Conclusions', 'Recommendations']
+
+# Open output file for logging
+try:
+    output_file = open(output_log_path, 'w', encoding='utf-8')
+    print(f"--- Output will be saved to: {output_log_path} ---")
+except Exception as e:
+    print(f"WARNING: Could not open output file {output_log_path}: {e}")
+    output_file = None
 
 try:
     with open(input_csv_path, 'r', encoding='utf-8') as infile:
@@ -720,5 +747,9 @@ except FileNotFoundError:
 except Exception as e:
     print(f"An unexpected error occurred: {e}")
     sys.exit(1)
+finally:
+    # Close output file if it was opened
+    if output_file:
+        output_file.close()
 
 print("\n\n--- Script Finished ---")
