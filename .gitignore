@@ -6,3 +6,4 @@ __pycache__
 *xlsx
 .env
 *csv
+cases_to_patient_class_output.txt
