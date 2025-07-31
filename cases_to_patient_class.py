@@ -196,6 +196,19 @@ def perform_analysis_and_print_results(patients: list[Patient]):
                         print(f"- Of these PDL1 < 0.5 patients: {len(high_ps_low_pdl1)} out of {len(low_pdl1_immuno_only)} ({percentage_high_ps:.1f}%) have PS >= 2")
                     else:
                         print("- No patients with PS >= 2 among PDL1 < 0.5 immunotherapy only patients")
+                
+                # Background illnesses breakdown for PDL1 < 0.5 immunotherapy only patients
+                print(f"\nBackground illnesses for PDL1 < 0.5 Immunotherapy Only patients:")
+                all_background_illnesses_low_pdl1 = []
+                for p in low_pdl1_immuno_only:
+                    all_background_illnesses_low_pdl1.extend(p.background_illnesses)
+                
+                if all_background_illnesses_low_pdl1:
+                    illness_counts = Counter(all_background_illnesses_low_pdl1)
+                    for illness, count in illness_counts.most_common():
+                        print(f"- \"{illness}\": {count} occurrences")
+                else:
+                    print("- No background illnesses recorded for PDL1 < 0.5 immunotherapy only patients")
             else:
                 print("No 'Immunotherapy Only' patients with PDL1 score data found.")
         else:
