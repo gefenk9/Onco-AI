@@ -81,6 +81,25 @@ SYSTEM_PROMPT_PATIENT_EXTRACTION_EN = (
 )
 
 
+def format_count_percentage(count: int, total: int, decimal_places: int = 1) -> str:
+    """
+    Helper function to format count and percentage in standardized format: 'X out of Y (Z%)'
+    
+    Args:
+        count: The count/numerator
+        total: The total/denominator  
+        decimal_places: Number of decimal places for percentage (default: 1)
+    
+    Returns:
+        Formatted string like "5 out of 10 (50.0%)"
+    """
+    if total == 0:
+        return f"{count} out of {total} (0.0%)"
+    
+    percentage = (count / total) * 100
+    return f"{count} out of {total} ({percentage:.{decimal_places}f}%)"
+
+
 def perform_analysis_and_print_results(patients: list[Patient]):
     print("\n\n--- Performing Analyses ---")
 
@@ -182,9 +201,8 @@ def perform_analysis_and_print_results(patients: list[Patient]):
             low_pdl1_immuno_only = [p for p in immuno_only_with_pdl1 if p.pdl1_score is not None and p.pdl1_score < 0.5]
 
             if immuno_only_with_pdl1:
-                percentage_low_pdl1 = (len(low_pdl1_immuno_only) / len(immuno_only_with_pdl1)) * 100
                 print(
-                    f"{len(low_pdl1_immuno_only)} out of {len(immuno_only_with_pdl1)} ({percentage_low_pdl1:.2f}%) "
+                    f"{format_count_percentage(len(low_pdl1_immuno_only), len(immuno_only_with_pdl1), 2)} "
                     f"of 'Immunotherapy Only' patients with PDL1 data had a PDL1 score < 0.5."
                 )
 
@@ -196,9 +214,8 @@ def perform_analysis_and_print_results(patients: list[Patient]):
                         if p.performance_status is not None and p.performance_status >= 2
                     ]
                     if high_ps_low_pdl1:
-                        percentage_high_ps = (len(high_ps_low_pdl1) / len(low_pdl1_immuno_only)) * 100
                         print(
-                            f"- Of these PDL1 < 0.5 patients: {len(high_ps_low_pdl1)} out of {len(low_pdl1_immuno_only)} ({percentage_high_ps:.1f}%) have PS >= 2"
+                            f"- Of these PDL1 < 0.5 patients: {format_count_percentage(len(high_ps_low_pdl1), len(low_pdl1_immuno_only))} have PS >= 2"
                         )
                     else:
                         print("- No patients with PS >= 2 among PDL1 < 0.5 immunotherapy only patients")
@@ -229,9 +246,8 @@ def perform_analysis_and_print_results(patients: list[Patient]):
         low_pdl1_all_patients = [p for p in all_patients_with_pdl1 if p.pdl1_score is not None and p.pdl1_score < 0.5]
 
         if low_pdl1_all_patients:
-            percentage_low_pdl1_all = (len(low_pdl1_all_patients) / len(all_patients_with_pdl1)) * 100
             print(
-                f"Patients with PDL1 < 0.5: {len(low_pdl1_all_patients)} out of {len(all_patients_with_pdl1)} ({percentage_low_pdl1_all:.1f}%) patients with PDL1 data"
+                f"Patients with PDL1 < 0.5: {format_count_percentage(len(low_pdl1_all_patients), len(all_patients_with_pdl1))} patients with PDL1 data"
             )
 
             # Breakdown by treatment type
@@ -279,9 +295,8 @@ def perform_analysis_and_print_results(patients: list[Patient]):
         ]
 
         if very_low_pdl1_all_patients:
-            percentage_very_low_pdl1_all = (len(very_low_pdl1_all_patients) / len(all_patients_with_pdl1)) * 100
             print(
-                f"Patients with PDL1 < 0.01: {len(very_low_pdl1_all_patients)} out of {len(all_patients_with_pdl1)} ({percentage_very_low_pdl1_all:.1f}%) patients with PDL1 data"
+                f"Patients with PDL1 < 0.01: {format_count_percentage(len(very_low_pdl1_all_patients), len(all_patients_with_pdl1))} patients with PDL1 data"
             )
 
             # Breakdown by treatment type
@@ -351,7 +366,7 @@ def perform_analysis_and_print_results(patients: list[Patient]):
             ]
 
             print(
-                f"Patients with any dosage change: {len(dosage_changed_all)} out of {len(combo_patients)} ({len(dosage_changed_all)*100/len(combo_patients):.1f}%)"
+                f"Patients with any dosage change: {format_count_percentage(len(dosage_changed_all), len(combo_patients))}"
             )
             print(
                 f"- Quantifiable dosage changes: {len(dosage_quantifiably_changed_patients)} ({len(dosage_quantifiably_changed_patients)*100/len(combo_patients):.1f}%)"
@@ -367,10 +382,10 @@ def perform_analysis_and_print_results(patients: list[Patient]):
 
                 print(f"\nAge-based dosage change analysis:")
                 print(
-                    f"- Age >= 75: {len(elderly_dosage_changed)} out of {len(dosage_changed_all)} ({len(elderly_dosage_changed)*100/len(dosage_changed_all):.1f}%) patients who had dosage changes"
+                    f"- Age >= 75: {format_count_percentage(len(elderly_dosage_changed), len(dosage_changed_all))} patients who had dosage changes"
                 )
                 print(
-                    f"- Age < 75: {len(younger_dosage_changed)} out of {len(dosage_changed_all)} ({len(younger_dosage_changed)*100/len(dosage_changed_all):.1f}%) patients who had dosage changes"
+                    f"- Age < 75: {format_count_percentage(len(younger_dosage_changed), len(dosage_changed_all))} patients who had dosage changes"
                 )
 
                 # Reasons for treatment for younger patients with dosage changes
@@ -493,9 +508,8 @@ def perform_analysis_and_print_results(patients: list[Patient]):
         ]
 
         if high_ps_patients:
-            percentage_high_ps = (len(high_ps_patients) / len(patients)) * 100
             print(
-                f"Patients with PS >= 2: {len(high_ps_patients)} out of {len(patients)} ({percentage_high_ps:.1f}%) total patients"
+                f"Patients with PS >= 2: {format_count_percentage(len(high_ps_patients), len(patients))} total patients"
             )
 
             # Breakdown by treatment type
@@ -525,8 +539,7 @@ def perform_analysis_and_print_results(patients: list[Patient]):
         
         # PS 0-1 analysis
         if ps_0_1_patients:
-            percentage_ps_0_1 = (len(ps_0_1_patients) / len(patients)) * 100
-            print(f"\nPS 0-1: {len(ps_0_1_patients)} out of {len(patients)} ({percentage_ps_0_1:.1f}%) total patients")
+            print(f"\nPS 0-1: {format_count_percentage(len(ps_0_1_patients), len(patients))} total patients")
             
             ps_0_1_immuno = [p for p in ps_0_1_patients if p.treatment_type == "Immunotherapy Only"]
             ps_0_1_combo = [p for p in ps_0_1_patients if p.treatment_type == "Immunotherapy and Chemotherapy"]
@@ -538,8 +551,7 @@ def perform_analysis_and_print_results(patients: list[Patient]):
         
         # PS 2 analysis
         if ps_2_patients:
-            percentage_ps_2 = (len(ps_2_patients) / len(patients)) * 100
-            print(f"\nPS 2: {len(ps_2_patients)} out of {len(patients)} ({percentage_ps_2:.1f}%) total patients")
+            print(f"\nPS 2: {format_count_percentage(len(ps_2_patients), len(patients))} total patients")
             
             ps_2_immuno = [p for p in ps_2_patients if p.treatment_type == "Immunotherapy Only"]
             ps_2_combo = [p for p in ps_2_patients if p.treatment_type == "Immunotherapy and Chemotherapy"]
@@ -551,8 +563,7 @@ def perform_analysis_and_print_results(patients: list[Patient]):
         
         # PS 3-4 analysis
         if ps_3_4_patients:
-            percentage_ps_3_4 = (len(ps_3_4_patients) / len(patients)) * 100
-            print(f"\nPS 3-4: {len(ps_3_4_patients)} out of {len(patients)} ({percentage_ps_3_4:.1f}%) total patients")
+            print(f"\nPS 3-4: {format_count_percentage(len(ps_3_4_patients), len(patients))} total patients")
             
             ps_3_4_immuno = [p for p in ps_3_4_patients if p.treatment_type == "Immunotherapy Only"]
             ps_3_4_combo = [p for p in ps_3_4_patients if p.treatment_type == "Immunotherapy and Chemotherapy"]
