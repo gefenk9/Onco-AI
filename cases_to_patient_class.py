@@ -88,9 +88,12 @@ def perform_analysis_and_print_results(patients: list[Patient]):
     immuno_only_patients = [p for p in patients if p.treatment_type == "Immunotherapy Only"]
     combo_patients = [p for p in patients if p.treatment_type == "Immunotherapy and Chemotherapy"]
 
+    print(f"Total Patients: {len(patients)}")
+    print(f"Immuno Only Patients: {len(immuno_only_patients)} ({len(immuno_only_patients)*100/len(patients):.1f}%)")
+    print(f"Combo Patients: {len(combo_patients)} ({len(combo_patients)*100/len(patients):.1f}%)")
+
     # 1. Average age of patients that only got immunotherapy
-    # 5. Avg age of patients that got only immunotherapy (Points 1 and 5 are the same)
-    print("\n--- Analysis 1 & 5: Average age of patients who received Immunotherapy Only ---")
+    print("\n--- Analysis 1: Average age of patients who received Immunotherapy Only ---")
     ages_immuno_only = [p.age for p in immuno_only_patients if p.age is not None]
     if ages_immuno_only:
         avg_age_immuno_only = sum(ages_immuno_only) / len(ages_immuno_only)
@@ -112,8 +115,61 @@ def perform_analysis_and_print_results(patients: list[Patient]):
     else:
         print("No patients with 'Immunotherapy Only' treatment found.")
 
-    # 3. Percentage of patients that got only immunotherapy and their PDL1 is lower than 0.5
-    print("\n--- Analysis 3: Percentage of 'Immunotherapy Only' patients with PDL1 < 0.5 ---")
+    # 3. Reasons for getting combo, sorted by most common first
+    print("\n--- Analysis 3: Reasons for getting Combo (Most common first) ---")
+    if combo_patients:
+        reasons_combo = [p.reason_for_treatment for p in combo_patients if p.reason_for_treatment]
+        if reasons_combo:
+            reason_counts = Counter(reasons_combo)
+            print("Reasons:")
+            for reason, count in reason_counts.most_common():
+                print(f"- \"{reason}\": {count} occurrences")
+        else:
+            print("No reasons specified for 'Combo' patients.")
+    else:
+        print("No patients with 'Combo' treatment found.")
+
+    # 4. For patients with PDL1 >= 0.5, breakdown by treatment type
+    print("\n--- Analysis 4: Patients with PDL1 >= 0.5 - Treatment breakdown ---")
+    high_pdl1_patients = [p for p in patients if p.pdl1_score is not None and p.pdl1_score >= 0.5]
+    if high_pdl1_patients:
+        high_pdl1_immuno = [p for p in high_pdl1_patients if p.treatment_type == "Immunotherapy Only"]
+        high_pdl1_combo = [p for p in high_pdl1_patients if p.treatment_type == "Immunotherapy and Chemotherapy"]
+
+        print(f"Total patients with PDL1 >= 0.5: {len(high_pdl1_patients)}")
+        print(
+            f"- Immunotherapy Only: {len(high_pdl1_immuno)} ({len(high_pdl1_immuno)*100/len(high_pdl1_patients):.1f}%)"
+        )
+        print(
+            f"- Immunotherapy and Chemotherapy: {len(high_pdl1_combo)} ({len(high_pdl1_combo)*100/len(high_pdl1_patients):.1f}%)"
+        )
+
+        # Show reasons for immunotherapy only in high PDL1 patients
+        if high_pdl1_immuno:
+            print("\nReasons for Immunotherapy Only (PDL1 >= 0.5):")
+            reasons_high_pdl1_immuno = [p.reason_for_treatment for p in high_pdl1_immuno if p.reason_for_treatment]
+            if reasons_high_pdl1_immuno:
+                reason_counts = Counter(reasons_high_pdl1_immuno)
+                for reason, count in reason_counts.most_common():
+                    print(f"- \"{reason}\": {count} occurrences")
+            else:
+                print("- No reasons specified for high PDL1 immunotherapy only patients")
+
+        # Show reasons for combo therapy in high PDL1 patients
+        if high_pdl1_combo:
+            print("\nReasons for Immunotherapy and Chemotherapy (PDL1 >= 0.5):")
+            reasons_high_pdl1_combo = [p.reason_for_treatment for p in high_pdl1_combo if p.reason_for_treatment]
+            if reasons_high_pdl1_combo:
+                reason_counts = Counter(reasons_high_pdl1_combo)
+                for reason, count in reason_counts.most_common():
+                    print(f"- \"{reason}\": {count} occurrences")
+            else:
+                print("- No reasons specified for high PDL1 combo therapy patients")
+    else:
+        print("No patients with PDL1 >= 0.5 found.")
+
+    # 5. Percentage of patients that got only immunotherapy and their PDL1 is lower than 0.5
+    print("\n--- Analysis 5: Percentage of 'Immunotherapy Only' patients with PDL1 < 0.5 ---")
     if immuno_only_patients:
         # Ensure there are patients to avoid division by zero if the list is empty after filtering
         if len(immuno_only_patients) > 0:
@@ -128,10 +184,10 @@ def perform_analysis_and_print_results(patients: list[Patient]):
     else:
         print("No patients with 'Immunotherapy Only' treatment found to calculate PDL1 percentage.")
 
-    # 4. For patients that got immunotherapy and chemo, percentage of them that had their dosage changed
+    # 6. For patients that got immunotherapy and chemo, percentage of them that had their dosage changed
     #    Show the medications that got changed, and for each medication the avg change of dosage
     #    Also show their baackground illness
-    print("\n--- Analysis 4: Dosage changes for 'Immunotherapy and Chemotherapy' patients ---")
+    print("\n--- Analysis 6: Dosage changes for 'Immunotherapy and Chemotherapy' patients ---")
     if combo_patients:
         if len(combo_patients) > 0:
             # Patients whose dosage was specifically changed (not 0, not None, not -1.0 for unquantifiable)
@@ -174,8 +230,8 @@ def perform_analysis_and_print_results(patients: list[Patient]):
     else:
         print("No patients with 'Immunotherapy and Chemotherapy' treatment found.")
 
-    # 6. For patients that got only immunotherapy, show their background disease by percentage and sort by most common first
-    print("\n--- Analysis 5: Background diseases for 'Immunotherapy Only' patients (by percentage) ---")
+    # 7. For patients that got only immunotherapy, show their background disease by percentage and sort by most common first
+    print("\n--- Analysis 7: Background diseases for 'Immunotherapy Only' patients (by percentage) ---")
     if immuno_only_patients:
         if len(immuno_only_patients) > 0:
             all_background_illnesses_immuno_only = []
@@ -198,8 +254,8 @@ def perform_analysis_and_print_results(patients: list[Patient]):
             print("No 'Immunotherapy Only' patients found for background disease analysis.")
     else:
         print("No patients with 'Immunotherapy Only' treatment found for background disease analysis.")
-    # 7. Reasons for getting chemotherapy for patients with high PDL1, sorted by most common first
-    print("\n--- Analysis 7: Reasons for getting Chemo for patients with high PDL1 (Most common first) ---")
+    # 8. Reasons for getting chemotherapy for patients with high PDL1, sorted by most common first
+    print("\n--- Analysis 8: Reasons for getting Chemo for patients with high PDL1 (Most common first) ---")
     if combo_patients:
         if len(combo_patients) > 0:
             high_pdl1_chemo = [p for p in combo_patients if p.pdl1_score is not None and p.pdl1_score > 0.5]
@@ -213,11 +269,11 @@ def perform_analysis_and_print_results(patients: list[Patient]):
                 print("No reasons specified for 'Chemo high pdl1' patients.")
     else:
         print("No patients with 'Chemoy Only' treatment found.")
-    # 8. Reasons for getting immunotherapy for patients with low PDL1, sorted by most common first
-    print("\n--- Analysis 7: Reasons for getting Immuno for patients with Low PDL1 (Most common first) ---")
+    # 9. Reasons for getting immunotherapy for patients with low PDL1, sorted by most common first
+    print("\n--- Analysis 9: Reasons for getting Immuno for patients with Low PDL1 (Most common first) ---")
     if immuno_only_patients:
         if len(immuno_only_patients) > 0:
-            low_pdl1_immuno = [p for p in combo_patients if p.pdl1_score is not None and p.pdl1_score < 0.5]
+            low_pdl1_immuno = [p for p in immuno_only_patients if p.pdl1_score is not None and p.pdl1_score < 0.5]
             reasons_immuno = [p.reason_for_treatment for p in low_pdl1_immuno if p.reason_for_treatment]
             if reasons_immuno:
                 reason_counts = Counter(reasons_immuno)
@@ -229,20 +285,20 @@ def perform_analysis_and_print_results(patients: list[Patient]):
     else:
         print("No patients with 'Immuno Only' treatment found.")
 
-        # 9. Reasons for getting chemo and immuno sorted by most common first
-        print("\n--- Analysis 2: Reasons for getting chemo and immuno (Most common first) ---")
-        if combo_patients:
-            if len(combo_patients) > 0:
-                reasons_chemo = [p.reason_for_treatment for p in combo_patients if p.reason_for_treatment]
-                if reasons_chemo:
-                    reason_counts = Counter(reasons_chemo)
-                    print("Reasons:")
-                    for reason, count in reason_counts.most_common():
-                        print(f"- \"{reason}\": {count} occurrences")
-                else:
-                    print("No reasons specified for 'immuno and chemo' patients.")
-        else:
-            print("No patients with 'immuno and chemo' treatment found.")
+    # 10. Reasons for getting chemo and immuno sorted by most common first
+    print("\n--- Analysis 10: Reasons for getting chemo and immuno (Most common first) ---")
+    if combo_patients:
+        if len(combo_patients) > 0:
+            reasons_chemo = [p.reason_for_treatment for p in combo_patients if p.reason_for_treatment]
+            if reasons_chemo:
+                reason_counts = Counter(reasons_chemo)
+                print("Reasons:")
+                for reason, count in reason_counts.most_common():
+                    print(f"- \"{reason}\": {count} occurrences")
+            else:
+                print("No reasons specified for 'immuno and chemo' patients.")
+    else:
+        print("No patients with 'immuno and chemo' treatment found.")
 
     print("\n--- End of Analyses ---")
 
