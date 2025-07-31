@@ -34,6 +34,7 @@ class Patient:
         pdl1_score: float | None,
         dosage_change: float | None,
         chemotherapy_medication_type: str | None,
+        performance_status: int | None,
     ):
         self.cancer_type = cancer_type
         self.metastasized = metastasized
@@ -44,6 +45,7 @@ class Patient:
         self.pdl1_score = pdl1_score
         self.dosage_change = dosage_change
         self.chemotherapy_medication_type = chemotherapy_medication_type
+        self.performance_status = performance_status
 
     def __repr__(self):
         return (
@@ -54,7 +56,8 @@ class Patient:
             f"reason_for_treatment='{self.reason_for_treatment}', "
             f"pdl1_score={self.pdl1_score}, "
             f"dosage_change={self.dosage_change}, "
-            f"chemotherapy_medication_type='{self.chemotherapy_medication_type}')"
+            f"chemotherapy_medication_type='{self.chemotherapy_medication_type}', "
+            f"performance_status={self.performance_status})"
         )
 
 
@@ -70,9 +73,10 @@ SYSTEM_PROMPT_PATIENT_EXTRACTION_EN = (
     "6.  **Reason for Treatment Choice**: (String: Briefly explain the rationale for the chosen treatment type based on the provided text. e.g., \"High PD-L1 expression led to immunotherapy alone\", \"Advanced stage with nodal involvement prompted combination therapy\". If not determinable, use \"Not Specified\".)\n"
     "7.  **PDL1 Score**: (Float between 0.0 and 1.0. If a percentage is mentioned (e.g., \"PD-L1 50%\", \"PDL1 >50%\", \"PDL1 <1%\"), convert it to a decimal (e.g., 0.5 for 50%, 0.5 for >50% if no more specific value, 0.01 for <1% if no more specific value). If a general term like \"high\" or \"low\" is used without a number, or if testing is recommended but no result given, use null. If not mentioned at all, use null.)\n"
     "8.  **Dosage Change**: (Float: Applicable only if 'Treatment Type' is \"Immunotherapy and Chemotherapy\". If a dosage change (e.g., reduction by 20%, increase by 10%) for chemotherapy is mentioned, provide the percentage of change as a float (e.g., -20.0 for a 20% reduction, 10.0 for a 10% increase). If no change is mentioned or it's explicitly stated as no change, use 0.0. If a change is mentioned but not quantifiable (e.g., \"dose adjustment\"), use -1.0 (representing 'unquantifiable change'). If not applicable (e.g. treatment is 'Immunotherapy Only' or 'Other/Unclear'), use null.)\n"
-    "9.  **Chemotherapy Medication Type**: (String: Applicable only if 'Treatment Type' is \"Immunotherapy and Chemotherapy\". List the type(s) of chemotherapy medication mentioned, e.g., \"R-CHOP\", \"Paclitaxel\". If multiple, join with a comma. If not applicable or not mentioned, use \"N/A\".)\n\n"
+    "9.  **Chemotherapy Medication Type**: (String: Applicable only if 'Treatment Type' is \"Immunotherapy and Chemotherapy\". List the type(s) of chemotherapy medication mentioned, e.g., \"R-CHOP\", \"Paclitaxel\". If multiple, join with a comma. If not applicable or not mentioned, use \"N/A\".)\n"
+    "10. **Performance Status**: (Integer: ECOG Performance Status (PS) score from 0-4. If mentioned as \"PS 2\", \"ECOG 1\", \"performance status 3\", etc., extract the numeric value. If described as \"good performance status\" without a number, use null. If not mentioned, use null.)\n\n"
     "Your entire response MUST be a single, valid JSON object. Do not include any explanatory text, markdown, or any characters outside of this JSON object.\n"
-    "The JSON object must have the following keys: \"cancer_type\", \"metastasized\", \"age\", \"background_illnesses\", \"treatment_type\", \"reason_for_treatment_choice\", \"pdl1_score\", \"dosage_change\", \"chemotherapy_medication_type\".\n"
+    "The JSON object must have the following keys: \"cancer_type\", \"metastasized\", \"age\", \"background_illnesses\", \"treatment_type\", \"reason_for_treatment_choice\", \"pdl1_score\", \"dosage_change\", \"chemotherapy_medication_type\", \"performance_status\".\n"
     "Ensure all string fields are populated, using \"Not Specified\", \"N/A\", or \"Unknown\" where appropriate if information cannot be extracted. For lists, use an empty list if no information. For numbers/booleans, use null if not determinable."
 )
 
@@ -183,6 +187,15 @@ def perform_analysis_and_print_results(patients: list[Patient]):
                     f"{percentage_low_pdl1:.2f}% ({len(low_pdl1_immuno_only)} out of {len(immuno_only_with_pdl1)}) "
                     f"of 'Immunotherapy Only' patients with PDL1 data had a PDL1 score < 0.5."
                 )
+                
+                # Performance Status >= 2 analysis for PDL1 < 0.5 patients
+                if low_pdl1_immuno_only:
+                    high_ps_low_pdl1 = [p for p in low_pdl1_immuno_only if p.performance_status is not None and p.performance_status >= 2]
+                    if high_ps_low_pdl1:
+                        percentage_high_ps = (len(high_ps_low_pdl1) / len(low_pdl1_immuno_only)) * 100
+                        print(f"- Of these PDL1 < 0.5 patients: {len(high_ps_low_pdl1)} out of {len(low_pdl1_immuno_only)} ({percentage_high_ps:.1f}%) have PS >= 2")
+                    else:
+                        print("- No patients with PS >= 2 among PDL1 < 0.5 immunotherapy only patients")
             else:
                 print("No 'Immunotherapy Only' patients with PDL1 score data found.")
         else:
@@ -446,6 +459,27 @@ def perform_analysis_and_print_results(patients: list[Patient]):
     else:
         print("No patients with 'immuno and chemo' treatment found.")
 
+    # 13. Performance Status >= 2 analysis
+    print("\n--- Analysis 13: Patients with Performance Status >= 2 ---")
+    patients_with_ps = [p for p in patients if p.performance_status is not None]
+    if patients_with_ps:
+        high_ps_patients = [p for p in patients_with_ps if p.performance_status >= 2]
+        
+        if high_ps_patients:
+            percentage_high_ps = (len(high_ps_patients) / len(patients)) * 100
+            print(f"Patients with PS >= 2: {len(high_ps_patients)} out of {len(patients)} ({percentage_high_ps:.1f}%) total patients")
+            
+            # Breakdown by treatment type
+            high_ps_immuno = [p for p in high_ps_patients if p.treatment_type == "Immunotherapy Only"]
+            high_ps_combo = [p for p in high_ps_patients if p.treatment_type == "Immunotherapy and Chemotherapy"]
+            
+            print(f"- Immunotherapy Only: {len(high_ps_immuno)} ({len(high_ps_immuno)*100/len(high_ps_patients):.1f}%)")
+            print(f"- Immunotherapy and Chemotherapy: {len(high_ps_combo)} ({len(high_ps_combo)*100/len(high_ps_patients):.1f}%)")
+        else:
+            print("No patients with PS >= 2 found.")
+    else:
+        print("No patients with Performance Status data found.")
+
     print("\n--- End of Analyses ---")
 
 
@@ -516,6 +550,7 @@ Please extract the patient details based on the above information and provide a 
                     pdl1_score=None,
                     dosage_change=None,
                     chemotherapy_medication_type="Error: LLM Failed",
+                    performance_status=None,
                 )
             else:
                 try:
@@ -545,6 +580,7 @@ Please extract the patient details based on the above information and provide a 
                         pdl1_score=extracted_data.get("pdl1_score"),  # None if missing
                         dosage_change=extracted_data.get("dosage_change"),  # None if missing or not applicable
                         chemotherapy_medication_type=extracted_data.get("chemotherapy_medication_type", "N/A"),
+                        performance_status=extracted_data.get("performance_status"),  # None if missing
                     )
                 except json.JSONDecodeError as e:
                     print(
@@ -560,6 +596,7 @@ Please extract the patient details based on the above information and provide a 
                         pdl1_score=None,
                         dosage_change=None,
                         chemotherapy_medication_type="Error: JSON Parse Failed",
+                        performance_status=None,
                     )
             patients_list.append(patient)
             print(f"--- Finished processing record {i+1}. Patient object created. ---")
