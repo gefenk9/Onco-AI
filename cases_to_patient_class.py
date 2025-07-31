@@ -511,6 +511,59 @@ def perform_analysis_and_print_results(patients: list[Patient]):
     else:
         print("No patients with Performance Status data found.")
 
+    # 14. Performance Status detailed breakdown analysis
+    print("\n--- Analysis 14: Performance Status detailed breakdown ---")
+    if patients_with_ps:
+        # PS 0-1 group
+        ps_0_1_patients = [p for p in patients_with_ps if p.performance_status is not None and p.performance_status <= 1]
+        # PS 2 group
+        ps_2_patients = [p for p in patients_with_ps if p.performance_status is not None and p.performance_status == 2]
+        # PS 3-4 group
+        ps_3_4_patients = [p for p in patients_with_ps if p.performance_status is not None and p.performance_status >= 3]
+        
+        print(f"Total patients with PS data: {len(patients_with_ps)}")
+        
+        # PS 0-1 analysis
+        if ps_0_1_patients:
+            percentage_ps_0_1 = (len(ps_0_1_patients) / len(patients)) * 100
+            print(f"\nPS 0-1: {len(ps_0_1_patients)} out of {len(patients)} ({percentage_ps_0_1:.1f}%) total patients")
+            
+            ps_0_1_immuno = [p for p in ps_0_1_patients if p.treatment_type == "Immunotherapy Only"]
+            ps_0_1_combo = [p for p in ps_0_1_patients if p.treatment_type == "Immunotherapy and Chemotherapy"]
+            
+            print(f"- Immunotherapy Only: {len(ps_0_1_immuno)} ({len(ps_0_1_immuno)*100/len(ps_0_1_patients):.1f}%)")
+            print(f"- Immunotherapy and Chemotherapy: {len(ps_0_1_combo)} ({len(ps_0_1_combo)*100/len(ps_0_1_patients):.1f}%)")
+        else:
+            print(f"\nPS 0-1: 0 out of {len(patients)} (0.0%) total patients")
+        
+        # PS 2 analysis
+        if ps_2_patients:
+            percentage_ps_2 = (len(ps_2_patients) / len(patients)) * 100
+            print(f"\nPS 2: {len(ps_2_patients)} out of {len(patients)} ({percentage_ps_2:.1f}%) total patients")
+            
+            ps_2_immuno = [p for p in ps_2_patients if p.treatment_type == "Immunotherapy Only"]
+            ps_2_combo = [p for p in ps_2_patients if p.treatment_type == "Immunotherapy and Chemotherapy"]
+            
+            print(f"- Immunotherapy Only: {len(ps_2_immuno)} ({len(ps_2_immuno)*100/len(ps_2_patients):.1f}%)")
+            print(f"- Immunotherapy and Chemotherapy: {len(ps_2_combo)} ({len(ps_2_combo)*100/len(ps_2_patients):.1f}%)")
+        else:
+            print(f"\nPS 2: 0 out of {len(patients)} (0.0%) total patients")
+        
+        # PS 3-4 analysis
+        if ps_3_4_patients:
+            percentage_ps_3_4 = (len(ps_3_4_patients) / len(patients)) * 100
+            print(f"\nPS 3-4: {len(ps_3_4_patients)} out of {len(patients)} ({percentage_ps_3_4:.1f}%) total patients")
+            
+            ps_3_4_immuno = [p for p in ps_3_4_patients if p.treatment_type == "Immunotherapy Only"]
+            ps_3_4_combo = [p for p in ps_3_4_patients if p.treatment_type == "Immunotherapy and Chemotherapy"]
+            
+            print(f"- Immunotherapy Only: {len(ps_3_4_immuno)} ({len(ps_3_4_immuno)*100/len(ps_3_4_patients):.1f}%)")
+            print(f"- Immunotherapy and Chemotherapy: {len(ps_3_4_combo)} ({len(ps_3_4_combo)*100/len(ps_3_4_patients):.1f}%)")
+        else:
+            print(f"\nPS 3-4: 0 out of {len(patients)} (0.0%) total patients")
+    else:
+        print("No patients with Performance Status data found.")
+
     print("\n--- End of Analyses ---")
 
 
