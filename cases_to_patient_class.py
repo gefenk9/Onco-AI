@@ -175,7 +175,7 @@ def perform_analysis_and_print_results(patients: list[Patient]):
         if len(immuno_only_patients) > 0:
             # Get immunotherapy only patients with PDL1 data
             immuno_only_with_pdl1 = [p for p in immuno_only_patients if p.pdl1_score is not None]
-            low_pdl1_immuno_only = [p for p in immuno_only_with_pdl1 if p.pdl1_score < 0.5]
+            low_pdl1_immuno_only = [p for p in immuno_only_with_pdl1 if p.pdl1_score is not None and p.pdl1_score < 0.5]
             
             if immuno_only_with_pdl1:
                 percentage_low_pdl1 = (len(low_pdl1_immuno_only) / len(immuno_only_with_pdl1)) * 100
