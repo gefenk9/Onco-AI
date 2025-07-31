@@ -434,8 +434,7 @@ def perform_analysis_and_print_results(patients: list[Patient]):
                 for p in dosage_quantifiably_changed_patients:
                     if p.chemotherapy_medication_type and p.chemotherapy_medication_type != "N/A":
                         # Handle multiple medications if comma-separated
-                        meds = [med.strip() for med in p.chemotherapy_medication_type.split(',')]
-                        for med_name in meds:
+                        for med_name in [med.strip() for med in p.chemotherapy_medication_type.split(',')]:
                             if med_name not in med_dosage_changes:
                                 med_dosage_changes[med_name] = []
                             if p.dosage_change is not None:  # Should always be true due to filter
@@ -467,13 +466,11 @@ def perform_analysis_and_print_results(patients: list[Patient]):
 
             if all_background_illnesses_immuno_only:
                 illness_counts = Counter(all_background_illnesses_immuno_only)
-                total_immuno_only_patients = len(immuno_only_patients)
                 print(
-                    f"Background disease prevalence among {total_immuno_only_patients} 'Immunotherapy Only' patients:"
+                    f"Background disease prevalence among {len(immuno_only_patients)} 'Immunotherapy Only' patients:"
                 )
-                sorted_illnesses = sorted(illness_counts.items(), key=lambda item: item[1], reverse=True)
-                for illness, count in sorted_illnesses:
-                    percentage = (count / total_immuno_only_patients) * 100
+                for illness, count in sorted(illness_counts.items(), key=lambda item: item[1], reverse=True):
+                    percentage = (count / len(immuno_only_patients)) * 100
                     print(f"- {illness}: {percentage:.2f}% ({count} patients)")
             else:
                 print("No background illnesses recorded for 'Immunotherapy Only' patients.")
