@@ -476,7 +476,7 @@ def perform_analysis_and_print_results(patients: list[Patient]):
     print("\n--- Analysis 13: Patients with Performance Status >= 2 ---")
     patients_with_ps = [p for p in patients if p.performance_status is not None]
     if patients_with_ps:
-        high_ps_patients = [p for p in patients_with_ps if p.performance_status >= 2]
+        high_ps_patients = [p for p in patients_with_ps if p.performance_status is not None and p.performance_status >= 2]
         
         if high_ps_patients:
             percentage_high_ps = (len(high_ps_patients) / len(patients)) * 100
