@@ -174,7 +174,7 @@ def perform_analysis_and_print_results(patients: list[Patient]):
             if reasons_high_pdl1_immuno:
                 reason_counts = Counter(reasons_high_pdl1_immuno)
                 for reason, count in reason_counts.most_common():
-                    print(f"- \"{reason}\": {count} occurrences out of {len(reasons_high_pdl1_immuno)}")
+                    print(f"- \"{reason}\": {count} occurrences")
             else:
                 print("- No reasons specified for high PDL1 immunotherapy only patients")
 
@@ -185,9 +185,37 @@ def perform_analysis_and_print_results(patients: list[Patient]):
             if reasons_high_pdl1_combo:
                 reason_counts = Counter(reasons_high_pdl1_combo)
                 for reason, count in reason_counts.most_common():
-                    print(f"- \"{reason}\": {count} occurrences out of {len(reasons_high_pdl1_immuno)}")
+                    print(f"- \"{reason}\": {count} occurrences")
             else:
                 print("- No reasons specified for high PDL1 combo therapy patients")
+        
+        # Background illnesses for immunotherapy only in high PDL1 patients
+        if high_pdl1_immuno:
+            print(f"\nBackground illnesses for Immunotherapy Only (PDL1 >= 0.5):")
+            all_background_illnesses_high_pdl1_immuno = []
+            for p in high_pdl1_immuno:
+                all_background_illnesses_high_pdl1_immuno.extend(p.background_illnesses)
+            
+            if all_background_illnesses_high_pdl1_immuno:
+                illness_counts = Counter(all_background_illnesses_high_pdl1_immuno)
+                for illness, count in illness_counts.most_common():
+                    print(f"- \"{illness}\": {count} occurrences")
+            else:
+                print("- No background illnesses recorded for high PDL1 immunotherapy only patients")
+        
+        # Background illnesses for combo therapy in high PDL1 patients
+        if high_pdl1_combo:
+            print(f"\nBackground illnesses for Immunotherapy and Chemotherapy (PDL1 >= 0.5):")
+            all_background_illnesses_high_pdl1_combo = []
+            for p in high_pdl1_combo:
+                all_background_illnesses_high_pdl1_combo.extend(p.background_illnesses)
+            
+            if all_background_illnesses_high_pdl1_combo:
+                illness_counts = Counter(all_background_illnesses_high_pdl1_combo)
+                for illness, count in illness_counts.most_common():
+                    print(f"- \"{illness}\": {count} occurrences")
+            else:
+                print("- No background illnesses recorded for high PDL1 combo therapy patients")
     else:
         print("No patients with PDL1 >= 0.5 found.")
 
