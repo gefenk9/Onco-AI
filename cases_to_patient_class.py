@@ -254,11 +254,14 @@ try:
     with open(input_csv_path, 'r', encoding='utf-8') as infile:
         patients_list = []
         reader = csv.DictReader(infile)
-        # Ensure the reader uses the correct fieldnames if they are not exactly as expected
-        if reader.fieldnames != ORIGINAL_FIELDNAMES:
-            print(
-                f"WARNING: CSV headers in '{input_csv_path}' are {reader.fieldnames}, expected {ORIGINAL_FIELDNAMES}."
-            )
+        # Check that all required fields are present
+        if reader.fieldnames is None:
+            print(f"ERROR: Could not read CSV headers from '{input_csv_path}'.")
+            sys.exit(1)
+
+        missing_fields = [field for field in ORIGINAL_FIELDNAMES if field not in reader.fieldnames]
+        if missing_fields:
+            print(f"ERROR: CSV headers in '{input_csv_path}' are missing required fields: {missing_fields}.")
             sys.exit(1)
 
         for i, row in enumerate(reader):
