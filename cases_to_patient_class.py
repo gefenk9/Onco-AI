@@ -19,8 +19,8 @@ def tee_print(*args, **kwargs):
     # Print to stdout as normal
     _original_print(*args, **kwargs)
 
-    # Also write to file if it's open
-    if output_file:
+    # Also write to file if it's open and not closed
+    if output_file and not output_file.closed:
         # Create a copy of kwargs without 'file' parameter for file output
         file_kwargs = {k: v for k, v in kwargs.items() if k != 'file'}
         _original_print(*args, **file_kwargs, file=output_file)
