@@ -13,15 +13,19 @@ output_file = None
 # Save reference to original print function
 _original_print = print
 
+
 def tee_print(*args, **kwargs):
     """Custom print function that outputs to both stdout and file"""
     # Print to stdout as normal
     _original_print(*args, **kwargs)
-    
+
     # Also write to file if it's open
     if output_file:
-        _original_print(*args, **kwargs, file=output_file)
+        # Create a copy of kwargs without 'file' parameter for file output
+        file_kwargs = {k: v for k, v in kwargs.items() if k != 'file'}
+        _original_print(*args, **file_kwargs, file=output_file)
         output_file.flush()  # Ensure immediate write
+
 
 # Override the built-in print function
 print = tee_print
@@ -698,7 +702,7 @@ Please extract the patient details based on the above information and provide a 
 
                     treatment_type = extracted_data.get("treatment_type", "Other/Unclear")
                     if treatment_type not in ["Immunotherapy and Chemotherapy", "Immunotherapy Only"]:
-                        print(
+                        _original_print(
                             f"WARNING (Record {i+1}): LLM returned treatment_type '{treatment_type}'. Expected 'Immunotherapy and Chemotherapy' or 'Immunotherapy Only'. Storing as is.",
                             file=sys.stderr,
                         )
