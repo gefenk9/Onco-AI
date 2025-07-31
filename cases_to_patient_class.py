@@ -200,7 +200,7 @@ def perform_analysis_and_print_results(patients: list[Patient]):
         print("No patients with 'Immunotherapy Only' treatment found for background disease analysis.")
     # 7. Reasons for getting chemotherapy for patients with high PDL1, sorted by most common first
     print("\n--- Analysis 7: Reasons for getting Chemo for patients with high PDL1 (Most common first) ---")
-     if combo_patients:
+    if combo_patients:
         if len(combo_patients) > 0:
             high_pdl1_chemo = [p for p in combo_patients if p.pdl1_score is not None and p.pdl1_score > 0.5]
             reasons_chemo = [p.reason_for_treatment for p in high_pdl1_chemo if p.reason_for_treatment]
@@ -215,7 +215,7 @@ def perform_analysis_and_print_results(patients: list[Patient]):
         print("No patients with 'Chemoy Only' treatment found.")
     # 8. Reasons for getting immunotherapy for patients with low PDL1, sorted by most common first
     print("\n--- Analysis 7: Reasons for getting Immuno for patients with Low PDL1 (Most common first) ---")
-     if immuno_only_patients:
+    if immuno_only_patients:
         if len(immuno_only_patients) > 0:
             low_pdl1_immuno = [p for p in combo_patients if p.pdl1_score is not None and p.pdl1_score < 0.5]
             reasons_immuno = [p.reason_for_treatment for p in low_pdl1_immuno if p.reason_for_treatment]
@@ -229,7 +229,7 @@ def perform_analysis_and_print_results(patients: list[Patient]):
     else:
         print("No patients with 'Immuno Only' treatment found.")
 
-    # 9. Reasons for getting chemo and immuno sorted by most common first
+        # 9. Reasons for getting chemo and immuno sorted by most common first
         print("\n--- Analysis 2: Reasons for getting chemo and immuno (Most common first) ---")
         if combo_patients:
             if len(combo_patients) > 0:
