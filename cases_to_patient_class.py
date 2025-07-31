@@ -173,12 +173,18 @@ def perform_analysis_and_print_results(patients: list[Patient]):
     if immuno_only_patients:
         # Ensure there are patients to avoid division by zero if the list is empty after filtering
         if len(immuno_only_patients) > 0:
-            low_pdl1_immuno_only = [p for p in immuno_only_patients if p.pdl1_score is not None and p.pdl1_score < 0.5]
-            percentage_low_pdl1 = (len(low_pdl1_immuno_only) / len(immuno_only_patients)) * 100
-            print(
-                f"{percentage_low_pdl1:.2f}% ({len(low_pdl1_immuno_only)} out of {len(immuno_only_patients)}) "
-                f"of 'Immunotherapy Only' patients had a PDL1 score < 0.5."
-            )
+            # Get immunotherapy only patients with PDL1 data
+            immuno_only_with_pdl1 = [p for p in immuno_only_patients if p.pdl1_score is not None]
+            low_pdl1_immuno_only = [p for p in immuno_only_with_pdl1 if p.pdl1_score < 0.5]
+            
+            if immuno_only_with_pdl1:
+                percentage_low_pdl1 = (len(low_pdl1_immuno_only) / len(immuno_only_with_pdl1)) * 100
+                print(
+                    f"{percentage_low_pdl1:.2f}% ({len(low_pdl1_immuno_only)} out of {len(immuno_only_with_pdl1)}) "
+                    f"of 'Immunotherapy Only' patients with PDL1 data had a PDL1 score < 0.5."
+                )
+            else:
+                print("No 'Immunotherapy Only' patients with PDL1 score data found.")
         else:
             print("No 'Immunotherapy Only' patients with PDL1 score data found to calculate percentage.")
     else:
