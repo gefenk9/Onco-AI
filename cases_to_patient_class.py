@@ -84,20 +84,85 @@ SYSTEM_PROMPT_PATIENT_EXTRACTION_EN = (
 def format_count_percentage(count: int, total: int, decimal_places: int = 1) -> str:
     """
     Helper function to format count and percentage in standardized format: 'X out of Y (Z%)'
-    
+
     Args:
         count: The count/numerator
-        total: The total/denominator  
+        total: The total/denominator
         decimal_places: Number of decimal places for percentage (default: 1)
-    
+
     Returns:
         Formatted string like "5 out of 10 (50.0%)"
     """
     if total == 0:
         return f"{count} out of {total} (0.0%)"
-    
+
     percentage = (count / total) * 100
     return f"{count} out of {total} ({percentage:.{decimal_places}f}%)"
+
+
+def print_treatment_reasons(
+    patients: list[Patient], title: str, no_patients_msg: str | None = None, no_reasons_msg: str | None = None
+) -> None:
+    """
+    Helper function to print treatment reasons in a standardized format
+
+    Args:
+        patients: List of patients to analyze
+        title: Title to print for this section
+        no_patients_msg: Message to display if no patients (optional)
+        no_reasons_msg: Message to display if no reasons found (optional)
+    """
+    if patients:
+        print(f"\n{title}:")
+        reasons = [p.reason_for_treatment for p in patients if p.reason_for_treatment]
+        if reasons:
+            reason_counts = Counter(reasons)
+            for reason, count in reason_counts.most_common():
+                print(f"- \"{reason}\": {count} occurrences")
+        else:
+            print(f"- {no_reasons_msg or 'No reasons specified'}")
+    elif no_patients_msg:
+        print(f"- {no_patients_msg}")
+
+
+def print_background_illnesses(patients: list[Patient], title: str) -> None:
+    """
+    Helper function to print background illnesses in a standardized format
+
+    Args:
+        patients: List of patients to analyze
+        title: Title to print for this section
+    """
+    print(f"\n{title}:")
+    all_illnesses = []
+    for p in patients:
+        all_illnesses.extend(p.background_illnesses)
+
+    if all_illnesses:
+        illness_counts = Counter(all_illnesses)
+        for illness, count in illness_counts.most_common():
+            print(f"- \"{illness}\": {count} occurrences")
+    else:
+        print(f"- No background illnesses recorded")
+
+
+def print_treatment_breakdown(patients: list[Patient], total_patients: int, group_name: str) -> None:
+    """
+    Helper function to print treatment type breakdown with percentages
+
+    Args:
+        patients: List of patients in this group
+        total_patients: Total number of patients for percentage calculation
+        group_name: Name of the group being analyzed
+    """
+    immuno_patients = [p for p in patients if p.treatment_type == "Immunotherapy Only"]
+    combo_patients = [p for p in patients if p.treatment_type == "Immunotherapy and Chemotherapy"]
+
+    if patients:
+        print(f"- Immunotherapy Only: {len(immuno_patients)} ({len(immuno_patients)*100/len(patients):.1f}%)")
+        print(f"- Immunotherapy and Chemotherapy: {len(combo_patients)} ({len(combo_patients)*100/len(patients):.1f}%)")
+    else:
+        print(f"- No {group_name} patients found")
 
 
 def perform_analysis_and_print_results(patients: list[Patient]):
@@ -167,55 +232,25 @@ def perform_analysis_and_print_results(patients: list[Patient]):
             f"- Immunotherapy and Chemotherapy: {len(high_pdl1_combo)} ({len(high_pdl1_combo)*100/len(high_pdl1_patients):.1f}%)"
         )
 
-        # Show reasons for immunotherapy only in high PDL1 patients
-        if high_pdl1_immuno:
-            print("\nReasons for Immunotherapy Only (PDL1 >= 0.5):")
-            reasons_high_pdl1_immuno = [p.reason_for_treatment for p in high_pdl1_immuno if p.reason_for_treatment]
-            if reasons_high_pdl1_immuno:
-                reason_counts = Counter(reasons_high_pdl1_immuno)
-                for reason, count in reason_counts.most_common():
-                    print(f"- \"{reason}\": {count} occurrences")
-            else:
-                print("- No reasons specified for high PDL1 immunotherapy only patients")
+        # Show reasons for treatment in high PDL1 patients
+        print_treatment_reasons(
+            high_pdl1_immuno,
+            "Reasons for Immunotherapy Only (PDL1 >= 0.5)",
+            no_reasons_msg="No reasons specified for high PDL1 immunotherapy only patients",
+        )
+        print_treatment_reasons(
+            high_pdl1_combo,
+            "Reasons for Immunotherapy and Chemotherapy (PDL1 >= 0.5)",
+            no_reasons_msg="No reasons specified for high PDL1 combo therapy patients",
+        )
 
-        # Show reasons for combo therapy in high PDL1 patients
-        if high_pdl1_combo:
-            print("\nReasons for Immunotherapy and Chemotherapy (PDL1 >= 0.5):")
-            reasons_high_pdl1_combo = [p.reason_for_treatment for p in high_pdl1_combo if p.reason_for_treatment]
-            if reasons_high_pdl1_combo:
-                reason_counts = Counter(reasons_high_pdl1_combo)
-                for reason, count in reason_counts.most_common():
-                    print(f"- \"{reason}\": {count} occurrences")
-            else:
-                print("- No reasons specified for high PDL1 combo therapy patients")
-        
-        # Background illnesses for immunotherapy only in high PDL1 patients
+        # Background illnesses for high PDL1 patients
         if high_pdl1_immuno:
-            print(f"\nBackground illnesses for Immunotherapy Only (PDL1 >= 0.5):")
-            all_background_illnesses_high_pdl1_immuno = []
-            for p in high_pdl1_immuno:
-                all_background_illnesses_high_pdl1_immuno.extend(p.background_illnesses)
-            
-            if all_background_illnesses_high_pdl1_immuno:
-                illness_counts = Counter(all_background_illnesses_high_pdl1_immuno)
-                for illness, count in illness_counts.most_common():
-                    print(f"- \"{illness}\": {count} occurrences")
-            else:
-                print("- No background illnesses recorded for high PDL1 immunotherapy only patients")
-        
-        # Background illnesses for combo therapy in high PDL1 patients
+            print_background_illnesses(high_pdl1_immuno, "Background illnesses for Immunotherapy Only (PDL1 >= 0.5)")
         if high_pdl1_combo:
-            print(f"\nBackground illnesses for Immunotherapy and Chemotherapy (PDL1 >= 0.5):")
-            all_background_illnesses_high_pdl1_combo = []
-            for p in high_pdl1_combo:
-                all_background_illnesses_high_pdl1_combo.extend(p.background_illnesses)
-            
-            if all_background_illnesses_high_pdl1_combo:
-                illness_counts = Counter(all_background_illnesses_high_pdl1_combo)
-                for illness, count in illness_counts.most_common():
-                    print(f"- \"{illness}\": {count} occurrences")
-            else:
-                print("- No background illnesses recorded for high PDL1 combo therapy patients")
+            print_background_illnesses(
+                high_pdl1_combo, "Background illnesses for Immunotherapy and Chemotherapy (PDL1 >= 0.5)"
+            )
     else:
         print("No patients with PDL1 >= 0.5 found.")
 
@@ -249,17 +284,9 @@ def perform_analysis_and_print_results(patients: list[Patient]):
                         print("- No patients with PS >= 2 among PDL1 < 0.5 immunotherapy only patients")
 
                 # Background illnesses breakdown for PDL1 < 0.5 immunotherapy only patients
-                print(f"\nBackground illnesses for PDL1 < 0.5 Immunotherapy Only patients:")
-                all_background_illnesses_low_pdl1 = []
-                for p in low_pdl1_immuno_only:
-                    all_background_illnesses_low_pdl1.extend(p.background_illnesses)
-
-                if all_background_illnesses_low_pdl1:
-                    illness_counts = Counter(all_background_illnesses_low_pdl1)
-                    for illness, count in illness_counts.most_common():
-                        print(f"- \"{illness}\": {count} occurrences")
-                else:
-                    print("- No background illnesses recorded for PDL1 < 0.5 immunotherapy only patients")
+                print_background_illnesses(
+                    low_pdl1_immuno_only, "Background illnesses for PDL1 < 0.5 Immunotherapy Only patients"
+                )
             else:
                 print("No 'Immunotherapy Only' patients with PDL1 score data found.")
         else:
@@ -289,27 +316,17 @@ def perform_analysis_and_print_results(patients: list[Patient]):
                 f"- Immunotherapy and Chemotherapy: {len(low_pdl1_combo)} ({len(low_pdl1_combo)*100/len(low_pdl1_all_patients):.1f}%)"
             )
 
-            # Reasons for immunotherapy only in low PDL1 patients
-            if low_pdl1_immuno:
-                print("\nReasons for Immunotherapy Only (PDL1 < 0.5):")
-                reasons_low_pdl1_immuno = [p.reason_for_treatment for p in low_pdl1_immuno if p.reason_for_treatment]
-                if reasons_low_pdl1_immuno:
-                    reason_counts = Counter(reasons_low_pdl1_immuno)
-                    for reason, count in reason_counts.most_common():
-                        print(f"- \"{reason}\": {count} occurrences")
-                else:
-                    print("- No reasons specified for low PDL1 immunotherapy only patients")
-
-            # Reasons for combo therapy in low PDL1 patients
-            if low_pdl1_combo:
-                print("\nReasons for Immunotherapy and Chemotherapy (PDL1 < 0.5):")
-                reasons_low_pdl1_combo = [p.reason_for_treatment for p in low_pdl1_combo if p.reason_for_treatment]
-                if reasons_low_pdl1_combo:
-                    reason_counts = Counter(reasons_low_pdl1_combo)
-                    for reason, count in reason_counts.most_common():
-                        print(f"- \"{reason}\": {count} occurrences")
-                else:
-                    print("- No reasons specified for low PDL1 combo therapy patients")
+            # Reasons for treatment in low PDL1 patients
+            print_treatment_reasons(
+                low_pdl1_immuno,
+                "Reasons for Immunotherapy Only (PDL1 < 0.5)",
+                no_reasons_msg="No reasons specified for low PDL1 immunotherapy only patients",
+            )
+            print_treatment_reasons(
+                low_pdl1_combo,
+                "Reasons for Immunotherapy and Chemotherapy (PDL1 < 0.5)",
+                no_reasons_msg="No reasons specified for low PDL1 combo therapy patients",
+            )
         else:
             print("No patients with PDL1 < 0.5 found.")
     else:
@@ -340,31 +357,17 @@ def perform_analysis_and_print_results(patients: list[Patient]):
                 f"- Immunotherapy and Chemotherapy: {len(very_low_pdl1_combo)} ({len(very_low_pdl1_combo)*100/len(very_low_pdl1_all_patients):.1f}%)"
             )
 
-            # Reasons for immunotherapy only in very low PDL1 patients
-            if very_low_pdl1_immuno:
-                print("\nReasons for Immunotherapy Only (PDL1 < 0.01):")
-                reasons_very_low_pdl1_immuno = [
-                    p.reason_for_treatment for p in very_low_pdl1_immuno if p.reason_for_treatment
-                ]
-                if reasons_very_low_pdl1_immuno:
-                    reason_counts = Counter(reasons_very_low_pdl1_immuno)
-                    for reason, count in reason_counts.most_common():
-                        print(f"- \"{reason}\": {count} occurrences")
-                else:
-                    print("- No reasons specified for very low PDL1 immunotherapy only patients")
-
-            # Reasons for combo therapy in very low PDL1 patients
-            if very_low_pdl1_combo:
-                print("\nReasons for Immunotherapy and Chemotherapy (PDL1 < 0.01):")
-                reasons_very_low_pdl1_combo = [
-                    p.reason_for_treatment for p in very_low_pdl1_combo if p.reason_for_treatment
-                ]
-                if reasons_very_low_pdl1_combo:
-                    reason_counts = Counter(reasons_very_low_pdl1_combo)
-                    for reason, count in reason_counts.most_common():
-                        print(f"- \"{reason}\": {count} occurrences")
-                else:
-                    print("- No reasons specified for very low PDL1 combo therapy patients")
+            # Reasons for treatment in very low PDL1 patients
+            print_treatment_reasons(
+                very_low_pdl1_immuno,
+                "Reasons for Immunotherapy Only (PDL1 < 0.01)",
+                no_reasons_msg="No reasons specified for very low PDL1 immunotherapy only patients",
+            )
+            print_treatment_reasons(
+                very_low_pdl1_combo,
+                "Reasons for Immunotherapy and Chemotherapy (PDL1 < 0.01)",
+                no_reasons_msg="No reasons specified for very low PDL1 combo therapy patients",
+            )
         else:
             print("No patients with PDL1 < 0.01 found.")
     else:
@@ -466,9 +469,7 @@ def perform_analysis_and_print_results(patients: list[Patient]):
 
             if all_background_illnesses_immuno_only:
                 illness_counts = Counter(all_background_illnesses_immuno_only)
-                print(
-                    f"Background disease prevalence among {len(immuno_only_patients)} 'Immunotherapy Only' patients:"
-                )
+                print(f"Background disease prevalence among {len(immuno_only_patients)} 'Immunotherapy Only' patients:")
                 for illness, count in sorted(illness_counts.items(), key=lambda item: item[1], reverse=True):
                     percentage = (count / len(immuno_only_patients)) * 100
                     print(f"- {illness}: {percentage:.2f}% ({count} patients)")
@@ -538,13 +539,7 @@ def perform_analysis_and_print_results(patients: list[Patient]):
             )
 
             # Breakdown by treatment type
-            high_ps_immuno = [p for p in high_ps_patients if p.treatment_type == "Immunotherapy Only"]
-            high_ps_combo = [p for p in high_ps_patients if p.treatment_type == "Immunotherapy and Chemotherapy"]
-
-            print(f"- Immunotherapy Only: {len(high_ps_immuno)} ({len(high_ps_immuno)*100/len(high_ps_patients):.1f}%)")
-            print(
-                f"- Immunotherapy and Chemotherapy: {len(high_ps_combo)} ({len(high_ps_combo)*100/len(high_ps_patients):.1f}%)"
-            )
+            print_treatment_breakdown(high_ps_patients, len(patients), "PS >= 2")
         else:
             print("No patients with PS >= 2 found.")
     else:
@@ -554,47 +549,39 @@ def perform_analysis_and_print_results(patients: list[Patient]):
     print("\n--- Analysis 14: Performance Status detailed breakdown ---")
     if patients_with_ps:
         # PS 0-1 group
-        ps_0_1_patients = [p for p in patients_with_ps if p.performance_status is not None and p.performance_status <= 1]
+        ps_0_1_patients = [
+            p for p in patients_with_ps if p.performance_status is not None and p.performance_status <= 1
+        ]
         # PS 2 group
         ps_2_patients = [p for p in patients_with_ps if p.performance_status is not None and p.performance_status == 2]
         # PS 3-4 group
-        ps_3_4_patients = [p for p in patients_with_ps if p.performance_status is not None and p.performance_status >= 3]
-        
+        ps_3_4_patients = [
+            p for p in patients_with_ps if p.performance_status is not None and p.performance_status >= 3
+        ]
+
         print(f"Total patients with PS data: {len(patients_with_ps)}")
-        
+
         # PS 0-1 analysis
         if ps_0_1_patients:
             print(f"\nPS 0-1: {format_count_percentage(len(ps_0_1_patients), len(patients))} total patients")
-            
-            ps_0_1_immuno = [p for p in ps_0_1_patients if p.treatment_type == "Immunotherapy Only"]
-            ps_0_1_combo = [p for p in ps_0_1_patients if p.treatment_type == "Immunotherapy and Chemotherapy"]
-            
-            print(f"- Immunotherapy Only: {len(ps_0_1_immuno)} ({len(ps_0_1_immuno)*100/len(ps_0_1_patients):.1f}%)")
-            print(f"- Immunotherapy and Chemotherapy: {len(ps_0_1_combo)} ({len(ps_0_1_combo)*100/len(ps_0_1_patients):.1f}%)")
+
+            print_treatment_breakdown(ps_0_1_patients, len(patients), "PS 0-1")
         else:
             print(f"\nPS 0-1: 0 out of {len(patients)} (0.0%) total patients")
-        
+
         # PS 2 analysis
         if ps_2_patients:
             print(f"\nPS 2: {format_count_percentage(len(ps_2_patients), len(patients))} total patients")
-            
-            ps_2_immuno = [p for p in ps_2_patients if p.treatment_type == "Immunotherapy Only"]
-            ps_2_combo = [p for p in ps_2_patients if p.treatment_type == "Immunotherapy and Chemotherapy"]
-            
-            print(f"- Immunotherapy Only: {len(ps_2_immuno)} ({len(ps_2_immuno)*100/len(ps_2_patients):.1f}%)")
-            print(f"- Immunotherapy and Chemotherapy: {len(ps_2_combo)} ({len(ps_2_combo)*100/len(ps_2_patients):.1f}%)")
+
+            print_treatment_breakdown(ps_2_patients, len(patients), "PS 2")
         else:
             print(f"\nPS 2: 0 out of {len(patients)} (0.0%) total patients")
-        
+
         # PS 3-4 analysis
         if ps_3_4_patients:
             print(f"\nPS 3-4: {format_count_percentage(len(ps_3_4_patients), len(patients))} total patients")
-            
-            ps_3_4_immuno = [p for p in ps_3_4_patients if p.treatment_type == "Immunotherapy Only"]
-            ps_3_4_combo = [p for p in ps_3_4_patients if p.treatment_type == "Immunotherapy and Chemotherapy"]
-            
-            print(f"- Immunotherapy Only: {len(ps_3_4_immuno)} ({len(ps_3_4_immuno)*100/len(ps_3_4_patients):.1f}%)")
-            print(f"- Immunotherapy and Chemotherapy: {len(ps_3_4_combo)} ({len(ps_3_4_combo)*100/len(ps_3_4_patients):.1f}%)")
+
+            print_treatment_breakdown(ps_3_4_patients, len(patients), "PS 3-4")
         else:
             print(f"\nPS 3-4: 0 out of {len(patients)} (0.0%) total patients")
     else:
