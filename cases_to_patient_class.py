@@ -327,6 +327,26 @@ def perform_analysis_and_print_results(patients: list[Patient]):
             print(
                 f"- Unquantifiable dosage changes: {len(dosage_unquantifiable_changed)} ({len(dosage_unquantifiable_changed)*100/len(combo_patients):.1f}%)"
             )
+            
+            # Age-based analysis for dosage changes
+            if dosage_changed_all:
+                elderly_dosage_changed = [p for p in dosage_changed_all if p.age is not None and p.age >= 75]
+                younger_dosage_changed = [p for p in dosage_changed_all if p.age is not None and p.age < 75]
+                
+                print(f"\nAge-based dosage change analysis:")
+                print(f"- Age >= 75: {len(elderly_dosage_changed)} out of {len(dosage_changed_all)} ({len(elderly_dosage_changed)*100/len(dosage_changed_all):.1f}%) patients who had dosage changes")
+                print(f"- Age < 75: {len(younger_dosage_changed)} out of {len(dosage_changed_all)} ({len(younger_dosage_changed)*100/len(dosage_changed_all):.1f}%) patients who had dosage changes")
+                
+                # Reasons for treatment for younger patients with dosage changes
+                if younger_dosage_changed:
+                    print(f"\nReasons for treatment (Age < 75 with dosage changes):")
+                    reasons_younger_dosage = [p.reason_for_treatment for p in younger_dosage_changed if p.reason_for_treatment]
+                    if reasons_younger_dosage:
+                        reason_counts = Counter(reasons_younger_dosage)
+                        for reason, count in reason_counts.most_common():
+                            print(f"- \"{reason}\": {count} occurrences")
+                    else:
+                        print("- No reasons specified for younger patients with dosage changes")
 
             if dosage_quantifiably_changed_patients:
                 med_dosage_changes = {}  # {med_type: [change1, change2, ...]}
