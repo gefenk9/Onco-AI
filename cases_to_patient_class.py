@@ -155,7 +155,7 @@ def perform_analysis_and_print_results(patients: list[Patient]):
             if reasons_high_pdl1_immuno:
                 reason_counts = Counter(reasons_high_pdl1_immuno)
                 for reason, count in reason_counts.most_common():
-                    print(f"- \"{reason}\": {count} occurrences")
+                    print(f"- \"{reason}\": {count} occurrences out of {len(reasons_high_pdl1_immuno)}")
             else:
                 print("- No reasons specified for high PDL1 immunotherapy only patients")
 
@@ -166,7 +166,7 @@ def perform_analysis_and_print_results(patients: list[Patient]):
             if reasons_high_pdl1_combo:
                 reason_counts = Counter(reasons_high_pdl1_combo)
                 for reason, count in reason_counts.most_common():
-                    print(f"- \"{reason}\": {count} occurrences")
+                    print(f"- \"{reason}\": {count} occurrences out of {len(reasons_high_pdl1_immuno)}")
             else:
                 print("- No reasons specified for high PDL1 combo therapy patients")
     else:
@@ -187,22 +187,28 @@ def perform_analysis_and_print_results(patients: list[Patient]):
                     f"{percentage_low_pdl1:.2f}% ({len(low_pdl1_immuno_only)} out of {len(immuno_only_with_pdl1)}) "
                     f"of 'Immunotherapy Only' patients with PDL1 data had a PDL1 score < 0.5."
                 )
-                
+
                 # Performance Status >= 2 analysis for PDL1 < 0.5 patients
                 if low_pdl1_immuno_only:
-                    high_ps_low_pdl1 = [p for p in low_pdl1_immuno_only if p.performance_status is not None and p.performance_status >= 2]
+                    high_ps_low_pdl1 = [
+                        p
+                        for p in low_pdl1_immuno_only
+                        if p.performance_status is not None and p.performance_status >= 2
+                    ]
                     if high_ps_low_pdl1:
                         percentage_high_ps = (len(high_ps_low_pdl1) / len(low_pdl1_immuno_only)) * 100
-                        print(f"- Of these PDL1 < 0.5 patients: {len(high_ps_low_pdl1)} out of {len(low_pdl1_immuno_only)} ({percentage_high_ps:.1f}%) have PS >= 2")
+                        print(
+                            f"- Of these PDL1 < 0.5 patients: {len(high_ps_low_pdl1)} out of {len(low_pdl1_immuno_only)} ({percentage_high_ps:.1f}%) have PS >= 2"
+                        )
                     else:
                         print("- No patients with PS >= 2 among PDL1 < 0.5 immunotherapy only patients")
-                
+
                 # Background illnesses breakdown for PDL1 < 0.5 immunotherapy only patients
                 print(f"\nBackground illnesses for PDL1 < 0.5 Immunotherapy Only patients:")
                 all_background_illnesses_low_pdl1 = []
                 for p in low_pdl1_immuno_only:
                     all_background_illnesses_low_pdl1.extend(p.background_illnesses)
-                
+
                 if all_background_illnesses_low_pdl1:
                     illness_counts = Counter(all_background_illnesses_low_pdl1)
                     for illness, count in illness_counts.most_common():
@@ -353,20 +359,26 @@ def perform_analysis_and_print_results(patients: list[Patient]):
             print(
                 f"- Unquantifiable dosage changes: {len(dosage_unquantifiable_changed)} ({len(dosage_unquantifiable_changed)*100/len(combo_patients):.1f}%)"
             )
-            
+
             # Age-based analysis for dosage changes
             if dosage_changed_all:
                 elderly_dosage_changed = [p for p in dosage_changed_all if p.age is not None and p.age >= 75]
                 younger_dosage_changed = [p for p in dosage_changed_all if p.age is not None and p.age < 75]
-                
+
                 print(f"\nAge-based dosage change analysis:")
-                print(f"- Age >= 75: {len(elderly_dosage_changed)} out of {len(dosage_changed_all)} ({len(elderly_dosage_changed)*100/len(dosage_changed_all):.1f}%) patients who had dosage changes")
-                print(f"- Age < 75: {len(younger_dosage_changed)} out of {len(dosage_changed_all)} ({len(younger_dosage_changed)*100/len(dosage_changed_all):.1f}%) patients who had dosage changes")
-                
+                print(
+                    f"- Age >= 75: {len(elderly_dosage_changed)} out of {len(dosage_changed_all)} ({len(elderly_dosage_changed)*100/len(dosage_changed_all):.1f}%) patients who had dosage changes"
+                )
+                print(
+                    f"- Age < 75: {len(younger_dosage_changed)} out of {len(dosage_changed_all)} ({len(younger_dosage_changed)*100/len(dosage_changed_all):.1f}%) patients who had dosage changes"
+                )
+
                 # Reasons for treatment for younger patients with dosage changes
                 if younger_dosage_changed:
                     print(f"\nReasons for treatment (Age < 75 with dosage changes):")
-                    reasons_younger_dosage = [p.reason_for_treatment for p in younger_dosage_changed if p.reason_for_treatment]
+                    reasons_younger_dosage = [
+                        p.reason_for_treatment for p in younger_dosage_changed if p.reason_for_treatment
+                    ]
                     if reasons_younger_dosage:
                         reason_counts = Counter(reasons_younger_dosage)
                         for reason, count in reason_counts.most_common():
@@ -476,18 +488,24 @@ def perform_analysis_and_print_results(patients: list[Patient]):
     print("\n--- Analysis 13: Patients with Performance Status >= 2 ---")
     patients_with_ps = [p for p in patients if p.performance_status is not None]
     if patients_with_ps:
-        high_ps_patients = [p for p in patients_with_ps if p.performance_status is not None and p.performance_status >= 2]
-        
+        high_ps_patients = [
+            p for p in patients_with_ps if p.performance_status is not None and p.performance_status >= 2
+        ]
+
         if high_ps_patients:
             percentage_high_ps = (len(high_ps_patients) / len(patients)) * 100
-            print(f"Patients with PS >= 2: {len(high_ps_patients)} out of {len(patients)} ({percentage_high_ps:.1f}%) total patients")
-            
+            print(
+                f"Patients with PS >= 2: {len(high_ps_patients)} out of {len(patients)} ({percentage_high_ps:.1f}%) total patients"
+            )
+
             # Breakdown by treatment type
             high_ps_immuno = [p for p in high_ps_patients if p.treatment_type == "Immunotherapy Only"]
             high_ps_combo = [p for p in high_ps_patients if p.treatment_type == "Immunotherapy and Chemotherapy"]
-            
+
             print(f"- Immunotherapy Only: {len(high_ps_immuno)} ({len(high_ps_immuno)*100/len(high_ps_patients):.1f}%)")
-            print(f"- Immunotherapy and Chemotherapy: {len(high_ps_combo)} ({len(high_ps_combo)*100/len(high_ps_patients):.1f}%)")
+            print(
+                f"- Immunotherapy and Chemotherapy: {len(high_ps_combo)} ({len(high_ps_combo)*100/len(high_ps_patients):.1f}%)"
+            )
         else:
             print("No patients with PS >= 2 found.")
     else:
