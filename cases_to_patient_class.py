@@ -739,9 +739,52 @@ Please extract the patient details based on the above information and provide a 
             patients_list.append(patient)
             print(f"--- Finished processing record {i+1}. Patient object created. ---")
 
-        print("\n\n--- List of Extracted Patients ---")
+        print("\n\n--- List of Extracted Patients (CSV format) ---")
+
+        # Create CSV output using StringIO to capture as string first
+        import io
+
+        csv_output = io.StringIO()
+        csv_writer = csv.writer(csv_output)
+
+        # Write header
+        csv_writer.writerow(
+            [
+                "cancer_type",
+                "metastasized",
+                "age",
+                "background_illnesses",
+                "treatment_type",
+                "reason_for_treatment",
+                "pdl1_score",
+                "dosage_change",
+                "chemotherapy_medication_type",
+                "performance_status",
+            ]
+        )
+
+        # Write patient data
         for patient_obj in patients_list:
-            print(patient_obj)
+            background_illnesses_str = (
+                ",".join(patient_obj.background_illnesses) if patient_obj.background_illnesses else ""
+            )
+            csv_writer.writerow(
+                [
+                    patient_obj.cancer_type,
+                    patient_obj.metastasized,
+                    patient_obj.age,
+                    background_illnesses_str,
+                    patient_obj.treatment_type,
+                    patient_obj.reason_for_treatment,
+                    patient_obj.pdl1_score,
+                    patient_obj.dosage_change,
+                    patient_obj.chemotherapy_medication_type,
+                    patient_obj.performance_status,
+                ]
+            )
+
+        # Print the CSV content
+        print(csv_output.getvalue().strip())
 
         perform_analysis_and_print_results(patients_list)
 
