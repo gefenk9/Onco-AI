@@ -69,8 +69,8 @@ try:
             doctor_summary_text = row.get('Summary_Conclusions', "")
             doctor_recommendations_text = row.get('Recommendations', "")
 
-            user_prompt = "כך סיכם הרופא את המקרה" + current_disease_text
-            user_prompt+= "זה מה שהחליט הרופא" + doctor_recommendations_text + doctor_summary_text
+            user_prompt = "כך סיכם הרופא את המקרה:\n" + current_disease_text + "\n\n"
+            user_prompt+= "זה מה שהחליט הרופא:\n" + doctor_recommendations_text + " " + doctor_summary_text
 
             llm_summary_conclusion = "Error: LLM call failed or no content."
            
