@@ -1,0 +1,126 @@
+import json
+import re
+import sys
+import csv
+import time
+import os
+from llm_client import invoke_llm  # Import the new common function
+
+# Configs
+LLM_PROVIDER = os.getenv("LLM_PROVIDER", "azure_openai").lower()
+REQUEST_DELAY_SECONDS = 31  # Delay in seconds between requests (current rate limit is 2 req/sec)
+ANTHROPIC_NO_RATE_LIMIT = LLM_PROVIDER == "anthropic"
+
+# Define the constant system prompt for treatment plan
+SYSTEM_PROMPT_BASE_HE = (
+    "אתה רופא אונקולוג עלייך לבסס את התשובות שלך על בסיס NCCN וESNO , "
+    "אתה צריך לדרג את הסיבות וההגיון שהובילו את הרופא להחלטה על טיפול "
+    "ולדרג את השיקולים שלו לפי הסדר , לסדר את זה בצורה מדורגת לפי עוצמה"
+)
+
+
+
+input_csv_path = './cases.csv'
+output_csv_path = 'cases_with_analysis.csv'
+DEFAULT_SCORE_ON_ERROR = 0.0
+CSV_FIELD_DISEASE = 'Current_Disease'
+CSV_FIELD_SUMMARY_CONCLUSION = 'Summary_Conclusions'
+CSV_FIELD_RECOMMENDATIONS = 'Recommendations'
+ORIGINAL_FIELDNAMES = ['PatId', 'Current_Disease', 'Summary_Conclusions', 'Recommendations']
+NEW_FIELDNAMES = ['Llm_Summary_Conclusions', 'Llm_Vs_Doctor_Comparision', 'Llm_Vs_Doctor_Comparison_Score']
+output_fieldnames = ORIGINAL_FIELDNAMES + NEW_FIELDNAMES
+
+try:
+    with open(input_csv_path, 'r', encoding='utf-8') as infile, open(
+        output_csv_path, 'w', newline='', encoding='utf-8'
+    ) as outfile:
+
+        reader = csv.DictReader(infile)
+        # Ensure the reader uses the correct fieldnames if they are not exactly as expected
+        if reader.fieldnames != ORIGINAL_FIELDNAMES:
+            print(
+                f"WARNING: CSV headers in '{input_csv_path}' are {reader.fieldnames}, expected {ORIGINAL_FIELDNAMES}."
+            )
+        # Check if essential columns are present
+        if not reader.fieldnames or not (
+            CSV_FIELD_DISEASE in reader.fieldnames
+            and CSV_FIELD_SUMMARY_CONCLUSION in reader.fieldnames
+            and CSV_FIELD_RECOMMENDATIONS in reader.fieldnames
+        ):
+            print(
+                f"ERROR: Essential columns ('{CSV_FIELD_DISEASE}', '{CSV_FIELD_SUMMARY_CONCLUSION}', '{CSV_FIELD_RECOMMENDATIONS}') not found in CSV headers. Exiting."
+            )
+            sys.exit(1)
+
+        writer = csv.DictWriter(outfile, fieldnames=output_fieldnames)
+        writer.writeheader()
+
+        for i, row in enumerate(reader):
+            if (
+                i > 0 and not ANTHROPIC_NO_RATE_LIMIT
+            ):  # If it's not the first record, wait before processing this new record
+                print(f"\n--- Waiting {REQUEST_DELAY_SECONDS} seconds before processing record {i+1}... ---")
+                time.sleep(REQUEST_DELAY_SECONDS)  # Respect rate limits
+
+            print(f"\n\n--- Processing record {i+1} from CSV ---")
+
+            pat_id = row.get('PatId', "")
+            current_disease_text = row.get('Current_Disease', "")
+            doctor_summary_text = row.get('Summary_Conclusions', "")
+            doctor_recommendations_text = row.get('Recommendations', "")
+
+            user_prompt = "כך סיכם הרופא את המקרה" + current_disease_text
+            user_prompt+= "זה מה שהחליט הרופא" + doctor_recommendations_text + doctor_summary_text
+
+            llm_summary_conclusion = "Error: LLM call failed or no content."
+           
+            # 1. First LLM Call: Get summary/conclusion resoning
+            print("--- Invoking LLM for treatment reasoning ---")
+
+            llm_response_text = invoke_llm(
+                system_prompt=SYSTEM_PROMPT_BASE_HE,
+                user_prompt_text=user_prompt,
+                max_tokens=1000,
+                temperature=0.0,
+                # provider_override can be used here if needed, e.g., os.getenv("LLM_PROVIDER_CASES", "bedrock")
+            )
+
+            if llm_response_text.startswith("ERROR:"):
+                print(f"ERROR during LLM call for treatment plan (record {i+1}): {llm_response_text}")
+                # llm_Summary_Conclusions remains "Error: LLM call failed or no content." (its default)
+            else:
+                llm_summary_conclusion = llm_response_text
+
+            # Ensure llm_summary_conclusion has a value for the next step, even if it's an error message
+            if llm_summary_conclusion == "Error: LLM call failed or no content." and not llm_response_text.startswith(
+                "ERROR:"
+            ):
+                llm_summary_conclusion = llm_response_text  # Should not happen if logic is correct
+
+            if not ANTHROPIC_NO_RATE_LIMIT:
+                # Wait before the second LLM request for the current record
+                print(
+                    f"\n--- Waiting {REQUEST_DELAY_SECONDS} seconds before AI vs Doctor comparison request for record {i+1}... ---"
+                )
+                time.sleep(REQUEST_DELAY_SECONDS)
+
+            
+            # Write data to output CSV
+            output_row = {
+                'PatId': pat_id,
+                'Current_Disease': current_disease_text,
+                'Summary_Conclusions': doctor_summary_text,
+                'Recommendations': doctor_recommendations_text,
+                NEW_FIELDNAMES[0]: llm_summary_conclusion,
+            }
+            writer.writerow(output_row)
+            print(f"--- Finished processing and wrote record {i+1} to '{output_csv_path}' ---")
+
+except FileNotFoundError:
+    print(f"ERROR: Input CSV file '{input_csv_path}' not found.")
+    sys.exit(1)
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
+    sys.exit(1)
+
+print("\n\n--- Script Finished ---")
