@@ -16,19 +16,19 @@ SYSTEM_PROMPT_BASE_HE = (
     "אתה רופא אונקולוג עלייך לבסס את התשובות שלך על בסיס NCCN וESNO , "
     "אתה צריך לציין את הסיבות וההגיון שהובילו את הרופא להחלטה על טיפול "
     " ולדרג את השיקולים שלו לפי הסדר , לסדר את זה בצורה מדורגת לפי עוצמה שהשפיעה על החלטת הטיפול בין " \
-    "אם זה אימונולוגי לבד או אימונולוגי וכימו"
+    "אם זה אימונולוגי לבד או אימונולוגי וכימו. ענה בעברית בלבד."
 )
 
 
 
 input_csv_path = './cases.csv'
-output_csv_path = 'cases_with_analysis.csv'
+output_csv_path = 'analysis_per_case.csv'
 DEFAULT_SCORE_ON_ERROR = 0.0
 CSV_FIELD_DISEASE = 'Current_Disease'
 CSV_FIELD_SUMMARY_CONCLUSION = 'Summary_Conclusions'
 CSV_FIELD_RECOMMENDATIONS = 'Recommendations'
 ORIGINAL_FIELDNAMES = ['PatId', 'Current_Disease', 'Summary_Conclusions', 'Recommendations']
-NEW_FIELDNAMES = ['Llm_Summary_Conclusions', 'Llm_Vs_Doctor_Comparision', 'Llm_Vs_Doctor_Comparison_Score']
+NEW_FIELDNAMES = ['Treatment_Reasoning']
 output_fieldnames = ORIGINAL_FIELDNAMES + NEW_FIELDNAMES
 
 try:
@@ -73,7 +73,7 @@ try:
             user_prompt = "כך סיכם הרופא את המקרה:\n" + current_disease_text + "\n\n"
             user_prompt+= "זה מה שהחליט הרופא:\n" + doctor_recommendations_text + " " + doctor_summary_text
 
-            llm_summary_conclusion = "Error: LLM call failed or no content."
+            llm_treatment_reasoning = "Error: LLM call failed or no content."
            
             # 1. First LLM Call: Get summary/conclusion resoning
             print("--- Invoking LLM for treatment reasoning ---")
@@ -90,13 +90,13 @@ try:
                 print(f"ERROR during LLM call for treatment plan (record {i+1}): {llm_response_text}")
                 # llm_Summary_Conclusions remains "Error: LLM call failed or no content." (its default)
             else:
-                llm_summary_conclusion = llm_response_text
+                llm_treatment_reasoning = llm_response_text
 
             # Ensure llm_summary_conclusion has a value for the next step, even if it's an error message
-            if llm_summary_conclusion == "Error: LLM call failed or no content." and not llm_response_text.startswith(
+            if llm_treatment_reasoning == "Error: LLM call failed or no content." and not llm_response_text.startswith(
                 "ERROR:"
             ):
-                llm_summary_conclusion = llm_response_text  # Should not happen if logic is correct
+                llm_treatment_reasoning = llm_response_text  # Should not happen if logic is correct
 
             if not ANTHROPIC_NO_RATE_LIMIT:
                 # Wait before the second LLM request for the current record
@@ -112,7 +112,7 @@ try:
                 'Current_Disease': current_disease_text,
                 'Summary_Conclusions': doctor_summary_text,
                 'Recommendations': doctor_recommendations_text,
-                NEW_FIELDNAMES[0]: llm_summary_conclusion,
+                NEW_FIELDNAMES[0]: llm_treatment_reasoning,
             }
             writer.writerow(output_row)
             print(f"--- Finished processing and wrote record {i+1} to '{output_csv_path}' ---")
