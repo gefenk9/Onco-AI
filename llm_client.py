@@ -53,14 +53,12 @@ def get_azure_openai_client():
     return _azure_openai_client
 
 
-def get_bedrock_client(region_name=None):
+def get_bedrock_client():
     """Initializes and returns a Bedrock runtime client."""
     global _bedrock_client
     if _bedrock_client is None:
         try:
-            client_region = region_name or AWS_REGION
-            _bedrock_client = boto3.client('bedrock-runtime', region_name=client_region)
-            print(f"Bedrock client initialized for region: {client_region}")
+            _bedrock_client = boto3.client('bedrock-runtime', region_name="eu-west-1")
         except Exception as e:
             print(f"Error initializing AWS Bedrock client: {e}")
             raise
@@ -121,8 +119,6 @@ def invoke_llm(
             }
             response = client.invoke_model(
                 modelId=BEDROCK_MODEL,
-                contentType='application/json',
-                accept='application/json',
                 body=json.dumps(request_body),
             )
             response_body_text = response['body'].read().decode('utf-8')
