@@ -150,5 +150,5 @@ except Exception as e:
     print(f"An unexpected error occurred: {e}")
     sys.exit(1)
 
-print ("\n\n reasons list: \n\n "+reasons_dic)
+print ("\n\n reasons list: \n\n "+"\n".join(reasons_dic))
 print("\n\n--- Script Finished ---")
