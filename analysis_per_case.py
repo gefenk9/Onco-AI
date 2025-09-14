@@ -82,6 +82,8 @@ try:
         writer = csv.DictWriter(outfile, fieldnames=output_fieldnames)
         writer.writeheader()
 
+        reasons_dic = []
+
         for i, row in enumerate(reader):
             if (
                 i > 0 and not ANTHROPIC_NO_RATE_LIMIT
@@ -139,6 +141,7 @@ try:
             }
             writer.writerow(output_row)
             print(f"--- Finished processing and wrote record {i+1} to '{output_csv_path}' ---")
+            reasons_dic += reasons
 
 except FileNotFoundError:
     print(f"ERROR: Input CSV file '{input_csv_path}' not found.")
@@ -147,4 +150,5 @@ except Exception as e:
     print(f"An unexpected error occurred: {e}")
     sys.exit(1)
 
+print ("\n\n reasons list: \n\n "+reasons_dic)
 print("\n\n--- Script Finished ---")
