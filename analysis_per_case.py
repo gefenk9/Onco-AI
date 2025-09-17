@@ -171,7 +171,7 @@ try:
             }
             writer.writerow(output_row)
             print(f"--- Finished processing and wrote record {i+1} to '{output_csv_path}' ---")
-            reasons_dic += reasons
+            reasons_dic += reasons[1:5]
 
 except FileNotFoundError:
     print(f"ERROR: Input CSV file '{input_csv_path}' not found.")
