@@ -16,7 +16,7 @@ def extract_4_reasons(llm_response_text):
     for line in lines:
         line = line.strip()
         # Look for patterns like "1. reason", "1) reason", etc.
-        for i in range(1, 5):
+        for i in range(1, 6):
             patterns = [f"{i}. ", f"{i}) ", f"{i}- "]
             for pattern in patterns:
                 if line.startswith(pattern):
@@ -67,11 +67,11 @@ SYSTEM_PROMPT_BASE_HE = (
     "Dx not final,"
     "Material insufficient,"
     " הכי חשובות בפורמט הבא: "
-    "0. [סוג טיפול]"
-    "1. [סיבה ראשונה] "
-    "2. [סיבה שנייה] "
-    "3. [סיבה שלישית] "
-    "4. [סיבה רביעית]"
+    "1. [סוג טיפול]"
+    "2. [סיבה ראשונה] "
+    "3. [סיבה שנייה] "
+    "4. [סיבה שלישית] "
+    "5. [סיבה רביעית]"
 )
 
 
@@ -163,10 +163,11 @@ try:
                 'Current_Disease': current_disease_text,
                 'Summary_Conclusions': doctor_summary_text,
                 'Recommendations': doctor_recommendations_text,
-                'reason_1': reasons[0],
-                'reason_2': reasons[1],
-                'reason_3': reasons[2],
-                'reason_4': reasons[3],
+                'treatment_type': reasons[0],
+                'reason_1': reasons[1],
+                'reason_2': reasons[2],
+                'reason_3': reasons[3],
+                'reason_4': reasons[4],
             }
             writer.writerow(output_row)
             print(f"--- Finished processing and wrote record {i+1} to '{output_csv_path}' ---")
