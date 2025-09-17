@@ -36,9 +36,38 @@ ANTHROPIC_NO_RATE_LIMIT = LLM_PROVIDER == "anthropic"
 SYSTEM_PROMPT_BASE_HE = (
     "אתה רופא אונקולוג עלייך לבסס את התשובות שלך על בסיס NCCN וESNO , "
     "אתה צריך לציין את הסיבות וההגיון שהובילו את הרופא להחלטה על טיפול "
+    "כל מטופל מקבל טיפול אחד משני סוגים או רק אימונו או אימונו וכימו, עלייך להבין איזה סוג טיפול המטופל קיבל"
     " ולדרג את השיקולים שלו לפי הסדר , לסדר את זה בצורה מדורגת לפי עוצמה שהשפיעה על החלטת הטיפול בין " \
     "אם זה אימונולוגי לבד או אימונולוגי וכימו. "
-    "ענה בעברית בלבד ורשום בדיוק 4 סיבות (כל סיבה להגביל ל5 מילים) הכי חשובות בפורמט הבא: "
+    "ענה בעברית בלבד ורשום בדיוק 4 סיבות "
+    "הסיבה צריכה להיבחר מהרשימה הבאה:"
+    "PS Good 0-1,"
+    "PS Intermediate 2,"
+    "Age young ,"
+    "Age old ,"
+    "PDL-1 high,"
+    "PDL-1 low,"
+    "PDL-1 unknown,"
+    "High disease burden,"
+    "low disease burden,"
+    "Comorbidities renal,"
+    "Comorbidities cardiac,"
+    "Comorbidities hepatic,"
+    "Comorbidities pulmonary\copd,"
+    "Comorbidities autoimmune,"
+    "Comorbidities viral(HBV\HIV),"
+    "Comorbidities other,"
+    "PDL-1 low,"
+    "PDL-1 low,"
+    "Curative,"
+    "Palliative,"
+    "QoL priority,"
+    "Refusal of chemo,"
+    "Awaiting NGS,"
+    "Dx not final,"
+    "Material insufficient,"
+    " הכי חשובות בפורמט הבא: "
+    "0. [סוג טיפול]"
     "1. [סיבה ראשונה] "
     "2. [סיבה שנייה] "
     "3. [סיבה שלישית] "
@@ -54,7 +83,7 @@ CSV_FIELD_DISEASE = 'Current_Disease'
 CSV_FIELD_SUMMARY_CONCLUSION = 'Summary_Conclusions'
 CSV_FIELD_RECOMMENDATIONS = 'Recommendations'
 ORIGINAL_FIELDNAMES = ['PatId', 'Current_Disease', 'Summary_Conclusions', 'Recommendations']
-NEW_FIELDNAMES = ['reason_1', 'reason_2', 'reason_3', 'reason_4']
+NEW_FIELDNAMES = ['treatment_type','reason_1', 'reason_2', 'reason_3', 'reason_4']
 output_fieldnames = ORIGINAL_FIELDNAMES + NEW_FIELDNAMES
 
 try:
