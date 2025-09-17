@@ -7,8 +7,8 @@ import os
 from llm_client import invoke_llm  # Import the new common function
 
 def extract_4_reasons(llm_response_text):
-    """Extract 4 numbered reasons from LLM response text"""
-    reasons = ["", "", "", ""]
+    """Extract 5 numbered reasons from LLM response text (treatment type + 4 reasons)"""
+    reasons = ["", "", "", "", ""]
 
     # Split by lines and look for numbered items
     lines = llm_response_text.strip().split('\n')
@@ -38,35 +38,34 @@ SYSTEM_PROMPT_BASE_HE = (
     "אתה צריך לציין את הסיבות וההגיון שהובילו את הרופא להחלטה על טיפול "
     "כל מטופל מקבל טיפול אחד משני סוגים או רק אימונו או אימונו וכימו, עלייך להבין איזה סוג טיפול המטופל קיבל"
     " ולדרג את השיקולים שלו לפי הסדר , לסדר את זה בצורה מדורגת לפי עוצמה שהשפיעה על החלטת הטיפול בין " \
-    "אם זה אימונולוגי לבד או אימונולוגי וכימו. "
+    "אם זה 'אימונותרפיה בלבד' או 'אימונותרפיה וכימותרפיה'. "
     "ענה בעברית בלבד ורשום בדיוק 4 סיבות "
     "הסיבה צריכה להיבחר מהרשימה הבאה:"
-    "PS Good 0-1,"
-    "PS Intermediate 2,"
-    "Age young ,"
-    "Age old ,"
-    "PDL-1 high,"
-    "PDL-1 low,"
-    "PDL-1 unknown,"
-    "High disease burden,"
-    "low disease burden,"
-    "Comorbidities renal,"
-    "Comorbidities cardiac,"
-    "Comorbidities hepatic,"
-    "Comorbidities pulmonary\copd,"
-    "Comorbidities autoimmune,"
-    "Comorbidities viral(HBV\HIV),"
-    "Comorbidities other,"
-    "PDL-1 low,"
-    "PDL-1 low,"
-    "Curative,"
-    "Palliative,"
-    "QoL priority,"
-    "Refusal of chemo,"
-    "Awaiting NGS,"
-    "Dx not final,"
-    "Material insufficient,"
-    " הכי חשובות בפורמט הבא: "
+    "PS Good 0-1"
+    "PS Intermediate 2"
+    "Age young"
+    "Age old"
+    "PDL-1 high"
+    "PDL-1 low"
+    "PDL-1 unknown"
+    "High disease burden"
+    "low disease burden"
+    "Comorbidities renal"
+    "Comorbidities cardiac"
+    "Comorbidities hepatic"
+    "Comorbidities pulmonary/copd"
+    "Comorbidities autoimmune"
+    "Comorbidities viral(HBV/HIV)"
+    "Comorbidities other"
+    "Curative"
+    "Palliative"
+    "QoL priority"
+    "Refusal of chemo"
+    "Awaiting NGS"
+    "Dx not final"
+    "Material insufficient"
+    ""
+    "ענה בפורמט הבא בלבד, לפי סדר חשיבות:"
     "1. [סוג טיפול]"
     "2. [סיבה ראשונה] "
     "3. [סיבה שנייה] "
@@ -130,7 +129,7 @@ try:
             user_prompt = "כך סיכם הרופא את המקרה:\n" + current_disease_text + "\n\n"
             user_prompt+= "זה מה שהחליט הרופא:\n" + doctor_recommendations_text + " " + doctor_summary_text
 
-            reasons = ["Error: LLM call failed or no content.", "", "", ""]
+            reasons = ["Error: LLM call failed or no content.", "", "", "", ""]
            
             # 1. First LLM Call: Get summary/conclusion resoning
             print("--- Invoking LLM for treatment reasoning ---")
@@ -180,5 +179,5 @@ except Exception as e:
     print(f"An unexpected error occurred: {e}")
     sys.exit(1)
 
-print ("\n\n reasons list: \n\n "+"\n".join(reasons_dic))
+print ("\n\nreasons list:\n\n"+"\n".join(reasons_dic))
 print("\n\n--- Script Finished ---")
