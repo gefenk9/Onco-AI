@@ -36,12 +36,9 @@ ANTHROPIC_NO_RATE_LIMIT = LLM_PROVIDER == "anthropic"
 SYSTEM_PROMPT_BASE_HE = (
     "אתה רופא אונקולוג עלייך לבסס את התשובות שלך על בסיס NCCN וESNO , "
     "אתה צריך לציין את הסיבות וההגיון שהובילו את הרופא להחלטה על טיפול "
-    "כל מטופל מקבל טיפול אחד משני סוגים או רק אימונו או אימונו וכימו או אימונו וכימו עם מינון מופחת, עלייך להבין איזה סוג טיפול המטופל קיבל"
+    "כל מטופל מקבל טיפול אחד משני סוגים או רק אימונו או אימונו וכימו, עלייך להבין איזה סוג טיפול המטופל קיבל"
     " ולדרג את השיקולים שלו לפי הסדר , לסדר את זה בצורה מדורגת לפי עוצמה שהשפיעה על החלטת הטיפול בין " \
-    "כשאתה עונה על סוג הטיפול תבחר מהרשימה הבאה בלבד:"
-    "IMMUNO"
-    "IMMUNO CHIMO"
-    "IMMUNO CHIMO REDUCE DOSE"
+    "  אם זה 'אימונותרפיה בלבד' או 'אימונותרפיה וכימותרפיה' או מינון מופחת של כימותרפיה. "
     "ענה מהרשימה בלבד ורשום בדיוק 4 סיבות "
     "הסיבה צריכה להיבחר מהרשימה הבאה:"
     "PS Good 0-1"
@@ -86,37 +83,9 @@ CSV_FIELD_DISEASE = 'Current_Disease'
 CSV_FIELD_SUMMARY_CONCLUSION = 'Summary_Conclusions'
 CSV_FIELD_RECOMMENDATIONS = 'Recommendations'
 ORIGINAL_FIELDNAMES = ['PatId', 'Current_Disease', 'Summary_Conclusions', 'Recommendations']
-NEW_FIELDNAMES = ['treatment_type','reason_1', 'reason_2', 'reason_3', 'reason_4','treatment_type_index','reason_1_index', 'reason_2_index', 'reason_3_index', 'reason_4_index']
+NEW_FIELDNAMES = ['treatment_type','reason_1', 'reason_2', 'reason_3', 'reason_4']
 output_fieldnames = ORIGINAL_FIELDNAMES + NEW_FIELDNAMES
-index={
-    "IMMUNO" : 1,
-    "IMMUNO CHIMO" :2,
-    "IMMUNO CHIMO REDUCE DOSE" : 3,  
-    "PS Good 0-1" : 4,
-    "PS Intermediate 2" : 5,
-    "PS Bad 3-4" : 6,
-    "Age young" : 7,
-    "Age old" : 8,
-    "PDL-1 high" : 9,
-    "PDL-1 low" : 10,
-    "PDL-1 unknown" : 11,
-    "High disease burden" : 12,
-    "low disease burden" : 13,
-    "Comorbidities renal" : 14,
-    "Comorbidities cardiac" : 15,
-    "Comorbidities hepatic" : 16,
-    "Comorbidities pulmonary/copd" : 17,
-    "Comorbidities autoimmune" : 18,
-    "Comorbidities viral(HBV/HIV)" : 19,
-    "Comorbidities other" : 20,
-    "Curative" : 21,
-    "Palliative" : 22,
-    "QoL priority" : 23,
-    "Refusal of chemo" : 24,
-    "Awaiting NGS" : 25,
-    "Dx not final" : 26,
-    "Material insufficient" :27,
-}
+
 try:
     with open(input_csv_path, 'r', encoding='utf-8') as infile, open(
         output_csv_path, 'w', newline='', encoding='utf-8'
@@ -199,12 +168,6 @@ try:
                 'reason_2': reasons[2],
                 'reason_3': reasons[3],
                 'reason_4': reasons[4],
-                'treatment_type_index': index.get(reasons[0],0),
-                'reason_1_index': index.get(reasons[1], 0),
-                'reason_2_index': index.get(reasons[2],0),
-                'reason_3_index': index.get(reasons[3],0),
-                'reason_4_index': index.get(reasons[4],0),
-                
             }
             writer.writerow(output_row)
             print(f"--- Finished processing and wrote record {i+1} to '{output_csv_path}' ---")
