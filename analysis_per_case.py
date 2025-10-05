@@ -6,6 +6,7 @@ import time
 import os
 from llm_client import invoke_llm  # Import the new common function
 
+
 def extract_4_reasons(llm_response_text):
     """Extract 5 numbered reasons from LLM response text (treatment type + 4 reasons)"""
     reasons = ["", "", "", "", ""]
@@ -20,12 +21,13 @@ def extract_4_reasons(llm_response_text):
             patterns = [f"{i}. ", f"{i}) ", f"{i}- "]
             for pattern in patterns:
                 if line.startswith(pattern):
-                    reason_text = line[len(pattern):].strip()
+                    reason_text = line[len(pattern) :].strip()
                     if reason_text:  # Only update if we found actual content
-                        reasons[i-1] = reason_text
+                        reasons[i - 1] = reason_text
                     break
 
     return reasons
+
 
 # Configs
 LLM_PROVIDER = os.getenv("LLM_PROVIDER", "azure_openai").lower()
@@ -37,7 +39,7 @@ SYSTEM_PROMPT_BASE_HE = (
     "אתה רופא אונקולוג עלייך לבסס את התשובות שלך על בסיס NCCN וESMO , "
     "אתה צריך לציין את הסיבות וההגיון שהובילו את הרופא להחלטה על טיפול "
     "כל מטופל מקבל טיפול אחד משני סוגים או רק אימונו או אימונו וכימו, עלייך להבין איזה סוג טיפול המטופל קיבל"
-    " ולדרג את השיקולים שלו לפי הסדר , לסדר את זה בצורה מדורגת לפי עוצמה שהשפיעה על החלטת הטיפול בין " \
+    " ולדרג את השיקולים שלו לפי הסדר , לסדר את זה בצורה מדורגת לפי עוצמה שהשפיעה על החלטת הטיפול בין "
     "  אם זה 'אימונותרפיה בלבד' או 'אימונותרפיה וכימותרפיה' או מינון מופחת של כימותרפיה. "
     "ענה מהרשימה בלבד ורשום בדיוק 4 סיבות "
     "הסיבה צריכה להיבחר מהרשימה הבאה:"
@@ -75,7 +77,6 @@ SYSTEM_PROMPT_BASE_HE = (
 )
 
 
-
 input_csv_path = './cases.csv'
 output_csv_path = 'analysis_per_case.csv'
 DEFAULT_SCORE_ON_ERROR = 0.0
@@ -83,7 +84,7 @@ CSV_FIELD_DISEASE = 'Current_Disease'
 CSV_FIELD_SUMMARY_CONCLUSION = 'Summary_Conclusions'
 CSV_FIELD_RECOMMENDATIONS = 'Recommendations'
 ORIGINAL_FIELDNAMES = ['PatId', 'Current_Disease', 'Summary_Conclusions', 'Recommendations']
-NEW_FIELDNAMES = ['treatment_type','reason_1', 'reason_2', 'reason_3', 'reason_4']
+NEW_FIELDNAMES = ['treatment_type', 'reason_1', 'reason_2', 'reason_3', 'reason_4']
 output_fieldnames = ORIGINAL_FIELDNAMES + NEW_FIELDNAMES
 
 try:
@@ -128,10 +129,10 @@ try:
             doctor_recommendations_text = row.get('Recommendations', "")
 
             user_prompt = "כך סיכם הרופא את המקרה:\n" + current_disease_text + "\n\n"
-            user_prompt+= "זה מה שהחליט הרופא:\n" + doctor_recommendations_text + " " + doctor_summary_text
+            user_prompt += "זה מה שהחליט הרופא:\n" + doctor_recommendations_text + " " + doctor_summary_text
 
             reasons = ["Error: LLM call failed or no content.", "", "", "", ""]
-           
+
             # 1. First LLM Call: Get summary/conclusion resoning
             print("--- Invoking LLM for treatment reasoning ---")
 
@@ -156,7 +157,6 @@ try:
                 )
                 time.sleep(REQUEST_DELAY_SECONDS)
 
-            
             # Write data to output CSV
             output_row = {
                 'PatId': pat_id,
@@ -180,5 +180,5 @@ except Exception as e:
     print(f"An unexpected error occurred: {e}")
     sys.exit(1)
 
-print ("\n\nreasons list:\n\n"+"\n".join(reasons_dic))
+print("\n\nreasons list:\n\n" + "\n".join(reasons_dic))
 print("\n\n--- Script Finished ---")
