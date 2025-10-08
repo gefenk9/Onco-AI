@@ -13,29 +13,22 @@ def extract_reason_percentages(llm_response_text):
     # Define all possible reasons
     all_reasons = [
         "PS Good 0-1",
-        "PS Intermediate 2",
-        "PS Bad 3-4",
+        "PS Bad 3-4/PS Intermediate 2",
         "Age young",
         "Age old",
         "PDL-1 high",
         "PDL-1 low",
-        "PDL-1 unknown",
         "High disease burden",
         "low disease burden",
         "Comorbidities renal",
         "Comorbidities cardiac",
-        "Comorbidities hepatic",
         "Comorbidities pulmonary/copd",
         "Comorbidities autoimmune",
-        "Comorbidities viral(HBV/HIV)",
         "Comorbidities other",
-        "Curative",
-        "Palliative",
         "QoL priority",
+        "Smoking",
         "Refusal of chemo",
-        "Awaiting NGS",
-        "Dx not final",
-        "Material insufficient",
+        "Material insufficient/Awaiting NGS/Dx not final/PDL-1 unknown",
     ]
 
     # Initialize result dictionary
