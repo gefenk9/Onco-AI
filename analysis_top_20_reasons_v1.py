@@ -303,6 +303,51 @@ def classify_patient(
     return response
 
 
+def select_top_20_reasons(patient_reasons: list[PatientReason], provider: str) -> str:
+    """
+    Second LLM call to select top 20 reasons from all patient reasons.
+
+    Sends all patient reasons to LLM in single call and asks to merge similar
+    reasons and explain decisions.
+    """
+    # Build prompt with all patient reasons
+    reasons_text = "\n".join(
+        [f"{i+1}. [PatId: {r.pat_id}] {r.reason_text}" for i, r in enumerate(patient_reasons)]
+    )
+
+    # Hebrew prompt for top-20 selection
+    system_prompt = (
+        "אתה רופא אונקולוג מומחה שמנתח סיבות להחלטות טיפוליות. "
+        "להלן רשימה של סיבות שנתנו על ידי רופאים עבור כל מטופל. "
+        "עליך לבחור את 20 הסיבות העיקריות ביותר שהשפיעו על החלטות הטיפול. "
+        "עליך למזג סיבות דומות לקטגוריות אחתות ולהסביר את ההחלטות שלך. "
+        "פורמט התשובה:"
+        "לכל סיבה, ציין:"
+        "1. מספר סידורי (1-20)"
+        "2. שם הסיבה"
+        "3. כמות מטופלים שהשתמשו בסיבה זו"
+        "4. הסבר למו נכללה ברשימת ה-20"
+        "ענה בעברית בלבד."
+    )
+
+    user_prompt = (
+        f"להלן רשימה של סיבות מכל המטופלים:\n\n"
+        f"{reasons_text}\n\n"
+        f"בחר 20 הסיבות העיקריות ביותר מהרשימה, מזג סיבות דומות, "
+        f"והסבר את החלטותיך."
+    )
+
+    response = invoke_llm(
+        system_prompt=system_prompt,
+        user_prompt_text=user_prompt,
+        max_tokens=4000,
+        temperature=0.0,
+        provider_override=provider,
+    )
+
+    return response
+
+
 def main() -> None:
     """Main entry point for the script."""
     args = parse_args()
@@ -365,6 +410,15 @@ def main() -> None:
         )
     else:
         print("Reasons count matches patients processed")
+
+    # Second LLM call: Select top 20 reasons
+    if all_patient_reasons:
+        print("\n--- Selecting Top 20 Reasons ---")
+        top_20_response = select_top_20_reasons(all_patient_reasons, args.provider)
+        print("\nTop 20 Reasons Response:")
+        print(top_20_response)
+    else:
+        print("\nWARNING: No patient reasons collected, skipping top-20 analysis")
 
 
 if __name__ == "__main__":
