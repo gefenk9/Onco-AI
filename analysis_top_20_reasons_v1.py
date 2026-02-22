@@ -17,6 +17,14 @@ class PatientReason:
     reason_text: str
 
 
+@dataclass
+class TopReason:
+    """Represents a top reason with metadata."""
+    reason_name: str
+    patient_count: str
+    explanation: str
+
+
 # Required columns for input CSV
 REQUIRED_COLUMNS = ["PatId", "Current_Disease", "Summary_Conclusions", "Recommendations"]
 INPUT_CSV_PATH = "./cases.csv"
@@ -348,6 +356,71 @@ def select_top_20_reasons(patient_reasons: list[PatientReason], provider: str) -
     return response
 
 
+def parse_top_20_response(llm_response: str) -> list[TopReason]:
+    """
+    Parse top-20 LLM response to extract structured data about reasons.
+
+    Extracts reason name, patient count, and explanation for each top reason.
+    Handles cases where LLM returns fewer than 20 reasons.
+    """
+    top_reasons: list[TopReason] = []
+    lines = llm_response.strip().split("\n")
+
+    current_reason: dict[str, str] = {}
+    reason_number = None
+
+    for line in lines:
+        line = line.strip()
+
+        # Check for numbered reason pattern (e.g., "1." or "1)" or "1.")
+        # Match patterns like: "1.", "1)", "1." with various delimiters
+        reason_match = re.match(r"^(\d+)[\.)]\s*(.+)$", line)
+        if reason_match:
+            # Save previous reason if exists
+            if current_reason and "name" in current_reason:
+                top_reasons.append(
+                    TopReason(
+                        reason_name=current_reason.get("name", ""),
+                        patient_count=current_reason.get("count", "0"),
+                        explanation=current_reason.get("explanation", ""),
+                    )
+                )
+
+            # Start new reason
+            reason_number = reason_match.group(1)
+            current_reason = {"name": reason_match.group(2).strip()}
+
+        # Check for patient count patterns
+        elif current_reason:
+            # Look for "כמות מטופלים" (number of patients) or "מספר" (number)
+            if "כמות מטופלים" in line or "מטופלים:" in line or "חולים:" in line:
+                parts = re.split(r"[:：]", line, 1)
+                if len(parts) > 1:
+                    current_reason["count"] = parts[1].strip()
+
+            # Check for explanation patterns
+            elif "הסבר" in line or "כי" in line:
+                # Extract text after the explanation marker
+                parts = re.split(r"[:：]", line, 1)
+                if len(parts) > 1:
+                    explanation_text = parts[1].strip()
+                    # Append to existing explanation or create new
+                    current_reason["explanation"] = current_reason.get("explanation", "") + " " + explanation_text
+
+    # Save last reason if exists
+    if current_reason and "name" in current_reason:
+        top_reasons.append(
+            TopReason(
+                reason_name=current_reason.get("name", ""),
+                patient_count=current_reason.get("count", "0"),
+                explanation=current_reason.get("explanation", ""),
+            )
+        )
+
+    print(f"Parsed {len(top_reasons)} top reasons from LLM response")
+    return top_reasons
+
+
 def main() -> None:
     """Main entry point for the script."""
     args = parse_args()
@@ -417,6 +490,10 @@ def main() -> None:
         top_20_response = select_top_20_reasons(all_patient_reasons, args.provider)
         print("\nTop 20 Reasons Response:")
         print(top_20_response)
+
+        # Parse top-20 response
+        top_reasons = parse_top_20_response(top_20_response)
+        print(f"\nParsed {len(top_reasons)} top reasons")
     else:
         print("\nWARNING: No patient reasons collected, skipping top-20 analysis")
 
