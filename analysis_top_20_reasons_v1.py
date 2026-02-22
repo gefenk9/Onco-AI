@@ -3,6 +3,7 @@
 
 import argparse
 import csv
+import re
 import sys
 
 from llm_client import invoke_llm
@@ -11,6 +12,11 @@ from llm_client import invoke_llm
 # Required columns for input CSV
 REQUIRED_COLUMNS = ["PatId", "Current_Disease", "Summary_Conclusions", "Recommendations"]
 INPUT_CSV_PATH = "./cases.csv"
+
+# Valid treatment types (normalized English names)
+TREATMENT_CHEMO_IMMUNO = "Chemo + immuno"
+TREATMENT_IMMUNO_ONLY = "immuno only"
+TREATMENT_IMMUNO_CHEMO_REDUCED = "Immuno + chemo reduce dose"
 
 # Hebrew system prompt for patient classification
 SYSTEM_PROMPT = (
@@ -84,6 +90,106 @@ def read_and_validate_csv(file_path: str) -> list[dict[str, str]]:
         sys.exit(1)
 
 
+def normalize_treatment_type(raw_treatment: str) -> str:
+    """
+    Normalize treatment type to standard English strings.
+
+    Handles flexible Hebrew/English input with simple keyword matching.
+    """
+    raw_lower = raw_treatment.lower()
+
+    # Check for Chemo + immuno variants
+    chemo_immuno_keywords = [
+        "כימותרפיה ואימונותרפיה",
+        "כימו ואימונו",
+        "אימונו וכימו",
+        "chemo + immuno",
+        "chemo and immuno",
+        "chemotherapy and immunotherapy",
+    ]
+    for keyword in chemo_immuno_keywords:
+        if keyword.lower() in raw_lower:
+            return TREATMENT_CHEMO_IMMUNO
+
+    # Check for immuno only variants
+    immuno_only_keywords = [
+        "אימונותרפיה בלבד",
+        "רק אימונו",
+        "אימונו בלבד",
+        "immuno only",
+        "immunotherapy only",
+        "only immuno",
+    ]
+    for keyword in immuno_only_keywords:
+        if keyword.lower() in raw_lower:
+            return TREATMENT_IMMUNO_ONLY
+
+    # Check for Immuno + chemo reduce dose variants
+    immuno_chemo_reduced_keywords = [
+        "אימונו וכימו במינון מופחת",
+        "כימו מופחת ואימונו",
+        "immuno + chemo reduce dose",
+        "immunotherapy and reduced dose chemotherapy",
+        "reduced dose chemo and immuno",
+    ]
+    for keyword in immuno_chemo_reduced_keywords:
+        if keyword.lower() in raw_lower:
+            return TREATMENT_IMMUNO_CHEMO_REDUCED
+
+    # Return raw value if no match
+    return raw_treatment
+
+
+def parse_llm_response(llm_response: str) -> tuple[str, str, str]:
+    """
+    Parse LLM response to extract treatment type and primary reason.
+
+    Returns tuple of (raw_treatment_type, normalized_treatment_type, primary_reason).
+    """
+    lines = llm_response.strip().split("\n")
+
+    raw_treatment_type = ""
+    primary_reason = ""
+
+    for line in lines:
+        line = line.strip()
+
+        # Extract treatment type
+        if line.startswith("סוג טיפול:") or line.startswith("סוג טיפול :"):
+            raw_treatment_type = line.replace("סוג טיפול:", "").replace("סוג טיפול :", "").strip()
+        elif line.startswith("טיפול:") or line.startswith("טיפול :"):
+            raw_treatment_type = line.replace("טיפול:", "").replace("טיפול :", "").strip()
+        elif "treatment type:" in line.lower():
+            # Handle English variants
+            parts = line.split(":", 1)
+            if len(parts) > 1:
+                raw_treatment_type = parts[1].strip()
+
+        # Extract primary reason
+        elif line.startswith("סיבה עיקרית:") or line.startswith("סיבה עיקרית :"):
+            primary_reason = line.replace("סיבה עיקרית:", "").replace("סיבה עיקרית :", "").strip()
+        elif line.startswith("סיבה:") or line.startswith("סיבה :"):
+            primary_reason = line.replace("סיבה:", "").replace("סיבה :", "").strip()
+        elif "primary reason:" in line.lower() or "reason:" in line.lower():
+            # Handle English variants
+            parts = line.split(":", 1)
+            if len(parts) > 1:
+                primary_reason = parts[1].strip()
+
+    # Normalize treatment type
+    normalized_treatment_type = normalize_treatment_type(raw_treatment_type)
+
+    # Log normalization decision
+    if raw_treatment_type != normalized_treatment_type:
+        print(f"  Normalized treatment type: '{raw_treatment_type}' -> '{normalized_treatment_type}'")
+    else:
+        print(f"  Treatment type: {normalized_treatment_type}")
+
+    print(f"  Primary reason: {primary_reason}")
+
+    return raw_treatment_type, normalized_treatment_type, primary_reason
+
+
 def classify_patient(
     pat_id: str,
     current_disease: str,
@@ -146,7 +252,8 @@ def main() -> None:
             provider=args.provider,
         )
 
-        print(f"LLM Response: {llm_response}")
+        # Parse and normalize the LLM response
+        raw_treatment_type, normalized_treatment_type, primary_reason = parse_llm_response(llm_response)
 
 
 if __name__ == "__main__":
