@@ -469,6 +469,34 @@ def create_not_in_top_20_csv(
         print(f"ERROR: Failed to create not_in_top_20.csv: {e}")
 
 
+def append_top_20_reasons_to_output(top_reasons: list[TopReason]) -> None:
+    """
+    Append top-20 reasons to main output CSV.
+
+    Each top reason as row with PatId = 'TOP_REASON_N' format.
+    Columns: PatId, reason_name, patient_count, explanation.
+    """
+    try:
+        with open(OUTPUT_CSV_PATH, "a", newline="", encoding="utf-8") as csvfile:
+            # Note: Top reasons have different columns than patient rows
+            # We'll use DictWriter with top reason specific fieldnames
+            writer = csv.writer(csvfile)
+
+            for i, top_reason in enumerate(top_reasons, 1):
+                writer.writerow(
+                    [
+                        f"TOP_REASON_{i}",
+                        top_reason.reason_name,
+                        top_reason.patient_count,
+                        top_reason.explanation,
+                    ]
+                )
+
+        print(f"Appended {len(top_reasons)} top reasons to {OUTPUT_CSV_PATH}")
+    except Exception as e:
+        print(f"ERROR: Failed to append top reasons to output CSV: {e}")
+
+
 def main() -> None:
     """Main entry point for the script."""
     args = parse_args()
@@ -545,6 +573,9 @@ def main() -> None:
 
         # Create not_in_top_20.csv for excluded reasons
         create_not_in_top_20_csv(all_patient_reasons, top_reasons)
+
+        # Append top-20 reasons to output CSV
+        append_top_20_reasons_to_output(top_reasons)
     else:
         print("\nWARNING: No patient reasons collected, skipping top-20 analysis")
 
