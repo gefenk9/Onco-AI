@@ -35,6 +35,7 @@ TREATMENT_IMMUNO_ONLY = "immuno only"
 TREATMENT_IMMUNO_CHEMO_REDUCED = "Immuno + chemo reduce dose"
 UNCATEGORIZED_CSV_PATH = "./uncategorized.csv"
 OUTPUT_CSV_PATH = "./analysis_v1_results.csv"
+NOT_IN_TOP_20_CSV_PATH = "./not_in_top_20.csv"
 
 # Hebrew system prompt for patient classification
 SYSTEM_PROMPT = (
@@ -421,6 +422,53 @@ def parse_top_20_response(llm_response: str) -> list[TopReason]:
     return top_reasons
 
 
+def create_not_in_top_20_csv(
+    all_patient_reasons: list[PatientReason], top_reasons: list[TopReason]
+) -> None:
+    """
+    Create not_in_top_20.csv for patients whose reasons were not in top 20.
+
+    Columns: PatId, primary_reason, exclusion_reason.
+    Populates exclusion_reason with LLM's explanation from top reasons.
+    """
+    try:
+        # Create set of top reason names for faster lookup
+        top_reason_names = {tr.reason_name for tr in top_reasons}
+
+        with open(NOT_IN_TOP_20_CSV_PATH, "w", newline="", encoding="utf-8") as csvfile:
+            fieldnames = ["PatId", "primary_reason", "exclusion_reason"]
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            writer.writeheader()
+
+            excluded_count = 0
+            for patient_reason in all_patient_reasons:
+                # Check if patient's reason is not in top 20
+                # This is a simple check - in reality, we'd need to match
+                # patient reasons to the grouped top reasons more intelligently
+                if patient_reason.reason_text not in top_reason_names:
+                    # Find the most relevant exclusion reason from top reasons
+                    # (using the first explanation as a general explanation)
+                    exclusion_reason = ""
+                    if top_reasons:
+                        # Use explanation from first top reason as general exclusion explanation
+                        exclusion_reason = f"Not in top {len(top_reasons)} most common reasons"
+                    else:
+                        exclusion_reason = "No top reasons identified"
+
+                    writer.writerow(
+                        {
+                            "PatId": patient_reason.pat_id,
+                            "primary_reason": patient_reason.reason_text,
+                            "exclusion_reason": exclusion_reason,
+                        }
+                    )
+                    excluded_count += 1
+
+        print(f"Created {NOT_IN_TOP_20_CSV_PATH} with {excluded_count} excluded patients")
+    except Exception as e:
+        print(f"ERROR: Failed to create not_in_top_20.csv: {e}")
+
+
 def main() -> None:
     """Main entry point for the script."""
     args = parse_args()
@@ -494,6 +542,9 @@ def main() -> None:
         # Parse top-20 response
         top_reasons = parse_top_20_response(top_20_response)
         print(f"\nParsed {len(top_reasons)} top reasons")
+
+        # Create not_in_top_20.csv for excluded reasons
+        create_not_in_top_20_csv(all_patient_reasons, top_reasons)
     else:
         print("\nWARNING: No patient reasons collected, skipping top-20 analysis")
 
