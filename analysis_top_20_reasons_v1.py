@@ -300,11 +300,12 @@ def classify_patient(
     summary_conclusions: str,
     recommendations: str,
     provider: str,
-) -> str:
+) -> tuple[bool, str, str, str]:
     """
     Classify a patient into treatment type using LLM.
 
-    Returns the LLM response string for later processing.
+    Returns tuple of (is_error, treatment_type, primary_reason, raw_response).
+    If LLM returns error, returns True for is_error.
     """
     user_prompt = (
         f"כך סיכם הרופא את המקרה:\n"
@@ -321,8 +322,12 @@ def classify_patient(
         provider_override=provider,
     )
 
-    return response
+    # Check for LLM API errors
+    if response.startswith("ERROR:"):
+        print(f"  ERROR: LLM call failed: {response}")
+        return True, "ERROR", response, response
 
+    return False, "", "", response
 
 def select_top_20_reasons(patient_reasons: list[PatientReason], provider: str) -> str:
     """
@@ -570,6 +575,9 @@ def main() -> None:
         TREATMENT_IMMUNO_CHEMO_REDUCED: 0,
     }
 
+    # Track LLM API errors
+    error_count = 0
+
     # Process each patient
     for i, patient in enumerate(patients, 1):
         # Apply rate limiting delay (not before first patient)
@@ -588,7 +596,8 @@ def main() -> None:
         print(f"\n--- Processing patient {i}/{len(patients)} (PatId: {pat_id}) ---")
 
         # Make first LLM call for patient classification
-        llm_response = classify_patient(
+        # Make first LLM call for patient classification
+        is_error, llm_response = classify_patient(
             pat_id=pat_id,
             current_disease=current_disease,
             summary_conclusions=summary_conclusions,
@@ -596,10 +605,33 @@ def main() -> None:
             provider=args.provider,
         )
 
-        # Parse and normalize the LLM response
-        raw_treatment_type, normalized_treatment_type, primary_reason = parse_llm_response(
-            pat_id, llm_response
-        )
+        # Handle LLM API errors
+        if is_error:
+            error_count += 1
+            # Save error result
+            save_patient_result(pat_id, "ERROR", llm_response)
+            # Track error as Chemo + immuno for counting purposes
+            treatment_counts[TREATMENT_CHEMO_IMMUNO] += 1
+            # Collect error reason for top-20 analysis
+            all_patient_reasons.append(PatientReason(pat_id=pat_id, reason_text=llm_response))
+        else:
+            # Parse and normalize the LLM response
+            raw_treatment_type, normalized_treatment_type, primary_reason = parse_llm_response(
+                pat_id, llm_response
+            )
+
+            # Save patient result immediately after processing
+            save_patient_result(pat_id, normalized_treatment_type, primary_reason)
+
+            # Collect patient reason for top-20 analysis
+            all_patient_reasons.append(PatientReason(pat_id=pat_id, reason_text=primary_reason))
+
+            # Track treatment type count
+            if normalized_treatment_type in treatment_counts:
+                treatment_counts[normalized_treatment_type] += 1
+            else:
+                # Track uncategorized as Chemo + immuno for counting purposes
+                treatment_counts[TREATMENT_CHEMO_IMMUNO] += 1
 
         # Save patient result immediately after processing
         save_patient_result(pat_id, normalized_treatment_type, primary_reason)
@@ -630,6 +662,14 @@ def main() -> None:
 
     # Validate patient count totals by treatment type
     validate_patient_count_totals(treatment_counts, len(patients))
+
+    # Print error summary
+    print(f"\n--- Error Summary ---")
+    print(f"Total LLM API errors: {error_count}")
+    if error_count > 0:
+        print(f"Patients with errors: {error_count}")
+    else:
+        print("No LLM API errors encountered")
 
     # Second LLM call: Select top 20 reasons
     if all_patient_reasons:
