@@ -18,6 +18,7 @@ TREATMENT_CHEMO_IMMUNO = "Chemo + immuno"
 TREATMENT_IMMUNO_ONLY = "immuno only"
 TREATMENT_IMMUNO_CHEMO_REDUCED = "Immuno + chemo reduce dose"
 UNCATEGORIZED_CSV_PATH = "./uncategorized.csv"
+OUTPUT_CSV_PATH = "./analysis_v1_results.csv"
 
 # Hebrew system prompt for patient classification
 SYSTEM_PROMPT = (
@@ -120,6 +121,40 @@ def write_uncategorized_patient(pat_id: str, original_response: str, normalized_
             )
     except Exception as e:
         print(f"  ERROR: Failed to write to uncategorized.csv: {e}")
+
+
+def initialize_output_csv() -> None:
+    """Create output CSV file with headers if it doesn't exist."""
+    try:
+        # Check if file exists
+        try:
+            with open(OUTPUT_CSV_PATH, "r", encoding="utf-8"):
+                # File exists, don't overwrite
+                return
+        except FileNotFoundError:
+            pass
+
+        # Create file with headers
+        with open(OUTPUT_CSV_PATH, "w", newline="", encoding="utf-8") as csvfile:
+            fieldnames = ["PatId", "treatment_type", "primary_reason"]
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            writer.writeheader()
+        print(f"Created output file: {OUTPUT_CSV_PATH}")
+    except Exception as e:
+        print(f"ERROR: Failed to initialize output CSV: {e}")
+
+
+def save_patient_result(pat_id: str, treatment_type: str, primary_reason: str) -> None:
+    """Save patient result to output CSV file incrementally."""
+    try:
+        with open(OUTPUT_CSV_PATH, "a", newline="", encoding="utf-8") as csvfile:
+            fieldnames = ["PatId", "treatment_type", "primary_reason"]
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            writer.writerow(
+                {"PatId": pat_id, "treatment_type": treatment_type, "primary_reason": primary_reason}
+            )
+    except Exception as e:
+        print(f"  ERROR: Failed to write patient result: {e}")
 
 
 def normalize_treatment_type(raw_treatment: str) -> str:
@@ -274,7 +309,10 @@ def main() -> None:
     # Print total patient count
     print(f"Total patients to process: {len(patients)}")
 
-    # Process each patient (for now, just make LLM calls)
+    # Initialize output CSV file with headers
+    initialize_output_csv()
+
+    # Process each patient
     for i, patient in enumerate(patients, 1):
         pat_id = patient.get("PatId", "")
         current_disease = patient.get("Current_Disease", "")
@@ -296,6 +334,9 @@ def main() -> None:
         raw_treatment_type, normalized_treatment_type, primary_reason = parse_llm_response(
             pat_id, llm_response
         )
+
+        # Save patient result immediately after processing
+        save_patient_result(pat_id, normalized_treatment_type, primary_reason)
 
 
 if __name__ == "__main__":
