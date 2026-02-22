@@ -5,8 +5,16 @@ import argparse
 import csv
 import re
 import sys
+from dataclasses import dataclass
 
 from llm_client import invoke_llm
+
+
+@dataclass
+class PatientReason:
+    """Represents a patient's primary reason for treatment decision."""
+    pat_id: str
+    reason_text: str
 
 
 # Required columns for input CSV
@@ -312,6 +320,9 @@ def main() -> None:
     # Initialize output CSV file with headers
     initialize_output_csv()
 
+    # Collect all patient reasons for top-20 analysis
+    all_patient_reasons: list[PatientReason] = []
+
     # Process each patient
     for i, patient in enumerate(patients, 1):
         pat_id = patient.get("PatId", "")
@@ -337,6 +348,23 @@ def main() -> None:
 
         # Save patient result immediately after processing
         save_patient_result(pat_id, normalized_treatment_type, primary_reason)
+
+        # Collect patient reason for top-20 analysis
+        all_patient_reasons.append(PatientReason(pat_id=pat_id, reason_text=primary_reason))
+
+    # Print count of total reasons collected
+    print(f"\n--- Summary ---")
+    print(f"Total patients processed: {len(patients)}")
+    print(f"Total reasons collected: {len(all_patient_reasons)}")
+
+    # Verify count matches
+    if len(all_patient_reasons) != len(patients):
+        print(
+            f"WARNING: Mismatch between patients processed ({len(patients)}) "
+            f"and reasons collected ({len(all_patient_reasons)})"
+        )
+    else:
+        print("Reasons count matches patients processed")
 
 
 if __name__ == "__main__":
