@@ -5,10 +5,27 @@ import argparse
 import csv
 import sys
 
+from llm_client import invoke_llm
+
 
 # Required columns for input CSV
 REQUIRED_COLUMNS = ["PatId", "Current_Disease", "Summary_Conclusions", "Recommendations"]
 INPUT_CSV_PATH = "./cases.csv"
+
+# Hebrew system prompt for patient classification
+SYSTEM_PROMPT = (
+    "אתה רופא אונקולוג מומחה. עליך לבחון תיק מטופל ולקבוע את סוג הטיפול שהמטופל קיבל "
+    "על סמך NCCN וESMO גידלינים. "
+    "עליך להבחין בין שלושה סוגי טיפול בלבד: "
+    "1. כימותרפיה ואימונותרפיה "
+    "2. אימונותרפיה בלבד "
+    "3. אימונותרפיה וכימותרפיה במינון מופחת "
+    "בנוסף, עליך לציין את הסיבה העיקרית אחת בלבד שהובילה להחלטת הטיפול. "
+    "ענה בעברית בלבד."
+    "פורמט התשובה:"
+    "סוג טיפול: [אחד משלושת הסוגים]"
+    "סיבה עיקרית: [סיבה אחת]"
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -67,6 +84,36 @@ def read_and_validate_csv(file_path: str) -> list[dict[str, str]]:
         sys.exit(1)
 
 
+def classify_patient(
+    pat_id: str,
+    current_disease: str,
+    summary_conclusions: str,
+    recommendations: str,
+    provider: str,
+) -> str:
+    """
+    Classify a patient into treatment type using LLM.
+
+    Returns the LLM response string for later processing.
+    """
+    user_prompt = (
+        f"כך סיכם הרופא את המקרה:\n"
+        f"מחלה נוכחית: {current_disease}\n\n"
+        f"סיכומים ומסקנות: {summary_conclusions}\n\n"
+        f"המלצות: {recommendations}"
+    )
+
+    response = invoke_llm(
+        system_prompt=SYSTEM_PROMPT,
+        user_prompt_text=user_prompt,
+        max_tokens=1000,
+        temperature=0.0,
+        provider_override=provider,
+    )
+
+    return response
+
+
 def main() -> None:
     """Main entry point for the script."""
     args = parse_args()
@@ -80,6 +127,26 @@ def main() -> None:
 
     # Print total patient count
     print(f"Total patients to process: {len(patients)}")
+
+    # Process each patient (for now, just make LLM calls)
+    for i, patient in enumerate(patients, 1):
+        pat_id = patient.get("PatId", "")
+        current_disease = patient.get("Current_Disease", "")
+        summary_conclusions = patient.get("Summary_Conclusions", "")
+        recommendations = patient.get("Recommendations", "")
+
+        print(f"\n--- Processing patient {i}/{len(patients)} (PatId: {pat_id}) ---")
+
+        # Make first LLM call for patient classification
+        llm_response = classify_patient(
+            pat_id=pat_id,
+            current_disease=current_disease,
+            summary_conclusions=summary_conclusions,
+            recommendations=recommendations,
+            provider=args.provider,
+        )
+
+        print(f"LLM Response: {llm_response}")
 
 
 if __name__ == "__main__":
