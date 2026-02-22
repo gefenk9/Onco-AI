@@ -5,9 +5,14 @@ import argparse
 import csv
 import re
 import sys
+import time
 from dataclasses import dataclass
 
 from llm_client import invoke_llm
+
+
+# Rate limiting configuration
+REQUEST_DELAY_SECONDS = 31  # Delay in seconds between requests (rate limit)
 
 
 @dataclass
@@ -560,6 +565,14 @@ def main() -> None:
 
     # Process each patient
     for i, patient in enumerate(patients, 1):
+        # Apply rate limiting delay (not before first patient)
+        if i > 1 and args.provider != "anthropic":
+            print(f"\n--- Waiting {REQUEST_DELAY_SECONDS} seconds before next patient... ---")
+            for remaining in range(REQUEST_DELAY_SECONDS, 0, -1):
+                print(f"  {remaining} seconds remaining...", end="\r")
+                time.sleep(1)
+            print("  Continuing...")
+
         pat_id = patient.get("PatId", "")
         current_disease = patient.get("Current_Disease", "")
         summary_conclusions = patient.get("Summary_Conclusions", "")
