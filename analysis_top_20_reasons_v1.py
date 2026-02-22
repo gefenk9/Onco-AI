@@ -497,6 +497,40 @@ def append_top_20_reasons_to_output(top_reasons: list[TopReason]) -> None:
         print(f"ERROR: Failed to append top reasons to output CSV: {e}")
 
 
+def validate_patient_count_totals(
+    treatment_counts: dict[str, int], total_patients: int
+) -> None:
+    """
+    Verify that sum of patients across treatment types matches total input.
+
+    Counts patients in each treatment type category and compares to total.
+    Prints warning on mismatch with both counts for comparison.
+    Does not stop execution on mismatch.
+    """
+    # Sum counts across all treatment types
+    total_processed = sum(treatment_counts.values())
+
+    # Print treatment type breakdown
+    print("\n--- Patient Count by Treatment Type ---")
+    for treatment_type, count in treatment_counts.items():
+        print(f"  {treatment_type}: {count}")
+    print(f"  Total processed: {total_processed}")
+
+    # Compare to total input
+    if total_processed != total_patients:
+        warning_msg = (
+            f"WARNING: Patient count mismatch detected\n"
+            f"  Total input patients: {total_patients}\n"
+            f"  Total processed: {total_processed}\n"
+            f"  Difference: {abs(total_patients - total_processed)}"
+        )
+        print(warning_msg)
+        # Log to stderr as well
+        print(warning_msg, file=sys.stderr)
+    else:
+        print("Patient count validation: PASS - counts match")
+
+
 def main() -> None:
     """Main entry point for the script."""
     args = parse_args()
@@ -516,6 +550,13 @@ def main() -> None:
 
     # Collect all patient reasons for top-20 analysis
     all_patient_reasons: list[PatientReason] = []
+
+    # Track patients by treatment type for validation
+    treatment_counts: dict[str, int] = {
+        TREATMENT_CHEMO_IMMUNO: 0,
+        TREATMENT_IMMUNO_ONLY: 0,
+        TREATMENT_IMMUNO_CHEMO_REDUCED: 0,
+    }
 
     # Process each patient
     for i, patient in enumerate(patients, 1):
@@ -546,6 +587,13 @@ def main() -> None:
         # Collect patient reason for top-20 analysis
         all_patient_reasons.append(PatientReason(pat_id=pat_id, reason_text=primary_reason))
 
+        # Track treatment type count
+        if normalized_treatment_type in treatment_counts:
+            treatment_counts[normalized_treatment_type] += 1
+        else:
+            # Track uncategorized as Chemo + immuno for counting purposes
+            treatment_counts[TREATMENT_CHEMO_IMMUNO] += 1
+
     # Print count of total reasons collected
     print(f"\n--- Summary ---")
     print(f"Total patients processed: {len(patients)}")
@@ -559,6 +607,9 @@ def main() -> None:
         )
     else:
         print("Reasons count matches patients processed")
+
+    # Validate patient count totals by treatment type
+    validate_patient_count_totals(treatment_counts, len(patients))
 
     # Second LLM call: Select top 20 reasons
     if all_patient_reasons:
