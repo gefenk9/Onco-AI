@@ -1,0 +1,246 @@
+{
+  "project": "Onco-AI Analysis",
+  "branchName": "ralph/analysis-top-20-reasons-v1",
+  "description": "Analysis Top 20 Treatment Reasons v1 - Classify patients into 3 treatment types and identify top 20 reasons for treatment decisions",
+  "userStories": [
+    {
+      "id": "US-001",
+      "title": "Create new analysis script with CLI argument for LLM provider",
+      "description": "As a developer, I need to create a new Python script that accepts an LLM provider as a CLI argument so I can run analysis with different models.",
+      "acceptanceCriteria": [
+        "Create analysis_top_20_reasons_v1.py script in project root",
+        "Script accepts --provider CLI argument with default 'azure_openai'",
+        "Valid provider values: azure_openai, bedrock, anthropic",
+        "Script prints selected provider at startup",
+        "Error if invalid provider is specified with usage message",
+        "Typecheck passes"
+      ],
+      "priority": 1,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-002",
+      "title": "Read input CSV and validate structure",
+      "description": "As a developer, I need to read cases.csv file and validate its structure matches expected columns.",
+      "acceptanceCriteria": [
+        "Read from ./cases.csv with utf-8 encoding",
+        "Validate required columns: PatId, Current_Disease, Summary_Conclusions, Recommendations",
+        "Print warning if column names don't match exactly but required columns exist",
+        "Exit with error if required columns are missing",
+        "Count and print total patients at startup",
+        "Typecheck passes"
+      ],
+      "priority": 2,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-003",
+      "title": "Implement first LLM call for patient classification",
+      "description": "As a developer, I need to implement first LLM call that classifies each patient into a treatment type and provides a single primary reason.",
+      "acceptanceCriteria": [
+        "Define Hebrew system prompt with oncologist persona",
+        "Prompt asks for exactly one treatment type from 3 options",
+        "Prompt asks for a single primary reason (not multiple)",
+        "User prompt includes: Current_Disease, Summary_Conclusions, Recommendations",
+        "Call invoke_llm() from llm_client.py with max_tokens=1000, temperature=0.0",
+        "Store LLM response string for later processing",
+        "Typecheck passes"
+      ],
+      "priority": 3,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-004",
+      "title": "Parse and normalize LLM response",
+      "description": "As a developer, I need to parse LLM response to extract treatment type and primary reason, then normalize treatment type to standard English strings.",
+      "acceptanceCriteria": [
+        "Extract treatment type from LLM response using regex/string parsing",
+        "Extract primary reason from LLM response",
+        "Normalize treatment type to: Chemo + immuno, immuno only, or Immuno + chemo reduce dose",
+        "Handle flexible Hebrew/English input for treatment types with simple keyword matching",
+        "Log treatment type normalization decisions to console",
+        "Typecheck passes"
+      ],
+      "priority": 4,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-005",
+      "title": "Handle invalid treatment types with uncategorized logging",
+      "description": "As a developer, I need to handle cases where LLM returns a treatment type that doesn't match 3 valid categories.",
+      "acceptanceCriteria": [
+        "If treatment type cannot be normalized, classify as Chemo + immuno",
+        "Create and write to uncategorized.csv file",
+        "uncategorized.csv columns: PatId, original_response, normalized_as",
+        "Print warning to console for each uncategorized patient",
+        "Continue processing subsequent patients without stopping",
+        "Typecheck passes"
+      ],
+      "priority": 5,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-006",
+      "title": "Save patient results incrementally",
+      "description": "As a developer, I need to save patient results after each patient is processed to prevent data loss on interruption.",
+      "acceptanceCriteria": [
+        "Create output file analysis_v1_results.csv with headers before first patient",
+        "Append each patient's result immediately after processing",
+        "Output columns: PatId, treatment_type, primary_reason",
+        "Use append mode if file exists (don't overwrite existing data)",
+        "Handle file write errors with try/except and continue",
+        "Typecheck passes"
+      ],
+      "priority": 6,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-007",
+      "title": "Collect all patient reasons for top-20 analysis",
+      "description": "As a developer, I need to collect all patient reasons after processing all patients for second LLM call.",
+      "acceptanceCriteria": [
+        "Store all patient reasons in list during processing: each entry has PatId and reason_text",
+        "Print count of total reasons collected after all patients processed",
+        "Verify count matches number of patients processed, warn if mismatch",
+        "Typecheck passes"
+      ],
+      "priority": 7,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-008",
+      "title": "Implement second LLM call for top-20 reasons selection",
+      "description": "As a developer, I need to implement second LLM call that receives all patient reasons and selects top 20 with explanations.",
+      "acceptanceCriteria": [
+        "Define Hebrew prompt asking to select top 20 reasons from list",
+        "Send all patient reasons to LLM in single call (approx 480 reasons)",
+        "Ask LLM to merge similar reasons and explain decisions",
+        "Use same LLM provider as patient analysis",
+        "Call invoke_llm() with max_tokens=4000, temperature=0.0",
+        "Typecheck passes"
+      ],
+      "priority": 8,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-009",
+      "title": "Parse top-20 LLM response",
+      "description": "As a developer, I need to parse top-20 LLM response to extract structured data about reasons.",
+      "acceptanceCriteria": [
+        "Extract top 20 reason names/descriptions from response",
+        "Extract patient count for each top reason",
+        "Extract explanation for why each was included",
+        "Handle cases where LLM returns fewer than 20 reasons",
+        "Store parsed data in structured format for output",
+        "Typecheck passes"
+      ],
+      "priority": 9,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-010",
+      "title": "Create not_in_top_20.csv for excluded reasons",
+      "description": "As a developer, I need to create a separate CSV file that logs patients whose reasons were not included in top 20, with explanations.",
+      "acceptanceCriteria": [
+        "Create not_in_top_20.csv file after second LLM call",
+        "Columns: PatId, primary_reason, exclusion_reason",
+        "Include all patients whose primary reason is not in top 20",
+        "Populate exclusion_reason with LLM's explanation",
+        "Typecheck passes"
+      ],
+      "priority": 10,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-011",
+      "title": "Append top-20 reasons to output CSV",
+      "description": "As a developer, I need to append top-20 reasons and their metadata to main output CSV.",
+      "acceptanceCriteria": [
+        "Append top-20 reasons to analysis_v1_results.csv",
+        "Each top reason as row with PatId = 'TOP_REASON_N' format",
+        "Columns: PatId, reason_name, patient_count, explanation",
+        "Include all 20 reasons (or fewer if LLM returned less)",
+        "Print message to console indicating top reasons appended",
+        "Typecheck passes"
+      ],
+      "priority": 11,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-012",
+      "title": "Validate patient count totals",
+      "description": "As a developer, I need to verify that sum of patients across treatment types matches total input and log discrepancies.",
+      "acceptanceCriteria": [
+        "Count patients in each treatment type category",
+        "Sum counts and compare to total input patients",
+        "If mismatch: print warning to console and log to stderr",
+        "Warning message includes both counts for comparison",
+        "Do not stop execution on mismatch",
+        "Typecheck passes"
+      ],
+      "priority": 12,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-013",
+      "title": "Implement rate limiting between requests",
+      "description": "As a developer, I need to implement rate limiting to respect API constraints for Azure OpenAI.",
+      "acceptanceCriteria": [
+        "Use 31-second delay between patient LLM calls for Azure OpenAI",
+        "No delay for Anthropic provider (ANTHROPIC_NO_RATE_LIMIT logic)",
+        "Print countdown message before each delay",
+        "Apply delay after each patient is processed",
+        "No delay before first patient",
+        "Typecheck passes"
+      ],
+      "priority": 13,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-014",
+      "title": "Add treatment type normalization rules",
+      "description": "As a developer, I need to implement flexible normalization rules for 3 treatment types to handle various Hebrew/English inputs.",
+      "acceptanceCriteria": [
+        "Define normalization mapping for Chemo + immuno with Hebrew variants: 'כימותרפיה ואימונותרפיה', 'כימו ואימונו', 'אימונו וכימו'",
+        "Define normalization mapping for immuno only with Hebrew variants: 'אימונותרפיה בלבד', 'רק אימונו', 'אימונו בלבד'",
+        "Define normalization mapping for Immuno + chemo reduce dose with Hebrew variants: 'אימונו וכימו במינון מופחת', 'כימו מופחת ואימונו'",
+        "Add English variants for each type",
+        "Apply case-insensitive matching",
+        "Log each normalization decision to console",
+        "Typecheck passes"
+      ],
+      "priority": 14,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-015",
+      "title": "Handle LLM API errors gracefully",
+      "description": "As a developer, I need to handle LLM API errors to prevent script failure and allow recovery.",
+      "acceptanceCriteria": [
+        "Detect LLM responses starting with 'ERROR:' string",
+        "Log error details to console",
+        "Mark patient with error: treatment_type = 'ERROR', primary_reason = error_message",
+        "Continue processing next patient without stopping",
+        "Track error count and print summary at end of script",
+        "Typecheck passes"
+      ],
+      "priority": 15,
+      "passes": false,
+      "notes": ""
+    }
+  ]
+}
