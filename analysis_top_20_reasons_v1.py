@@ -596,8 +596,7 @@ def main() -> None:
         print(f"\n--- Processing patient {i}/{len(patients)} (PatId: {pat_id}) ---")
 
         # Make first LLM call for patient classification
-        # Make first LLM call for patient classification
-        is_error, llm_response = classify_patient(
+        is_error, treatment_type, primary_reason, llm_response = classify_patient(
             pat_id=pat_id,
             current_disease=current_disease,
             summary_conclusions=summary_conclusions,
@@ -632,19 +631,6 @@ def main() -> None:
             else:
                 # Track uncategorized as Chemo + immuno for counting purposes
                 treatment_counts[TREATMENT_CHEMO_IMMUNO] += 1
-
-        # Save patient result immediately after processing
-        save_patient_result(pat_id, normalized_treatment_type, primary_reason)
-
-        # Collect patient reason for top-20 analysis
-        all_patient_reasons.append(PatientReason(pat_id=pat_id, reason_text=primary_reason))
-
-        # Track treatment type count
-        if normalized_treatment_type in treatment_counts:
-            treatment_counts[normalized_treatment_type] += 1
-        else:
-            # Track uncategorized as Chemo + immuno for counting purposes
-            treatment_counts[TREATMENT_CHEMO_IMMUNO] += 1
 
     # Print count of total reasons collected
     print(f"\n--- Summary ---")
