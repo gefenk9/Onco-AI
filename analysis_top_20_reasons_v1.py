@@ -184,46 +184,53 @@ def normalize_treatment_type(raw_treatment: str) -> str:
     Normalize treatment type to standard English strings.
 
     Handles flexible Hebrew/English input with simple keyword matching.
+    Keywords are sorted by length (longest first) to ensure specific matches
+    are checked before general ones.
+    IMPORTANT: Check reduced dose variants BEFORE regular chemo+immuno variants
+    to avoid false positives.
     """
     raw_lower = raw_treatment.lower()
 
-    # Check for Chemo + immuno variants
-    chemo_immuno_keywords = [
-        "כימותרפיה ואימונותרפיה",
-        "כימו ואימונו",
-        "אימונו וכימו",
-        "chemo + immuno",
-        "chemo and immuno",
-        "chemotherapy and immunotherapy",
+    # Check for Immuno + chemo reduce dose variants FIRST (sorted by length, longest first)
+    immuno_chemo_reduced_keywords = [
+        "immunotherapy and reduced dose chemotherapy",
+        "reduced dose chemo and immuno",
+        "immuno + chemo reduce dose",
+        "אימונו וכימו במינון מופחת",
+        "כימו מופחת ואימונו",
     ]
-    for keyword in chemo_immuno_keywords:
+    immuno_chemo_reduced_keywords.sort(key=len, reverse=True)
+    for keyword in immuno_chemo_reduced_keywords:
         if keyword.lower() in raw_lower:
-            return TREATMENT_CHEMO_IMMUNO
+            return TREATMENT_IMMUNO_CHEMO_REDUCED
 
-    # Check for immuno only variants
+    # Check for immuno only variants (sorted by length, longest first)
     immuno_only_keywords = [
+        "immunotherapy only",
+        "immuno only",
+        "only immuno",
         "אימונותרפיה בלבד",
         "רק אימונו",
         "אימונו בלבד",
-        "immuno only",
-        "immunotherapy only",
-        "only immuno",
     ]
+    immuno_only_keywords.sort(key=len, reverse=True)
     for keyword in immuno_only_keywords:
         if keyword.lower() in raw_lower:
             return TREATMENT_IMMUNO_ONLY
 
-    # Check for Immuno + chemo reduce dose variants
-    immuno_chemo_reduced_keywords = [
-        "אימונו וכימו במינון מופחת",
-        "כימו מופחת ואימונו",
-        "immuno + chemo reduce dose",
-        "immunotherapy and reduced dose chemotherapy",
-        "reduced dose chemo and immuno",
+    # Check for Chemo + immuno variants LAST (sorted by length, longest first)
+    chemo_immuno_keywords = [
+        "chemotherapy and immunotherapy",
+        "chemo and immuno",
+        "chemo + immuno",
+        "כימותרפיה ואימונותרפיה",
+        "כימו ואימונו",
+        "אימונו וכימו",
     ]
-    for keyword in immuno_chemo_reduced_keywords:
+    chemo_immuno_keywords.sort(key=len, reverse=True)
+    for keyword in chemo_immuno_keywords:
         if keyword.lower() in raw_lower:
-            return TREATMENT_IMMUNO_CHEMO_REDUCED
+            return TREATMENT_CHEMO_IMMUNO
 
     # Return raw value if no match
     return raw_treatment
