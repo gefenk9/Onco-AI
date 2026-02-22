@@ -17,6 +17,7 @@ INPUT_CSV_PATH = "./cases.csv"
 TREATMENT_CHEMO_IMMUNO = "Chemo + immuno"
 TREATMENT_IMMUNO_ONLY = "immuno only"
 TREATMENT_IMMUNO_CHEMO_REDUCED = "Immuno + chemo reduce dose"
+UNCATEGORIZED_CSV_PATH = "./uncategorized.csv"
 
 # Hebrew system prompt for patient classification
 SYSTEM_PROMPT = (
@@ -90,6 +91,37 @@ def read_and_validate_csv(file_path: str) -> list[dict[str, str]]:
         sys.exit(1)
 
 
+def is_valid_treatment_type(treatment_type: str) -> bool:
+    """Check if treatment type is one of the valid normalized types."""
+    return treatment_type in [TREATMENT_CHEMO_IMMUNO, TREATMENT_IMMUNO_ONLY, TREATMENT_IMMUNO_CHEMO_REDUCED]
+
+
+def write_uncategorized_patient(pat_id: str, original_response: str, normalized_as: str) -> None:
+    """Write uncategorized patient to uncategorized.csv."""
+    try:
+        # Check if file exists to determine if we need to write headers
+        file_exists = False
+        try:
+            with open(UNCATEGORIZED_CSV_PATH, "r", encoding="utf-8"):
+                file_exists = True
+        except FileNotFoundError:
+            pass
+
+        with open(UNCATEGORIZED_CSV_PATH, "a", newline="", encoding="utf-8") as csvfile:
+            fieldnames = ["PatId", "original_response", "normalized_as"]
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+            # Write header if file doesn't exist
+            if not file_exists:
+                writer.writeheader()
+
+            writer.writerow(
+                {"PatId": pat_id, "original_response": original_response, "normalized_as": normalized_as}
+            )
+    except Exception as e:
+        print(f"  ERROR: Failed to write to uncategorized.csv: {e}")
+
+
 def normalize_treatment_type(raw_treatment: str) -> str:
     """
     Normalize treatment type to standard English strings.
@@ -140,11 +172,12 @@ def normalize_treatment_type(raw_treatment: str) -> str:
     return raw_treatment
 
 
-def parse_llm_response(llm_response: str) -> tuple[str, str, str]:
+def parse_llm_response(pat_id: str, llm_response: str) -> tuple[str, str, str]:
     """
     Parse LLM response to extract treatment type and primary reason.
 
     Returns tuple of (raw_treatment_type, normalized_treatment_type, primary_reason).
+    Handles invalid treatment types by normalizing to 'Chemo + immuno' and logging to uncategorized.csv.
     """
     lines = llm_response.strip().split("\n")
 
@@ -179,8 +212,15 @@ def parse_llm_response(llm_response: str) -> tuple[str, str, str]:
     # Normalize treatment type
     normalized_treatment_type = normalize_treatment_type(raw_treatment_type)
 
-    # Log normalization decision
-    if raw_treatment_type != normalized_treatment_type:
+    # Check if treatment type is valid, otherwise classify as uncategorized
+    if not is_valid_treatment_type(normalized_treatment_type):
+        print(f"  WARNING: Treatment type '{raw_treatment_type}' could not be normalized to a valid category")
+        print(f"  Classifying as '{TREATMENT_CHEMO_IMMUNO}' (default)")
+        # Write to uncategorized.csv
+        write_uncategorized_patient(pat_id, llm_response, TREATMENT_CHEMO_IMMUNO)
+        # Use default treatment type
+        normalized_treatment_type = TREATMENT_CHEMO_IMMUNO
+    elif raw_treatment_type != normalized_treatment_type:
         print(f"  Normalized treatment type: '{raw_treatment_type}' -> '{normalized_treatment_type}'")
     else:
         print(f"  Treatment type: {normalized_treatment_type}")
@@ -253,7 +293,9 @@ def main() -> None:
         )
 
         # Parse and normalize the LLM response
-        raw_treatment_type, normalized_treatment_type, primary_reason = parse_llm_response(llm_response)
+        raw_treatment_type, normalized_treatment_type, primary_reason = parse_llm_response(
+            pat_id, llm_response
+        )
 
 
 if __name__ == "__main__":
