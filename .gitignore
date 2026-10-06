@@ -1,2 +1,9 @@
 .venv
 .idea
+cross_analysis_output.txt
+__pycache__
+/raw_data
+*xlsx
+.env
+*csv
+cases_to_patient_class_output.txt

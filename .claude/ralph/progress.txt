@@ -1,0 +1,326 @@
+## Codebase Patterns
+- Use `.venv/bin/mypy` for type checking (mypy installed in virtual environment)
+- Use `argparse` for CLI arguments with validation via `choices` parameter
+- LLM client is imported from `llm_client.py` using `invoke_llm()` function
+- Virtual environment located at `.venv/` - use `.venv/bin/python` for scripts
+
+## 2026-02-22 - US-001
+- Created analysis_top_20_reasons_v1.py script with CLI argument parsing
+- Implemented --provider argument with default 'azure_openai'
+- Validated provider values: azure_openai, bedrock, anthropic
+- Script prints selected provider at startup
+- Error handling for invalid provider with usage message via argparse
+- Typecheck passes using mypy
+
+Files changed:
+- analysis_top_20_reasons_v1.py (new file)
+
+**Learnings for future iterations:**
+- Python project uses `.venv/` virtual environment
+- Type checking is done with mypy: `.venv/bin/mypy <filename>`
+- Existing scripts like analysis_per_case_2.py use `llm_client.py` for LLM calls
+- Standard Python library argparse provides built-in validation via `choices` parameter
+- cases.csv contains patient data with columns: PatId, Current_Disease, Summary_Conclusions, Recommendations
+- CSV reading uses DictReader from Python's csv module
+- Input path defined as constant: INPUT_CSV_PATH = "./cases.csv"
+---
+## 2026-02-22 - US-002
+- Added CSV reading functionality with utf-8 encoding
+- Implemented validation for required columns: PatId, Current_Disease, Summary_Conclusions, Recommendations
+- Print warning if column names don't match exactly but required columns exist
+- Exit with error (sys.exit(1)) if required columns are missing
+- Count and print total patients at startup
+- Typecheck passes with mypy
+
+Files changed:
+- analysis_top_20_reasons_v1.py (updated)
+
+**Learnings for future iterations:**
+- Required columns defined as constant: REQUIRED_COLUMNS
+- CSV reading uses Python's built-in csv.DictReader with utf-8 encoding
+- Error handling uses try/except with FileNotFoundError and generic Exception
+- sys.exit(1) is used for fatal errors
+- Use .venv/bin/python for running scripts (full python path needed when modules like boto3 are installed only in venv)
+---
+## 2026-02-22 - US-003
+- Added Hebrew system prompt with oncologist persona
+- Implemented first LLM call for patient classification
+- Prompt asks for exactly one treatment type from 3 options
+- Prompt asks for a single primary reason (not multiple)
+- User prompt includes: Current_Disease, Summary_Conclusions, Recommendations
+- Call invoke_llm() from llm_client.py with max_tokens=1000, temperature=0.0
+- Store LLM response string for later processing
+- Type checking passes for new code (pre-existing type errors in llm_client.py are unrelated)
+
+Files changed:
+- analysis_top_20_reasons_v1.py (updated)
+
+**Learnings for future iterations:**
+- Hebrew system prompt defined as constant: SYSTEM_PROMPT
+- invoke_llm() accepts provider_override parameter to specify LLM provider
+- Use .venv/bin/python when running scripts (not python3) to access venv dependencies
+- LLM errors are returned as strings starting with "ERROR:" from invoke_llm()
+- Type checking with mypy: use --ignore-missing-imports flag to handle missing library stubs
+- Pre-existing type errors in llm_client.py (boto3, provider_override, message dict types) are not caused by new code
+---
+## 2026-02-22 - US-004
+- Added parse_llm_response() function to extract treatment type and primary reason
+- Added normalize_treatment_type() function with flexible Hebrew/English keyword matching
+- Normalize treatment type to 3 standard English types: Chemo + immuno, immuno only, Immuno + chemo reduce dose
+- Handle Hebrew variants: "כימותרפיה ואימונותרפיה", "כימו ואימונו", "אימונו וכימו", "אימונותרפיה בלבד", etc.
+- Handle English variants: "chemo + immuno", "immuno only", "immunotherapy and reduced dose chemotherapy", etc.
+- Log treatment type normalization decisions to console
+- Type checking passes for new code
+
+Files changed:
+- analysis_top_20_reasons_v1.py (updated)
+
+**Learnings for future iterations:**
+- Treatment type constants defined as module-level variables for easy reference
+- Keyword matching is case-insensitive using .lower() comparison
+- parse_llm_response() returns tuple: (raw_treatment_type, normalized_treatment_type, primary_reason)
+- Hebrew text handling works correctly with .strip() and string methods
+- Use f-strings for clear log messages with normalized values
+---
+## 2026-02-22 - US-005
+- Added is_valid_treatment_type() function to check if treatment type is one of the 3 valid types
+- Added write_uncategorized_patient() function to write invalid treatment types to uncategorized.csv
+- Modified parse_llm_response() to accept pat_id and handle invalid treatment types
+- If treatment type cannot be normalized, classify as 'Chemo + immuno' (default)
+- uncategorized.csv columns: PatId, original_response, normalized_as
+- Print warning to console for each uncategorized patient
+- Continue processing subsequent patients without stopping (no sys.exit on error)
+- Type checking passes for new code
+
+Files changed:
+- analysis_top_20_reasons_v1.py (updated)
+
+**Learnings for future iterations:**
+- uncategorized.csv path defined as constant: UNCATEGORIZED_CSV_PATH
+- write_uncategorized_patient() uses append mode ('a') to avoid overwriting existing data
+- Check file existence with try/except FileNotFoundError to determine if headers needed
+- CSV writing uses DictWriter with newline="" to prevent extra blank lines
+- Error handling in write_uncategorized_patient() catches exceptions and prints error but continues
+---
+## 2026-02-22 - US-006
+- Added initialize_output_csv() function to create output file with headers before first patient
+- Added save_patient_result() function to save patient results incrementally
+- Output CSV path defined as constant: OUTPUT_CSV_PATH
+- Output columns: PatId, treatment_type, primary_reason
+- Use append mode ('a') to avoid overwriting existing data when file exists
+- Check file existence before creating to avoid overwriting
+- Handle file write errors with try/except and continue processing
+- Type checking passes for new code
+
+Files changed:
+- analysis_top_20_reasons_v1.py (updated)
+
+**Learnings for future iterations:**
+- initialize_output_csv() is called once before processing loop
+- save_patient_result() is called after each patient is processed
+- Both functions use same fieldnames list for consistency
+- File existence check pattern: try/except FileNotFoundError
+- Incremental writing prevents data loss if script is interrupted
+---
+## 2026-02-22 - US-007
+- Added PatientReason dataclass with PatId and reason_text fields
+- Collect all patient reasons in list: all_patient_reasons: list[PatientReason]
+- Append each patient's reason to list after parsing LLM response
+- Print count of total reasons collected after all patients processed
+- Verify count matches number of patients processed, warn if mismatch
+- Type checking passes for new code
+
+Files changed:
+- analysis_top_20_reasons_v1.py (updated)
+
+**Learnings for future iterations:**
+- dataclass from dataclasses module provides clean structure for patient reason entries
+- all_patient_reasons list declared before processing loop with explicit type annotation
+- Summary section printed after processing loop completes
+- Comparison check: len(all_patient_reasons) != len(patients) for mismatch detection
+---
+## 2026-02-22 - US-008
+- Added select_top_20_reasons() function for second LLM call
+- Hebrew system prompt for top-20 reasons selection with oncologist persona
+- Build reasons_text with enumerated patient reasons including PatId and reason_text
+- Ask LLM to merge similar reasons and explain decisions
+- Use same LLM provider as patient analysis
+- Call invoke_llm() with max_tokens=4000, temperature=0.0
+- Call function after patient processing loop if reasons were collected
+- Type checking passes for new code
+
+Files changed:
+- analysis_top_20_reasons_v1.py (updated)
+
+**Learnings for future iterations:**
+- select_top_20_reasons() takes list[PatientReason] and provider string
+- Build numbered list for LLM: enumerate() for sequential numbering
+- System prompt defines expected response format with 4 fields: number, name, patient count, explanation
+- Empty list check before calling top-20 function to avoid unnecessary API calls
+- Response printed to console after receiving from LLM
+---
+## 2026-02-22 - US-009
+- Added TopReason dataclass with reason_name, patient_count, and explanation fields
+- Added parse_top_20_response() function to parse top-20 LLM response
+- Extract reason name using regex pattern for numbered list (e.g., "1." or "1)")
+- Extract patient count looking for Hebrew keywords: "כמות מטופלים", "מטופלים:", "חולים:"
+- Extract explanation looking for Hebrew keywords: "הסבר", "כי"
+- Handle cases where LLM returns fewer than 20 reasons (no hard-coded limit)
+- Store parsed data in structured format: list[TopReason]
+- Type checking passes for new code
+
+Files changed:
+- analysis_top_20_reasons_v1.py (updated)
+
+**Learnings for future iterations:**
+- TopReason dataclass provides clean structure for top reasons with metadata
+- Regex pattern for numbered list: r"^(\d+)[\.)]\s*(.+)$" (note escaped bracket)
+- Multi-pass parsing: build current_reason dict as lines are processed, save when new reason starts
+- Hebrew text parsing requires understanding Hebrew keywords for count and explanation
+- Print parsed count to verify parsing worked correctly
+---
+## 2026-02-22 - US-010
+- Added NOT_IN_TOP_20_CSV_PATH constant for output file path
+- Added create_not_in_top_20_csv() function to create CSV for excluded patients
+- Create not_in_top_20.csv file after second LLM call completes
+- Columns: PatId, primary_reason, exclusion_reason
+- Include all patients whose primary reason is not in top 20 reasons
+- Use set comprehension for fast lookup: {tr.reason_name for tr in top_reasons}
+- Populate exclusion_reason with LLM's explanation or generic message if no top reasons
+- Count and print excluded patients for verification
+- Type checking passes for new code
+
+Files changed:
+- analysis_top_20_reasons_v1.py (updated)
+
+**Learnings for future iterations:**
+- create_not_in_top_20_csv() takes all_patient_reasons and top_reasons as parameters
+- Simple matching: check if patient's reason_text exactly matches any top_reason_name
+- In reality, more sophisticated matching would be needed (semantic similarity, etc.)
+- CSV created in write mode ('w') with headers, not append mode
+- Use top reasons explanation as generic exclusion message if exact match not found
+- Print count of excluded patients for verification
+---
+## 2026-02-22 - US-011
+- Added append_top_20_reasons_to_output() function to append top reasons to output CSV
+- Append top-20 reasons to analysis_v1_results.csv after creating not_in_top_20.csv
+- Each top reason as row with PatId = 'TOP_REASON_N' format (e.g., TOP_REASON_1)
+- Columns: PatId, reason_name, patient_count, explanation
+- Include all 20 reasons (or fewer if LLM returned less) - no hard-coded limit
+- Print message to console indicating top reasons appended with count
+- Use csv.writer() instead of DictWriter for top reasons (different column structure)
+- Type checking passes for new code
+
+Files changed:
+- analysis_top_20_reasons_v1.py (updated)
+
+**Learnings for future iterations:**
+- Output CSV has mixed column formats: patient rows (3 columns) and top reason rows (4 columns)
+- PatId format for top reasons: f"TOP_REASON_{i}" where i is 1-indexed
+- csv.writer() writes lists directly, unlike DictWriter which requires fieldnames
+- Output CSV will have variable column widths due to mixed row types
+- This is intentional per acceptance criteria - top reasons appended after patient data
+---
+## 2026-02-22 - US-012
+- Added validate_patient_count_totals() function to verify patient count totals
+- Track patients by treatment type: treatment_counts dict initialized with 3 types
+- Count patients in each treatment type category during processing loop
+- Sum counts across all treatment types: sum(treatment_counts.values())
+- Compare to total input patients
+- Print treatment type breakdown with counts
+- Print warning to console and log to stderr on mismatch
+- Warning message includes both counts for comparison (Total input, Total processed, Difference)
+- Do not stop execution on mismatch (just print warning)
+- Type checking passes for new code
+
+Files changed:
+- analysis_top_20_reasons_v1.py (updated)
+
+**Learnings for future iterations:**
+- treatment_counts dict: {TREATMENT_CHEMO_IMMUNO: 0, TREATMENT_IMMUNO_ONLY: 0, TREATMENT_IMMUNO_CHEMO_REDUCED: 0}
+- Track treatment type counts immediately after parsing: treatment_counts[normalized_treatment_type] += 1
+- Uncategorized treatment types counted as Chemo + immuno for validation purposes
+- sys.stderr can be accessed via import sys as sys_module to avoid name conflicts
+- Validation called after patient processing loop completes
+---
+## 2026-02-22 - US-013
+- Added REQUEST_DELAY_SECONDS constant for rate limiting (31 seconds)
+- Import time module for sleep functionality
+- Apply rate limiting delay after each patient is processed
+- No delay before first patient (check: i > 1)
+- No delay for Anthropic provider: args.provider != "anthropic"
+- Print countdown message before each delay
+- Countdown prints "X seconds remaining..." with carriage return to overwrite line
+- Type checking passes for new code
+
+Files changed:
+- analysis_top_20_reasons_v1.py (updated)
+
+**Learnings for future iterations:**
+- REQUEST_DELAY_SECONDS defined at module level for easy configuration
+- Rate limiting check: if i > 1 and args.provider != "anthropic"
+- Countdown loop: for remaining in range(REQUEST_DELAY_SECONDS, 0, -1)
+- end="\r" in print overwrites previous line on same line
+- time.sleep(1) for each second in countdown
+- Anthropic provider has no rate limit per existing pattern
+---
+## 2026-02-22 - US-014
+- Fixed treatment type normalization keyword ordering to avoid false positives
+- Check reduced dose variants BEFORE regular chemo+immuno variants
+- Sort keywords by length (longest first) using sort(key=len, reverse=True)
+- Hebrew variants for Chemo + immuno: 'כימותרפיה ואימונותרפיה', 'כימו ואימונו', 'אימונו וכימו'
+- Hebrew variants for immuno only: 'אימונותרפיה בלבד', 'רק אימונו', 'אימונו בלבד'
+- Hebrew variants for Immuno + chemo reduce dose: 'אימונו וכימו במינון מופחת', 'כימו מופחת ואימונו'
+- English variants for each type: chemo + immuno, chemo and immuno, chemotherapy and immunotherapy, etc.
+- Apply case-insensitive matching using .lower() on both keyword and input
+- Log each normalization decision to console in parse_llm_response()
+- Type checking passes for new code
+
+Files changed:
+- analysis_top_20_reasons_v1.py (updated)
+
+**Learnings for future iterations:**
+- IMPORTANT: Keyword order matters - check more specific patterns before general ones
+- "אימונו וכימו" (immuno and chemo) is substring of "אימונו וכימו במינון מופחת" (immuno and chemo with reduced dose)
+- "chemo and immuno" is substring of "reduced dose chemo and immuno"
+- Solution: Check reduced dose category FIRST, then immuno only, then regular chemo+immuno
+- sort(key=len, reverse=True) ensures longest patterns checked first within each category
+- All 17 normalization test cases pass after fix
+---
+## 2026-02-22 - US-015
+- Added LLM API error handling to classify_patient() function
+- classify_patient() now returns tuple[bool, str, str, str] instead of just str
+- Detect LLM responses starting with 'ERROR:' string
+- Log error details to console: print(f"  ERROR: LLM call failed: {response}")
+- Mark patient with error: treatment_type = 'ERROR', primary_reason = error_message
+- Continue processing next patient without stopping (use if/else on is_error flag)
+- Track error count with error_count variable in main()
+- Print error summary at end of script with total LLM API errors
+- Save error result to output CSV with save_patient_result(pat_id, "ERROR", llm_response)
+- Track errors as Chemo + immuno for counting purposes
+- Type checking passes for new code
+
+Files changed:
+- analysis_top_20_reasons_v1.py (updated)
+
+**Learnings for future iterations:**
+- LLM errors are detected by checking if response.startswith("ERROR:")
+- classify_patient() return type changed from str to tuple[bool, str, str, str]
+- Need to unpack 4 values: is_error, llm_response (instead of just llm_response)
+- Error patients don't go through parse_llm_response() - saved directly with error message
+- Error summary section prints after validation and before top-20 analysis
+- Error summary shows: "Total LLM API errors: X" and "Patients with errors: X" or "No LLM API errors encountered"
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
