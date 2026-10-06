@@ -79,6 +79,7 @@ with token usage for each call.
   - Keep script names, relative paths, the `NCCN_Guidlines/` name, and how scripts are run, unless asked.
   - A new or changed dependency means the VM must rerun `pip install -r requirements.txt`. Say so.
   - Never widen where patient data goes: no new services, uploads, logs, or files outside the repo.
+- **Commit and push to `master` often.** Make small commits, one per change, and push each to `origin master`. Never commit `user_prompt.txt` or `Patients.xlsx` changes unless asked.
 - **Treat patient data as sensitive.** `user_prompt.txt` and `Patients.xlsx` hold real patient records. Do not send them anywhere except the Anthropic API calls the scripts already make. Do not paste them into commits, issues, or logs.
 - **Keep the Hebrew prompts in Hebrew.** Change their meaning only when asked.
 - **Keep `guidelines_descriptions.json` in step with `NCCN_Guidlines/`.** Every guideline needs an entry with a matching filename.
