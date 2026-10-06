@@ -7,6 +7,7 @@ import re
 import sys
 import time
 from dataclasses import dataclass
+from pathlib import Path
 
 from llm_client import invoke_llm
 
@@ -146,15 +147,15 @@ def write_uncategorized_patient(pat_id: str, original_response: str, normalized_
 
 
 def initialize_output_csv() -> None:
-    """Create output CSV file with headers if it doesn't exist."""
+    """Move the last run's output files aside, then create a fresh output CSV with headers."""
     try:
-        # Check if file exists
-        try:
-            with open(OUTPUT_CSV_PATH, "r", encoding="utf-8"):
-                # File exists, don't overwrite
-                return
-        except FileNotFoundError:
-            pass
+        # Keep old results under a timestamped name so a new run never mixes with them
+        stamp = time.strftime("%Y%m%d-%H%M%S")
+        for path in map(Path, (OUTPUT_CSV_PATH, UNCATEGORIZED_CSV_PATH, NOT_IN_TOP_20_CSV_PATH)):
+            if path.exists():
+                old = path.with_name(f"{path.stem}.{stamp}{path.suffix}")
+                path.rename(old)
+                print(f"Moved previous {path.name} to {old.name}")
 
         # Create file with headers
         with open(OUTPUT_CSV_PATH, "w", newline="", encoding="utf-8") as csvfile:
@@ -164,6 +165,7 @@ def initialize_output_csv() -> None:
         print(f"Created output file: {OUTPUT_CSV_PATH}")
     except Exception as e:
         print(f"ERROR: Failed to initialize output CSV: {e}")
+        sys.exit(1)
 
 
 def save_patient_result(pat_id: str, treatment_type: str, primary_reason: str) -> None:

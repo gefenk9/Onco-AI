@@ -67,7 +67,7 @@ Run each from the repo root: `python <script>`. All paths are relative.
 
 | Script | What it does | Writes |
 |---|---|---|
-| `analysis_top_20_reasons_v1.py --provider {azure_openai,bedrock,anthropic}` | Newest (Feb 2026). For each patient, asks for one of three treatments (chemo + immuno, immuno only, immuno + reduced-dose chemo) and one main reason. A second call picks the top 20 reasons across all patients and says why others were left out or merged. Checks that counts add up. | `analysis_v1_results.csv`, `uncategorized.csv`, `not_in_top_20.csv` |
+| `analysis_top_20_reasons_v1.py --provider {azure_openai,bedrock,anthropic}` | Newest (Feb 2026). For each patient, asks for one of three treatments (chemo + immuno, immuno only, immuno + reduced-dose chemo) and one main reason. A second call picks the top 20 reasons across all patients and says why others were left out or merged. Checks that counts add up. Each run first renames the last run's files to `<name>.<timestamp>.csv`. | `analysis_v1_results.csv`, `uncategorized.csv`, `not_in_top_20.csv` |
 | `analysis_per_case_2.py` | For each patient, the treatment type and a percentage weight for each reason in a fixed list (`ALL_REASONS`). | `analysis_per_case.csv` |
 | `analysis_per_case.py` | Older version: treatment type and four main reasons per patient. | `analysis_per_case.csv` |
 | `cases_to_patient_class.py` | Extracts structured fields (cancer type, age, PD-L1, ECOG status, illnesses, dose change, and so on) as JSON per patient, then prints 14 group analyses. | stdout and `cases_to_patient_class_output.txt` |
@@ -97,10 +97,6 @@ to `claude --print` until every story in `prd.json` passes. It built
 
 ## Known problems
 
-- `cases_to_cases_with_analysis.py`: the score pattern `(0-1?)` matches the text "0-1",
-  not a number, so every score comes out 0.0.
-- `analysis_top_20_reasons_v1.py` appends to `analysis_v1_results.csv` and `uncategorized.csv`
-  if they exist. Delete them before a new run, or the results mix.
 - `analysis_per_case.py` and `analysis_per_case_2.py` write the same output file.
 - `cases_to_patient_class.py` defaults `LLM_PROVIDER` to `bedrock` when it works out the
   delay, while `llm_client.py` defaults to `azure_openai`. `BEDROCK_CLAUDE_MODEL_ID` there is unused.
