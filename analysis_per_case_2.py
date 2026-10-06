@@ -118,7 +118,7 @@ SYSTEM_PROMPT_BASE_HE = (
 
 
 input_csv_path = './cases.csv'
-output_csv_path = 'analysis_per_case.csv'
+output_csv_path = 'analysis_per_case_2.csv'
 DEFAULT_SCORE_ON_ERROR = 0.0
 CSV_FIELD_DISEASE = 'Current_Disease'
 CSV_FIELD_SUMMARY_CONCLUSION = 'Summary_Conclusions'
