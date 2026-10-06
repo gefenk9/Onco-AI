@@ -157,14 +157,14 @@ try:
                 raw_comparison_text = comparison_response_text
                 try:
                     # Extract numerical score and clean the text
-                    score_extraction_pattern = r"ציון דמיון מספרי \(0-1\):\s*(0-1?)"
+                    score_extraction_pattern = r"ציון דמיון מספרי \(0-1\):\s*([01](?:\.\d+)?)"
                     score_match = re.search(score_extraction_pattern, raw_comparison_text)
 
                     if score_match:
                         try:
                             llm_comparison_score = float(score_match.group(1))
                             # Remove the score line from the comparison text
-                            score_line_removal_pattern = r"^\s*ציון דמיון מספרי \(0-1\):\s*0-1?\s*[\r\n]?"
+                            score_line_removal_pattern = r"^\s*ציון דמיון מספרי \(0-1\):\s*[01](?:\.\d+)?\s*[\r\n]?"
                             # Using re.MULTILINE to ensure ^ matches the start of a line
                             llm_vs_doctor_comparison = re.sub(
                                 score_line_removal_pattern, "", raw_comparison_text, count=1, flags=re.MULTILINE
