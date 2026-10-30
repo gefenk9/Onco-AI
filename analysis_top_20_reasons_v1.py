@@ -6,6 +6,7 @@ import csv
 import re
 import sys
 import time
+from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -547,6 +548,55 @@ def append_top_20_reasons_to_output(top_reasons: list[TopReason]) -> None:
         print(f"ERROR: Failed to append top reasons to output CSV: {e}")
 
 
+def merge_similar_reasons(reasons: list[str], provider: str) -> dict[str, str]:
+    """Ask the model to map each distinct reason to a group name. Returns {reason: group}."""
+    if provider != "anthropic":
+        time.sleep(REQUEST_DELAY_SECONDS)
+    response = invoke_llm(
+        system_prompt=(
+            "אתה רופא אונקולוג מומחה. להלן רשימת סיבות להחלטות טיפוליות. "
+            f"מזג סיבות בעלות אותה משמעות תחת שם קבוצה אחד של עד {MAX_REASON_WORDS} מילים. "
+            "לכל סיבה ברשימה כתוב שורה אחת, ללא מספור, בפורמט: סיבה => שם קבוצה. "
+            "ענה בעברית בלבד."
+        ),
+        user_prompt_text="\n".join(sorted(set(reasons))),
+        max_tokens=8000,
+        temperature=0.0,
+        provider_override=provider,
+    )
+    if response.startswith("ERROR:"):
+        print(f"  ERROR: Merging reasons failed, counting exact wording: {response}")
+        return {}
+    groups = {}
+    for line in response.splitlines():
+        if "=>" in line:
+            reason, group = line.split("=>", 1)
+            groups[reason.strip(" -*•")] = group.strip()
+    return groups
+
+
+def append_top_20_by_treatment(patient_results: list[tuple[str, str]], provider: str) -> None:
+    """Append one row per treatment type to the output CSV: the 20 most common reasons, most common first."""
+    rows = []
+    for treatment in (TREATMENT_CHEMO_IMMUNO, TREATMENT_IMMUNO_ONLY, TREATMENT_IMMUNO_CHEMO_REDUCED):
+        reasons = [r for t, r in patient_results if t == treatment and r]
+        if not reasons:
+            continue
+        print(f"\n--- Top 20 reasons for {treatment} ({len(reasons)} patients) ---")
+        groups = merge_similar_reasons(reasons, provider)
+        # ponytail: a reason the model left out or reworded keeps its own name
+        top = Counter(groups.get(r, r) for r in reasons).most_common(20)
+        for name, count in top:
+            print(f"  {name}: {count}")
+        rows.append([f"TOP_20: {treatment}"] + [f"{name} ({count})" for name, count in top])
+    try:
+        with open(OUTPUT_CSV_PATH, "a", newline="", encoding="utf-8") as csvfile:
+            csv.writer(csvfile).writerows(rows)
+        print(f"Appended top 20 reasons per treatment type to {OUTPUT_CSV_PATH}")
+    except Exception as e:
+        print(f"ERROR: Failed to append top 20 reasons per treatment type: {e}")
+
+
 def validate_patient_count_totals(
     treatment_counts: dict[str, int], total_patients: int
 ) -> None:
@@ -600,6 +650,8 @@ def main() -> None:
 
     # Collect all patient reasons for top-20 analysis
     all_patient_reasons: list[PatientReason] = []
+    # (treatment type, reason) per patient, for the top 20 per treatment type
+    patient_results: list[tuple[str, str]] = []
 
     # Track patients by treatment type for validation
     treatment_counts: dict[str, int] = {
@@ -662,6 +714,7 @@ def main() -> None:
 
             # Collect patient reason for top-20 analysis
             all_patient_reasons.append(PatientReason(pat_id=pat_id, reason_text=primary_reason))
+            patient_results.append((normalized_treatment_type, primary_reason))
 
             # Track treatment type count
             if normalized_treatment_type in treatment_counts:
@@ -711,6 +764,8 @@ def main() -> None:
 
         # Append top-20 reasons to output CSV
         append_top_20_reasons_to_output(top_reasons)
+
+        append_top_20_by_treatment(patient_results, args.provider)
     else:
         print("\nWARNING: No patient reasons collected, skipping top-20 analysis")
 
