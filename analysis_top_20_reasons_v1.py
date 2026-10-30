@@ -15,6 +15,7 @@ from llm_client import invoke_llm
 # Rate limiting configuration
 REQUEST_DELAY_SECONDS = 31  # Delay in seconds between requests (rate limit)
 MAX_REASON_WORDS = 3
+MAX_REASON_TRIES = 3
 
 
 @dataclass
@@ -334,26 +335,31 @@ def classify_patient(
     return False, "", "", response
 
 def fix_reason(llm_response: str, provider: str) -> str:
-    """Ask the model again for a reason of at most MAX_REASON_WORDS words; cut to that length if it still runs long."""
-    if provider != "anthropic":
-        time.sleep(REQUEST_DELAY_SECONDS)
-    response = invoke_llm(
-        system_prompt=SYSTEM_PROMPT,
-        user_prompt_text=(
-            f"תשובתך הקודמת:\n{llm_response}\n\n"
-            f"הסיבה העיקרית חסרה או ארוכה מעד {MAX_REASON_WORDS} מילים. "
-            f"כתוב סיבה עיקרית אחת בעד {MAX_REASON_WORDS} מילים. ענה רק בסיבה עצמה."
-        ),
-        max_tokens=1000,
-        temperature=0.0,
-        provider_override=provider,
-    )
-    if response.startswith("ERROR:"):
-        print(f"  ERROR: Retry for reason failed: {response}")
-        response = llm_response
-    reason = response.strip().splitlines()[-1] if response.strip() else ""
-    reason = reason.split(":", 1)[-1].strip()
-    return " ".join(reason.split()[:MAX_REASON_WORDS])
+    """Ask the model to sum up its reason in at most MAX_REASON_WORDS words, up to MAX_REASON_TRIES times."""
+    reason = ""
+    for _ in range(MAX_REASON_TRIES):
+        if provider != "anthropic":
+            time.sleep(REQUEST_DELAY_SECONDS)
+        response = invoke_llm(
+            system_prompt=SYSTEM_PROMPT,
+            user_prompt_text=(
+                f"תשובתך הקודמת:\n{llm_response}\n\n"
+                f"סכם את הסיבה העיקרית לסיבה אחת של עד {MAX_REASON_WORDS} מילים. ענה רק בסיבה עצמה."
+            ),
+            max_tokens=1000,
+            temperature=0.0,
+            provider_override=provider,
+        )
+        if response.startswith("ERROR:"):
+            print(f"  ERROR: Retry for reason failed: {response}")
+            continue
+        lines = response.strip().splitlines()
+        reason = lines[-1].split(":", 1)[-1].strip() if lines else ""
+        if reason and len(reason.split()) <= MAX_REASON_WORDS:
+            return reason
+        print(f"  Summary still missing or too long: {reason}")
+    print(f"  WARNING: No reason of {MAX_REASON_WORDS} words or fewer after {MAX_REASON_TRIES} tries")
+    return reason
 
 
 def select_top_20_reasons(patient_reasons: list[PatientReason], provider: str) -> str:
