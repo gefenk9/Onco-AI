@@ -14,6 +14,7 @@ from llm_client import invoke_llm
 
 # Rate limiting configuration
 REQUEST_DELAY_SECONDS = 31  # Delay in seconds between requests (rate limit)
+MAX_REASON_WORDS = 3
 
 
 @dataclass
@@ -51,11 +52,12 @@ SYSTEM_PROMPT = (
     "1. כימותרפיה ואימונותרפיה "
     "2. אימונותרפיה בלבד "
     "3. אימונותרפיה וכימותרפיה במינון מופחת "
-    "בנוסף, עליך לציין את הסיבה העיקרית אחת בלבד שהובילה להחלטת הטיפול. "
+    "בנוסף, עליך לציין את הסיבה העיקרית אחת בלבד שהובילה להחלטת הטיפול, בעד 3 מילים. "
+    "חובה לציין סיבה לכל מטופל, גם אם היא לא כתובה במפורש בתיק. "
     "ענה בעברית בלבד."
     "פורמט התשובה:"
     "סוג טיפול: [אחד משלושת הסוגים]"
-    "סיבה עיקרית: [סיבה אחת]"
+    "סיבה עיקרית: [סיבה אחת, עד 3 מילים]"
 )
 
 
@@ -330,6 +332,29 @@ def classify_patient(
         return True, "ERROR", response, response
 
     return False, "", "", response
+
+def fix_reason(llm_response: str, provider: str) -> str:
+    """Ask the model again for a reason of at most MAX_REASON_WORDS words; cut to that length if it still runs long."""
+    if provider != "anthropic":
+        time.sleep(REQUEST_DELAY_SECONDS)
+    response = invoke_llm(
+        system_prompt=SYSTEM_PROMPT,
+        user_prompt_text=(
+            f"תשובתך הקודמת:\n{llm_response}\n\n"
+            f"הסיבה העיקרית חסרה או ארוכה מעד {MAX_REASON_WORDS} מילים. "
+            f"כתוב סיבה עיקרית אחת בעד {MAX_REASON_WORDS} מילים. ענה רק בסיבה עצמה."
+        ),
+        max_tokens=1000,
+        temperature=0.0,
+        provider_override=provider,
+    )
+    if response.startswith("ERROR:"):
+        print(f"  ERROR: Retry for reason failed: {response}")
+        response = llm_response
+    reason = response.strip().splitlines()[-1] if response.strip() else ""
+    reason = reason.split(":", 1)[-1].strip()
+    return " ".join(reason.split()[:MAX_REASON_WORDS])
+
 
 def select_top_20_reasons(patient_reasons: list[PatientReason], provider: str) -> str:
     """
@@ -620,6 +645,11 @@ def main() -> None:
             raw_treatment_type, normalized_treatment_type, primary_reason = parse_llm_response(
                 pat_id, llm_response
             )
+
+            if not primary_reason or len(primary_reason.split()) > MAX_REASON_WORDS:
+                print(f"  Reason missing or over {MAX_REASON_WORDS} words, asking again...")
+                primary_reason = fix_reason(llm_response, args.provider)
+                print(f"  Primary reason: {primary_reason}")
 
             # Save patient result immediately after processing
             save_patient_result(pat_id, normalized_treatment_type, primary_reason)
