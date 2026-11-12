@@ -536,23 +536,30 @@ def merge_similar_reasons(reasons: list[str], provider: str) -> dict[str, str]:
     return groups
 
 
-def append_top_20_by_treatment(patient_results: list[tuple[str, str]], provider: str) -> None:
-    """Append one row per treatment type to the output CSV: the 20 most common reasons, most common first."""
-    rows = []
+def append_top_20_by_treatment(
+    patient_results: list[tuple[str, str]], main_results: list[tuple[str, str]], provider: str
+) -> None:
+    """
+    Append two sets of rows to the output CSV, one row per treatment type in each:
+    the 20 most common reasons over all four reasons, then over the most important reason only.
+    Both sets share one grouping of similar reasons per treatment type.
+    """
+    all_rows, main_rows = [], []
     for treatment in (TREATMENT_CHEMO_IMMUNO, TREATMENT_IMMUNO_ONLY, TREATMENT_IMMUNO_CHEMO_REDUCED):
         reasons = [r for t, r in patient_results if t == treatment and r]
         if not reasons:
             continue
-        print(f"\n--- Top 20 reasons for {treatment} ({len(reasons)} reasons) ---")
+        main_reasons = [r for t, r in main_results if t == treatment and r]
+        print(f"\n--- Top 20 reasons for {treatment} ({len(reasons)} reasons, {len(main_reasons)} main) ---")
         groups = merge_similar_reasons(reasons, provider)
-        # ponytail: a reason the model left out or reworded keeps its own name
-        top = Counter(groups.get(r, r) for r in reasons).most_common(20)
-        for name, count in top:
-            print(f"  {name}: {count}")
-        rows.append([f"TOP_20: {treatment}"] + [f"{name} ({count})" for name, count in top])
+        for rows, label, items in ((all_rows, "all reasons", reasons), (main_rows, "main reason", main_reasons)):
+            # ponytail: a reason the model left out or reworded keeps its own name
+            top = Counter(groups.get(r, r) for r in items).most_common(20)
+            print(f"  {label}: " + ", ".join(f"{name} ({count})" for name, count in top))
+            rows.append([f"TOP_20 {label}: {treatment}"] + [f"{name} ({count})" for name, count in top])
     try:
         with open(OUTPUT_CSV_PATH, "a", newline="", encoding="utf-8") as csvfile:
-            csv.writer(csvfile).writerows(rows)
+            csv.writer(csvfile).writerows(all_rows + main_rows)
         print(f"Appended top 20 reasons per treatment type to {OUTPUT_CSV_PATH}")
     except Exception as e:
         print(f"ERROR: Failed to append top 20 reasons per treatment type: {e}")
@@ -613,6 +620,8 @@ def main() -> None:
     all_patient_reasons: list[PatientReason] = []
     # (treatment type, reason) for each of each patient's reasons, for the top 20 per treatment type
     patient_results: list[tuple[str, str]] = []
+    # (treatment type, most important reason) per patient, for the second top 20 set
+    main_results: list[tuple[str, str]] = []
 
     # Track patients by treatment type for validation
     treatment_counts: dict[str, int] = {
@@ -668,6 +677,8 @@ def main() -> None:
         # The overall top 20 step works on each patient's most important reason
         all_patient_reasons.append(PatientReason(pat_id=pat_id, reason_text=reasons[0]))
         patient_results += [(treatment_type, r) for r in reasons if r != UNCLEAR]
+        if reasons[0] != UNCLEAR:
+            main_results.append((treatment_type, reasons[0]))
 
     # Print count of total reasons collected
     print(f"\n--- Summary ---")
@@ -711,7 +722,7 @@ def main() -> None:
         # Append top-20 reasons to output CSV
         append_top_20_reasons_to_output(top_reasons)
 
-        append_top_20_by_treatment(patient_results, args.provider)
+        append_top_20_by_treatment(patient_results, main_results, args.provider)
     else:
         print("\nWARNING: No patient reasons collected, skipping top-20 analysis")
 
