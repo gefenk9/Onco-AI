@@ -17,6 +17,8 @@ from llm_client import invoke_llm
 REQUEST_DELAY_SECONDS = 31  # Delay in seconds between requests (rate limit)
 MAX_REASON_WORDS = 3
 MAX_REASON_TRIES = 3
+REASON_COUNT = 4
+UNCLEAR = "לא ברור"
 
 
 @dataclass
@@ -42,6 +44,7 @@ INPUT_CSV_PATH = "./cases.csv"
 TREATMENT_CHEMO_IMMUNO = "Chemo + immuno"
 TREATMENT_IMMUNO_ONLY = "immuno only"
 TREATMENT_IMMUNO_CHEMO_REDUCED = "Immuno + chemo reduce dose"
+OUTPUT_FIELDS = ["PatId", "treatment_type"] + [f"reason_{n}" for n in range(1, REASON_COUNT + 1)] + ["שגיאה"]
 UNCATEGORIZED_CSV_PATH = "./uncategorized.csv"
 OUTPUT_CSV_PATH = "./analysis_v1_results.csv"
 NOT_IN_TOP_20_CSV_PATH = "./not_in_top_20.csv"
@@ -50,16 +53,24 @@ NOT_IN_TOP_20_CSV_PATH = "./not_in_top_20.csv"
 SYSTEM_PROMPT = (
     "אתה רופא אונקולוג מומחה. עליך לבחון תיק מטופל ולקבוע את סוג הטיפול שהמטופל קיבל "
     "על סמך NCCN וESMO גידלינים. "
+    "התבסס אך ורק על הטקסט של המטופל הזה. "
     "עליך להבחין בין שלושה סוגי טיפול בלבד: "
     "1. כימותרפיה ואימונותרפיה "
     "2. אימונותרפיה בלבד "
     "3. אימונותרפיה וכימותרפיה במינון מופחת "
-    "בנוסף, עליך לציין את הסיבה העיקרית אחת בלבד שהובילה להחלטת הטיפול, בעד 3 מילים. "
-    "חובה לציין סיבה לכל מטופל, גם אם היא לא כתובה במפורש בתיק. "
-    "ענה בעברית בלבד."
-    "פורמט התשובה:"
-    "סוג טיפול: [אחד משלושת הסוגים]"
-    "סיבה עיקרית: [סיבה אחת, עד 3 מילים]"
+    "אם הכימותרפיה ניתנה או הומלצה במינון מופחת, בחר בסוג 3. "
+    "בנוסף, ציין 4 סיבות שבגללן נבחר סוג הטיפול, מהמשמעותית ביותר ועד הפחות משמעותית. "
+    "כל סיבה בעד 3 מילים. "
+    "אם אינך יכול לקבוע את סוג הטיפול או סיבה, כתוב 'לא ברור' במקומם, "
+    "והסבר בשורת 'שגיאה' מה לא היה ברור. "
+    "ענה בעברית בלבד.\n"
+    "פורמט התשובה:\n"
+    "סוג טיפול: [אחד משלושת הסוגים, או לא ברור]\n"
+    "סיבה 1: [הסיבה המשמעותית ביותר]\n"
+    "סיבה 2: [סיבה]\n"
+    "סיבה 3: [סיבה]\n"
+    "סיבה 4: [הסיבה הפחות משמעותית]\n"
+    "שגיאה: [רק אם משהו לא ברור, אחרת השאר ריק]"
 )
 
 
@@ -119,11 +130,6 @@ def read_and_validate_csv(file_path: str) -> list[dict[str, str]]:
         sys.exit(1)
 
 
-def is_valid_treatment_type(treatment_type: str) -> bool:
-    """Check if treatment type is one of the valid normalized types."""
-    return treatment_type in [TREATMENT_CHEMO_IMMUNO, TREATMENT_IMMUNO_ONLY, TREATMENT_IMMUNO_CHEMO_REDUCED]
-
-
 def write_uncategorized_patient(pat_id: str, original_response: str, normalized_as: str) -> None:
     """Write uncategorized patient to uncategorized.csv."""
     try:
@@ -163,24 +169,18 @@ def initialize_output_csv() -> None:
 
         # Create file with headers
         with open(OUTPUT_CSV_PATH, "w", newline="", encoding="utf-8") as csvfile:
-            fieldnames = ["PatId", "treatment_type", "primary_reason"]
-            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-            writer.writeheader()
+            csv.writer(csvfile).writerow(OUTPUT_FIELDS)
         print(f"Created output file: {OUTPUT_CSV_PATH}")
     except Exception as e:
         print(f"ERROR: Failed to initialize output CSV: {e}")
         sys.exit(1)
 
 
-def save_patient_result(pat_id: str, treatment_type: str, primary_reason: str) -> None:
+def save_patient_result(pat_id: str, treatment_type: str, reasons: list[str], error: str) -> None:
     """Save patient result to output CSV file incrementally."""
     try:
         with open(OUTPUT_CSV_PATH, "a", newline="", encoding="utf-8") as csvfile:
-            fieldnames = ["PatId", "treatment_type", "primary_reason"]
-            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-            writer.writerow(
-                {"PatId": pat_id, "treatment_type": treatment_type, "primary_reason": primary_reason}
-            )
+            csv.writer(csvfile).writerow([pat_id, treatment_type] + reasons + [error])
     except Exception as e:
         print(f"  ERROR: Failed to write patient result: {e}")
 
@@ -189,115 +189,68 @@ def normalize_treatment_type(raw_treatment: str) -> str:
     """
     Normalize treatment type to standard English strings.
 
-    Handles flexible Hebrew/English input with simple keyword matching.
-    Keywords are sorted by length (longest first) to ensure specific matches
-    are checked before general ones.
-    IMPORTANT: Check reduced dose variants BEFORE regular chemo+immuno variants
-    to avoid false positives.
+    Checks reduced dose first, then immuno only, then chemo + immuno, so a reduced
+    dose answer is never read as plain chemo + immuno. A bare number 1-3 maps to
+    the prompt's numbered list. Returns the raw value if nothing matches.
     """
-    raw_lower = raw_treatment.lower()
-
-    # Check for Immuno + chemo reduce dose variants FIRST (sorted by length, longest first)
-    immuno_chemo_reduced_keywords = [
-        "immunotherapy and reduced dose chemotherapy",
-        "reduced dose chemo and immuno",
-        "immuno + chemo reduce dose",
-        "אימונו וכימו במינון מופחת",
-        "כימו מופחת ואימונו",
-    ]
-    immuno_chemo_reduced_keywords.sort(key=len, reverse=True)
-    for keyword in immuno_chemo_reduced_keywords:
-        if keyword.lower() in raw_lower:
-            return TREATMENT_IMMUNO_CHEMO_REDUCED
-
-    # Check for immuno only variants (sorted by length, longest first)
-    immuno_only_keywords = [
-        "immunotherapy only",
-        "immuno only",
-        "only immuno",
-        "אימונותרפיה בלבד",
-        "רק אימונו",
-        "אימונו בלבד",
-    ]
-    immuno_only_keywords.sort(key=len, reverse=True)
-    for keyword in immuno_only_keywords:
-        if keyword.lower() in raw_lower:
-            return TREATMENT_IMMUNO_ONLY
-
-    # Check for Chemo + immuno variants LAST (sorted by length, longest first)
-    chemo_immuno_keywords = [
-        "chemotherapy and immunotherapy",
-        "chemo and immuno",
-        "chemo + immuno",
-        "כימותרפיה ואימונותרפיה",
-        "כימו ואימונו",
-        "אימונו וכימו",
-    ]
-    chemo_immuno_keywords.sort(key=len, reverse=True)
-    for keyword in chemo_immuno_keywords:
-        if keyword.lower() in raw_lower:
-            return TREATMENT_CHEMO_IMMUNO
-
-    # Return raw value if no match
-    return raw_treatment
+    raw = raw_treatment.lower().strip()
+    if not raw or UNCLEAR in raw:
+        return UNCLEAR
+    if "מופחת" in raw or "reduce" in raw:
+        return TREATMENT_IMMUNO_CHEMO_REDUCED
+    if "בלבד" in raw or "only" in raw or raw.startswith("רק "):
+        return TREATMENT_IMMUNO_ONLY
+    if ("כימו" in raw or "chemo" in raw) and ("אימונו" in raw or "immuno" in raw):
+        return TREATMENT_CHEMO_IMMUNO
+    by_number = {"1": TREATMENT_CHEMO_IMMUNO, "2": TREATMENT_IMMUNO_ONLY, "3": TREATMENT_IMMUNO_CHEMO_REDUCED}
+    return by_number.get(raw[0], raw_treatment)
 
 
-def parse_llm_response(pat_id: str, llm_response: str) -> tuple[str, str, str]:
+def parse_reasons(text: str) -> list[str]:
+    """Read lines like 'סיבה 2: ...' into a list of REASON_COUNT reasons ('' where missing)."""
+    reasons = [""] * REASON_COUNT
+    for line in text.splitlines():
+        match = re.match(r"^(?:סיבה|reason)\s*(\d)\s*[:：]\s*(.*)$", line.replace("*", "").strip(), re.IGNORECASE)
+        if match and 1 <= int(match.group(1)) <= REASON_COUNT:
+            reasons[int(match.group(1)) - 1] = match.group(2).strip()
+    return reasons
+
+
+def reasons_ok(reasons: list[str]) -> bool:
+    """True when every reason is there and has at most MAX_REASON_WORDS words."""
+    return all(r and len(r.split()) <= MAX_REASON_WORDS for r in reasons)
+
+
+def parse_llm_response(pat_id: str, llm_response: str) -> tuple[str, list[str], str]:
     """
-    Parse LLM response to extract treatment type and primary reason.
+    Parse LLM response into (treatment_type, reasons, error).
 
-    Returns tuple of (raw_treatment_type, normalized_treatment_type, primary_reason).
-    Handles invalid treatment types by normalizing to 'Chemo + immuno' and logging to uncategorized.csv.
+    A treatment type that is not one of the three becomes 'לא ברור', with the
+    model's answer in error and a row in uncategorized.csv.
     """
-    lines = llm_response.strip().split("\n")
-
     raw_treatment_type = ""
-    primary_reason = ""
+    error = ""
+    for line in llm_response.splitlines():
+        line = line.replace("*", "").strip()
+        label, _, value = line.partition(":")
+        label = label.strip()
+        if label in ("סוג טיפול", "טיפול") or label.lower() == "treatment type":
+            raw_treatment_type = value.strip()
+        elif label in ("שגיאה", "error"):
+            error = value.strip()
 
-    for line in lines:
-        line = line.strip()
+    treatment_type = normalize_treatment_type(raw_treatment_type)
+    if treatment_type not in (TREATMENT_CHEMO_IMMUNO, TREATMENT_IMMUNO_ONLY, TREATMENT_IMMUNO_CHEMO_REDUCED, UNCLEAR):
+        print(f"  WARNING: Treatment type '{raw_treatment_type}' is not one of the three types")
+        write_uncategorized_patient(pat_id, llm_response, UNCLEAR)
+        error = error or f"סוג הטיפול שהמודל כתב אינו אחד משלושת הסוגים: {raw_treatment_type}"
+        treatment_type = UNCLEAR
+    reasons = parse_reasons(llm_response)
+    if (treatment_type == UNCLEAR or UNCLEAR in reasons) and not error:
+        error = "המודל כתב 'לא ברור' ולא הסביר למה"
+    print(f"  Treatment type: {treatment_type}")
 
-        # Extract treatment type
-        if line.startswith("סוג טיפול:") or line.startswith("סוג טיפול :"):
-            raw_treatment_type = line.replace("סוג טיפול:", "").replace("סוג טיפול :", "").strip()
-        elif line.startswith("טיפול:") or line.startswith("טיפול :"):
-            raw_treatment_type = line.replace("טיפול:", "").replace("טיפול :", "").strip()
-        elif "treatment type:" in line.lower():
-            # Handle English variants
-            parts = line.split(":", 1)
-            if len(parts) > 1:
-                raw_treatment_type = parts[1].strip()
-
-        # Extract primary reason
-        elif line.startswith("סיבה עיקרית:") or line.startswith("סיבה עיקרית :"):
-            primary_reason = line.replace("סיבה עיקרית:", "").replace("סיבה עיקרית :", "").strip()
-        elif line.startswith("סיבה:") or line.startswith("סיבה :"):
-            primary_reason = line.replace("סיבה:", "").replace("סיבה :", "").strip()
-        elif "primary reason:" in line.lower() or "reason:" in line.lower():
-            # Handle English variants
-            parts = line.split(":", 1)
-            if len(parts) > 1:
-                primary_reason = parts[1].strip()
-
-    # Normalize treatment type
-    normalized_treatment_type = normalize_treatment_type(raw_treatment_type)
-
-    # Check if treatment type is valid, otherwise classify as uncategorized
-    if not is_valid_treatment_type(normalized_treatment_type):
-        print(f"  WARNING: Treatment type '{raw_treatment_type}' could not be normalized to a valid category")
-        print(f"  Classifying as '{TREATMENT_CHEMO_IMMUNO}' (default)")
-        # Write to uncategorized.csv
-        write_uncategorized_patient(pat_id, llm_response, TREATMENT_CHEMO_IMMUNO)
-        # Use default treatment type
-        normalized_treatment_type = TREATMENT_CHEMO_IMMUNO
-    elif raw_treatment_type != normalized_treatment_type:
-        print(f"  Normalized treatment type: '{raw_treatment_type}' -> '{normalized_treatment_type}'")
-    else:
-        print(f"  Treatment type: {normalized_treatment_type}")
-
-    print(f"  Primary reason: {primary_reason}")
-
-    return raw_treatment_type, normalized_treatment_type, primary_reason
+    return treatment_type, reasons, error
 
 
 def classify_patient(
@@ -335,32 +288,40 @@ def classify_patient(
 
     return False, "", "", response
 
-def fix_reason(llm_response: str, provider: str) -> str:
-    """Ask the model to sum up its reason in at most MAX_REASON_WORDS words, up to MAX_REASON_TRIES times."""
-    reason = ""
+def fix_reasons(llm_response: str, reasons: list[str], provider: str) -> tuple[list[str], str]:
+    """
+    Ask the model to sum up each reason in at most MAX_REASON_WORDS words, up to MAX_REASON_TRIES times.
+
+    Returns (reasons, error). A reason still missing at the end becomes 'לא ברור', and error says why.
+    """
     for _ in range(MAX_REASON_TRIES):
+        if reasons_ok(reasons):
+            return reasons, ""
         if provider != "anthropic":
             time.sleep(REQUEST_DELAY_SECONDS)
         response = invoke_llm(
             system_prompt=SYSTEM_PROMPT,
             user_prompt_text=(
                 f"תשובתך הקודמת:\n{llm_response}\n\n"
-                f"סכם את הסיבה העיקרית לסיבה אחת של עד {MAX_REASON_WORDS} מילים. ענה רק בסיבה עצמה."
+                f"סכם כל אחת מ-{REASON_COUNT} הסיבות לסיבה של עד {MAX_REASON_WORDS} מילים, "
+                "באותו סדר. אם סיבה חסרה, כתוב 'לא ברור'. "
+                "ענה רק בשורות 'סיבה 1:' עד 'סיבה 4:'."
             ),
             max_tokens=1000,
             temperature=0.0,
             provider_override=provider,
         )
         if response.startswith("ERROR:"):
-            print(f"  ERROR: Retry for reason failed: {response}")
+            print(f"  ERROR: Retry for reasons failed: {response}")
             continue
-        lines = response.strip().splitlines()
-        reason = lines[-1].split(":", 1)[-1].strip() if lines else ""
-        if reason and len(reason.split()) <= MAX_REASON_WORDS:
-            return reason
-        print(f"  Summary still missing or too long: {reason}")
-    print(f"  WARNING: No reason of {MAX_REASON_WORDS} words or fewer after {MAX_REASON_TRIES} tries")
-    return reason
+        reasons = [new or old for new, old in zip(parse_reasons(response), reasons)]
+        print(f"  Reasons after summing up: {reasons}")
+    if reasons_ok(reasons):
+        return reasons, ""
+    print(f"  WARNING: Reasons still missing or over {MAX_REASON_WORDS} words after {MAX_REASON_TRIES} tries")
+    missing = [n for n, r in enumerate(reasons, 1) if not r]
+    error = f"המודל לא נתן את סיבות {missing}" if missing else ""
+    return [r or UNCLEAR for r in reasons], error
 
 
 def select_top_20_reasons(patient_reasons: list[PatientReason], provider: str) -> str:
@@ -582,7 +543,7 @@ def append_top_20_by_treatment(patient_results: list[tuple[str, str]], provider:
         reasons = [r for t, r in patient_results if t == treatment and r]
         if not reasons:
             continue
-        print(f"\n--- Top 20 reasons for {treatment} ({len(reasons)} patients) ---")
+        print(f"\n--- Top 20 reasons for {treatment} ({len(reasons)} reasons) ---")
         groups = merge_similar_reasons(reasons, provider)
         # ponytail: a reason the model left out or reworded keeps its own name
         top = Counter(groups.get(r, r) for r in reasons).most_common(20)
@@ -650,7 +611,7 @@ def main() -> None:
 
     # Collect all patient reasons for top-20 analysis
     all_patient_reasons: list[PatientReason] = []
-    # (treatment type, reason) per patient, for the top 20 per treatment type
+    # (treatment type, reason) for each of each patient's reasons, for the top 20 per treatment type
     patient_results: list[tuple[str, str]] = []
 
     # Track patients by treatment type for validation
@@ -658,6 +619,7 @@ def main() -> None:
         TREATMENT_CHEMO_IMMUNO: 0,
         TREATMENT_IMMUNO_ONLY: 0,
         TREATMENT_IMMUNO_CHEMO_REDUCED: 0,
+        UNCLEAR: 0,
     }
 
     # Track LLM API errors
@@ -681,7 +643,7 @@ def main() -> None:
         print(f"\n--- Processing patient {i}/{len(patients)} (PatId: {pat_id}) ---")
 
         # Make first LLM call for patient classification
-        is_error, treatment_type, primary_reason, llm_response = classify_patient(
+        is_error, _, _, llm_response = classify_patient(
             pat_id=pat_id,
             current_disease=current_disease,
             summary_conclusions=summary_conclusions,
@@ -692,36 +654,20 @@ def main() -> None:
         # Handle LLM API errors
         if is_error:
             error_count += 1
-            # Save error result
-            save_patient_result(pat_id, "ERROR", llm_response)
-            # Track error as Chemo + immuno for counting purposes
-            treatment_counts[TREATMENT_CHEMO_IMMUNO] += 1
-            # Collect error reason for top-20 analysis
-            all_patient_reasons.append(PatientReason(pat_id=pat_id, reason_text=llm_response))
+            treatment_type, reasons, error = UNCLEAR, [UNCLEAR] * REASON_COUNT, llm_response
         else:
-            # Parse and normalize the LLM response
-            raw_treatment_type, normalized_treatment_type, primary_reason = parse_llm_response(
-                pat_id, llm_response
-            )
+            treatment_type, reasons, error = parse_llm_response(pat_id, llm_response)
+            if not reasons_ok(reasons):
+                print(f"  Reasons missing or over {MAX_REASON_WORDS} words, asking to sum them up...")
+                reasons, reasons_error = fix_reasons(llm_response, reasons, args.provider)
+                error = "; ".join(e for e in (error, reasons_error) if e)
+            print(f"  Reasons: {reasons}")
 
-            if not primary_reason or len(primary_reason.split()) > MAX_REASON_WORDS:
-                print(f"  Reason missing or over {MAX_REASON_WORDS} words, asking again...")
-                primary_reason = fix_reason(llm_response, args.provider)
-                print(f"  Primary reason: {primary_reason}")
-
-            # Save patient result immediately after processing
-            save_patient_result(pat_id, normalized_treatment_type, primary_reason)
-
-            # Collect patient reason for top-20 analysis
-            all_patient_reasons.append(PatientReason(pat_id=pat_id, reason_text=primary_reason))
-            patient_results.append((normalized_treatment_type, primary_reason))
-
-            # Track treatment type count
-            if normalized_treatment_type in treatment_counts:
-                treatment_counts[normalized_treatment_type] += 1
-            else:
-                # Track uncategorized as Chemo + immuno for counting purposes
-                treatment_counts[TREATMENT_CHEMO_IMMUNO] += 1
+        save_patient_result(pat_id, treatment_type, reasons, error)
+        treatment_counts[treatment_type] += 1
+        # The overall top 20 step works on each patient's most important reason
+        all_patient_reasons.append(PatientReason(pat_id=pat_id, reason_text=reasons[0]))
+        patient_results += [(treatment_type, r) for r in reasons if r != UNCLEAR]
 
     # Print count of total reasons collected
     print(f"\n--- Summary ---")
