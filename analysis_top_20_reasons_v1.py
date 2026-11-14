@@ -3,6 +3,7 @@
 
 import argparse
 import csv
+import random
 import re
 import sys
 import time
@@ -48,6 +49,7 @@ OUTPUT_FIELDS = ["PatId", "treatment_type"] + [f"reason_{n}" for n in range(1, R
 UNCATEGORIZED_CSV_PATH = "./uncategorized.csv"
 OUTPUT_CSV_PATH = "./analysis_v1_results.csv"
 NOT_IN_TOP_20_CSV_PATH = "./not_in_top_20.csv"
+ANONYMOUS_CSV_PATH = "./analysis_v1_results_anonymous.csv"
 
 # Hebrew system prompt for patient classification
 SYSTEM_PROMPT = (
@@ -161,7 +163,7 @@ def initialize_output_csv() -> None:
     try:
         # Keep old results under a timestamped name so a new run never mixes with them
         stamp = time.strftime("%Y%m%d-%H%M%S")
-        for path in map(Path, (OUTPUT_CSV_PATH, UNCATEGORIZED_CSV_PATH, NOT_IN_TOP_20_CSV_PATH)):
+        for path in map(Path, (OUTPUT_CSV_PATH, UNCATEGORIZED_CSV_PATH, NOT_IN_TOP_20_CSV_PATH, ANONYMOUS_CSV_PATH)):
             if path.exists():
                 old = path.with_name(f"{path.stem}.{stamp}{path.suffix}")
                 path.rename(old)
@@ -565,6 +567,27 @@ def append_top_20_by_treatment(
         print(f"ERROR: Failed to append top 20 reasons per treatment type: {e}")
 
 
+def write_anonymous_csv() -> None:
+    """
+    Copy the output CSV without the PatId column. Patient rows go in random order,
+    so nobody can match them back to cases.csv by position. The overall top 20
+    explanations may name patients, so the copy leaves them out.
+    """
+    try:
+        with open(OUTPUT_CSV_PATH, "r", newline="", encoding="utf-8") as csvfile:
+            header, *rows = list(csv.reader(csvfile))
+        patients = [row[1:] for row in rows if not row[0].startswith("TOP_")]
+        random.shuffle(patients)
+        tops = [row[:3] if row[0].startswith("TOP_REASON_") else row for row in rows if row[0].startswith("TOP_")]
+        with open(ANONYMOUS_CSV_PATH, "w", newline="", encoding="utf-8") as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow(header[1:])
+            writer.writerows(patients + tops)
+        print(f"Created {ANONYMOUS_CSV_PATH} without patient IDs")
+    except Exception as e:
+        print(f"ERROR: Failed to create anonymous CSV: {e}")
+
+
 def validate_patient_count_totals(
     treatment_counts: dict[str, int], total_patients: int
 ) -> None:
@@ -725,6 +748,8 @@ def main() -> None:
         append_top_20_by_treatment(patient_results, main_results, args.provider)
     else:
         print("\nWARNING: No patient reasons collected, skipping top-20 analysis")
+
+    write_anonymous_csv()
 
 
 if __name__ == "__main__":
