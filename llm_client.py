@@ -135,16 +135,19 @@ def invoke_llm(
             client = get_anthropic_client()
             messages = [{"role": "user", "content": [{"type": "text", "text": user_prompt_text}]}]
 
+            # anthropic 1.x no longer takes temperature, and current models reject it.
+            # Current models think before answering, and the thinking counts toward
+            # max_tokens, so allow at least 16000 and read the text block, not the first block.
             response = client.messages.create(
                 model=ANTHROPIC_MODEL,
                 system=system_prompt,
                 messages=messages,  # type: ignore
-                max_tokens=max_tokens,
-                temperature=temperature,
+                max_tokens=max(max_tokens, 16000),
             )
-            if response.content and len(response.content) > 0 and hasattr(response.content[0], 'text'):
-                return response.content[0].text  # type: ignore
-            return f"ERROR: Could not extract LLM response content from Anthropic. Response: {response}"
+            text = "".join(block.text for block in response.content if block.type == "text")
+            if text:
+                return text
+            return f"ERROR: Could not extract LLM response content from Anthropic. Stop reason: {response.stop_reason}"
         else:
             return f"ERROR: Unknown LLM provider '{current_provider}'. Choose 'azure_openai', 'bedrock', or 'anthropic' in LLM_PROVIDER env var."
     except Exception as e:
